@@ -1,7 +1,47 @@
-## What next?
+## Build and test
 
-If you are following the [PathwayName](https://projects.raspberrypi.org/en/raspberrypi/pathway-name) pathway, you can move on to the [ProjectName](https://projects.raspberrypi.org/en/projects/project-name) project. In this project, you will make a (add description here).
+Now it's time to make your ...
 
-![ProjectName project](images/projectname-project.png)
+Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png)
 
-If you want to have more fun exploring Scratch, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch&curriculum%5B%5D=%201).
+
+--- task ---
+
+Step content... 
+Can use:
+**Test:**
+**Choose:**
+**Tip:**
+
+--- task ---
+
+--- task ---
+
+You have built up some really useful skills. Here is a reminder to help you make your ... : 
+
+<mark> Ingredients or collapses </mark>
+
+--- /task ---
+
+--- task ---
+
+**Test:** Show someone else your project and get their feedback. Do you want make any changes to your book? 
+
+--- /task ---
+
+--- task ---
+
+**Debug:** You might find some bugs in your project that you need to fix. Here are some common bugs.
+
+--- collapse ---
+Each debug in a collapse or ingredient
+--- /collapse ---
+
+You might find a bug not listed here. Can you figure out how to fix it?
+
+We love hearing about your bugs and how you fixed them. Use the feedback button at the bottom of this page if you found a different bug in your project.
+
+--- /task ---
+
+
+--- save ---

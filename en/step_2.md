@@ -1,22 +1,52 @@
-## Step title
+## Your idea
 
-Add an introductory sentence. What will learners achieve by the end of this step?
+Use this step to plan your ... . You can plan by just thinking; tinkering; drawing or writing; or however you like! 
+
+Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png)
+
+### Why are you making ... ?
 
 --- task ---
 
-If working **online**, open the [starter project](http://rpf.io/p/en/projectName-on){:target="_blank"} in Scratch.
- 
-If working **offline**, open the project [starter file](http://rpf.io/p/en/projectName-get){:target="_blank"} in the Scratch offline editor. If you need to download and install Scratch, you can find it [here](https://scratch.mit.edu/download){:target="_blank"}.
+Think about the purpose of your ... . 
 
-You should see...
- 
-![starter project](images/starter_project.png)
+It could be:
+- 
+
+
+--- /task ---
+
+### Who is it for?
+
+--- task ---
+
+Think about who you will make your ... for (your **audience**).
+
+--- /task ---
+
+### Get started
+
+
+--- task ---
+
+Open a [new Scratch project](http://rpf.io/scratch-new){:target="_blank"}. Scratch will open in another browser tab.
+
+--- collapse ---
+---
+title: Working offline
+---
+
+To set up Scratch for offline use visit [our Scratch guide](https://learning-admin.raspberrypi.org/en/projects/getting-started-scratch/1){:target="_blank"}.
+
+--- /collapse ---
+
+Use ... , a pen and paper, or both to plan ideas for your book.
 
 --- /task ---
 
 --- task ---
 
-Step content...
+Any other info/content
 
 --- /task ---
 

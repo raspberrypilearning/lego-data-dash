@@ -1,11 +1,15 @@
-title: lego-data-dash
+title: invent-project-template
 hero_image: images/banner.png
-description: lego-data-dash description
+description: invent-project-template description
 version: 4
 listed: false
 copyedit: false
-last_tested: "2021-09-28"
+last_tested: "2021-03-26"
 steps:
   - title: Introduction
-  - title: Step title
+  - title: Your idea
+  - title: Build and test
+  - title: Share
+  - title: Upgrade your project
+  - title: Reflect
   - title: What next?
