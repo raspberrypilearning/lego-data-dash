@@ -1,1 +1,1 @@
-## Displaying online data
+## Displaying online data with your dashboard
