@@ -9,12 +9,15 @@ This is what a vertical slider looks like:
 Sliding indicators can also run horizontally if you prefer, by rotating the build 90 degrees anticlockwise.
 
 --- task ---
+
 Follow these build instructions to create a vertical sliding indicator:
 
+INSERT BUILD PDF WHEN DONE
 
 --- /task --- 
 
 --- task ---
+
 Before attaching the motor to the rear of the slider's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
 
 ![Image showing motor 'zeroed in' with aligned symbols](images/aligned_symbols.jpg)
@@ -22,6 +25,7 @@ Before attaching the motor to the rear of the slider's axle, make sure that it i
 --- /task --
 
 ### Test the sliding indicator
+
 --- task ---
 
 Connect the motor of your slider to Port A on your BuildHAT.
@@ -72,6 +76,7 @@ sleep(0.5)
 motor_slider.run_to_position(0, direction='anticlockwise')
 sleep(0.5)
 motor_slider.run_to_position(-180, direction='anticlockwise')
+
 --- /code ---
 
 Save your work as `slider_test.py` and click Run. You should see your slider move up and down (or back and forth!)
