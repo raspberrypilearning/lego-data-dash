@@ -19,6 +19,34 @@ You will:
 
 --- /no-print ---
 
+
+--- collapse ---
+---
+title: What you will need
+---
+### Hardware
+
++ A Raspberry Pi Computer
++ A Raspberry Pi Build Hat
++ 2 Small Lego Motors (more optional)
++ Assortment of Lego; we used a selection from the [LEGO Spike Prime kit](https://education.lego.com/en-gb/product/spike-prime){:target="_blank"}
+
+Optional:
++ LEDs
++ Jumper wires
+
+### Software
+
++ BuildHAT python library for controlling the Build Hat
++ Thonny python IDE
++ PYTHON LIBS FOR APIS HERE
+
+### Downloads
+
++ [Image Classifier Test files](http://rpf.io/p/en/robot-face-go){:target="_blank"}
+
+--- /collapse ---
+
 <div style="border-top: 15px solid #f3524f; background-color: whitesmoke; margin-bottom: 20px; padding: 10px;">
 
 ### PROJECT BRIEF: LEGO Data Dashboard

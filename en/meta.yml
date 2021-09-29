@@ -7,7 +7,7 @@ copyedit: false
 last_tested: "2021-03-26"
 steps:
   - title: Introduction
-  - title: Build a simple dashboard
+  - title: Plan your dashboard
   - title: Make a LEGO slider
   - title: Make LEGO dials
   - title: Make an LED scale
