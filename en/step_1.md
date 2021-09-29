@@ -118,7 +118,7 @@ This example shows a weather Dashboard displaying the current temperature on a v
 --- /no-print ---
 
 --- print-only ---
-![Complete project](images/example-dash.jpg)
+![Image showing a weather station dashboard made of LEGO](images/example-dash.jpg)
 --- /print-only ---
 
 
