@@ -1,7 +1,7 @@
 ## Introduction
 
 
-You are going to create a dashboard ... Your ... will need to meet the **project brief**.
+In this project you are going to create a dashboard which will visualise data you choose from a range of online sources. Your data dashboard will need to meet the **project brief**.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 A <span style="color: #0faeb0">Dashboard</span> is a user interface that gives a current summary of important information, usually in graphic, easy-to-read form. The term originates from cars, where the driver is shown the current status of the vehicle using big, bright dials and scales.</p>
@@ -62,7 +62,7 @@ Mounting the Raspberry Pi this way round enables easy access to the ports as wel
 
 --- task ---
 
-Line up the BuildHAT with the Raspberry Pi, ensuring you can see the `This side up` label. Make sure all the GPIO pins are covered by the HAT, and press down firmly. (The example uses a [stacking header](https://www.adafruit.com/product/2223){:target="_blank"} which makes the pins longer.)
+Line up the BuildHAT with the Raspberry Pi, ensuring you can see the `This way up` label. Make sure all the GPIO pins are covered by the HAT, and press down firmly. (The example uses a [stacking header](https://www.adafruit.com/product/2223){:target="_blank"} which makes the pins longer.)
 
 ![Image of GPIO pins poking through the top of the buildHAT](images/build_15.jpg)
 
