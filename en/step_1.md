@@ -1,56 +1,44 @@
 ## Introduction
 
-You are going to create ... Your ... will need to meet the **project brief**.
 
-<mark>this particular boxout optional: maybe a good idea if first path</mark>
+You are going to create a dashboard ... Your ... will need to meet the **project brief**.
+
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">project brief</span> describes what a project must do. It's a bit like being given a mission to complete.
-</p>
+A <span style="color: #0faeb0">Dashboard</span> is a user interface that gives a current summary of important information, usually in graphic, easy-to-read form. The term originates from cars, where the driver is shown the current status of the vehicle using big, bright dials and scales.</p>
 
 You will:
-+ 
-+ 
-+ 
++ Build automated indicators using LEGO motors and elements
++ Access an online **API** to retrieve interesting data using python
++ Display your chosen data on a dashboard you create
 
 --- no-print ---
---- task ---
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1">
 
-### Try it
-
-Description of what to do or think about when looking at the example.
-
-</div>
-<div>
-
-**Light the way home**: [See inside](https://scratch.mit.edu/projects/499860786/editor){:target="_blank"}
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/499860786/?autostart=false" frameborder="0"></iframe>
-</div>
-
-</div>
-</div>
-
---- /task ---
 
 --- /no-print ---
 
 <div style="border-top: 15px solid #f3524f; background-color: whitesmoke; margin-bottom: 20px; padding: 10px;">
 
-### PROJECT BRIEF: Project title
+### PROJECT BRIEF: LEGO Data Dashboard
 <hr style="border-top: 2px solid black;">
 
-Brief explanation of aims of project. 
+Your task is to create a LEGO Dashboard that will display your chosen data. The sources for your data can be any API you like, but in this example we will show you how to access these specific examples, which require minimal or no sign up:
 
-Your ... should:
-+ ...
-+ ...
++ API 1 - Information list available
++ API 2 - Information list available
++ API 3 - Information list available
 
-Your ... could:
-+ ...
-+ ...
+Your Dashboard should:
++ Use LEGO to display your chosen data in a clear way
++ Access an online API to retrieve up-to-date data
++ Have at least two (2) LEGO indicators
+
+Your Dashboard could:
++ Use other electronic components (LEDs, buzzers)
++ Have physical user inputs (LEGO motor, LEGO Shock sensor, GPIO button, distance sensor)
++ 
 </div>
 
 --- no-print ---
@@ -59,23 +47,11 @@ Your ... could:
 
 --- task ---
 
-Think about ... as you investigate these example projects to get more ideas:
+Think about the information you would like to display on your dashboard as you investigate these example projects to get more ideas:
 
-**Tickle monster**: [See inside](https://scratch.mit.edu/projects/500189097/editor){:target="_blank"}
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/500189097/?autostart=false" frameborder="0"></iframe>
-</div>
+This example shows a weather Dashboard displaying the current temperature on a vertical slider, the cloud cover using an LED scale, and on on rotating dials it suggests a level of clothing based on the apparent temperature (includes the wind and other weather in the temperature) and a detailed weather report using World Weather Codes (a.k.a WMO code).
 
-**Scratch blends in**: [See inside](https://scratch.mit.edu/projects/498968472/editor){:target="_blank"}
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/498968472/?autostart=false" frameborder="0"></iframe>
-</div>
-
-**A debugging story**: [See inside](https://scratch.mit.edu/projects/498960446/editor){:target="_blank"}
-Click on the character and object to choose the ones you want in the story, then click on the Stage to turn the page.
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/498960446/?autostart=false" frameborder="0"></iframe>
-</div>
+![Demo Video](images/weather_dash.gif)
 
 --- /task ---
 
