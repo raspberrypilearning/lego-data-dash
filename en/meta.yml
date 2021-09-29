@@ -7,9 +7,10 @@ copyedit: false
 last_tested: "2021-03-26"
 steps:
   - title: Introduction
-  - title: Your idea
-  - title: Build and test
-  - title: Share
-  - title: Upgrade your project
-  - title: Reflect
+  - title: Build a simple dashboard
+  - title: Make a LEGO slider
+  - title: Make LEGO dials
+  - title: Make an LED scale
+  - title: Set the time with a LEGO clock
+  - title: Displaying online data
   - title: What next?

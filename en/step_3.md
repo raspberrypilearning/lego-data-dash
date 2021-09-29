@@ -1,4 +1,4 @@
-## Build and test
+## Make a LEGO slider
 
 Now it's time to make your ...
 

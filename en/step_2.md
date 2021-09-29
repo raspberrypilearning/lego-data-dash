@@ -1,4 +1,4 @@
-## Your idea
+## Build a simple dashboard
 
 Use this step to plan your ... . You can plan by just thinking; tinkering; drawing or writing; or however you like! 
 

@@ -1,4 +1,4 @@
-## Reflect
+## Set the time with a LEGO clock
 
 Did you meet the **project brief**? Think about your project and go through the checklist below and check off the ones that apply to your project.
 
