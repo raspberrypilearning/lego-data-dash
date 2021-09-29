@@ -111,14 +111,14 @@ Think about the information you would like to display on your dashboard as you i
 
 This example shows a weather Dashboard displaying the current temperature on a vertical slider, the cloud cover using an LED scale, and on the rotating dials it suggests a level of clothing based on the apparent temperature (includes the wind and other weather in the temperature) and a detailed weather report using World Weather Codes (a.k.a WMO code).
 
-![Demo Video](images/weather_dash.gif)
+![Demo Video](images/weather-dash.gif)
 
 --- /task ---
 
 --- /no-print ---
 
 --- print-only ---
-![Complete project](images/showcase_static.png)
+![Complete project](images/example-dash.jpg)
 --- /print-only ---
 
 
