@@ -71,11 +71,18 @@ from random import randint
 
 motor_slider = Motor('A')
 
-motor_slider.run_to_position(180, direction='clockwise')
-sleep(0.5)
-motor_slider.run_to_position(0, direction='anticlockwise')
-sleep(0.5)
-motor_slider.run_to_position(-180, direction='anticlockwise')
+last_value = 0
+
+while True:
+    sensor_data = randint(-180, 180)
+    print(sensor_data)
+    if sensor_data < last_value:
+        motor_slider.run_to_position(sensor_data, 100, direction="anticlockwise") # move anti-clockwise
+        last_value = sensor_data
+    else:
+        motor_slider.run_to_position(sensor_data, 100, direction="clockwise") # move clockwise
+        last_value = sensor_data
+    sleep(0.1)
 
 --- /code ---
 
@@ -83,5 +90,6 @@ Save your work as `slider_test.py` and click Run. You should see your slider mov
 
 --- /task ---
 
+At the moment
 
 --- save ---
