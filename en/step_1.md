@@ -98,7 +98,7 @@ Your Dashboard should:
 Your Dashboard could:
 + Use other electronic components (LEDs, buzzers)
 + Have physical user inputs (LEGO motor, LEGO Shock sensor, GPIO button, distance sensor)
-+ 
+  
 </div>
 
 --- no-print ---

@@ -1,22 +1,23 @@
-## Make an LED scale
+## Make LEGO dials
 
-If you have time you can upgrade your project. You might have ideas to add more already or you might want to go back to the first step and look at other projects again for more inspiration.
+<mark> This is for Scratch </mark>
 
-You could:
-- ...
-- ...
+Now is the time to share your book with your audience.
 
-Each example project in the [Introduction](.) has a ‘See Inside’ link for you to open the project in Scratch and look at the code to get ideas and see how they work.
+If you have a Scratch account, you can share your project through Scratch. Check with an adult first. You can send a link to people you know, and the whole Scratch community will be able to find your project and try it out.
 
-<mark> Optional </mark>Each example project in the [Introduction](.) has a ‘See Inside’ link for you to open the project in Scratch and look at the code to get ideas and see how they work.
+[[[share-scratch]]]
 
-**Sporg**: [See inside](https://scratch.mit.edu/projects/495865892/editor){:target="_blank"}
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/495865892/?autostart=false" frameborder="0"></iframe>
-</div>
+Why not invite your friends to create a project? Let them know how you had fun.
 
-Take a look at some I made you a book projects created by community members in the Raspberry Pi Foundation’s studio of I made you a book Community Projects [See inside](https://scratch.mit.edu/studios/29092393/){:target="_blank"}.
+If you have a Scratch account, and have shared your book project, keep an eye out for comments that others may make about your creation. Feedback is a great way to reflect on your work. Report and ignore any comments that are unhelpful or irrelevant.
 
+[[[comments-feedback-scratch]]]
 
---- save ---
+--- task ---
 
+Inspire others with your project by submitting it to our Scratch studio! 
+
+To share your book with others who make the 'I made a book' project, please complete [this form.](https://form.raspberrypi.org/f/community-project-submissions){:target="_blank"}
+
+--- /task ---

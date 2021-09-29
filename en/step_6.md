@@ -1,55 +1,22 @@
-## Set the time with a LEGO clock
+## Make an LED scale
 
-Did you meet the **project brief**? Think about your project and go through the checklist below and check off the ones that apply to your project.
+If you have time you can upgrade your project. You might have ideas to add more already or you might want to go back to the first step and look at other projects again for more inspiration.
 
-Does your ... have:
+You could:
+- ...
+- ...
 
---- task ---
-something
---- /task ---
---- task ---
-something
---- /task ---
+Each example project in the [Introduction](.) has a ‘See Inside’ link for you to open the project in Scratch and look at the code to get ideas and see how they work.
 
+<mark> Optional </mark>Each example project in the [Introduction](.) has a ‘See Inside’ link for you to open the project in Scratch and look at the code to get ideas and see how they work.
 
-Your ... could also have:
+**Sporg**: [See inside](https://scratch.mit.edu/projects/495865892/editor){:target="_blank"}
+<div class="scratch-preview" style="margin-left: 15px;">
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/495865892/?autostart=false" frameborder="0"></iframe>
+</div>
 
---- task ---
-something
---- /task ---
---- task ---
-something
---- /task ---
+Take a look at some I made you a book projects created by community members in the Raspberry Pi Foundation’s studio of I made you a book Community Projects [See inside](https://scratch.mit.edu/studios/29092393/){:target="_blank"}.
 
 
-Reflecting about how you made your ... will help you in your future projects:
-
---- task ---
-How did you get your ideas? <mark>free text answer, 3 characters possibly</mark>
---- /task ---
-
---- task ---
-What cool new thing(s) did you learn? <mark>free text answer, 3 characters possibly</mark>
---- /task ---
-
---- task ---
-<mark> some ideas, delete as needed </mark> Mistakes are the "portals of discovery" (James Joyce, Ulysses). 
-The Nobel Prize-winning physicist Niels Bohr said, “An expert is a person who has made all the mistakes that can be made”.
-Mistakes are powerful.
-Mistakes are empowering. 
-
-What mistakes did you make and how did they help you create your ... <mark>free text answer, 3 characters possibly</mark>
---- /task ---
-
-### Now you are (the author of a digital book)!
-
-Take a moment to celebrate what you have made.
-
---- task ---
-
-Where will you take your new powers? What will you make next? <mark>free text answer, 3 characters possibly</mark>
-
---- /task ---
-
-![scratch cat in at party hat](images/reflect.png)
+--- save ---
 
