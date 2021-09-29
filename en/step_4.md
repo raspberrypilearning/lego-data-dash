@@ -57,6 +57,8 @@ Open Thonny on your Raspberry Pi from the Programming menu.
 
 Enter the following code in a blank tab:
 
+--- /task ---
+
 --- code ---
 ---
 language: python
@@ -78,6 +80,8 @@ sleep(0.5)
 motor_slider.run_to_position(-180, direction='anticlockwise')
 
 --- /code ---
+
+--- task ---
 
 Save your work as `slider_test.py` and click Run. You should see your slider move up and down (or back and forth!)
 
