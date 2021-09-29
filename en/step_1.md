@@ -34,6 +34,7 @@ title: What you will need
 Optional:
 + LEDs
 + Jumper wires
++ M2 bolts and nuts (x2 each for mounting the Raspberry Pi to the LEGO Build Plate)
 
 ### Software
 
@@ -46,6 +47,37 @@ Optional:
 + [Image Classifier Test files](http://rpf.io/p/en/robot-face-go){:target="_blank"}
 
 --- /collapse ---
+
+Before you begin, you'll need to have setup your Raspberry Pi Computer and attached your LEGO BuildHAT. You can find instructions on how to do both here:
+
+--- task ---
+
+Mount your Raspberry Pi to the LEGO Maker Plate using M2 bolts and nuts, making sure the pi is on the side without the 'edge':
+
+ ![Raspberry Pi bolted to a magenta LEGO build plate](images/build_11.jpg)
+
+--- /task ---
+
+Mounting the Raspberry Pi this way round enables easy access to the ports as well as the SD card slot. The Maker Plate will allow you to connect the Raspberry Pi to the main structure of your Dashboard more easily.
+
+--- task ---
+
+Line up the BuildHAT with the Raspberry Pi, making sure all the GPIO pins are covered, and press down firmly. (The example uses a [stacking header](https://www.adafruit.com/product/2223){:target="_blank"} which makes the pins longer.)
+
+![Image of GPIO pins poking through the top of the buildHAT](images/build_15.jpg)
+
+--- /task ---
+
+You should now power your Raspberry Pi using the 7.5V barrel jack on the BuildHAT which will allow you to use the motors.
+
+--- task ---
+
+If you have not already done so, set up your new Raspberry Pi by following these instructions:
+
+[Setting up your Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up){:target="_blank"}
+
+--- /task ---
+
 
 <div style="border-top: 15px solid #f3524f; background-color: whitesmoke; margin-bottom: 20px; padding: 10px;">
 
@@ -77,7 +109,7 @@ Your Dashboard could:
 
 Think about the information you would like to display on your dashboard as you investigate these example projects to get more ideas:
 
-This example shows a weather Dashboard displaying the current temperature on a vertical slider, the cloud cover using an LED scale, and on on rotating dials it suggests a level of clothing based on the apparent temperature (includes the wind and other weather in the temperature) and a detailed weather report using World Weather Codes (a.k.a WMO code).
+This example shows a weather Dashboard displaying the current temperature on a vertical slider, the cloud cover using an LED scale, and on the rotating dials it suggests a level of clothing based on the apparent temperature (includes the wind and other weather in the temperature) and a detailed weather report using World Weather Codes (a.k.a WMO code).
 
 ![Demo Video](images/weather_dash.gif)
 

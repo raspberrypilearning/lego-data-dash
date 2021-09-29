@@ -2,23 +2,29 @@
 
 Now it's time to make a LEGO sliding indicator! If you don't want to include a sliding indicator, you can skip to the next step which shows you how to create rotating LEGO dials.
 
+This is what a vertical slider looks like:
+
 ![Image showing vertical lego slider acting as a thermometer](images/slider.jpg)
 
---- task ---
-
-Step content... 
-Can use:
-**Test:**
-**Choose:**
-**Tip:**
+Sliding indicators can also run horizontally if you prefer, by rotating the build 90 degrees anticlockwise.
 
 --- task ---
+Follow these build instructions to create a vertical sliding indicator:
+
+
+--- /task --- 
 
 --- task ---
+Before attaching the motor to the rear of the slider's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
 
-You have built up some really useful skills. Here is a reminder to help you make your ... : 
+![Image showing motor 'zeroed in' with aligned symbols](images/aligned_symbols.jpg)
 
-<mark> Ingredients or collapses </mark>
+--- /task --
+
+### Test the sliding indicator
+--- task ---
+
+
 
 --- /task ---
 
