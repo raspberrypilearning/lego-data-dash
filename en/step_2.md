@@ -50,6 +50,6 @@ Draw your dashboard now, including the frame to hold it, and any indicators you 
 
 --- /task ---
 
-In the next step, we will start building with LEGO!
+In the next step, we will use python to access your chose API and scrape some data!
 
 --- save ---

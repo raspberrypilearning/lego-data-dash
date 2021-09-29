@@ -90,6 +90,10 @@ Save your work as `slider_test.py` and click Run. You should see your slider mov
 
 --- /task ---
 
-At the moment
+### Calibrate your slider
+
+At the moment your slider is running off of random integers between -180 and 180. Calibrating it will mean mapping the maximum and minimum possible data values from your API between -180 and 180 on your motor. 
+
+
 
 --- save ---
