@@ -1,9 +1,8 @@
-## Make a LEGO slider
+## Make a LEGO sliding indicator
 
-Now it's time to make your ...
+Now it's time to make a LEGO sliding indicator! If you don't want to include a sliding indicator, you can skip to the next step which shows you how to create rotating LEGO dials.
 
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png)
-
+![Image showing vertical lego slider acting as a thermometer](images/slider.jpg)
 
 --- task ---
 
