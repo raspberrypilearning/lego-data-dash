@@ -122,6 +122,44 @@ For our Cambridge example, this would be 360 / 40 = 9. This means that we need t
 
 --- /task ---
 
+To program your sliding indicator, we can reuse some of the code written in the Data Plotter project as they're very much the same mechanism.
+
+In a new Thonny window add the following, filling in the variables with your own information as you go:
+
+`min_value` is the lowest reading you think you will get
+`max_value` is the highest reading you think you will get
+`min_a
+
+--- code ---
+---
+language: python
+filename: data_dash.py
+line_numbers: true
+line_number_start: 10 
+line_highlights: 
+---
+from buildhat import Motor
+from time import sleep
+from random import randint
+
+motor_slider = Motor('A')
+min_value = 
+max_value = 
+min_angle = -180
+max_angle = 180
+sensor_data  = COMMAND TO PULL DATA FROM API HERE
+
+def remap(min_value, max_value, min_angle, max_angle, sensor_data):
+    value_range = (max_value - min_value)
+    motor_range = (max_angle - min_angle)
+    mapped = (((sensor_data - min_value) * motor_range) / value_range) + min_angle
+    return int(mapped)
+
+while True:
+    remap()
+    motor_slider.run_to_position(mapped, 100)
+
+--- /code ---
 
 
 --- save ---
