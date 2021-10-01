@@ -70,19 +70,22 @@ from time import sleep
 from random import randint
 
 motor_slider = Motor('A')
+min_value = -180
+max_value = 180
+min_angle = -180
+max_angle = 180
+sensor_data  = randint(-180, 180)
 
-last_value = 0
+def remap(min_value, max_value, min_angle, max_angle, sensor_data):
+    value_range = (max_value - min_value)
+    motor_range = (max_angle - min_angle)
+    mapped = (((sensor_data - min_value) * motor_range) / value_range) + min_angle
+    return int(mapped)
 
 while True:
-    sensor_data = randint(-180, 180)
-    print(sensor_data)
-    if sensor_data < last_value:
-        motor_slider.run_to_position(sensor_data, 100, direction="anticlockwise") # move anti-clockwise
-        last_value = sensor_data
-    else:
-        motor_slider.run_to_position(sensor_data, 100, direction="clockwise") # move clockwise
-        last_value = sensor_data
-    sleep(0.1)
+    remap()
+    motor_slider.run_to_position(mapped, 100)
+    sleep(0.2)
 
 --- /code ---
 
