@@ -107,13 +107,20 @@ To map our scale to the available angles on our motor, we need to first work out
 For the example above, the temperature in Cambridge ranges from -5 to 35. This means that my scale is 40 units wide: 35 - -5 = 40
 
 --- task ---
+
 **Calculate** how wide your scale is by subtracting the minimum possible reading from the maximum possible reading. (Note: subtracting a negative number will make your answer bigger!)
+
 --- /task ---
 
 We now need to set our motor to move by a specific number of degrees when the reading changes. To work this out, we divide 360 by the width of your scale. 
 
 For our Cambridge example, this would be 360 / 40 = 9. This means that we need to move 9 degrees around the motor for every degree on our scale. 
 
+--- task ---
+
+**Calculate** the angle change for one degree of your scale. Write down the answer - we'll need it later. 
+
+--- /task ---
 
 
 
