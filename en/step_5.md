@@ -56,7 +56,7 @@ To finish building your needle gauge:
 
 --- task ---
 
-Slide the face down over your axle, using blue tac or tape to stick it down to the dash behind and prevent it from sliding as the axle turns.
+Slide the face down over your axle, using blu-tac or tape to stick it down to the dash behind and prevent it from sliding as the axle turns.
 ![Image showing LEGO axle protruding through gauge face](images/needle-gauge1.jpg)
 
 --- /task ---
@@ -71,4 +71,21 @@ Add a 90 degree elbow to the end of your axle and place another axle into it. Ma
 
 --- /collapse ---
 
-If you are creating a spinning face dial, you should mount a single gear behind your face, to prevent it from catching on your dashboard:
+--- collapse ---
+---
+title: If you are creating a spinning face dial
+---
+
+To finish building a spinning gauge:
+
+--- task ---
+
+Mount a single gear behind your face as a spacer, to prevent it from catching on your dashboard. Use some blu-tac to stick the face to this gear.
+![Image showing black LEGO gear mounted on axle with tack](/en/images/dial-gauge1.jpg)
+![Image showing gauge face mounted on top of black LEGO gear](/en/images/dial-gauge2.jpg)
+
+--- /task ---
+
+--- /collapse ---
+
+
