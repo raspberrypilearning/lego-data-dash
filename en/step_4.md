@@ -66,7 +66,9 @@ Take a toothed bar, a red axle and an indicator arrow. Insert the axle into one 
 
 --- task ---
 
-Slide the toothed bar down into the top of the mechanism. You may have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth.
+Slide the toothed bar down into the top of the mechanism. 
+
+You will have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth. The mechanism will slide easily up and down while the gear and axle are free. Connecting a motor will hold it steady.
 ![Image showing build plate with two straight brackets and studs and an axle and gear mounted in the plate with the slider bar inserted](images/sliderbuild8.jpg)
  
 --- /task ---
@@ -87,11 +89,14 @@ Before attaching the motor to the rear of the slider's axle, make sure that it i
 --- /task ---
 
 --- task ---
-
-Mount the motor behind the board using the two studs. Make sure the axle fits into the hole on the flat side of the motor.
+Adjust your toothed bar so it is about halfway along, then mount the motor behind the board using the two studs while holding the toothed bar in place. Make sure the axle fits into the hole on the flat side of the motor. It should keep the slider held steady now, around halfway along the bar.
 ![Image showing build plate with a motor mounted on the back](images/sliderbuild10.jpg)
 
 --- /task ---
+
+--- task ---
+
+
 
 
 ### Test the sliding indicator
