@@ -12,7 +12,7 @@ A gauge or dial is the simplest type of data readout you can create using LEGO, 
 INSERT BUILD PDF ONCE DONE
 
 ### Create a scale
-To create a scale for your gauge, you will need to consider what kind of dial it will be. There are two types we can create with LEGO:
+To create a scale for your gauge, you will need to consider what kind of dial it will be. There are two simple types we can create with LEGO:
 
 + A gauge where the needle spins to indicate a point on the face:
 ![An image showing a gauge with a needle and scale]()
