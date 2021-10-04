@@ -129,7 +129,7 @@ In a new Thonny window add the following, filling in the variables with your own
 
 `min_value` is the lowest reading you think you will get
 `max_value` is the highest reading you think you will get
-`min_a
+
 
 --- code ---
 ---
@@ -146,8 +146,8 @@ from random import randint
 motor_slider = Motor('A')
 min_value = #input your minimum expected value here
 max_value = #input your maximum expected value here
-min_angle = -180
-max_angle = 180
+min_angle = -175
+max_angle = 175
 sensor_data  = #Use an API command to pull the data you want 
 
 def remap(min_value, max_value, min_angle, max_angle, sensor_data):
