@@ -111,9 +111,9 @@ def temp_remap(temp_min_value, temp_max_value, temp_min_angle, temp_max_angle, t
     return int(temp_mapped)
 
 def poll_remap(poll_min_value, poll_max_value, poll_min_angle, poll_max_angle, poll_sensor_data):
-    value_range = (poll_max_value - poll_min_value)
-    motor_range = (poll_max_angle - poll_min_angle)
-    poll_mapped = (((poll_sensor_data - poll_min_value) * motor_range) / value_range) + poll_min_angle
+    poll_value_range = (poll_max_value - poll_min_value)
+    poll_motor_range = (poll_max_angle - poll_min_angle)
+    poll_mapped = (((poll_sensor_data - poll_min_value) * poll_motor_range) / poll_value_range) + poll_min_angle
     return int(poll_mapped)
 
 while True:
