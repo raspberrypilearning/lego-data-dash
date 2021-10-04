@@ -10,7 +10,7 @@ steps:
   - title: Plan your dashboard
   - title: Access your chosen API
   - title: Make a LEGO sliding indicator
-  - title: Make LEGO dials
+  - title: Make a LEGO gauge
   - title: Make an LED scale
   - title: Set the time with a LEGO clock
   - title: Displaying online data with your dashboard
