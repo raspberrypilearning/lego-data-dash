@@ -18,11 +18,81 @@ Follow these build instructions to create a vertical sliding indicator:
 
 --- task ---
 
+Take a yellow plate element and attach two blue beams using 90 degree stud brackets.
+![Image showing build plate with blue legs](images/sliderbuild1.jpg)
+
+--- /task ---
+
+--- task ---
+
+Attach two grey straight brackets, one column apart.
+![Image showing build plate with two straight brackets](images/sliderbuild2.jpg)
+
+--- /task ---
+
+--- task ---
+
+Attach two grey double length studs with spacers on one end to the plate elemnt above the brackets. 
+![Image showing build plate with two straight brackets and studs](images/sliderbuild3.jpg)
+
+--- /task ---
+
+--- task ---
+
+Attach two yellow (three hole) beams horizontally between the two straight brackets. 
+![Image showing build plate with two straight brackets and studs](images/sliderbuild4.jpg)
+
+--- /task ---
+
+--- task ---
+
+Take a small black gear and a short axle and join them together. 
+![Image showing build plate with two straight brackets and studs and an axle and gear](images/sliderbuild5.jpg)
+
+--- /task ---
+
+--- task ---
+Insert the axle through the build plate above the right bracket as shown: 
+![Image showing build plate with two straight brackets and studs and an axle and gear mounted in the plate](images/sliderbuild6.jpg)
+
+--- /task ---
+
+--- task ---
+
+Take a toothed bar, a red axle and an indicator arrow. Insert the axle into one end of the toothed bar, with the indicator arrow pointing toward the toothed side:
+![Image showing toothed bar, axle and indicator arrow together](images/sliderbuild11.jpg)
+
+--- /task ---
+
+--- task ---
+
+Slide the toothed bar down into the top of the mechanism. You may have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth.
+![Image showing build plate with two straight brackets and studs and an axle and gear mounted in the plate with the slider bar inserted](images/sliderbuild8.jpg)
+ 
+--- /task ---
+
+--- task ---
+
+Take a Spark motor and add two studs to the flat side, in the top two holes. 
+![Image showing build plate with two straight brackets and studs and an axle and gear mounted in the plate with the slider bar inserted, and a motor on the table](images/sliderbuild9.jpg)
+
+--- /task ---
+
+--- task ---
+
 Before attaching the motor to the rear of the slider's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
 
 ![Image showing motor 'zeroed in' with aligned symbols](images/aligned_symbols.jpg)
 
 --- /task ---
+
+--- task ---
+
+Mount the motor behind the board using the two studs. Make sure the axle fits into the hole on the flat side of the motor.
+![Image showing build plate with a motor mounted on the back](images/sliderbuild10.jpg)
+
+--- /task ---
+
 
 ### Test the sliding indicator
 
