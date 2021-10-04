@@ -12,7 +12,7 @@ Sliding indicators can also run horizontally if you prefer, by rotating the buil
 
 Follow these build instructions to create a vertical sliding indicator:
 
-INSERT BUILD PDF WHEN DONE
+<mark>INSERT BUILD PDF WHEN DONE</mark>
 
 --- /task --- 
 
