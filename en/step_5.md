@@ -15,8 +15,8 @@ INSERT BUILD PDF ONCE DONE
 To create a scale for your gauge, you will need to consider what kind of dial it will be. There are two simple types we can create with LEGO:
 
 + A gauge where the needle spins to indicate a point on the face:
-![An image showing a gauge with a needle and scale]()
+![An image showing a gauge with a needle and scale](/en/images/dial2.gif)
 
 + A gauge where the whole face turns to display a point at the top with a stationary indicator:
-![An image showing a gauge with a needle and scale]()
+![An image showing a gauge with a moving scale](/en/images/dial1.gif)
 
