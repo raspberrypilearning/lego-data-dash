@@ -26,6 +26,8 @@ Before attaching the motor to the rear of the slider's axle, make sure that it i
 
 ### Test the sliding indicator
 
+To program your sliding indicator, we can reuse some of the code written in the [LEGO Data Plotter](https://projects.raspberrypi.org/en/projects/lego-plotter) project as they're very much the same mechanism.
+
 --- task ---
 
 Connect the motor of your slider to Port A on your BuildHAT.
@@ -70,22 +72,20 @@ from time import sleep
 from random import randint
 
 motor_slider = Motor('A')
-min_value = -180
-max_value = 180
-min_angle = -180
-max_angle = 180
-sensor_data  = randint(-180, 180)
 
-def remap(min_value, max_value, min_angle, max_angle, sensor_data):
-    value_range = (max_value - min_value)
-    motor_range = (max_angle - min_angle)
-    mapped = (((sensor_data - min_value) * motor_range) / value_range) + min_angle
-    return int(mapped)
+motor_slider.run_to_position(0,100)
 
 while True:
-    remap()
-    motor_slider.run_to_position(mapped, 100)
-    sleep(0.2)
+    current_angle = motor_slider.get_aposition()
+    new_angle = randint(-180, 180)
+    print(sensor_data)
+    if new_angle > current_angle:
+        motor_slider.run_to_position(new_angle, 100, direction="clockwise")
+        print('Turning CW')
+    elif new_angle < current_angle:
+        motor_slider.run_to_position(new_angle, 100, direction="anticlockwise")
+        print('Turning ACW')
+    sleep(0.1)
 
 --- /code ---
 
@@ -125,8 +125,6 @@ For our Cambridge example, this would be 360 / 40 = 9. This means that we need t
 
 --- /task ---
 
-To program your sliding indicator, we can reuse some of the code written in the Data Plotter project as they're very much the same mechanism.
-
 In a new Thonny window add the following, filling in the variables with your own information as you go:
 
 `min_value` is the lowest reading you think you will get
@@ -146,11 +144,11 @@ from time import sleep
 from random import randint
 
 motor_slider = Motor('A')
-min_value = 
-max_value = 
+min_value = #input your minimum expected value here
+max_value = #input your maximum expected value here
 min_angle = -180
 max_angle = 180
-sensor_data  = COMMAND TO PULL DATA FROM API HERE
+sensor_data  = #Use an API command to pull the data you want 
 
 def remap(min_value, max_value, min_angle, max_angle, sensor_data):
     value_range = (max_value - min_value)

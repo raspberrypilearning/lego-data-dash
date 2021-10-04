@@ -1,23 +1,22 @@
-## Make LEGO dials
+## Make a LEGO gauge
 
-<mark> This is for Scratch </mark>
+Another way to quickly display data is using **dials**, also known as **gauges**. You've definitely seen them before, they are usually round or semicircular and have two main visible parts:
 
-Now is the time to share your book with your audience.
++ The face, which has the scale shown on it
++ The needle, which moves along the scale to display the data reading
 
-If you have a Scratch account, you can share your project through Scratch. Check with an adult first. You can send a link to people you know, and the whole Scratch community will be able to find your project and try it out.
+![Animated image showing dials moving](https://media.giphy.com/media/9f8bvMFurMTXG/giphy.gif)
 
-[[[share-scratch]]]
+A gauge or dial is the simplest type of data readout you can create using LEGO, as it only relies upon creating the face and needle. Because the needle connects directly to your motor, the build is very simple:
 
-Why not invite your friends to create a project? Let them know how you had fun.
+INSERT BUILD PDF ONCE DONE
 
-If you have a Scratch account, and have shared your book project, keep an eye out for comments that others may make about your creation. Feedback is a great way to reflect on your work. Report and ignore any comments that are unhelpful or irrelevant.
+### Create a scale
+To create a scale for your gauge, you will need to consider what kind of dial it will be. There are two types we can create with LEGO:
 
-[[[comments-feedback-scratch]]]
++ A gauge where the needle spins to indicate a point on the face:
+![An image showing a gauge with a needle and scale]()
 
---- task ---
++ A gauge where the whole face turns to display a point at the top with a stationary indicator:
+![An image showing a gauge with a needle and scale]()
 
-Inspire others with your project by submitting it to our Scratch studio! 
-
-To share your book with others who make the 'I made a book' project, please complete [this form.](https://form.raspberrypi.org/f/community-project-submissions){:target="_blank"}
-
---- /task ---
