@@ -86,7 +86,7 @@ language: python
 filename: gauge_test.py
 line_numbers: true
 line_number_start: 1 
-line_highlights: 11-15, 24-29, 33-35
+line_highlights: 11-15, 24-29, 35-38
 ---
 from buildhat import Motor
 from time import sleep
