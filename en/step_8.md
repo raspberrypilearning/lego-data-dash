@@ -2,13 +2,15 @@
 
 ### Program your slider to display the temperature
 
-At the moment your slider is running off of random integers between -170 and 170. Calibrating it will mean mapping the maximum and minimum possible data values from your API between -175 and 175 on your motor. The highest possible reading will be at 175 degrees, while the lowest possible reading will be at -175. (We don't go to 180 as it can cause problems with travel around a full rotation.)
+At the moment your slider is running off of random integers between -175 and 175. (We don't go to 180 as it can cause problems with travel around a full rotation.) We picked these numbers because they are the motor's limits of travel in each direction. The data coming in from your API won't have this range - we need to make it fit the motor.
+
+**Calibrating** the indicator will mean mapping the maximum and minimum possible data values from your API between -175° and 175° on your motor. The highest possible reading will be at 175°, while the lowest possible reading will be at -175°. 
 
 For example: if it's displaying the temperature, the minimum possible reading on your slider will depend on where you live. Here in Cambridge England, it doesn't really get below -5 degrees celcius. In summer, it *might* get to 35 degrees on a *very* hot day. This means my scale will run from -5 to 35 degrees.
 
 --- task ---
 
-**Think** about what your sliding indicator will measure, and what the lowest and highest readings might be. Write them down somewhere.
+**Think** about what your sliding indicator will measure, and what the lowest and highest readings might be. Write them down somewhere so you don't forget them.
 
 --- /task ---
 
@@ -38,7 +40,25 @@ temp_min_value = #input your minimum expected value here
 temp_max_value = #input your maximum expected value here
 temp_min_angle = -175
 temp_max_angle = 175
+
+--- /code ---
+
+--- /task ---
+
+The next part we will write will do some clever maths to map our data range across the motor range. (It's basically the same as the function used in the [LEGO Data Plotter project](https://learning-admin.raspberrypi.org/en/projects/lego-plotter/6).)
  
+--- task ---
+
+Add this function beneath your existing code:
+
+--- code ---
+---
+language: python
+filename: data_dash.py
+line_numbers: true
+line_number_start: 11
+line_highlights: 
+---
 def temp_remap(temp_min_value, temp_max_value, temp_min_angle, temp_max_angle, temp_sensor_data):
     temp_value_range = (temp_max_value - temp_min_value)
     temp_motor_range = (temp_max_angle - temp_min_angle)
@@ -46,10 +66,32 @@ def temp_remap(temp_min_value, temp_max_value, temp_min_angle, temp_max_angle, t
     return int(temp_mapped)
     print(temp_mapped)
 
+--- /code ---
+
+--- /task ---
+
+Now that our function has been created, we need to make a loop that will:
+
++ pull the temperature data from the API
++ find the angle the motor is currently at
++ move to the new angle to display the reading
+
+--- task ---
+Add the following code to the end of your script:
+
+--- code ---
+--
+language: python
+filename: data_dash.py
+line_numbers: true
+line_number_start: 18
+line_highlights: 
+---
 while True:
     temp_sensor_data  =  API command to pull the data()
     temp_current_angle = motor_temp.get_aposition()
     temp_new_angle = temp_remap(temp_min_value, temp_max_value, temp_min_angle, temp_max_angle, temp_sensor_data)
+    sleep(0.5)
 
 --- /code ---
 
@@ -75,7 +117,7 @@ Connect the motor from your gauge to port B on the BuildHAT.
 
 --- task ---
 
-Change your `dash_test.py` script to match the following, filling in the variables with your own information as you go:
+Change your `data_dash.py` script to match the following, filling in the variables with your own information as you go:
 
 `poll_min_value` is the lowest air pollution reading you think you will get
 `poll_max_value` is the highest air pollution reading you think you will get
@@ -86,7 +128,7 @@ language: python
 filename: gauge_test.py
 line_numbers: true
 line_number_start: 1 
-line_highlights: 11-15, 24-29, 35-38
+line_highlights: 11-15, 24-29, 36-38
 ---
 from buildhat import Motor
 from time import sleep
@@ -122,6 +164,7 @@ while True:
     temp_sensor_data  =  API command to pull the data()
     temp_current_angle = motor_temp.get_aposition()
     temp_new_angle = temp_remap(temp_min_value, temp_max_value, temp_min_angle, temp_max_angle, temp_sensor_data)
+    sleep(0.5)
     poll_sensor_data  =  API command to pull the data()
     poll_current_angle = motor_poll.get_aposition()
     poll_new_angle = poll_remap(poll_min_value, poll_max_value, poll_min_angle, poll_max_angle, poll_sensor_data)
