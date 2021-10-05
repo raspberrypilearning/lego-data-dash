@@ -33,7 +33,7 @@ line_highlights:
 ---
 from buildhat import Motor
 from time import sleep
-from random import randint
+
 
 motor_temp = Motor('A')
 temp_min_value = #input your minimum expected value here
@@ -132,7 +132,7 @@ line_highlights: 11-15, 24-29, 36-38
 ---
 from buildhat import Motor
 from time import sleep
-from random import randint
+
 
 motor_temp = Motor('A')
 temp_min_value = #input your minimum expected value here
