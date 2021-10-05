@@ -39,12 +39,12 @@ temp_max_value = #input your maximum expected value here
 temp_min_angle = -175
 temp_max_angle = 175
  
-
 def temp_remap(temp_min_value, temp_max_value, temp_min_angle, temp_max_angle, temp_sensor_data):
     temp_value_range = (temp_max_value - temp_min_value)
     temp_motor_range = (temp_max_angle - temp_min_angle)
     temp_mapped = (((temp_sensor_data - temp_min_value) * temp_motor_range) / temp_value_range) + temp_min_angle
     return int(temp_mapped)
+    print(temp_mapped)
 
 while True:
     temp_sensor_data  =  API command to pull the data()
@@ -57,7 +57,7 @@ while True:
 
 --- task ---
 
-Save your work as `data_dash.py` and click Run. Your slider should move to  
+Save your work as `data_dash.py` and click Run. Your slider should move to display the current temperature! 
 
 --- /task ---
 
@@ -86,7 +86,7 @@ language: python
 filename: gauge_test.py
 line_numbers: true
 line_number_start: 1 
-line_highlights: 11-15, 23-27, 33-35
+line_highlights: 11-15, 24-29, 33-35
 ---
 from buildhat import Motor
 from time import sleep
@@ -109,12 +109,14 @@ def temp_remap(temp_min_value, temp_max_value, temp_min_angle, temp_max_angle, t
     temp_motor_range = (temp_max_angle - temp_min_angle)
     temp_mapped = (((temp_sensor_data - temp_min_value) * temp_motor_range) / temp_value_range) + temp_min_angle
     return int(temp_mapped)
+    print(temp_mapped)
 
 def poll_remap(poll_min_value, poll_max_value, poll_min_angle, poll_max_angle, poll_sensor_data):
     poll_value_range = (poll_max_value - poll_min_value)
     poll_motor_range = (poll_max_angle - poll_min_angle)
     poll_mapped = (((poll_sensor_data - poll_min_value) * poll_motor_range) / poll_value_range) + poll_min_angle
     return int(poll_mapped)
+    print(temp_mapped)
 
 while True:
     temp_sensor_data  =  API command to pull the data()
