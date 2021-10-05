@@ -62,5 +62,81 @@ Your finished LED scale should look something like this:
 
 The next step is to connect it to the GPIO pins on the Raspberry Pi. 
 
---- save ---
+--- task ---
 
+Take the F end of the jumper cable connected  to your common ground rail, and connect it to Pin 39. This is one of several ground pins on the Raspberry Pi, which will provide the grounding for *all* of our LED bulbs.
+![Image showing a black jumper cable connected to pin 39 on the raspberry pi](images/LEDbuild9.jpg)
+
+--- /task ---
+
+--- task ---
+
+Connect the other cables up to numbered GPIO pins, taking note of which ones you have attached your LEDs to. 
+
+In this example, we have used pins 16, 19, 20,21 and 26 (to keep them all at one end for tidiness):
+![Image showing jumper cables trailing from the Raspberry Pi GPIO pins](images/LEDbuild10.jpg)
+
+--- /task ---
+
+Now that your LED sequence is connected to your Raspberry Pi, we need to power it up and program it. 
+
+--- task ---
+
+Connect the 7.5V power supply to the barrel jack on your BuildHAT. You should see your Raspberry Pi power up and load the Raspbian Desktop.
+
+--- /task ---
+
+--- task ---
+Open Thonny from your programming menu. 
+
+The first lines of our script will import the gpiozero library and set up your LEDs to be controllable. You will need to change the values in brackets to match the numbered pins you are connected to. 
+
+The final lines make sure that as our program starts, the LEDs are all switched off.
+
+In the blank window enter the following code :
+
+--- code ---
+---
+language: python
+filename: led_sequence.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 
+---
+from gpiozero import LED
+from random import randint
+
+LED1 = LED(16) #change these numbers if you used different pins!
+LED2 = LED(19)
+LED3 = LED(20)
+LED4 = LED(21)
+LED5 = LED(26)
+
+LED1.off()
+LED2.off()
+LED3.off()
+LED4.off()
+LED5.off()
+
+
+
+--- /code ---
+
+--- /task ---
+
+Now that we have our LEDs ready to program, the next part of our code should pull the data we want to measure, then determine how many LEDs to switch on based on the result. For testing purposes, we'll use random data.
+
+Our intention is to have the LEDs turn on as the reading increases, and to turn off as it decreases. As with the other indicators, we will need to map our data across our new scale. Depending on how 
+
+Enter the following code at the end of your open script:
+--- code ---
+---
+language: python
+filename: led_sequence.py
+line_numbers: true
+line_number_start: 9
+line_highlights: 
+---
+
+data_reading = randint(1,100)
+if data_reading >
