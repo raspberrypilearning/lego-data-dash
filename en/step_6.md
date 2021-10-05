@@ -1,22 +1,66 @@
 ## Make an LED scale
 
-If you have time you can upgrade your project. You might have ideas to add more already or you might want to go back to the first step and look at other projects again for more inspiration.
+Another really cool way to display data is by using a series of LEDs to turn on and off as readings change - the higher the reading, the more LEDs are lit. Like a graphic equaliser on your computer showing the volume of your music:
 
-You could:
-- ...
-- ...
+![](https://media.giphy.com/media/Hzt1XTt6gilFlK8Oea/giphy.gif)
 
-Each example project in the [Introduction](.) has a ‘See Inside’ link for you to open the project in Scratch and look at the code to get ideas and see how they work.
+To make an LED display, you'll need a few LED bulbs - the more bulbs you have, the more precise your scale will be. There is an upper limit though - you can only have as many LEDs as there are available GPIO pins. In this example we're using 5 LEDs, but you *could* connect more than ten if you choose.
 
-<mark> Optional </mark>Each example project in the [Introduction](.) has a ‘See Inside’ link for you to open the project in Scratch and look at the code to get ideas and see how they work.
+**Note:** Because of the way the BuildHAT is designed, you **can't access GPIO 14 or 15 (pins 8 and 10)**.
 
-**Sporg**: [See inside](https://scratch.mit.edu/projects/495865892/editor){:target="_blank"}
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/495865892/?autostart=false" frameborder="0"></iframe>
-</div>
+--- task ---
 
-Take a look at some I made you a book projects created by community members in the Raspberry Pi Foundation’s studio of I made you a book Community Projects [See inside](https://scratch.mit.edu/studios/29092393/){:target="_blank"}.
+Collect your LEDs, resistors, M-F jumper cables and breadboard together. 
+![Image showing Raspberry Pi with BuildHAT, breadboard, LEDs and jumper cables on a workbench](images/LEDbuild1.jpg)
 
+--- /task ---
+
+--- task ---
+
+Look closely at your LEDs - you'll notice that one leg is longer than the other. 
+![Image showing an LED in close up on a workbench](images/LEDbuild2.jpg)
+
+--- /task ---
+
+--- task ---
+
+Insert the **short leg** of your LEDs into the **common ground rail** along the edge of your breadboard (it's the one next to the blue line at the very edge), and the long leg into the nearest numbered row:
+![Image showing  LEDs lined up on a breadboard](images/LEDbuild3.jpg)
+
+--- /task ---
+
+You need to add a resistor to the circuit, to protect the LEDs from overloading and burning out or popping. Let's do that now.
+
+--- task ---
+
+Take a resistor and insert one end into the **same row** as the first LED in your sequence. Insert the other end of the resistor into the same row, but **on the other side of the spine** of your breadboard, like this:
+
+![Image showing LEDs lined up on a breadboard, with a resistor joining the first row](images/LEDbuild4.jpg)
+
+Repeat for all the LEDs in your sequence:
+![Image showing LEDs lined up on a breadboard, with resistors joining the rows](images/LEDbuild5.jpg)
+
+--- /task ---
+
+--- task ---
+
+Insert the M end of your M-F jumper cables into the same row as the resistors, so we can connect them up to the pins on the Raspberry Pi: 
+![Image showing LEDs lined up on a breadboard, with resistors joining the rows and jumper cables trailing from the breadboard](images/LEDbuild6.jpg)
+
+--- /task ---
+
+--- task ---
+
+Take the M end of another jumper cable and insert it into the end of the common ground rail:
+![Image showing a jumper cable trailing from the common ground rail of the breadboard](images/LEDbuild7.jpg)
+
+--- /task ---
+
+Your finished LED scale should look something like this:
+
+![Image showing LEDs lined up on a breadboard, with resistors joining the rows and jumper cables trailing from the breadboard](images/LEDbuild8.jpg)
+
+The next step is to connect it to the GPIO pins on the Raspberry Pi. 
 
 --- save ---
 

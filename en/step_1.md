@@ -33,18 +33,32 @@ title: What you will need
 
 Optional:
 + LEDs
++ resistors
 + Jumper wires
-+ M2 bolts and nuts (x2 each for mounting the Raspberry Pi to the LEGO Build Plate)
++ a breadboard
++ M2 bolts and nuts (x2 of each for mounting the Raspberry Pi to the LEGO Build Plate)
 
 ### Software
 
 + BuildHAT python library for controlling the Build Hat
 + Thonny python IDE
-+ PYTHON LIBS FOR APIS HERE
++ <mark>PYTHON LIBS FOR APIS HERE</mark>
 
 ### Downloads
 
-+ 
+
+--- collapse ---
+---
+title: Installing the BuildHAT python library
+---
+
+Open a terminal window on your Raspberry Pi by pressing `Ctrl + Alt + T`.
+
+At the prompt type: `pip3 install buildhat`
+
+Press Enter and wait for the 'installation completed' message.
+
+--- /collapse ---
 
 --- /collapse ---
 
