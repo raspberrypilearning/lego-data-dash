@@ -89,15 +89,12 @@ Before attaching the motor to the rear of the slider's axle, make sure that it i
 --- /task ---
 
 --- task ---
-Adjust your toothed bar so it is about halfway along, then mount the motor behind the board using the two studs while holding the toothed bar in place. Make sure the axle fits into the hole on the flat side of the motor. It should keep the slider held steady now, around halfway along the bar.
+
+Adjust your toothed bar so the gear sits about halfway along, then mount the motor behind the board using the two studs while holding the toothed bar in place. 
+Make sure the axle fits into the hole on the **flat side** of the motor. It should keep the slider held steady now, around halfway along the bar.
 ![Image showing build plate with a motor mounted on the back](images/sliderbuild10.jpg)
 
 --- /task ---
-
---- task ---
-
-
-
 
 ### Test the sliding indicator
 
