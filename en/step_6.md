@@ -138,6 +138,8 @@ while True:
 
 Save your work as led_sequence.py and click Run. You should see your bar graph begin to light up!
 
+![animated image showing a changing bar graph made of LEDs](images/LEDbuild.gif)
+
 --- /task ---
 
 --- save ---
