@@ -128,6 +128,8 @@ Now that we have our LEDs ready to program, the next part of our code should pul
 
 Our intention is to have the LEDs turn on as the reading increases, and to turn off as it decreases. As with the other indicators, we will need to map our data across our new scale. Depending on how 
 
+--- task ---
+
 Enter the following code at the end of your open script:
 --- code ---
 ---
@@ -137,6 +139,46 @@ line_numbers: true
 line_number_start: 9
 line_highlights: 
 ---
+while True:
+  data_reading = randint(1,100)
+  if data_reading > 0 and data_reading < 20:
+    LED1.on()
+    LED2.off()
+    LED3.off()
+    LED4.off()
+    LED5.off()
+  elif data_reading >= 20 and data_reading < 40:
+    LED1.on()
+    LED2.on()
+    LED3.off()
+    LED4.off()
+    LED5.off()
+  elif data_reading >= 40 and data_reading < 60:
+    LED1.on()
+    LED2.on()
+    LED3.on()
+    LED4.off()
+    LED5.off()
+  elif data_reading >= 60 and data_reading < 80:
+    LED1.on()
+    LED2.on()
+    LED3.on()
+    LED4.on()
+    LED5.off()
+  elif data_reading >= 80:
+    LED1.on()
+    LED2.on()
+    LED3.on()
+    LED4.on()
+    LED5.on()
+  else:
+    LED1.off()
+    LED2.off()
+    LED3.off()
+    LED4.off()
+    LED5.off()
 
-data_reading = randint(1,100)
-if data_reading >
+
+--- /code ---
+
+--- /task ---
