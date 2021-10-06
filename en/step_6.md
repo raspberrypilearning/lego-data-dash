@@ -118,8 +118,6 @@ LED3.off()
 LED4.off()
 LED5.off()
 
-
-
 --- /code ---
 
 --- /task ---
@@ -131,6 +129,7 @@ Our intention is to have the LEDs turn on as the reading increases, and to turn 
 --- task ---
 
 Enter the following code at the end of your open script:
+
 --- code ---
 ---
 language: python
@@ -177,8 +176,7 @@ while True:
     LED3.off()
     LED4.off()
     LED5.off()
-
-
+    
 --- /code ---
 
 --- /task ---
