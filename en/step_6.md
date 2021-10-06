@@ -89,34 +89,22 @@ Connect the 7.5V power supply to the barrel jack on your BuildHAT. You should se
 --- task ---
 Open Thonny from your programming menu. 
 
-The first lines of our script will import the gpiozero library and set up your LEDs to be controllable. You will need to change the values in brackets to match the numbered pins you are connected to. 
-
-The final lines make sure that as our program starts, the LEDs are all switched off.
+The first lines of our script will import the gpiozero and randint libraries and set up your LEDs to be controllable. You will need to change the values in brackets to match the numbered pins you are connected to. **Note:** The order of these numbers is important! The pin numbers should go from the lowest on your 'bar graph' to the highest.
 
 In the blank window enter the following code :
 
 --- code ---
 ---
 language: python
-filename: led_sequence.py
+filename: led_bargraph.py
 line_numbers: true
 line_number_start: 1
 line_highlights: 
 ---
-from gpiozero import LED
+from gpiozero import LEDBarGraph
 from random import randint
 
-LED1 = LED(16) #change these numbers if you used different pins!
-LED2 = LED(19)
-LED3 = LED(20)
-LED4 = LED(21)
-LED5 = LED(26)
-
-LED1.off()
-LED2.off()
-LED3.off()
-LED4.off()
-LED5.off()
+graph = LEDBarGraph(16, 19, 20, 21, 26) # the order of these numbers should match the pins you connected up 
 
 --- /code ---
 
@@ -124,7 +112,7 @@ LED5.off()
 
 Now that we have our LEDs ready to program, the next part of our code should pull the data we want to measure, then determine how many LEDs to switch on based on the result. For testing purposes, we'll use random data.
 
-Our intention is to have the LEDs turn on as the reading increases, and to turn off as it decreases. As with the other indicators, we will need to map our data across our new scale. Depending on how 
+Our intention is to have the LEDs turn on as the reading increases, and to turn off as it decreases. As with the other indicators, we will need to map our data across our new scale. 
 
 --- task ---
 
@@ -139,44 +127,17 @@ line_number_start: 9
 line_highlights: 
 ---
 while True:
-  data_reading = randint(1,100)
-  if data_reading > 0 and data_reading < 20:
-    LED1.on()
-    LED2.off()
-    LED3.off()
-    LED4.off()
-    LED5.off()
-  elif data_reading >= 20 and data_reading < 40:
-    LED1.on()
-    LED2.on()
-    LED3.off()
-    LED4.off()
-    LED5.off()
-  elif data_reading >= 40 and data_reading < 60:
-    LED1.on()
-    LED2.on()
-    LED3.on()
-    LED4.off()
-    LED5.off()
-  elif data_reading >= 60 and data_reading < 80:
-    LED1.on()
-    LED2.on()
-    LED3.on()
-    LED4.on()
-    LED5.off()
-  elif data_reading >= 80:
-    LED1.on()
-    LED2.on()
-    LED3.on()
-    LED4.on()
-    LED5.on()
-  else:
-    LED1.off()
-    LED2.off()
-    LED3.off()
-    LED4.off()
-    LED5.off()
-    
+  data_reading = randint(0, 100)
+  graph.value = 1/data_reading # this creates a decimal value for the graph to display
+  sleep(0.5)
 --- /code ---
 
 --- /task ---
+
+--- task ---
+
+Save your work as led_sequence.py and click Run. You should see your bar graph begin to light up!
+
+--- /task ---
+
+--- save ---
