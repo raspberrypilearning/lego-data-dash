@@ -38,27 +38,27 @@ Take a resistor and insert one end into the **same row** as the first LED in you
 ![Image showing LEDs lined up on a breadboard, with a resistor joining the first row](images/LEDbuild4.jpg)
 
 Repeat for all the LEDs in your sequence:
-![Image showing LEDs lined up on a breadboard, with resistors joining the rows](images/LEDbuild5.jpg)
+![Image showing LEDs lined up on a breadboard, with resistors joining the rows](images/LEDbuildX.jpg)
 
 --- /task ---
 
 --- task ---
 
 Insert the M end of your M-F jumper cables into the same row as the resistors, so we can connect them up to the pins on the Raspberry Pi: 
-![Image showing LEDs lined up on a breadboard, with resistors joining the rows and jumper cables trailing from the breadboard](images/LEDbuild6.jpg)
+![Image showing LEDs lined up on a breadboard, with resistors joining the rows and jumper cables trailing from the breadboard](images/LEDbuild5.jpg)
 
 --- /task ---
 
 --- task ---
 
 Take the M end of another jumper cable and insert it into the end of the common ground rail:
-![Image showing a jumper cable trailing from the common ground rail of the breadboard](images/LEDbuild7.jpg)
+![Image showing a jumper cable trailing from the common ground rail of the breadboard](images/LEDbuild6.jpg)
 
 --- /task ---
 
 Your finished LED scale should look something like this:
 
-![Image showing LEDs lined up on a breadboard, with resistors joining the rows and jumper cables trailing from the breadboard](images/LEDbuild8.jpg)
+![Image showing LEDs lined up on a breadboard, with resistors joining the rows and jumper cables trailing from the breadboard](images/LEDbuild7.jpg)
 
 The next step is to connect it to the GPIO pins on the Raspberry Pi. 
 
