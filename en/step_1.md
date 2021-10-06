@@ -46,19 +46,6 @@ Optional:
 
 ### Downloads
 
---- collapse ---
----
-title: Installing the BuildHAT python library
----
-
-Open a terminal window on your Raspberry Pi by pressing `Ctrl + Alt + T`.
-
-At the prompt type: `pip3 install buildhat`
-
-Press Enter and wait for the 'installation completed' message.
-
---- /collapse ---
-
 --- /collapse ---
 
 Before you begin, you'll need to have setup your Raspberry Pi Computer and attached your LEGO BuildHAT:
@@ -88,6 +75,19 @@ You should now power your Raspberry Pi using the 7.5V barrel jack on the BuildHA
 If you have not already done so, set up your new Raspberry Pi by following these instructions:
 
 [Setting up your Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up){:target="_blank"}
+
+--- collapse ---
+---
+title: Installing the BuildHAT python library
+---
+
+Open a terminal window on your Raspberry Pi by pressing `Ctrl + Alt + T`.
+
+At the prompt type: `pip3 install buildhat`
+
+Press Enter and wait for the 'installation completed' message.
+
+--- /collapse ---
 
 --- /task ---
 
