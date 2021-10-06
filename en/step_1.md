@@ -46,7 +46,6 @@ Optional:
 
 ### Downloads
 
-
 --- collapse ---
 ---
 title: Installing the BuildHAT python library
