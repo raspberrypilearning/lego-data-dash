@@ -1,12 +1,12 @@
 ## Display pollution data with your Dashboard
 
-### Program your slider to display the temperature
+### Program your slider to display the oxygen level
 
 At the moment your slider is running off of random integers between -175 and 175. (We don't go to 180 as it can cause problems with travel around a full rotation.) We picked these numbers because they are the motor's limits of travel in each direction. The data coming in from your API won't have this range - we need to make it fit the motor.
 
 **Calibrating** the indicator will mean mapping the maximum and minimum possible data values from your API between -175° and 175° on your motor. The highest possible reading will be at 175°, while the lowest possible reading will be at -175°. 
 
-For example: if it's displaying the temperature, the minimum possible reading on your slider will depend on where you live. Here in Cambridge England, it doesn't really get below -5 degrees celcius. In summer, it *might* get to 35 degrees on a *very* hot day. This means my scale will run from -5 to 35 degrees.
+For example: if it's displaying the oxygen (O2) level, the minimum and maximum possible reading on your slider will depend on where you live. Here in Cambridge England, it doesn't really get below -5 degrees celcius. In summer, it *might* get to 35 degrees on a *very* hot day. This means my scale will run from -5 to 35 degrees.
 
 --- task ---
 
@@ -18,9 +18,9 @@ For example: if it's displaying the temperature, the minimum possible reading on
 
 In a new Thonny window add the following, filling in the variables with your own information as you go:
 
-+ `temp_min_value` is the lowest reading you think you will get
-+ `temp_max_value` is the highest reading you think you will get
-+ `temp_sensor_data` will be the API command
++ `o2_min_value` is the lowest reading you think you will get
++ `o2_max_value` is the highest reading you think you will get
++ `o2_sensor_data` will be the API command
 
 
 --- code ---
@@ -36,10 +36,10 @@ from time import sleep
 
 
 motor_temp = Motor('A')
-temp_min_value = #input your minimum expected value here
-temp_max_value = #input your maximum expected value here
-temp_min_angle = -175
-temp_max_angle = 175
+o2_min_value = #input your minimum expected value here
+o2_max_value = #input your maximum expected value here
+o2_min_angle = -175
+o2_max_angle = 175
 
 --- /code ---
 
@@ -59,12 +59,12 @@ line_numbers: true
 line_number_start: 11
 line_highlights: 
 ---
-def temp_remap(temp_min_value, temp_max_value, temp_min_angle, temp_max_angle, temp_sensor_data):
-    temp_value_range = (temp_max_value - temp_min_value)
-    temp_motor_range = (temp_max_angle - temp_min_angle)
-    temp_mapped = (((temp_sensor_data - temp_min_value) * temp_motor_range) / temp_value_range) + temp_min_angle
-    return int(temp_mapped)
-    print(temp_mapped)
+def o2_remap(o2_min_value, o2_max_value, o2_min_angle, o2_max_angle, o2_sensor_data):
+    o2_value_range = (o2_max_value - o2_min_value)
+    o2_motor_range = (o2_max_angle - o2_min_angle)
+    o2_mapped = (((o2_sensor_data - o2_min_value) * o2_motor_range) / o2_value_range) + o2_min_angle
+    return int(o2_mapped)
+    print(o2_mapped)
 
 --- /code ---
 
@@ -88,9 +88,9 @@ line_number_start: 18
 line_highlights: 
 ---
 while True:
-    temp_sensor_data  =  API command to pull the data()
-    temp_current_angle = motor_temp.get_aposition()
-    temp_new_angle = temp_remap(temp_min_value, temp_max_value, temp_min_angle, temp_max_angle, temp_sensor_data)
+    o2_sensor_data  =  API command to pull the data()
+    o2_current_angle = motor_temp.get_aposition()
+    o2_new_angle = o2_remap(o2_min_value, o2_max_value, o2_min_angle, o2_max_angle, o2_sensor_data)
     sleep(0.5)
 
 --- /code ---
@@ -99,7 +99,7 @@ while True:
 
 --- task ---
 
-Save your work as `data_dash.py` and click Run. Your slider should move to display the current temperature! 
+Save your work as `data_dash.py` and click Run. Your slider should move to display the current oxygen reading. 
 
 --- /task ---
 
@@ -135,10 +135,10 @@ from time import sleep
 
 
 motor_temp = Motor('A')
-temp_min_value = #input your minimum expected value here
-temp_max_value = #input your maximum expected value here
-temp_min_angle = -175
-temp_max_angle = 175
+o2_min_value = #input your minimum expected value here
+o2_max_value = #input your maximum expected value here
+o2_min_angle = -175
+o2_max_angle = 175
 
 motor_poll = Motor('B')
 poll_min_value = #input your minimum expected value here
@@ -146,24 +146,24 @@ poll_max_value = #input your maximum expected value here
 poll_min_angle = -175
 poll_max_angle = 175
 
-def temp_remap(temp_min_value, temp_max_value, temp_min_angle, temp_max_angle, temp_sensor_data):
-    temp_value_range = (temp_max_value - temp_min_value)
-    temp_motor_range = (temp_max_angle - temp_min_angle)
-    temp_mapped = (((temp_sensor_data - temp_min_value) * temp_motor_range) / temp_value_range) + temp_min_angle
-    return int(temp_mapped)
-    print(temp_mapped)
+def o2_remap(o2_min_value, o2_max_value, o2_min_angle, o2_max_angle, o2_sensor_data):
+    o2_value_range = (o2_max_value - o2_min_value)
+    o2_motor_range = (o2_max_angle - o2_min_angle)
+    o2_mapped = (((o2_sensor_data - o2_min_value) * o2_motor_range) / o2_value_range) + o2_min_angle
+    return int(o2_mapped)
+    print(o2_mapped)
 
 def poll_remap(poll_min_value, poll_max_value, poll_min_angle, poll_max_angle, poll_sensor_data):
     poll_value_range = (poll_max_value - poll_min_value)
     poll_motor_range = (poll_max_angle - poll_min_angle)
     poll_mapped = (((poll_sensor_data - poll_min_value) * poll_motor_range) / poll_value_range) + poll_min_angle
     return int(poll_mapped)
-    print(temp_mapped)
+    print(o2_mapped)
 
 while True:
-    temp_sensor_data  =  API command to pull the data()
-    temp_current_angle = motor_temp.get_aposition()
-    temp_new_angle = temp_remap(temp_min_value, temp_max_value, temp_min_angle, temp_max_angle, temp_sensor_data)
+    o2_sensor_data  =  API command to pull the data()
+    o2_current_angle = motor_temp.get_aposition()
+    o2_new_angle = o2_remap(o2_min_value, o2_max_value, o2_min_angle, o2_max_angle, o2_sensor_data)
     sleep(0.5)
     poll_sensor_data  =  API command to pull the data()
     poll_current_angle = motor_poll.get_aposition()

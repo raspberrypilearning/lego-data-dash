@@ -32,7 +32,7 @@ Attach two grey straight brackets, one column apart.
 
 --- task ---
 
-Attach two grey double length studs with spacers on one end to the plate elemnt above the brackets. 
+Attach two grey double length studs with spacers on one end to the plate element above the brackets. 
 ![Image showing build plate with two straight brackets and studs](images/sliderbuild3.jpg)
 
 --- /task ---
