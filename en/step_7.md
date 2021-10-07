@@ -164,6 +164,6 @@ while True:
 
 Save your code as clockface,py and click Run. Your clock should set itself to 12. Adjust it to new positions and you should see a readout of the indicated time in your console.
 
--- /task ---
+--- /task ---
 
 --- save ---
