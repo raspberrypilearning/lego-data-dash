@@ -158,7 +158,7 @@ while True:
         print('The time is ' + (str(hour).zfill(2)) +':'+(str(minute).zfill(2)) +' ' + meridian)
     sleep(1)
 
---- code ---
+--- /code ---
 
 --- /task ---
 
