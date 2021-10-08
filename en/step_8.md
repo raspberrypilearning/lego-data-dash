@@ -119,8 +119,8 @@ Connect the motor from your gauge to port B on the BuildHAT.
 
 Change your `data_dash.py` script to match the following, filling in the variables with your own information as you go:
 
-`poll_min_value` is the lowest air pollution reading you think you will get
-`poll_max_value` is the highest air pollution reading you think you will get
+`poll_min_value` is the lowest pm25 air pollution reading you think you will get
+`poll_max_value` is the highest pm25 air pollution reading you think you will get
 
 --- code ---
 ---
@@ -161,11 +161,11 @@ def poll_remap(poll_min_value, poll_max_value, poll_min_angle, poll_max_angle, p
     print(o2_mapped)
 
 while True:
-    o2_sensor_data  =  API command to pull the data()
+    o2_sensor_data  =  API command to pull the o2 data()
     o2_current_angle = motor_temp.get_aposition()
     o2_new_angle = o2_remap(o2_min_value, o2_max_value, o2_min_angle, o2_max_angle, o2_sensor_data)
     sleep(0.5)
-    poll_sensor_data  =  API command to pull the data()
+    poll_sensor_data  =  API command to pull the pm25 data()
     poll_current_angle = motor_poll.get_aposition()
     poll_new_angle = poll_remap(poll_min_value, poll_max_value, poll_min_angle, poll_max_angle, poll_sensor_data)
 
@@ -178,3 +178,7 @@ while True:
 Save your work by pressing `Ctrl + s` and click Run. You should see your dash begin displaying your data!
 
 --- /task ---
+
+In the next step, we will use the LEGO clock to choose data by time!
+
+--- save ---

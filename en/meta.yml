@@ -14,4 +14,5 @@ steps:
   - title: Make an LED scale
   - title: Choose the time with a LEGO clock
   - title: Displaying pollution data with your dashboard
+  - title: Use the LEGO clock to filter data by time
   - title: What next?
