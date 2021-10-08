@@ -65,8 +65,94 @@ Mount a 90 degree elbow onto the end of the axle, pointing up. Insert a 50mm axl
 
 --- task ---
 
-Take your LEGO SPark Force Sensor and add a grey double stud bracket to one side, so it is mounted vertically. 
-![Image showing LEGO force sensor with grey bracket mounted to side](images/clockbuild5.jpg)
+Take your LEGO Spark Force Sensor and add a grey double stud bracket to one side, so it is mounted vertically. 
+![Image showing LEGO force sensor with grey bracket mounted to side](images/clockbuild8.jpg)
+
+--- /task ---
+
+--- task ---
+
+Add a flat 3x3 element to the top of the force sensor.  
+![Image showing LEGO force sensor with grey bracket mounted to side and pink 3 by 3 element on top](images/clockbuild9.jpg)
+
+--- /task ---
+
+--- task ---
+
+Clip the force sensor to the side of the yellow build element. 
+![Image showing LEGO force sensor mounted to side of yellow plate](images/clockbuild10.jpg)
+
+--- /task ---
+--- task ---
+
+Collect your LEDs, resistors, M-F jumper cables and breadboard together. 
+![Image showing Raspberry Pi with BuildHAT, breadboard, LEDs and jumper cables on a workbench](images/LEDbuild1.jpg)
+
+--- /task ---
+
+--- task ---
+
+Look closely at your LEDs - you'll notice that one leg is longer than the other. 
+![Image showing an LED in close up on a workbench](images/LEDbuild2.jpg)
+
+--- /task ---
+
+--- task ---
+
+Insert the **short leg** of your LEDs into the **common ground rail** along the edge of your breadboard (it's the one next to the blue line at the very edge), and the long leg into the nearest numbered row:
+![Image showing  LEDs lined up on a breadboard](images/LEDbuild3.jpg)
+
+--- /task ---
+
+You need to add a resistor to the circuit, to protect the LEDs from overloading and burning out or popping. Let's do that now.
+
+--- task ---
+
+Take a resistor and insert one end into the **same row** as the first LED in your sequence. Insert the other end of the resistor into the same row, but **on the other side of the spine** of your breadboard, like this:
+
+![Image showing LEDs lined up on a breadboard, with a resistor joining the first row](images/LEDbuild4.jpg)
+
+Repeat for the other LED:
+![Image showing LEDs lined up on a breadboard, with resistors joining the rows](images/clockbuild11.jpg)
+
+--- /task ---
+
+--- task ---
+
+Insert the M end of your M-F jumper cables into the same row as the resistors, so we can connect them up to the pins on the Raspberry Pi: 
+![Image showing LEDs lined up on a breadboard, with resistors joining the rows and jumper cables trailing from the breadboard](images/clockbuild12.jpg)
+
+--- /task ---
+
+--- task ---
+
+Take the M end of another jumper cable and insert it into the common ground rail:
+![Image showing a jumper cable trailing from the common ground rail of the breadboard](images/clockbuild13.jpg)
+
+--- /task ---
+
+Your finished LED indicator should look something like this:
+
+![Image showing LEDs lined up on a breadboard, with resistors joining the rows and jumper cables trailing from the breadboard](images/clockbuild14.jpg)
+
+The next step is to connect it to the GPIO pins on the Raspberry Pi. 
+
+--- task ---
+
+Take the F end of the jumper cable connected  to your common ground rail, and connect it to Pin 39. This is one of several ground pins on the Raspberry Pi, which will provide the grounding for *all* of our LED bulbs.
+![Image showing a black jumper cable connected to pin 39 on the raspberry pi](images/LEDbuild9.jpg)
+
+--- /task ---
+
+--- task ---
+
+Connect the other cables up to numbered GPIO pins, taking note of which ones you have attached your LEDs to. 
+
+In this example, we have used pins 20 and 21 (to keep them all at one end for tidiness):
+![Image showing jumper cables trailing from the Raspberry Pi GPIO pins](images/LEDbuild10.jpg)
+
+--- /task ---
+
 
 
 ### Program your clock to recognise the time
@@ -75,7 +161,7 @@ Now, we need to program our motor to recognise what angle it is set to, and conv
 
 --- task ---
 
-Connect the motor of your slider to Port A on your BuildHAT.
+Connect the motor of your slider to Port A on your BuildHAT. Connect the Force Sensor to Port B on your BuildHAT.
 
 --- /task ---
 
@@ -98,7 +184,7 @@ Press Enter and wait for the 'installation completed' message.
 
 --- /task ---
 
-The first part of our code imports the libraries we will need, and sets up our motor as an input.
+The first part of our code imports the libraries we will need, and sets up our motor as an input as well as a force sensor to use as a button which will select whether the time is am or pm. We'll also connect some LEDs to show which one is currently selected.
 
 --- task ---
 
@@ -117,17 +203,48 @@ line_highlights:
 from buildhat import Motor, ForceSensor
 from time import sleep
 from math import floor
-from gpiozero import Button
+from gpiozero import LED
 
 motor_time = Motor('A')
 motor_time.run_to_position(0,100)
 button = ForceSensor('B')
 
+time = 0
+am_led = LED(20)
+pm_led = LED(21)
+
 --- /code ---
 
 --- /task ---
 
-THe next part of our code looks at the angle the motor is set to, then converts that into time by working out how far between two hours the hand is, and calculating the minutes. It then prints these values as part of a string, telling you the time. 
+Now that we have set up our motors and force sensor button, we need to create a function that will recognised when the button is pressed and change the time to am or pm, then light an LED showing which one is currently selected. 
+
+--- task ---
+
+At the bottom of your script, ass the following code:
+
+--- code ---
+---
+language: python
+filename: clockface.py
+line_numbers: true
+line_number_start: 10
+line_highlights: 
+---
+def change_time():
+    global time
+    if time == 0:
+        time = 12:
+        am_led.off()
+        pm_led.on()
+    else:
+        time = 0
+        am_led.on()
+        pm_led.off()
+
+--- /code ---
+
+The next part of our code looks at the angle the motor is set to, then converts that into time by working out how far between two hours the hand is, and calculating the minutes. It then prints these values as part of a string, telling you the time. 
 
 --- task ---
 
