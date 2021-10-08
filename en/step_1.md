@@ -28,7 +28,8 @@ title: What you will need
 
 + A Raspberry Pi Computer
 + A Raspberry Pi Build Hat
-+ 2 Small Lego Motors (more optional)
++ 2 LEGO Spark Motors (more optional)
++ LEGO Spark Force Sensor
 + Assortment of Lego; we used a selection from the [LEGO Spike Prime kit](https://education.lego.com/en-gb/product/spike-prime){:target="_blank"}
 
 Optional:

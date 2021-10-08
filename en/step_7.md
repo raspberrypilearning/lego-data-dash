@@ -4,8 +4,10 @@ When looking at data readings, it can be helpful to be able to sort by time. Thi
 
 It is possible to use a LEGO motor to simulate a clock face and recall data for a specific time. We can measure the angle of the motor when you move the indicator to a specific time, and then use an external switch to tell us if it's am or pm time. Ie., if the switch is closed, it's pm. It is also possible to make a 24 hour clock face (but less precise and not much easier) so we will make the 12 hour face for this example.
 
+You can create your own clock face on paper and cut it out, or use our printable version which you can [get by clicking here](images/clockface.jpg){:target="_blank"}.
+
 --- task ---
-Follow these build instructions to create a vertical sliding indicator:
+Follow these build instructions to create a LEGO clock:
 
 <mark>INSERT BUILD PDF WHEN DONE</mark>
 
@@ -14,14 +16,14 @@ Follow these build instructions to create a vertical sliding indicator:
 --- task ---
 
 Take a yellow plate element and attach two blue beams using 90 degree stud brackets to make legs.
-![Image showing build plate with blue legs](images/clockbuild1.jpg)
+![Image showing build plate with blue legs](images/clockbuild1.jpg)![Image showing build plate with blue legs](images/clockbuild2.jpg)
 
 --- /task ---
 
 --- task ---
 
 Mount two blue extended studs into the side of the motor with the blue rotor, with the short end into the motor's ports.
-![Image showing LEGO spark motor with blue extended stud mounted to front panel](images/clockbuild2.jpg)
+![Image showing LEGO spark motor with blue extended stud mounted to front panel](images/clockbuild3.jpg)
 
 --- /task ---
 
@@ -36,30 +38,35 @@ Before attaching the motor to the rear of the slider's axle, make sure that it i
 --- task ---
 
 Mount the motor about halfway up your plate element, with the rotor against the plate. Make sure the cable extends from the bottom of the motor.
-![Image showing LEGO spark motor mounted to rear of yellow plate element, with the cable down](images/clockbuild3.jpg)
+![Image showing LEGO spark motor mounted to rear of yellow plate element, with the cable down](images/clockbuild4.jpg)
 
 --- /task ---
 
 --- task ---
 
 Insert a short axle into the centre of the motor, through the plate element.
-![Image showing black axle poking through yellow build element](images/clockbuild4.jpg)
+![Image showing black axle poking through yellow build element](images/clockbuild5.jpg)
 
 --- /task ---
 
 --- task ---
 
 Place your clock face over the axle, poking it through the centre. Use blu-tac or similar adhesive to stick it down evenly, making sure the 12 is pointing up.
-![Image showing paper clock face stuck down to yellow build element](images/clockbuild3.jpg) 
+![Image showing paper clock face stuck down to yellow build element](images/clockbuild6.jpg) 
 
 --- /task ---
 
 --- task ---
 
 Mount a 90 degree elbow onto the end of the axle, pointing up. Insert a 50mm axle into the elbow to make an indicator.
-![Image showing axle poking through yellow build element with yellow elbow mounted to the front](images/clockbuild5.jpg)
+![Image showing axle poking through yellow build element with yellow elbow mounted to the front](images/clockbuild7.jpg)
 
 --- /task ---
+
+--- task ---
+
+Take your LEGO SPark Force Sensor and add a grey double stud bracket to one side, so it is mounted vertically. 
+![Image showing LEGO force sensor with grey bracket mounted to side](images/clockbuild5.jpg)
 
 
 ### Program your clock to recognise the time
@@ -107,14 +114,14 @@ line_numbers: true
 line_number_start: 1
 line_highlights: 
 ---
-from buildhat import Motor
+from buildhat import Motor, ForceSensor
 from time import sleep
 from math import floor
 from gpiozero import Button
 
 motor_time = Motor('A')
 motor_time.run_to_position(0,100)
-button = Button(21)
+button = ForceSensor('B')
 
 --- /code ---
 
@@ -155,7 +162,7 @@ while True:
     if angle == 0:
         print("Choose a time on the clock! Flip the switch closed for am, open for pm!")
     else:
-        print('The time is ' + (str(hour).zfill(2)) +':'+(str(minute).zfill(2)) +' ' + meridian)
+        print(f'The time is ' + (str(hour).zfill(2)) +':'+(str(minute).zfill(2)) +' ' + meridian)
     sleep(1)
 
 --- /code ---
