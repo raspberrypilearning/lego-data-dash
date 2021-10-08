@@ -52,6 +52,8 @@ Insert a short axle into the centre of the motor, through the plate element.
 Place your clock face over the axle, poking it through the centre. Use blu-tac or similar adhesive to stick it down evenly, making sure the 12 is pointing up.
 ![Image showing paper clock face stuck down to yellow build element](images/clockbuild3.jpg) 
 
+--- /task ---
+
 --- task ---
 
 Mount a 90 degree elbow onto the end of the axle, pointing up. Insert a 50mm axle into the elbow to make an indicator.
