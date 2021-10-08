@@ -139,20 +139,20 @@ The next step is to connect it to the GPIO pins on the Raspberry Pi.
 
 --- task ---
 
-Take the F end of the jumper cable connected  to your common ground rail, and connect it to Pin 39. This is one of several ground pins on the Raspberry Pi, which will provide the grounding for *all* of our LED bulbs.
+Take the F end of the jumper cable connected  to your common ground rail, and connect it to Pin 39. This is one of several ground pins on the Raspberry Pi, which will provide the grounding for both of our LED bulbs.
 ![Image showing a black jumper cable connected to pin 39 on the raspberry pi](images/LEDbuild9.jpg)
 
 --- /task ---
 
 --- task ---
 
-Connect the other cables up to numbered GPIO pins, taking note of which ones you have attached your LEDs to. 
-
-In this example, we have used pins 20 and 21 (to keep them all at one end for tidiness):
-![Image showing jumper cables trailing from the Raspberry Pi GPIO pins](images/LEDbuild10.jpg)
+Attach the 'am bulb' (the bulb that will light when the time is am) to pin 38 (GPIO20) and the 'pm bulb' to pin 40 (GPIO21). 
+[Image showing jumper cables trailing from the Raspberry Pi GPIO pins](images/clockbuild15.jpg)
 
 --- /task ---
 
+Your finished clock apparatus should look a little like this: 
+[Image showing jumper cables trailing from the Raspberry Pi GPIO pins](images/clockbuild16.jpg)
 
 
 ### Program your clock to recognise the time
