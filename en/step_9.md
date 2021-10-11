@@ -23,16 +23,16 @@ from time import sleep
 from math import floor
 
 motor_no2 = Motor('A')
-no2_min_value = #input your minimum expected value here
-no2_max_value = #input your maximum expected value here
+no2_min_value = 0
+no2_max_value = 0.3
 no2_min_angle = -175
 no2_max_angle = 175
 
-motor_poll = Motor('B')
-poll_min_value = #input your minimum expected value here
-poll_max_value = #input your maximum expected value here
-poll_min_angle = -175
-poll_max_angle = 175
+motor_pm25 = Motor('B')
+pm25_min_value = 0
+pm25_max_value = 100
+pm25_min_angle = -175
+pm25_max_angle = 175
 
 motor_time = Motor('C')
 motor_time.run_to_position(0,100)

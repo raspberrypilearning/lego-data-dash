@@ -26,7 +26,7 @@ from time import sleep
 
 motor_no2 = Motor('A')
 no2_min_value = 0 # the lowest NO2 reading you think you will get (This should hopefully be around 0)
-no2_max_value = 0.3 #the highest NO2 reading you think you will get (This shouldn't be more than 0.3)
+no2_max_value = 0.3 #the highest NO2 reading you think you will get 
 no2_min_angle = -175
 no2_max_angle = 175
 
@@ -101,7 +101,7 @@ At the moment your gauge is running off of random integers between -175 and 175.
 
 For our example we will measure the **fine particles (PM2.5)** measurement.The term **fine particles**, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and a half microns (or less) in width. The particles measured by PM2.5 are what make up most smoke and smog, and make it hard to see.
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">Like inches, meters and miles, a <span style="color: #0faeb0">micron</span> is a unit of measurement for distance. There are about 25,000 microns in an inch. The widths of the larger particles in the PM2.5 size range would be about thirty times smaller than that of a human hair.  These smaller particles are so small that several thousand of them could fit on the full stop at the end of this sentence.</p> 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">Like inches, meters and miles, a <span style="color: #0faeb0">micron</span> is a unit of measurement for distance. There are about 25,000 microns in an inch. The widths of the larger particles in the PM2.5 size range would be about thirty times smaller than that of a human hair.  These particles are so small that several thousand of them could fit on the full stop at the end of this sentence.</p> 
 
 --- task ---
 
@@ -113,8 +113,8 @@ Connect the motor from your gauge to port B on the BuildHAT.
 
 Change your `data_dash.py` script to match the following, filling in the variables with your own information as you go:
 
-`poll_min_value` is the lowest pm25 air pollution reading you think you will get (This should hopefully be around 0)
-`poll_max_value` is the highest pm25 air pollution reading you think you will get (The maximum possible is 100, but more than about 65 and you'll have trouble seeing!)
+`pm25_min_value` is the lowest pm25 air pollution reading you think you will get (This should hopefully be around 0)
+`pm25_max_value` is the highest pm25 air pollution reading you think you will get (The maximum possible is 100, but more than about 65 and you'll have trouble seeing!)
 
 --- code ---
 ---
@@ -134,11 +134,11 @@ no2_max_value = 0.3
 no2_min_angle = -175
 no2_max_angle = 175
 
-motor_poll = Motor('B')
-poll_min_value = 0 
-poll_max_value = 100
-poll_min_angle = -175
-poll_max_angle = 175
+motor_pm25 = Motor('B')
+pm25_min_value = 0 
+pm25_max_value = 100
+pm25_min_angle = -175
+pm25_max_angle = 175
 
 def no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data):
     no2_value_range = (no2_max_value - no2_min_value)
@@ -147,11 +147,11 @@ def no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_se
     return int(no2_mapped)
     print(no2_mapped)
 
-def poll_remap(poll_min_value, poll_max_value, poll_min_angle, poll_max_angle, poll_sensor_data):
-    poll_value_range = (poll_max_value - poll_min_value)
-    poll_motor_range = (poll_max_angle - poll_min_angle)
-    poll_mapped = (((poll_sensor_data - poll_min_value) * poll_motor_range) / poll_value_range) + poll_min_angle
-    return int(poll_mapped)
+def pm25_remap(pm25_min_value, pm25_max_value, pm25_min_angle, pm25_max_angle, pm25_sensor_data):
+    pm25_value_range = (pm25_max_value - pm25_min_value)
+    pm25_motor_range = (pm25_max_angle - pm25_min_angle)
+    pm25_mapped = (((pm25_sensor_data - pm25_min_value) * pm25_motor_range) / pm25_value_range) + pm25_min_angle
+    return int(pm25_mapped)
     print(no2_mapped)
 
 while True:
@@ -159,9 +159,9 @@ while True:
     no2_current_angle = motor_no2.get_aposition()
     no2_new_angle = no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data)
     sleep(0.5)
-    poll_sensor_data  =  API command to pull the pm25 data()
-    poll_current_angle = motor_poll.get_aposition()
-    poll_new_angle = poll_remap(poll_min_value, poll_max_value, poll_min_angle, poll_max_angle, poll_sensor_data)
+    pm25_sensor_data  =  API command to pull the pm25 data()
+    pm25_current_angle = motor_pm25.get_aposition()
+    pm25_new_angle = pm25_remap(pm25_min_value, pm25_max_value, pm25_min_angle, pm25_max_angle, pm25_sensor_data)
 
 --- /code ---
 
