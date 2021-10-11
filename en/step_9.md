@@ -13,7 +13,7 @@ Change your script to include the following lines:
 ---code ---
 ---
 language: python
-filename: gauge_test.py
+filename: data_dash.py
 line_numbers: true
 line_number_start: 1 
 line_highlights: 1,3,17,18,19,21
@@ -46,12 +46,13 @@ button = ForceSensor('D')
 Now we will add a function that will return the time to us, ready to use in our API call. 
 
 --- task ---
+
 Above your `while True:` loop, add the following code:
 
 ---code ---
 ---
 language: python
-filename: gauge_test.py
+filename: data_dash.py
 line_numbers: true
 line_number_start: 20
 line_highlights:22-45
@@ -91,6 +92,8 @@ def timecheck():
 --- /task ---
 
 Now, we need to call the `timecheck()` function in our main loop. 
+
+
 --- save ---
 
 
