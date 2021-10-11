@@ -22,11 +22,11 @@ from buildhat import Motor, ForceSensor   # Make sure you get both capital lette
 from time import sleep
 from math import floor
 
-motor_temp = Motor('A')
-o2_min_value = #input your minimum expected value here
-o2_max_value = #input your maximum expected value here
-o2_min_angle = -175
-o2_max_angle = 175
+motor_no2 = Motor('A')
+no2_min_value = #input your minimum expected value here
+no2_max_value = #input your maximum expected value here
+no2_min_angle = -175
+no2_max_angle = 175
 
 motor_poll = Motor('B')
 poll_min_value = #input your minimum expected value here
