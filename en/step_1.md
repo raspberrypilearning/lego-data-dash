@@ -98,11 +98,15 @@ Press Enter and wait for the 'installation completed' message.
 ### PROJECT BRIEF: LEGO Data Dashboard
 <hr style="border-top: 2px solid black;">
 
-Your task is to create a LEGO Dashboard that will display your chosen data. The sources for your data can be any API you like, but in this example we will show you how to access these specific examples, which require minimal or no sign up:
+Your task is to create a LEGO Dashboard that will display your chosen data. The sources for your data can be any API you like, but in this example we will show you how to access the OpenAQ, which require minimal or no sign up. 
 
-+ API 1 - Information list available
-+ API 2 - Information list available
-+ API 3 - Information list available
+For our example data we will be measuring:
++ The **NO2** levels of your chosen location - Nitrogen Dioxide (NO2) is one of a group of highly reactive gases known as oxides of nitrogen or nitrogen oxides (NOx).  NO2 primarily gets in the air from the burning of fuel.
++ The **fine particles (PM2.5)** levels of your chosen location - the term **fine particles**, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and a half microns (or less) in width. The particles measured by PM2.5 are what make up smoke and smog.
+
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">The example API we are using in this project is from [OpenAQ](https://openaq.org/#/), a global non-profit organisation 'fighting air inequality through open data'. **1 in 8 deaths** in the world is due to poor air quality, and OpenAQ are collecting global air quality data to help inform more people about the problems of growing air pollution in some parts of the world. </p>
+
 
 Your Dashboard should:
 + Use LEGO to display your chosen data in a clear way

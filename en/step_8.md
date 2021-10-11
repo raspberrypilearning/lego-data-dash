@@ -10,7 +10,7 @@ For example: if it's displaying the Carbon Monoxide (CO) level, the minimum and 
 
 --- task ---
 
-**Think** about what your sliding indicator will measure, and what the lowest and highest readings might be. Write them down somewhere so you don't forget them.
+**Think** about what your sliding indicator will measure, and what the lowest and highest readings might be. Write them down somewhere so you don't forget them. For an NO2 reading
 
 --- /task ---
 
@@ -18,9 +18,9 @@ For example: if it's displaying the Carbon Monoxide (CO) level, the minimum and 
 
 In a new Thonny window add the following, filling in the variables with your own information as you go:
 
-+ `CO_min_value` is the lowest CO reading you think you will get
-+ `CO_max_value` is the highest CO reading you think you will get
-+ `CO_sensor_data` will be the API command
++ `no2_min_value` is the lowest NO2 reading you think you will get (This should hopefully be around 0)
++ `no2_max_value` is the highest NO2 reading you think you will get (This shouldn't be more than 0.3)
++ `no2_sensor_data` will be the API command
 
 
 --- code ---
@@ -36,10 +36,10 @@ from time import sleep
 
 
 motor_temp = Motor('A')
-CO_min_value = #input your minimum expected value here
-CO_max_value = #input your maximum expected value here
-CO_min_angle = -175
-CO_max_angle = 175
+no2_min_value = #input your minimum expected value here
+no2_max_value = #input your maximum expected value here
+no2_min_angle = -175
+no2_max_angle = 175
 
 --- /code ---
 
@@ -59,12 +59,12 @@ line_numbers: true
 line_number_start: 11
 line_highlights: 
 ---
-def CO_remap(CO_min_value, CO_max_value, CO_min_angle, CO_max_angle, CO_sensor_data):
-    CO_value_range = (CO_max_value - CO_min_value)
-    CO_motor_range = (CO_max_angle - CO_min_angle)
-    CO_mapped = (((CO_sensor_data - CO_min_value) * CO_motor_range) / CO_value_range) + CO_min_angle
-    return int(CO_mapped)
-    print(CO_mapped)
+def no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data):
+    no2_value_range = (no2_max_value - no2_min_value)
+    no2_motor_range = (no2_max_angle - no2_min_angle)
+    no2_mapped = (((no2_sensor_data - no2_min_value) * no2_motor_range) / no2_value_range) + no2_min_angle
+    return int(no2_mapped)
+    print(no2_mapped)
 
 --- /code ---
 
@@ -88,9 +88,9 @@ line_number_start: 18
 line_highlights: 
 ---
 while True:
-    CO_sensor_data  =  API command to pull the data()
-    CO_current_angle = motor_temp.get_aposition()
-    CO_new_angle = CO_remap(CO_min_value, CO_max_value, CO_min_angle, CO_max_angle, CO_sensor_data)
+    no2_sensor_data  =  API command to pull the data()
+    no2_current_angle = motor_temp.get_aposition()
+    no2_new_angle = no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data)
     sleep(0.5)
 
 --- /code ---
@@ -123,8 +123,8 @@ Connect the motor from your gauge to port B on the BuildHAT.
 
 Change your `data_dash.py` script to match the following, filling in the variables with your own information as you go:
 
-`poll_min_value` is the lowest pm25 air pollution reading you think you will get
-`poll_max_value` is the highest pm25 air pollution reading you think you will get
+`poll_min_value` is the lowest pm25 air pollution reading you think you will get (This should hopefully be around 0)
+`poll_max_value` is the highest pm25 air pollution reading you think you will get (This will be around 65 - more than that and you'll have trouble seeing!)
 
 --- code ---
 ---
@@ -139,10 +139,10 @@ from time import sleep
 
 
 motor_temp = Motor('A')
-CO_min_value = #input your minimum expected value here
-CO_max_value = #input your maximum expected value here
-CO_min_angle = -175
-CO_max_angle = 175
+no2_min_value = #input your minimum expected value here
+no2_max_value = #input your maximum expected value here
+no2_min_angle = -175
+no2_max_angle = 175
 
 motor_poll = Motor('B')
 poll_min_value = #input your minimum expected value here
@@ -150,24 +150,24 @@ poll_max_value = #input your maximum expected value here
 poll_min_angle = -175
 poll_max_angle = 175
 
-def CO_remap(CO_min_value, CO_max_value, CO_min_angle, CO_max_angle, CO_sensor_data):
-    CO_value_range = (CO_max_value - CO_min_value)
-    CO_motor_range = (CO_max_angle - CO_min_angle)
-    CO_mapped = (((CO_sensor_data - CO_min_value) * CO_motor_range) / CO_value_range) + CO_min_angle
-    return int(CO_mapped)
-    print(CO_mapped)
+def no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data):
+    no2_value_range = (no2_max_value - no2_min_value)
+    no2_motor_range = (no2_max_angle - no2_min_angle)
+    no2_mapped = (((no2_sensor_data - no2_min_value) * no2_motor_range) / no2_value_range) + no2_min_angle
+    return int(no2_mapped)
+    print(no2_mapped)
 
 def poll_remap(poll_min_value, poll_max_value, poll_min_angle, poll_max_angle, poll_sensor_data):
     poll_value_range = (poll_max_value - poll_min_value)
     poll_motor_range = (poll_max_angle - poll_min_angle)
     poll_mapped = (((poll_sensor_data - poll_min_value) * poll_motor_range) / poll_value_range) + poll_min_angle
     return int(poll_mapped)
-    print(CO_mapped)
+    print(no2_mapped)
 
 while True:
-    CO_sensor_data  =  API command to pull the CO data()
-    CO_current_angle = motor_temp.get_aposition()
-    CO_new_angle = CO_remap(CO_min_value, CO_max_value, CO_min_angle, CO_max_angle, CO_sensor_data)
+    no2_sensor_data  =  API command to pull the CO data()
+    no2_current_angle = motor_temp.get_aposition()
+    no2_new_angle = no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data)
     sleep(0.5)
     poll_sensor_data  =  API command to pull the pm25 data()
     poll_current_angle = motor_poll.get_aposition()

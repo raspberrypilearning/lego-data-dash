@@ -1,14 +1,6 @@
 ## Plan your dashboard
 
-Use this step to plan your Dashboard, and think about what information you want to display. You can plan by just thinking; tinkering; drawing or writing; or however you like! 
-
-The APIs shown in this project are huge repositories of data stored online, specifically made for people like you to access. They contain all sorts of useful and interesting data. Let's have a look now at what the example APIs can tell you:
-
-API 1 is called NAME, and it stores worldwide data on TOPIC. You can use it to LIST OF IDEAS AND DATASETS
-
-API 2 is called NAME, and it stores worldwide data on TOPIC. You can use it to LIST OF IDEAS AND DATASETS
-
-API 3 is called NAME, and it stores worldwide data on TOPIC. You can use it to LIST OF IDEAS AND DATASETS
+Use this step to plan your Dashboard, and think about what information you want to display. You can plan by just thinking; tinkering; drawing or writing; or however you like! We will use an example API in this project from OpenAQ to demonstrate how to create and use your data dashboard, but you could use any API you like! (There are some more API links in the final step for you to look at if you'd like to try it with a different data source.)
 
 ### Why are you making a Dashboard?
 
