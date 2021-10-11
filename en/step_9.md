@@ -73,10 +73,11 @@ def timecheck():
         meridian = "pm"
     
     hour = int(floor(angle/30)) #find the hour by using 30 degree increments
+    hour24 = int(floor(angle/30))+ time  #find 24 hour time by adding 12
     minute = int(((angle - (30*hour))/30)*60) #calculate the minutes by working out the decimal remainder as a portion of 60 mins
     
     if angle == 0:
-        print("Choose a time on the clock! Flip the switch closed for am, open for pm!")
+        print("Choose a time on the clock! Press the button to change between am and pm!")
     else:
         print('The time is ' + (str(hour).zfill(2)) +':'+(str(minute).zfill(2)) +' ' + meridian)
     sleep(1)
