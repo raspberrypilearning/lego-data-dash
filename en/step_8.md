@@ -10,12 +10,7 @@ For example: if it's displaying the Nitrogen Dioxide (NO2) level, the minimum an
 
 --- task ---
 
-In a new Thonny window add the following, filling in the variables with your own information as you go:
-
-+ `no2_min_value` is the lowest NO2 reading you think you will get (This should hopefully be around 0)
-+ `no2_max_value` is the highest NO2 reading you think you will get (This shouldn't be more than 0.3)
-+ `no2_sensor_data` will be the API command
-
+In a new Thonny window, type the following:
 
 --- code ---
 ---
@@ -29,9 +24,9 @@ from buildhat import Motor
 from time import sleep
 
 
-motor_temp = Motor('A')
-no2_min_value = #input your minimum expected value here
-no2_max_value = #input your maximum expected value here
+motor_no2 = Motor('A')
+no2_min_value = 0 # the lowest NO2 reading you think you will get (This should hopefully be around 0)
+no2_max_value = 0.3 #the highest NO2 reading you think you will get (This shouldn't be more than 0.3)
 no2_min_angle = -175
 no2_max_angle = 175
 
@@ -84,7 +79,7 @@ line_highlights:
 ---
 while True:
     no2_sensor_data  =  API command to pull the data()
-    no2_current_angle = motor_temp.get_aposition()
+    no2_current_angle = motor_no2.get_aposition()
     no2_new_angle = no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data)
     sleep(0.5)
 
@@ -119,7 +114,7 @@ Connect the motor from your gauge to port B on the BuildHAT.
 Change your `data_dash.py` script to match the following, filling in the variables with your own information as you go:
 
 `poll_min_value` is the lowest pm25 air pollution reading you think you will get (This should hopefully be around 0)
-`poll_max_value` is the highest pm25 air pollution reading you think you will get (This will be around 65 - more than that and you'll have trouble seeing!)
+`poll_max_value` is the highest pm25 air pollution reading you think you will get (The maximum possible is 100, but more than about 65 and you'll have trouble seeing!)
 
 --- code ---
 ---
@@ -133,15 +128,15 @@ from buildhat import Motor
 from time import sleep
 
 
-motor_temp = Motor('A')
-no2_min_value = #input your minimum expected value here
-no2_max_value = #input your maximum expected value here
+motor_no2 = Motor('A')
+no2_min_value = 0
+no2_max_value = 0.3
 no2_min_angle = -175
 no2_max_angle = 175
 
 motor_poll = Motor('B')
-poll_min_value = #input your minimum expected value here
-poll_max_value = #input your maximum expected value here
+poll_min_value = 0 
+poll_max_value = 100
 poll_min_angle = -175
 poll_max_angle = 175
 
@@ -161,7 +156,7 @@ def poll_remap(poll_min_value, poll_max_value, poll_min_angle, poll_max_angle, p
 
 while True:
     no2_sensor_data  =  API command to pull the CO data()
-    no2_current_angle = motor_temp.get_aposition()
+    no2_current_angle = motor_no2.get_aposition()
     no2_new_angle = no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data)
     sleep(0.5)
     poll_sensor_data  =  API command to pull the pm25 data()
