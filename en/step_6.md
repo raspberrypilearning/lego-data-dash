@@ -72,7 +72,7 @@ Take your LEGO Spark Force Sensor and add a grey double stud bracket to one side
 
 --- task ---
 
-Add a flat 3x3 element to the top of the force sensor.  
+Add a flat 3x3 element to the top of the force sensor using a tan stud/axle element.  
 ![Image showing LEGO force sensor with grey bracket mounted to side and pink 3 by 3 element on top](images/clockbuild9.jpg)
 
 --- /task ---
@@ -101,7 +101,7 @@ Look closely at your LEDs - you'll notice that one leg is longer than the other.
 --- task ---
 
 Insert the **short leg** of your LEDs into the **common ground rail** along the edge of your breadboard (it's the one next to the blue line at the very edge), and the long leg into the nearest numbered row:
-![Image showing  LEDs lined up on a breadboard](images/LEDbuild3.jpg)
+![Image showing  LEDs lined up on a breadboard](images/clockbuild17.jpg)
 
 --- /task ---
 
@@ -111,7 +111,7 @@ You need to add a resistor to the circuit, to protect the LEDs from overloading 
 
 Take a resistor and insert one end into the **same row** as the first LED in your sequence. Insert the other end of the resistor into the same row, but **on the other side of the spine** of your breadboard, like this:
 
-![Image showing LEDs lined up on a breadboard, with a resistor joining the first row](images/LEDbuild4.jpg)
+![Image showing LEDs lined up on a breadboard, with a resistor joining the first row](images/clockbuild18.jpg)
 
 Repeat for the other LED:
 ![Image showing LEDs lined up on a breadboard, with resistors joining the rows](images/clockbuild11.jpg)
