@@ -12,7 +12,7 @@ steps:
   - title: Make a LEGO gauge
   - title: Make an LED scale
   - title: Choose the time with a LEGO clock
-  - title: Access your chosen API
+  - title: Access the OpenAQ API
   - title: Displaying pollution data with your dashboard
   - title: Use the LEGO clock to filter data by time
   - title: What next?

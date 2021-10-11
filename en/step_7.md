@@ -1,4 +1,4 @@
-## Accessing your chosen API
+## Accessing the OpenAQ API
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">API is the acronym for <span style="color: #0faeb0">**Application Programming Interface**</span>, which is software that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you’re using an API.</p> 
 
