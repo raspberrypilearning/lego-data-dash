@@ -29,10 +29,10 @@ To finish building the gauge, you will need to create a scale using paper, card 
  There are two simple types we can create with LEGO:
 
 + A gauge where the needle spins to indicate a point on the face:
-![An image showing a gauge with a needle and scale](/en/images/dial2.gif)
+![An image showing a gauge with a needle and scale](images/dial2.gif)
 
 + A gauge where the whole face turns to display a point at the top with a stationary indicator:
-![An image showing a gauge with a moving scale](/en/images/dial1.gif) 
+![An image showing a gauge with a moving scale](images/dial1.gif) 
 
 --- /task ---
 
