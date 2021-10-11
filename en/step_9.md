@@ -16,7 +16,7 @@ language: python
 filename: gauge_test.py
 line_numbers: true
 line_number_start: 1 
-line_highlights: 1,3,17,18,20
+line_highlights: 1,3,17,18,19,21
 ---
 from buildhat import Motor, ForceSensor   # Make sure you get both capital letters in ForceSensor!
 from time import sleep
@@ -36,6 +36,7 @@ poll_max_angle = 175
 
 motor_time = Motor('C')
 motor_time.run_to_position(0,100)
+time = 0
 
 button = ForceSensor('D')
 --- /code ---
@@ -67,7 +68,7 @@ def timecheck():
         pass
     print(angle)
 
-    if button.is_pressed:
+    if time ==0:
         meridian = "am"
     else:
         meridian = "pm"
