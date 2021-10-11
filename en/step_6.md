@@ -278,7 +278,7 @@ while True:
     minute = int(((angle - (30*hour))/30)*60) #calculate the minutes by working out the decimal remainder as a portion of 60 mins
     
     if angle == 0:
-        print("Choose a time on the clock! Flip the switch closed for am, open for pm!")
+        print("Choose a time on the clock! Press the button to switch between am and pm!")
     else:
         print(f'The time is ' + (str(hour).zfill(2)) +':'+(str(minute).zfill(2)) +' ' + meridian)
     sleep(1)
