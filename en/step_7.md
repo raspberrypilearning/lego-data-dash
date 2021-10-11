@@ -42,6 +42,8 @@ There are many different measurements taken by air quality monitoring stations. 
 **Decide** upon what kind of air pollution you are most interested in measuring. You can choose different options from the pulldown menu near the coloured scale on the left of the screen.
 ![image showing pulldown menu in OpenAQ map](images/mapscale.jpg)
 
+--- /task ---
+
 --- task ---
 
 **Zoom in** to your chosen area on the map, and find the dot closest to the place you would like to measure. Click on that nearest dot, to see the location details. In the pop-up that appears, click the button that says **View Location**. 
