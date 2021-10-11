@@ -83,6 +83,7 @@ Clip the force sensor to the side of the yellow build element.
 ![Image showing LEGO force sensor mounted to side of yellow plate](images/clockbuild10.jpg)
 
 --- /task ---
+
 --- task ---
 
 Collect your LEDs, resistors, M-F jumper cables and breadboard together. 
@@ -245,6 +246,8 @@ def change_time():
 --- /code ---
 
 The next part of our code looks at the angle the motor is set to, then converts that into time by working out how far between two hours the hand is, and calculating the minutes. It then prints these values as part of a string, telling you the time. 
+
+--- /task ---
 
 --- task ---
 
