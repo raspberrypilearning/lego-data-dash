@@ -54,8 +54,8 @@ Above your `while True:` loop, add the following code:
 language: python
 filename: data_dash.py
 line_numbers: true
-line_number_start: 20
-line_highlights:22-45
+line_number_start: 21
+line_highlights: 23-46
 ---
 button = ForceSensor('D')
 
