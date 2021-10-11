@@ -1,108 +1,109 @@
-## Make a LEGO sliding indicator
+## Make a LEGO gauge
 
-Now it's time to make a LEGO sliding indicator! If you don't want to include a sliding indicator, you can skip to the next step which shows you how to create rotating LEGO dials.
+Another way to quickly display data is using **dials**, also known as **gauges**. You've definitely seen them before, they are usually round or semicircular and have two main visible parts:
 
-This is what a vertical slider looks like:
++ The face, which has the scale shown on it
++ The needle, which moves along the scale to display the data reading
 
-![Image showing vertical lego slider acting as a thermometer](images/slider.jpg)
+![Animated image showing dials moving](https://media.giphy.com/media/9f8bvMFurMTXG/giphy.gif)
 
-Sliding indicators can also run horizontally if you prefer, by rotating the build 90 degrees anticlockwise.
+A gauge or dial is the simplest type of data readout you can create using LEGO, as it only relies upon creating the face and needle. Because the needle connects directly to your motor, the build is very simple:
 
---- task ---
-
-Follow these build instructions to create a vertical sliding indicator:
-
-<mark>INSERT BUILD PDF WHEN DONE</mark>
-
---- /task --- 
+<mark>INSERT BUILD PDF ONCE DONE</mark>
 
 --- task ---
 
-Take a yellow plate element and attach two blue beams using 90 degree stud brackets.
-![Image showing build plate with blue legs](images/sliderbuild1.jpg)
-
---- /task ---
-
---- task ---
-
-Attach two grey straight brackets, one column apart.
-![Image showing build plate with two straight brackets](images/sliderbuild2.jpg)
-
---- /task ---
-
---- task ---
-
-Attach two grey double length studs with spacers on one end to the plate element above the brackets. 
-![Image showing build plate with two straight brackets and studs](images/sliderbuild3.jpg)
-
---- /task ---
-
---- task ---
-
-Attach two yellow (three hole) beams horizontally between the two straight brackets. 
-![Image showing build plate with two straight brackets and studs](images/sliderbuild4.jpg)
-
---- /task ---
-
---- task ---
-
-Take a small black gear and a short axle and join them together. 
-![Image showing build plate with two straight brackets and studs and an axle and gear](images/sliderbuild5.jpg)
-
---- /task ---
-
---- task ---
-Insert the axle through the build plate above the right bracket as shown: 
-![Image showing build plate with two straight brackets and studs and an axle and gear mounted in the plate](images/sliderbuild6.jpg)
-
---- /task ---
-
---- task ---
-
-Take a toothed bar, a red axle and an indicator arrow. Insert the axle into one end of the toothed bar, with the indicator arrow pointing toward the toothed side:
-![Image showing toothed bar, axle and indicator arrow together](images/sliderbuild11.jpg)
-
---- /task ---
-
---- task ---
-
-Slide the toothed bar down into the top of the mechanism. 
-
-You will have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth. The mechanism will slide easily up and down while the gear and axle are free. Connecting a motor will hold it steady.
-![Image showing build plate with two straight brackets and studs and an axle and gear mounted in the plate with the slider bar inserted](images/sliderbuild8.jpg)
- 
---- /task ---
-
---- task ---
-
-Take a Spark motor and add two studs to the flat side, in the top two holes. 
-![Image showing build plate with two straight brackets and studs and an axle and gear mounted in the plate with the slider bar inserted, and a motor on the table](images/sliderbuild9.jpg)
-
---- /task ---
-
---- task ---
-
-Before attaching the motor to the rear of the slider's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
+Before attaching the motor to the rear of the gauge's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
 
 ![Image showing motor 'zeroed in' with aligned symbols](images/aligned_symbols.jpg)
 
 --- /task ---
 
---- task ---
+### Create a scale
 
-Adjust your toothed bar so the gear sits about halfway along, then mount the motor behind the board using the two studs while holding the toothed bar in place. 
-Make sure the axle fits into the hole on the **flat side** of the motor. It should keep the slider held steady now, around halfway along the bar.
-![Image showing build plate with a motor mounted on the back](images/sliderbuild10.jpg)
+To finish building the gauge, you will need to create a scale using paper, card or other art supplies. The mechanics and coding are exactly the same, but think now about how you would like your gauge to look. 
+
+ --- task ---
+ **Choose** what kind of dial you will make. 
+ 
+ There are two simple types we can create with LEGO:
+
++ A gauge where the needle spins to indicate a point on the face:
+![An image showing a gauge with a needle and scale](/en/images/dial2.gif)
+
++ A gauge where the whole face turns to display a point at the top with a stationary indicator:
+![An image showing a gauge with a moving scale](/en/images/dial1.gif) 
 
 --- /task ---
 
-### Test the sliding indicator
+--- task ---
 
-To program your sliding indicator, we can reuse some of the code written in the [LEGO Data Plotter](https://projects.raspberrypi.org/en/projects/lego-plotter) project as they're very much the same mechanism.
+On a blank piece of paper, trace a neat circle the size you would like your gauge to be. Mark the centre, and cut it out using scissors.
+
+--- /task --- 
 
 --- task ---
 
-Connect the motor of your slider to Port A on your BuildHAT.
+Split the circle into equal segments (one for each reading) by drawing lines through the centre, or draw your scale around the edge.
+
+--- /task ---
+
+--- task ---
+
+Draw an icon or write inside each segment what it indicates.
+
+--- /task ---
+
+Once you have finished creating your gauge face, you will need to mount it to your dashboard.
+
+--- collapse ---
+---
+title: If you are creating a needle gauge
+---
+
+To finish building your needle gauge:
+
+--- task ---
+
+Slide the face down over your axle, using blu-tac or tape to stick it down to the dash behind and prevent it from sliding as the axle turns.
+![Image showing LEGO axle protruding through gauge face](images/needle-gauge1.jpg)
+
+--- /task ---
+
+--- task ---
+
+Add a 90 degree elbow to the end of your axle and place another axle into it. Make sure it is long enough to reach your scale and clearly indicate the readings.
+
+![Image showing LEGO axle protruding through gauge face with elbow and perpendicular axle](images/needle-gauge2.jpg)
+
+It will help later if your axle is pointing straight up (and your motor is 'zeroed') when you mount it, as it will make it easier to calculate the amount of rotation required for a reading.
+
+--- /task ---
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: If you are creating a spinning face dial
+---
+
+To finish building a spinning gauge:
+
+--- task ---
+
+Mount a single gear behind your face as a spacer, to prevent it from catching on your dashboard. Use some blu-tac to stick the face to this gear.
+![Image showing black LEGO gear mounted on axle with tack](/en/images/dial-gauge1.jpg)
+![Image showing gauge face mounted on top of black LEGO gear](/en/images/dial-gauge2.jpg)
+
+--- /task ---
+
+--- /collapse ---
+
+### Test your gauge
+
+--- task ---
+
+Connect the motor of your gauge to Port A on your BuildHAT.
 
 --- /task ---
 
@@ -134,7 +135,7 @@ Enter the following code in a blank tab:
 --- code ---
 ---
 language: python
-filename: slider_test.py
+filename: gauge_test.py
 line_numbers: true
 line_number_start: 1
 line_highlights: 
@@ -143,26 +144,18 @@ from buildhat import Motor
 from time import sleep
 from random import randint
 
-motor_slider = Motor('A')
+motor_gauge = Motor('A')
 
-motor_slider.run_to_position(0,100)
+motor_gauge.run_to_position(0,100)
 
 while True:
-    current_angle = motor_slider.get_aposition()
-    new_angle = randint(-175, 175)
-    print(sensor_data)
-    if new_angle > current_angle:
-        motor_slider.run_to_position(new_angle, 100, direction="clockwise")
-        print('Turning CW')
-    elif new_angle < current_angle:
-        motor_slider.run_to_position(new_angle, 100, direction="anticlockwise")
-        print('Turning ACW')
-    sleep(0.1)
+    angle = randint(-180, 180)
+    motor_gauge.run_to_position(angle, 100)
+    sleep(0.3)
 
 --- /code ---
 
-Save your work as `slider_test.py` and click Run. You should see your slider move up and down (or back and forth!)
+Save your work as `gauge_test.py` and press Run. You will see your gauge begin to move!
 
 --- /task ---
 
---- save ---

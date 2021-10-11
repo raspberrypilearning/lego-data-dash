@@ -1,161 +1,145 @@
-## Make a LEGO gauge
+## Make an LED scale
 
-Another way to quickly display data is using **dials**, also known as **gauges**. You've definitely seen them before, they are usually round or semicircular and have two main visible parts:
+Another really cool way to display data is by using a series of LEDs to turn on and off as readings change - the higher the reading, the more LEDs are lit. Like a graphic equaliser on your computer showing the volume of your music:
 
-+ The face, which has the scale shown on it
-+ The needle, which moves along the scale to display the data reading
+![](https://media.giphy.com/media/Hzt1XTt6gilFlK8Oea/giphy.gif)
 
-![Animated image showing dials moving](https://media.giphy.com/media/9f8bvMFurMTXG/giphy.gif)
+To make an LED display, you'll need a few LED bulbs - the more bulbs you have, the more precise your scale will be. There is an upper limit though - you can only have as many LEDs as there are available GPIO pins. In this example we're using 5 LEDs, but you *could* connect more than ten if you choose.
 
-A gauge or dial is the simplest type of data readout you can create using LEGO, as it only relies upon creating the face and needle. Because the needle connects directly to your motor, the build is very simple:
-
-<mark>INSERT BUILD PDF ONCE DONE</mark>
+**Note:** Because of the way the BuildHAT is designed, you **can't access GPIO 14 or 15 (pins 8 and 10)**.
 
 --- task ---
 
-Before attaching the motor to the rear of the gauge's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
-
-![Image showing motor 'zeroed in' with aligned symbols](images/aligned_symbols.jpg)
-
---- /task ---
-
-### Create a scale
-
-To finish building the gauge, you will need to create a scale using paper, card or other art supplies. The mechanics and coding are exactly the same, but think now about how you would like your gauge to look. 
-
- --- task ---
- **Choose** what kind of dial you will make. 
- 
- There are two simple types we can create with LEGO:
-
-+ A gauge where the needle spins to indicate a point on the face:
-![An image showing a gauge with a needle and scale](/en/images/dial2.gif)
-
-+ A gauge where the whole face turns to display a point at the top with a stationary indicator:
-![An image showing a gauge with a moving scale](/en/images/dial1.gif) 
+Collect your LEDs, resistors, M-F jumper cables and breadboard together. 
+![Image showing Raspberry Pi with BuildHAT, breadboard, LEDs and jumper cables on a workbench](images/LEDbuild1.jpg)
 
 --- /task ---
 
 --- task ---
 
-On a blank piece of paper, trace a neat circle the size you would like your gauge to be. Mark the centre, and cut it out using scissors.
-
---- /task --- 
-
---- task ---
-
-Split the circle into equal segments (one for each reading) by drawing lines through the centre, or draw your scale around the edge.
+Look closely at your LEDs - you'll notice that one leg is longer than the other. 
+![Image showing an LED in close up on a workbench](images/LEDbuild2.jpg)
 
 --- /task ---
 
 --- task ---
 
-Draw an icon or write inside each segment what it indicates.
+Insert the **short leg** of your LEDs into the **common ground rail** along the edge of your breadboard (it's the one next to the blue line at the very edge), and the long leg into the nearest numbered row:
+![Image showing  LEDs lined up on a breadboard](images/LEDbuild3.jpg)
 
 --- /task ---
 
-Once you have finished creating your gauge face, you will need to mount it to your dashboard.
-
---- collapse ---
----
-title: If you are creating a needle gauge
----
-
-To finish building your needle gauge:
+You need to add a resistor to the circuit, to protect the LEDs from overloading and burning out or popping. Let's do that now.
 
 --- task ---
 
-Slide the face down over your axle, using blu-tac or tape to stick it down to the dash behind and prevent it from sliding as the axle turns.
-![Image showing LEGO axle protruding through gauge face](images/needle-gauge1.jpg)
+Take a resistor and insert one end into the **same row** as the first LED in your sequence. Insert the other end of the resistor into the same row, but **on the other side of the spine** of your breadboard, like this:
 
---- /task ---
+![Image showing LEDs lined up on a breadboard, with a resistor joining the first row](images/LEDbuild4.jpg)
 
---- task ---
-
-Add a 90 degree elbow to the end of your axle and place another axle into it. Make sure it is long enough to reach your scale and clearly indicate the readings.
-
-![Image showing LEGO axle protruding through gauge face with elbow and perpendicular axle](images/needle-gauge2.jpg)
-
-It will help later if your axle is pointing straight up (and your motor is 'zeroed') when you mount it, as it will make it easier to calculate the amount of rotation required for a reading.
-
---- /task ---
-
---- /collapse ---
-
---- collapse ---
----
-title: If you are creating a spinning face dial
----
-
-To finish building a spinning gauge:
-
---- task ---
-
-Mount a single gear behind your face as a spacer, to prevent it from catching on your dashboard. Use some blu-tac to stick the face to this gear.
-![Image showing black LEGO gear mounted on axle with tack](/en/images/dial-gauge1.jpg)
-![Image showing gauge face mounted on top of black LEGO gear](/en/images/dial-gauge2.jpg)
-
---- /task ---
-
---- /collapse ---
-
-### Test your gauge
-
---- task ---
-
-Connect the motor of your gauge to Port A on your BuildHAT.
+Repeat for all the LEDs in your sequence:
+![Image showing LEDs lined up on a breadboard, with resistors joining the rows](images/LEDbuildX.jpg)
 
 --- /task ---
 
 --- task ---
 
-We will be using the BuildHAT python library, so make sure it is installed:
-
---- collapse ---
----
-title: Installing the BuildHAT python library
----
-
-Open a terminal window on your Raspberry Pi by pressing `Ctrl + Alt + T`.
-
-At the prompt type: `pip3 install buildhat`
-
-Press Enter and wait for the 'installation completed' message.
-
---- /collapse ---
+Insert the M end of your M-F jumper cables into the same row as the resistors, so we can connect them up to the pins on the Raspberry Pi: 
+![Image showing LEDs lined up on a breadboard, with resistors joining the rows and jumper cables trailing from the breadboard](images/LEDbuild5.jpg)
 
 --- /task ---
 
 --- task ---
 
-Open Thonny on your Raspberry Pi from the Programming menu. 
+Take the M end of another jumper cable and insert it into the end of the common ground rail:
+![Image showing a jumper cable trailing from the common ground rail of the breadboard](images/LEDbuild6.jpg)
 
-Enter the following code in a blank tab:
+--- /task ---
+
+Your finished LED scale should look something like this:
+
+![Image showing LEDs lined up on a breadboard, with resistors joining the rows and jumper cables trailing from the breadboard](images/LEDbuild7.jpg)
+
+The next step is to connect it to the GPIO pins on the Raspberry Pi. 
+
+--- task ---
+
+Take the F end of the jumper cable connected  to your common ground rail, and connect it to Pin 39. This is one of several ground pins on the Raspberry Pi, which will provide the grounding for *all* of our LED bulbs.
+![Image showing a black jumper cable connected to pin 39 on the raspberry pi](images/LEDbuild9.jpg)
+
+--- /task ---
+
+--- task ---
+
+Connect the other cables up to numbered GPIO pins, taking note of which ones you have attached your LEDs to. 
+
+In this example, we have used pins 16, 19, 20,21 and 26 (to keep them all at one end for tidiness):
+![Image showing jumper cables trailing from the Raspberry Pi GPIO pins](images/LEDbuild10.jpg)
+
+--- /task ---
+
+Now that your LED sequence is connected to your Raspberry Pi, we need to power it up and program it. 
+
+--- task ---
+
+Connect the 7.5V power supply to the barrel jack on your BuildHAT. You should see your Raspberry Pi power up and load the Raspbian Desktop.
+
+--- /task ---
+
+--- task ---
+Open Thonny from your programming menu. 
+
+The first lines of our script will import the gpiozero and randint libraries and set up your LEDs to be controllable. You will need to change the values in brackets to match the numbered pins you are connected to. **Note:** The order of these numbers is important! The pin numbers should go from the lowest on your 'bar graph' to the highest.
+
+In the blank window enter the following code :
 
 --- code ---
 ---
 language: python
-filename: gauge_test.py
+filename: led_bargraph.py
 line_numbers: true
 line_number_start: 1
 line_highlights: 
 ---
-from buildhat import Motor
-from time import sleep
+from gpiozero import LEDBarGraph
 from random import randint
 
-motor_gauge = Motor('A')
-
-motor_gauge.run_to_position(0,100)
-
-while True:
-    angle = randint(-180, 180)
-    motor_gauge.run_to_position(angle, 100)
-    sleep(0.3)
+graph = LEDBarGraph(16, 19, 20, 21, 26) # the order of these numbers should match the pins you connected up 
 
 --- /code ---
 
-Save your work as `gauge_test.py` and press Run. You will see your gauge begin to move!
+--- /task ---
+
+Now that we have our LEDs ready to program, the next part of our code should pull the data we want to measure, then determine how many LEDs to switch on based on the result. For testing purposes, we'll use random data.
+
+Our intention is to have the LEDs turn on as the reading increases, and to turn off as it decreases. As with the other indicators, we will need to map our data across our new scale. 
+
+--- task ---
+
+Enter the following code at the end of your open script:
+
+--- code ---
+---
+language: python
+filename: led_sequence.py
+line_numbers: true
+line_number_start: 9
+line_highlights: 
+---
+while True:
+  data_reading = randint(0, 100)
+  graph.value = 1/data_reading # this creates a decimal value for the graph to display
+  sleep(0.5)
+--- /code ---
 
 --- /task ---
 
+--- task ---
+
+Save your work as led_sequence.py and click Run. You should see your bar graph begin to light up!
+
+![animated image showing a changing bar graph made of LEDs](images/LEDbuild.gif)
+
+--- /task ---
+
+--- save ---
