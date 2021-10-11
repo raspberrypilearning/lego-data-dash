@@ -1,10 +1,12 @@
-## Accessing the OpenAQ API
+## Access the OpenAQ API
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">API is the acronym for <span style="color: #0faeb0">**Application Programming Interface**</span>, which is software that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you’re using an API.</p> 
 
 Whenever you use an app on your phone, the app connects to the Internet and sends data about what you want to know to a server. The server then finds and retrieves the data you want, interprets it and sends it back to your phone. The app then takes that data that has been returned and presents you with the information you wanted in a readable way. This is what an API is; a way to control other machines over the internet - all of this happens through the **API**.
 
 The cool part is; we can write our own apps that investigate online databases of information and return them to our LEGO data dashboard instead of a phone - we'll use our Raspberry Pi as the brains to get that data, then display it on our hand made, custom LEGO indicators!
+
+To do that, we'll need to decide on a few things: where in the world we want to find out about air quality and what markers of air quality we will be representing. 
 
 ### OpenAQ - the open source air quality database
 
@@ -61,6 +63,4 @@ On the location page, you will see the different types of pollutants measured by
 This measurement station near Sandy can show NO2, PM10 and PM2.5 - so we'll use NO2 and PM2.5 in the example.  
 
 --- /task ---
-
-
 
