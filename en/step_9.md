@@ -88,7 +88,7 @@ def timecheck():
 
 --- /task ---
 
-Now, we need to call the `timecheck()` 
+Now, we need to call the `timecheck()` function in our main loop. 
 --- save ---
 
 
