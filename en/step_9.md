@@ -1,6 +1,6 @@
-### Using your LEGO clock to display historical data
+### Use the LEGO clock to filter data by time
 
-You might not want to display the data for right now on your dash. It can be very useful to be able to look at historical data to compare and contrast, as well as predict likely future readings. 
+You might not want to display the data for **right now** on your dash. It can be very useful to be able to look at historical data to compare and contrast, as well as predict likely future readings. 
 
 We can connect your LEGO clock up to the dash, and use it to choose the time from which you want to query the database. 
 
@@ -49,7 +49,7 @@ Now we will add a function that will return the time to us, ready to use in our 
 
 Above your `while True:` loop, add the following code:
 
----code ---
+--- code ---
 ---
 language: python
 filename: data_dash.py
@@ -69,7 +69,7 @@ def timecheck():
         pass
     print(angle)
 
-    if time ==0:
+    if time == 0:
         meridian = "am"
     else:
         meridian = "pm"
