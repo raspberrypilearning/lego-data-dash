@@ -40,7 +40,7 @@ Use a pen and paper to plan ideas for your Dashboard:
 + How will your different indicators and inputs fit together into a frame?
 + What LEGO elements will you need to build it?
 
-Draw your dashboard now, including the frame to hold it, and any indicators you would like to create or user inputs. Label them with the information they will display or the input they provide.
+Draw your dashboard now, including the frame to hold it and any indicators you would like to create or user inputs needed. Label them with the information they will display or the input they provide.
 
 --- /task ---
 
