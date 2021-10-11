@@ -1,12 +1,24 @@
 ## Display pollution data with your Dashboard
 
-### Program your slider to display the fuel emissions level
+### Program your slider to display the NO2 level
 
 At the moment your slider is running off of random integers between -175 and 175. (We don't go to 180 as it can cause problems with travel around a full rotation.) We picked these numbers because they are the motor's limits of travel in each direction. The data coming in from your API won't have this same range - we need to make it fit the motor.
 
 **Calibrating** the indicator will mean mapping the maximum and minimum possible data values from your API between -175° and 175° on your motor. The highest possible reading will be at 175°, while the lowest possible reading will be at -175°. 
 
-For example: if it's displaying the Nitrogen Dioxide (NO2) level, the minimum and maximum possible reading on your slider will depend on where you live. The minimum reading possible is obviously 0, and we will want to consider what the normal range for what we are attempting to measure and add a bit to that: for NO2, this will be around 0.3. (Any more than that, and you're in the danger zone!)
+For example: if it's displaying the Nitrogen Dioxide (NO2) level, the minimum and maximum possible reading on your slider will depend on where you live. The minimum reading possible is obviously 0, and we will want to consider what the normal range for what we are attempting to measure and add a bit to that.  
+
+In order to work out what the maximum likely reading should be, you can see the historical data from your chosen location on the webpage you opened earlier:
+
+![Image showing graphed historical NO2 data from Sandy roadside](images/historicaldata_no2.jpg)
+
+Here we can see that while there are some major outliers, around 60% (or 0.6) should be more than enough as our maximum value for most readings from Sandy Roadside.
+
+--- task ---
+
+Connect your sliding indicator motor to Port 'A'.
+
+--- /task ---
 
 --- task ---
 
@@ -22,13 +34,50 @@ line_highlights:
 ---
 from buildhat import Motor
 from time import sleep
-
+from datetime import datetime
+import requests
 
 motor_no2 = Motor('A')
 no2_min_value = 0 # the lowest NO2 reading you think you will get (This should hopefully be around 0)
-no2_max_value = 0.3 #the highest NO2 reading you think you will get 
+no2_max_value = 0.6 #the highest NO2 reading you think you will get 
 no2_min_angle = -175
 no2_max_angle = 175
+
+--- /code ---
+
+--- /task ---
+
+Now that we have imported the necessary libraries and set up our measurement details, we will set up our query to the API by making a few **dictionaries** of terms we will use.
+
+--- task ---
+ In your window add this code to the end of your script:
+
+--- code ---
+---
+language: python
+filename: data_dash.py
+line_numbers: true
+line_number_start: 12
+line_highlights: 
+---
+base_url = "https://docs.openaq.org/v2/measurements"
+
+payload = {
+    'date_from':'',
+    'date_to':'',
+    'location_id':'70977',
+    'order_by':'datetime',
+    'sort':'asc',
+    'has_geo':'true',
+    'limit':'100',
+    'offset':'0',
+}
+
+pollution = {
+    'pm25': 0,
+    'pm10': 0,
+    'o3' : 0,
+    }
 
 --- /code ---
 
@@ -59,6 +108,51 @@ def no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_se
 
 --- /task ---
 
+The next function we need to write will query the API using the parameters we have set up. 
+
+--- task ---
+ 
+At the end of your script, add this code:
+
+--- code ---
+---
+language: python
+filename: data_dash.py
+line_numbers: true
+line_number_start: 11
+line_highlights: 
+---
+def check_weather():
+    now = datetime.now()
+
+    time_from = int(floor(angle/30)) + time  #find 24 hour time by adding 12
+    time_to = time_from + 1
+
+
+    payload['date_from'] = f'{now:%Y-%m-%d}T{now:%H-%M:%S}+00:00'
+    payload['date_to'] = f'{now:%Y-%m-%d}T{now:%H:%M:%S}+00:00'
+    print(payload['date_from'])
+    print(payload['date_to'])
+    
+    response = requests.get(base_url, params=payload)
+    
+    if response.status_code != 200:
+        return
+    
+    data = response.json()
+    
+    for reading in data['results']:
+        if reading['parameter'] == 'pm25':
+            pollution['pm25'] = reading['value']
+        if reading['parameter'] == 'no2':
+            pollution['no2'] = reading['value']
+    output_results()   
+    sleep(1)
+ --- /code ---
+
+ --- /task ---
+
+
 Now that our function has been created, we need to make a loop that will:
 
 + pull the pollutant data from the API
@@ -77,12 +171,13 @@ line_numbers: true
 line_number_start: 18
 line_highlights: 
 ---
-while True:
-    no2_sensor_data  =  API command to pull the data()
-    no2_current_angle = motor_no2.get_aposition()
-    no2_new_angle = no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data)
-    sleep(0.5)
+def output_results():
+    
 
+
+    print(f"PM2.5 = {pollution['pm25']}")
+    print(f"PM10 = {pollution['pm10']}")
+    print(f"O3 = {pollution['o3']}")
 --- /code ---
 
 --- /task ---
