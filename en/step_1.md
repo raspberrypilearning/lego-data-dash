@@ -31,6 +31,10 @@ title: What you will need
 + 2 LEGO Spark Motors (more optional)
 + LEGO Spark Force Sensor
 + Assortment of Lego; we used a selection from the [LEGO Spike Prime kit](https://education.lego.com/en-gb/product/spike-prime){:target="_blank"}
++ Paper or card
++ Tack or tape for sticking down card
++ Marker or pencil
++ Scissors or craft knife
 
 Optional:
 + LEDs

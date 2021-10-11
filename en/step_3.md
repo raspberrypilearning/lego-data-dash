@@ -127,6 +127,8 @@ Press Enter and wait for the 'installation completed' message.
 
 ### Create the scale for your sliding indicator
 
+Now we know it works, we will need to create a scale for the sliding indicator, so we know what it means.
+
 --- task ---
 
 Get a piece of card about as long as your toothed bar. Stick it next to the sliding indicator, under the pointer. Have a marker or pencil ready.
