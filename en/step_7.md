@@ -228,7 +228,7 @@ At the bottom of your script, ass the following code:
 language: python
 filename: clockface.py
 line_numbers: true
-line_number_start: 10
+line_number_start: 14
 line_highlights: 
 ---
 def change_time():
@@ -255,7 +255,7 @@ At the bottom of your script add the following:
 language: python
 filename: clockface.py
 line_numbers: true
-line_number_start: 10
+line_number_start: 25
 line_highlights: 
 ---
 while True:
