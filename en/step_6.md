@@ -258,7 +258,7 @@ line_numbers: true
 line_number_start: 25
 line_highlights: 
 ---
-while True:
+def time_check():
     angle = motor_time.get_aposition() #Find what angle the hand is at
     print(angle)
     
@@ -268,7 +268,7 @@ while True:
         pass
     print(angle)
 
-    if button.is_pressed:
+    if time == 0:
         meridian = "am"
     else:
         meridian = "pm"
@@ -287,9 +287,31 @@ while True:
 
 --- /task ---
 
+Now that we have defined the two functions that will allow us to switch between am and pm times, as well as use the clock face to check the time - we just need to call them when we want them to run.
+
+--- task ---
+At the bottom of your code add the following lines:
+
+--- code ---
+---
+language: python
+filename: clockface.py
+line_numbers: true
+line_number_start: 50
+line_highlights: 
+---
+while True:
+    button.when_pressed = change_time
+    button.when_released = time_check
+    pause()
+
+--- /code ---
+
+--- /task ---
+
 --- task ---
 
-Save your code as clockface.py and click Run. Your clock should set itself to 12. Adjust it to new positions and you should see a readout of the indicated time in your console.
+Save your code as clockface.py and click Run. Your clock should set itself to 12. Adjust it to new positions then press the button, and you should see a readout of the indicated time in your console.
 
 --- /task ---
 

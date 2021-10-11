@@ -125,10 +125,49 @@ Press Enter and wait for the 'installation completed' message.
 
 --- /task ---
 
+### Create the scale for your sliding indicator
+
+--- task ---
+
+Get a piece of card about as long as your toothed bar. Stick it next to the sliding indicator, under the pointer. Have a marker or pencil ready.
+
+--- /task ---
+
 --- task ---
 
 Open Thonny on your Raspberry Pi from the Programming menu. 
 
+Into the shell (the window at the bottom) next to the three arrows, type:
+`from buildhat import Motor` and press Enter. You should see a new line appear with three more arrows.
+
+--- /task ---
+
+--- task ---
+Now type:
+`motor = = Motor('A')` and press Enter.
+--- /task ---
+
+Now we've set up our slider motor to run, we will send it to the maximum and minimum readings to see how far it can travel - then mark those places on the card.
+
+--- task ---
+
+Type: 
+`motor.run_to_position(-180, 100)` and press Enter. Mark the card at the place the arrow indicates. This is your minimum possible readout.
+
+--- /task ---
+
+--- task ---
+
+Type: 
+`motor.run_to_position(180, 100, direction=clockwise)` and press Enter. Mark the card at the place the arrow indicates. This is your maximum possible readout.
+
+--- /task ---
+
+We now know where our minumum and maximum possible readings will show up. Once we link it to some data, we will be able to create an accurate scale to show it. 
+
+### Programming your sliding indicator to show live data
+
+--- task ---
 Enter the following code in a blank tab:
 
 --- code ---

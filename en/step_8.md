@@ -1,8 +1,8 @@
 ## Display pollution data with your Dashboard
 
-### Program your slider to display the oxygen level
+### Program your slider to display the fuel emissions level
 
-At the moment your slider is running off of random integers between -175 and 175. (We don't go to 180 as it can cause problems with travel around a full rotation.) We picked these numbers because they are the motor's limits of travel in each direction. The data coming in from your API won't have this range - we need to make it fit the motor.
+At the moment your slider is running off of random integers between -175 and 175. (We don't go to 180 as it can cause problems with travel around a full rotation.) We picked these numbers because they are the motor's limits of travel in each direction. The data coming in from your API won't have this same range - we need to make it fit the motor.
 
 **Calibrating** the indicator will mean mapping the maximum and minimum possible data values from your API between -175° and 175° on your motor. The highest possible reading will be at 175°, while the lowest possible reading will be at -175°. 
 
@@ -89,7 +89,7 @@ while True:
 
 --- task ---
 
-Save your work as `data_dash.py` and click Run. Your slider should move to display the current oxygen reading. 
+Save your work as `data_dash.py` and click Run. Your slider should move to display the current NO2 reading. 
 
 --- /task ---
 
