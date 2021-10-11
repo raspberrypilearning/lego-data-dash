@@ -2,7 +2,7 @@
 
 When looking at data readings, it can be helpful to be able to sort by time. This is particularly useful with environmental data, as it allows us to look at historical trends in order to predict future outcomes - like the weather forecast. 
 
-It is possible to use a LEGO motor to simulate a clock face and recall data for a specific time. We can measure the angle of the motor when you move the indicator to a specific time, and then use an external switch to tell us if it's am or pm time. Ie., if the switch is closed, it's pm. It is also possible to make a 24 hour clock face (but less precise and not much easier) so we will make the 12 hour face for this example.
+It is possible to use a LEGO motor to simulate a clock face and recall data for a specific time. We can measure the angle of the motor when you move the indicator to a specific time, and then use an external button to switch between am or pm time. 
 
 You can create your own clock face on paper and cut it out, or use our printable version which you can [get by clicking here](images/clockface.jpg){:target="_blank"}.
 
