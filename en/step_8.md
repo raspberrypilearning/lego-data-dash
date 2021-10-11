@@ -6,13 +6,7 @@ At the moment your slider is running off of random integers between -175 and 175
 
 **Calibrating** the indicator will mean mapping the maximum and minimum possible data values from your API between -175° and 175° on your motor. The highest possible reading will be at 175°, while the lowest possible reading will be at -175°. 
 
-For example: if it's displaying the Carbon Monoxide (CO) level, the minimum and maximum possible reading on your slider will depend on where you live. The minimum reading possible is 0, 
-
---- task ---
-
-**Think** about what your sliding indicator will measure, and what the lowest and highest readings might be. Write them down somewhere so you don't forget them. For an NO2 reading
-
---- /task ---
+For example: if it's displaying the Nitrogen Dioxide (NO2) level, the minimum and maximum possible reading on your slider will depend on where you live. The minimum reading possible is obviously 0, and we will want to consider what the normal range for what we are attempting to measure and add a bit to that: for NO2, this will be around 0.3. (Any more than that, and you're in the danger zone!)
 
 --- task ---
 
@@ -77,6 +71,7 @@ Now that our function has been created, we need to make a loop that will:
 + move to the new angle to display the reading
 
 --- task ---
+
 Add the following code to the end of your script:
 
 --- code ---
