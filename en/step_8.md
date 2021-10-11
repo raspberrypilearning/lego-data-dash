@@ -83,31 +83,6 @@ pollution = {
 
 --- /task ---
 
-The next part we will write will do some clever maths to map our data range across the motor range. (It's basically the same as the function used in the [LEGO Data Plotter project](https://learning-admin.raspberrypi.org/en/projects/lego-plotter/6).)
- 
---- task ---
-
-Add this function beneath your existing code:
-
---- code ---
----
-language: python
-filename: data_dash.py
-line_numbers: true
-line_number_start: 11
-line_highlights: 
----
-def no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data):
-    no2_value_range = (no2_max_value - no2_min_value)
-    no2_motor_range = (no2_max_angle - no2_min_angle)
-    no2_mapped = (((no2_sensor_data - no2_min_value) * no2_motor_range) / no2_value_range) + no2_min_angle
-    return int(no2_mapped)
-    print(no2_mapped)
-
---- /code ---
-
---- /task ---
-
 The next function we need to write will query the API using the parameters we have set up. 
 
 --- task ---
@@ -142,15 +117,40 @@ def check_weather():
     data = response.json()
     
     for reading in data['results']:
-        if reading['parameter'] == 'pm25':
+        if reading['parameter'] == 'pm25': # This will depend upon what pollutant you are measuring
             pollution['pm25'] = reading['value']
-        if reading['parameter'] == 'no2':
+        if reading['parameter'] == 'no2': # This will depend upon what pollutant you are measuring
             pollution['no2'] = reading['value']
     output_results()   
     sleep(1)
  --- /code ---
 
  --- /task ---
+
+The next part we will write will do some clever maths to map our data range across the motor range. (It's basically the same as the function used in the [LEGO Data Plotter project](https://learning-admin.raspberrypi.org/en/projects/lego-plotter/6).)
+ 
+--- task ---
+
+Add this function beneath your existing code:
+
+--- code ---
+---
+language: python
+filename: data_dash.py
+line_numbers: true
+line_number_start: 11
+line_highlights: 
+---
+def no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data):
+    no2_value_range = (no2_max_value - no2_min_value)
+    no2_motor_range = (no2_max_angle - no2_min_angle)
+    no2_mapped = (((no2_sensor_data - no2_min_value) * no2_motor_range) / no2_value_range) + no2_min_angle
+    return int(no2_mapped)
+    print(no2_mapped)
+
+--- /code ---
+
+--- /task ---
 
 
 Now that our function has been created, we need to make a loop that will:
@@ -161,7 +161,7 @@ Now that our function has been created, we need to make a loop that will:
 
 --- task ---
 
-Add the following code to the end of your script:
+Add the following code to the end of your script, on a new line:
 
 --- code ---
 ---
@@ -172,7 +172,7 @@ line_number_start: 18
 line_highlights: 
 ---
 def output_results():
-    
+
 
 
     print(f"PM2.5 = {pollution['pm25']}")
