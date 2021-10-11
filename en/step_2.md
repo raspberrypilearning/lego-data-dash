@@ -1,6 +1,8 @@
 ## Plan your dashboard
 
-Use this step to plan your Dashboard, and think about what information you want to display. You can plan by just thinking; tinkering; drawing or writing; or however you like! We will use an example API in this project from OpenAQ to demonstrate how to create and use your data dashboard, but you could use any API you like! (There are some more API links in the final step for you to look at if you'd like to try it with a different data source.)
+Use this step to plan your Dashboard, and think about what information you want to display. You can plan by just thinking; tinkering; drawing or writing; or however you like! 
+
+We will use an example API in this project from OpenAQ to demonstrate how to create and use your data dashboard, but you could use any API you want. (There are some more API links in the final step for you to look at if you'd like to try it with a different data source.)
 
 ### Why are you making a Dashboard?
 
@@ -42,6 +44,6 @@ Draw your dashboard now, including the frame to hold it, and any indicators you 
 
 --- /task ---
 
-In the next step, we will use python to access your chose API and scrape some data!
+In the next step, we will construct some readouts for our dashboard using LEGO!
 
 --- save ---

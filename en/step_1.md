@@ -43,8 +43,7 @@ Optional:
 
 + BuildHAT python library for controlling the Build Hat
 + Thonny python IDE
-+ <mark>PYTHON LIBS FOR APIS HERE</mark>
-
+  
 ### Downloads
 
 --- /collapse ---
