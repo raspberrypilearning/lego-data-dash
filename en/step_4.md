@@ -7,7 +7,7 @@ Another way to quickly display data is by using **dials**, also known as **gauge
 
 ![Animated image showing dials moving.](https://media.giphy.com/media/uozBSFuz99USA/giphy.gif)
 
-A gauge or dial is the simplest type of data readout you can create using LEGO®, as it only relies upon creating the face and needle. Because the needle connects directly to your motor, the build is very simple:
+A gauge or dial is the simplest type of data readout you can create using LEGO®, as it only relies upon creating the face and needle. Because the needle or dial connects directly to your motor, the build is very simple:
 
 --- task ---
 
