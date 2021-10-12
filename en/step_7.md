@@ -224,6 +224,9 @@ line_highlights:
 while True:
     check_weather()
     sleep(3600)   # wait an hour before checking again (make this smaller for testing purposes)
+--- /code ---
+
+--- /task ---
 
 --- task ---
 
