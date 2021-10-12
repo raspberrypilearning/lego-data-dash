@@ -16,11 +16,7 @@ In order to work out what the maximum likely reading should be, you can see the 
 
 ![Image showing graphed historical NO2 data from Sandy roadside](images/historicaldata_no2.jpg)
 
-Here we can see that while there are some major outliers, around 60% (or 0.6) should be more than enough as our maximum value for most readings from Sandy Roadside. (If you want to simply make your scale from 1-100 you can do that too - just make `max_value = 100`)
-
-
-
-
+Here we can see that while there are some major outliers, around 60% (or 0.6) should be more than enough as our maximum value for most readings from the *Sandy Roadside* air quality station. (If you want to simply make your scale from 1-100 you can do that too - just make `max_value = 100`)
 
 --- task ---
 
@@ -222,16 +218,16 @@ At the end of your script on a new line (making sure it isn't indented) type:
 language: python
 filename: data_dash.py
 line_numbers: true
-line_number_start: 73
+line_number_start: 93
 line_highlights: 
 ---
 while True:
     check_weather()
-    sleep(3600)   # wait an hour before checking again
+    sleep(3600)   # wait an hour before checking again (make this smaller for testing purposes)
 
 --- task ---
 
-Save your work as `data_dash.py` and click Run. Your slider should move to display the current NO2 reading from your chosen OpenAQ station, and your gauge should move to display the PM2.5 reading. 
+Save your work as `data_dash.py` and click Run. Your slider should move to display the current NO2 reading from your chosen OpenAQ station, and your gauge should move to display the PM2.5 reading. Well done!
 
 --- /task ---
 

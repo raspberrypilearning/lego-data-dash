@@ -5,11 +5,9 @@ Another way to quickly display data is by using **dials**, also known as **gauge
 + The face, which has the scale shown on it
 + The needle, which moves along the scale to display the data reading
 
-![Animated image showing dials moving.](https://media.giphy.com/media/9f8bvMFurMTXG/giphy.gif)
+![Animated image showing dials moving.](https://media.giphy.com/media/uozBSFuz99USA/giphy.gif)
 
 A gauge or dial is the simplest type of data readout you can create using LEGO®, as it only relies upon creating the face and needle. Because the needle connects directly to your motor, the build is very simple:
-
-<mark>INSERT BUILD PDF ONCE DONE</mark>
 
 --- task ---
 
@@ -54,7 +52,7 @@ Draw an icon or write inside each segment what it indicates.
 
 --- /task ---
 
-Once you have finished creating your gauge face, you will need to mount it to your dashboard.
+Once you have finished creating your gauge face, you will need to mount it to your dashboard. 
 
 --- collapse ---
 ---
@@ -91,7 +89,8 @@ To finish building a spinning gauge:
 
 --- task ---
 
-Mount a single gear behind your dial face as a spacer, to prevent it from catching on your dashboard. Use some Blu Tack to stick the face to this gear.
+Mount a single gear behind your dial face as a spacer, to prevent it from catching on your dashboard. Use some Blu Tack to stick the face to this gear. If you have created an incremental scale around the gauge, mount it with the middle of the scale at the top (in line with the 'zeroed' lollipop symbols) and the minimum and maximum values at the bottom.
+
 ![Image showing a black LEGO® gear mounted on an axle with some tack.](/en/images/dial-gauge1.jpg)
 ![Image showing the gauge face mounted on top of a black LEGO® gear.](/en/images/dial-gauge2.jpg)
 

@@ -1,5 +1,7 @@
 ## What next?
 
+You could quite easily add a third motor to your dash to display other data from OpenAQ!
+
 Now you know how to represent data using LEGO indicators, you can use your new data dashboard to show almost anything!
 
 Some possible sources you can use for new data to show on your dash:
