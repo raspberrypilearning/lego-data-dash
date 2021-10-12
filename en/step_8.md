@@ -117,10 +117,11 @@ def check_weather():
     data = response.json()
     
     for reading in data['results']:
-        if reading['parameter'] == 'pm25': # This will depend upon what pollutant you are measuring
-            pollution['pm25'] = reading['value']
         if reading['parameter'] == 'no2': # This will depend upon what pollutant you are measuring
             pollution['no2'] = reading['value']
+        if reading['parameter'] == 'pm25': # This will depend upon what pollutant you are measuring
+            pollution['pm25'] = reading['value']
+
     output_results()   
     sleep(1)
  --- /code ---
@@ -152,7 +153,6 @@ def no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_se
 
 --- /task ---
 
-
 Now that our function has been created, we need to make a loop that will:
 
 + pull the pollutant data from the API
@@ -172,7 +172,17 @@ line_number_start: 18
 line_highlights: 
 ---
 def output_results():
-
+    current_angle = motor_slider.get_aposition()
+    no2_sensor_data = int({pollution['no2']})
+    new_angle = no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data)
+    print(new_angle)
+    if new_angle > current_angle:
+        motor_slider.run_to_position(new_angle, 100, direction="clockwise")
+        print('Turning CW')
+    elif new_angle < current_angle:
+        motor_slider.run_to_position(new_angle, 100, direction="anticlockwise")
+        print('Turning ACW')
+    sleep(0.1)
 
 
     print(f"PM2.5 = {pollution['pm25']}")
