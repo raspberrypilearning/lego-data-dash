@@ -1,68 +1,238 @@
-## Access the OpenAQ API
+## Display pollution data with your Dashboard
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">API is the acronym for <span style="color: #0faeb0">**Application Programming Interface**</span>, which is software that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you’re using an API.</p> 
+### Program your slider to display the NO2 level
 
-Whenever you use an app on your phone, the app connects to the Internet and sends data about what you want to know to a server. The server then finds and retrieves the data you want, interprets it and sends it back to your phone. The app then takes that data that has been returned and presents you with the information you wanted in a readable way. This is what an API is; a way to control other machines over the internet - all of this happens through the **API**.
+At the moment your dash is running off of random integers between -175 and 175. (We don't go to 180 as it can cause problems with travel around a full rotation.) We picked these numbers because they are the motor's limits of travel in each direction. The data coming in from your API won't have this same range - we need to make it fit the motors.
 
-The cool part is; we can write our own apps that investigate online databases of information and return them to our LEGO data dashboard instead of a phone - we'll use our Raspberry Pi as the brains to get that data, then display it on our hand made, custom LEGO indicators!
+**Calibrating** the indicators will mean mapping the maximum and minimum possible data values from your API between -175° and 175° on your motor. The highest possible reading will be at -175°, while the lowest possible reading will be at 175°. (Because we have mounted the motors in reverse!)
 
-To do that, we'll need to decide on a few things: where in the world we want to find out about air quality and what markers of air quality we will be representing. 
+For our example we will display the **fine particles (PM2.5)** measurement on the gauge, while the slider will display the Nitrogen Dioxide (NO2) level. The term **fine particles**, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and a half microns (or less) in width. The particles measured by PM2.5 are what make up most smoke and smog, and make it hard to see.
 
-### OpenAQ - the open source air quality database
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">Like inches, meters and miles, a <span style="color: #0faeb0">micron</span> is a unit of measurement for distance. There are about 25,000 microns in an inch. The widths of the larger particles in the PM2.5 size range would be about thirty times smaller than that of a human hair.  These particles are so small that several thousand of them could fit on the full stop at the end of this sentence.</p> 
 
-In our example dashboard we're going to be using the API for [**OpenAQ**](https://openaq.org/#/){:target="_blank"}, an open-source, global air quality data project. OpenAQ allows us to look at lots of different air pollution data from all over the globe, collected by thousands of measurement stations around the world. 
+In our example, the slider will display the Nitrogen Dioxide (NO2) level. The maximum possible reading on your slider will depend on where you live, because urban areas will always have higher readings than rural ones. The minimum reading possible is obviously 0, but we will want to consider what the normal range for what we are attempting to measure and add a bit to that.  
 
-If you're already a wizard with APIs, you can use any data you like to represent on your dashboard. If you want to follow along with us and use OpenAQ for your first try, we'll need to find out which measurement station you want to investigate and which measurements you are able to view.
+In order to work out what the maximum likely reading should be, you can see the historical data from your chosen location on the webpage you opened earlier:
 
---- task ---
+![Image showing graphed historical NO2 data from Sandy roadside](images/historicaldata_no2.jpg)
 
-**Navigate** to the OpenAQ map by [clicking here](https://openaq.org/#/map){:target="_blank"}. A webpage showing a world map covered in dots should appear.
+Here we can see that while there are some major outliers, around 60% (or 0.6) should be more than enough as our maximum value for most readings from Sandy Roadside. (If you want to simply make your scale from 1-100 you can do that too - just make `max_value = 100`)
 
---- /task --- 
 
---- task ---
 
-**Decide** where in the world you would like to gather data about air quality. This could be the area near where you live, somewhere that interests you, or somewhere that you think might have interesting data.
 
---- /task --- 
-
-As our Headquarters is in Cambridge, in the United Kingdom, we will use that as the example here.  
-
-There are many different measurements taken by air quality monitoring stations. The OpenAQ database has information on the following types of air pollution:
-
- + PM 2.5 and PM10 - Particulate Matter: microscopic particles floating in the air (smoke, smog)
- + NO2 - Nitrogen Dioxide: causes ozone creation, causes asthma in children
- + CO - Carbon Monoxide: deadly to humans, side effect of burning fossil fuels
- + SO2 - Sulfur Dioxide: smells bad, can cause breathing problems, creates acid rain, side effect of industrial treatments
- + o3 - Ozone: created when NO2 reacts to sunlight, causes smog, harmful to plants
- + BC - Black Carbon: not measured in many places (US & Poland), caused by inefficient fuel burning, adds to global warming, dangerous to humans
 
 --- task ---
 
-**Decide** upon what kind of air pollution you are most interested in measuring. You can choose different options from the pulldown menu near the coloured scale on the left of the screen.
-![image showing pulldown menu in OpenAQ map](images/mapscale.jpg)
+Connect your sliding indicator motor to Port 'A'. 
+Connect your gauge indicator motor to Port 'B'.
 
 --- /task ---
 
 --- task ---
 
-**Zoom in** to your chosen area on the map, and find the dot closest to the place you would like to measure. Click on that nearest dot, to see the location details. In the pop-up that appears, click the button that says **View Location**. 
-![Image showing a world map zoomed into the eastern UK](images/mapscroll.gif)
+In a new Thonny window, type the following:
+
+--- code ---
+---
+language: python
+filename: data_dash.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 
+---
+from buildhat import Motor
+from time import sleep
+from datetime import datetime, timedelta
+import requests
+
+no2_motor = Motor('A')           # set up slider motor
+no2_motor.run_to_position(0,100) # reset slider position
+pm25_motor = Motor('B')           # set up gauge motor
+pm25_motor.run_to_position(0,100) # reset gauge position
+
+no2_min_value = 0         # the lowest NO2 reading you think you will get (This should hopefully be around 0)
+no2_max_value = 60        # the highest NO2 reading you think you will get 
+no2_min_angle = 175       # miniumum motor travel
+no2_max_angle = -175      # maximum motor travel
+
+pm25_min_value = 0        # the lowest NO2 reading you think you will get (This should hopefully be around 0)
+pm25_max_value = 100      # the highest pm25 reading you think you will get 
+pm25_min_angle = 175      # miniumum motor travel
+pm25_max_angle = -175     # maximum motor travel
+
+--- /code ---
 
 --- /task ---
+
+Now that we have imported the necessary libraries and set up our measurement details, we will set up our query to the API by making a few **dictionaries** of terms we will use.
 
 --- task ---
 
-When the new webpage loads showing the details of the measurements taken at the location, **make a note** of the number in the URL of the new page. This is the OpenAQ identification number for your chosen air quality station. (In this example it is the Sandy Roadside measurement station, with ID number **2480**.)
-![Image showing openaq URL with number for location ID](images/openaq_id.jpg)
+In your Thonny window, add this code to the end of your script:
+
+--- code ---
+---
+language: python
+filename: data_dash.py
+line_numbers: true
+line_number_start: 21
+line_highlights: 
+---
+base_url = 'https://docs.openaq.org/v2/measurements'
+
+payload = {                    # create a dictionary for the API request
+    'date_from':'',
+    'date_to':'',
+    'location_id':'2480',      # This number should be the ID number taken from the URL earlier
+    'order_by':'datetime',
+    'sort':'asc',
+    'has_geo':'true',
+    'limit':'100',
+    'offset':'0',
+}
+
+pollution = {                  # create a dictionary for the pollution readings
+    'no2' : 0,                 # here we are looking for no2 and pm25 - yours may differ!
+    'pm25': 0,
+    }
+
+--- /code ---
 
 --- /task ---
+
+The next function we need to write will query the API using the parameters we have set up. 
+
+--- task ---
+ 
+At the end of your script, add this code:
+
+--- code ---
+---
+language: python
+filename: data_dash.py
+line_numbers: true
+line_number_start: 39
+line_highlights: 
+---
+def check_weather():
+    now = datetime.now()           # gets the time now
+    delta = datetime.now() - timedelta(days=1)         # creates a time difference of one day
+    
+    payload['date_from'] = f'{delta:%Y-%m-%d}T{delta:%H:%M:%S}+00:00'  # inserts our date and time into the dictionary above
+    payload['date_to'] = f'{now:%Y-%m-%d}T{now:%H:%M:%S}+00:00'
+    
+    response = requests.get(base_url, params=payload)          # queries the API database
+    
+    if response.status_code != 200:          # check for connection to API
+        print('no response from server')
+        return
+    
+    data = response.json()
+        
+    for reading in data['results']:
+        if reading['parameter'] == 'no2':       # This will depend upon what pollutant you are measuring
+            pollution['no2'] = reading['value']
+            print(pollution['no2'])
+        if reading['parameter'] == 'pm25':      # This will depend upon what pollutant you are measuring
+            pollution['pm25'] = reading['value']
+            print(pollution['pm25'])
+
+    output_results()   
+    sleep(1)
+
+ --- /code ---
+
+ --- /task ---
+
+The next part we will write will do some clever maths to map our data range across the motor range. (It's basically the same as the function used in the [LEGO Data Plotter project](https://learning-admin.raspberrypi.org/en/projects/lego-plotter/6).)
+ 
+--- task ---
+
+Add this function beneath your existing code:
+
+--- code ---
+---
+language: python
+filename: data_dash.py
+line_numbers: true
+line_number_start: 65
+line_highlights: 
+---
+def remap(min_value, max_value, min_angle, max_angle, sensor_data):                    # create function
+    value_range = (max_value - min_value)                                              # work out how wide your value range is
+    motor_range = (max_angle - min_angle)                                              # work out how wide your motor range is
+    mapped = (((sensor_data - min_value) * motor_range) / value_range) + min_angle     # stretch your value range across your motor range
+    return int(mapped)                                           # give back a number that shows the value as an angle on the motor
+
+--- /code ---
+
+--- /task ---
+
+Now that our function has been created, we need to make a loop that will:
+
++ find the angle the motor is currently at
++ pull the pollutant data from the `remap` function to use as the new angle for our motors
++ move to the new angle to display the reading
 
 --- task ---
 
-On the location page, you will see the different types of pollutants measured by that location. **Choose** two from that list that you would like to represent on your data dashboard.
-![Image showing pollutant list from a location on the openAQ map](images/openaq_msmt.jpg)
-This measurement station near Sandy can show NO2, PM10 and PM2.5 - so we'll use NO2 and PM2.5 in the example.  
+Add the following code to the end of your script, on a new line:
+
+--- code ---
+---
+language: python
+filename: data_dash.py
+line_numbers: true
+line_number_start: 73
+line_highlights: 
+---
+def output_results():
+    print(f'NO2 = {pollution['no2']}')
+    no2_current_angle = no2_motor.get_aposition()
+    no2_sensor_data = int(pollution['no2'])
+    no2_new_angle = remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data)
+    print(no2_new_angle)
+    if no2_new_angle > no2_current_angle:
+        no2_motor.run_to_position(no2_new_angle, 100, direction='anticlockwise')
+        print('Turning CW')
+    elif no2_new_angle < no2_current_angle:
+        no2_motor.run_to_position(no2_new_angle, 100, direction='clockwise')
+        print('Turning ACW')
+    sleep(0.1)
+    pm25_sensor_data = int(pollution['pm25'])
+    print(f"PM2.5 = {pollution['pm25']}")
+    pm25_current_angle = pm25_motor.get_aposition()
+    print(pm25_current_angle)
+    pm25_new_angle = remap(pm25_min_value, pm25_max_value, pm25_min_angle, pm25_max_angle, pm25_sensor_data)
+    pm25_motor.run_to_position(pm25_new_angle, 100)
+
+--- /code ---
 
 --- /task ---
 
+The last part of our code now needs to call our `check_weather()` function to make it all go, and periodically check the API for updated data. 
+
+--- task ---
+
+At the end of your script on a new line (making sure it isn't indented) type:
+
+--- code ---
+---
+language: python
+filename: data_dash.py
+line_numbers: true
+line_number_start: 73
+line_highlights: 
+---
+while True:
+    check_weather()
+    sleep(3600)   # wait an hour before checking again
+
+--- task ---
+
+Save your work as `data_dash.py` and click Run. Your slider should move to display the current NO2 reading from your chosen OpenAQ station, and your gauge should move to display the PM2.5 reading. 
+
+--- /task ---
+
+--- save ---
