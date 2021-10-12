@@ -37,7 +37,7 @@ from time import sleep
 from datetime import datetime
 import requests
 
-motor_no2 = Motor('A')
+no2_motor = Motor('A')
 no2_min_value = 0 # the lowest NO2 reading you think you will get (This should hopefully be around 0)
 no2_max_value = 0.6 #the highest NO2 reading you think you will get 
 no2_min_angle = -175
@@ -172,6 +172,8 @@ line_number_start: 18
 line_highlights: 
 ---
 def output_results():
+    print(f"NO2 = {pollution['no2']}")
+    print(f"PM2.5 = {pollution['pm25']}")
     current_angle = motor_slider.get_aposition()
     no2_sensor_data = int({pollution['no2']})
     new_angle = no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data)
@@ -185,9 +187,6 @@ def output_results():
     sleep(0.1)
 
 
-    print(f"PM2.5 = {pollution['pm25']}")
-    print(f"PM10 = {pollution['pm10']}")
-    print(f"O3 = {pollution['o3']}")
 --- /code ---
 
 --- /task ---
@@ -233,13 +232,13 @@ from buildhat import Motor
 from time import sleep
 
 
-motor_no2 = Motor('A')
+no2_motor = Motor('A')
 no2_min_value = 0
 no2_max_value = 0.3
 no2_min_angle = -175
 no2_max_angle = 175
 
-motor_pm25 = Motor('B')
+pm25_motor = Motor('B')
 pm25_min_value = 0 
 pm25_max_value = 100
 pm25_min_angle = -175
@@ -257,15 +256,15 @@ def pm25_remap(pm25_min_value, pm25_max_value, pm25_min_angle, pm25_max_angle, p
     pm25_motor_range = (pm25_max_angle - pm25_min_angle)
     pm25_mapped = (((pm25_sensor_data - pm25_min_value) * pm25_motor_range) / pm25_value_range) + pm25_min_angle
     return int(pm25_mapped)
-    print(no2_mapped)
+    print(pm25_mapped)
 
 while True:
-    no2_sensor_data  =  API command to pull the CO data()
-    no2_current_angle = motor_no2.get_aposition()
+    no2_sensor_data  =  API command to pull the NO2 data()
+    no2_current_angle = no2_motor.get_aposition()
     no2_new_angle = no2_remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data)
     sleep(0.5)
     pm25_sensor_data  =  API command to pull the pm25 data()
-    pm25_current_angle = motor_pm25.get_aposition()
+    pm25_current_angle = pm25_motor.get_aposition()
     pm25_new_angle = pm25_remap(pm25_min_value, pm25_max_value, pm25_min_angle, pm25_max_angle, pm25_sensor_data)
 
 --- /code ---
