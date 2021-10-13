@@ -12,5 +12,5 @@ steps:
   - title: Make a LEGO gauge
   - title: Make an LED scale
   - title: Access the OpenAQ API
-  - title: Displaying pollution data with your dashboard
+  - title: Display pollution data with your dashboard
   - title: What next?
