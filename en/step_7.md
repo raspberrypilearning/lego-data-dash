@@ -1,7 +1,5 @@
 ## Display pollution data with your Dashboard
 
-### Program your slider to display the NO2 level
-
 At the moment your dash is running off of random integers between -175 and 175. (We don't go to 180 as it can cause problems with travel around a full rotation.) We picked these numbers because they are the motor's limits of travel in each direction. The data coming in from your API won't have this same range - we need to make it fit the motors.
 
 **Calibrating** the indicators will mean mapping the maximum and minimum possible data values from your API between -175° and 175° on your motor. The highest possible reading will be at -175°, while the lowest possible reading will be at 175°. (Because we have mounted the motors in reverse!)
