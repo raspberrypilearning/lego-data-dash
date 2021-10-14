@@ -1,10 +1,10 @@
 ## Make an LED scale
 
-Another really cool way to display data is by using a series of LEDs that turn on and off as readings change — the higher the reading, the more LEDs are lit; like a graphic equaliser on your computer showing the volume of your music:
+Another really cool way to display data is by using a series of LEDs that turn on and off as readings change — the higher the reading, the more LEDs are lit; like a graphic equaliser on your computer showing the volume of your music.
 
 ![](https://media.giphy.com/media/Hzt1XTt6gilFlK8Oea/giphy.gif)
 
-To make an LED display, you'll need a few LED bulbs — the more bulbs you have, the more precise your scale will be. There is an upper limit though; you can only have as many LEDs as there are available GPIO pins. In this example, we're using five LEDs, but you **could** connect more than ten if you choose.
+To make an LED display, you'll need a few LED bulbs — the more bulbs you have, the more precise your scale will be. There is an upper limit though: you can only have as many LEDs as there are available GPIO pins. In this example, we're using five LEDs, but you **could** connect more than ten if you choose.
 
 **Note:** Because of the way the Build HAT is designed, you **can't access GPIO 14 or 15 (pins 8 and 10)**.
 
