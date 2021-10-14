@@ -42,11 +42,13 @@ There are many different measurements taken by air quality monitoring stations. 
 **Decide** upon what kind of air pollution you are most interested in measuring. You can choose different options from the pulldown menu near the coloured scale on the left of the screen.
 ![Image showing the pulldown menu in the OpenAQ map.](images/mapscale.jpg)
 
+**Note:** Round markers represent more substantial air quality stations which are likely to measure more varied pollutants. 
+
 --- /task ---
 
 --- task ---
 
-**Zoom in** to your chosen area on the map, and find the dot closest to the place you would like to measure. Click on that nearest dot to see the location details. In the pop-up that appears, click the button that says **View Location**. 
+**Zoom in** to your chosen area on the map, and find the dot closest to the place you would like to measure. Click on that nearest dot to see the location details. In the pop-up that appears, click the button that says **View Location**.  
 ![Image showing a world map zoomed in on the eastern UK.](images/mapscroll.gif)
 
 --- /task ---
