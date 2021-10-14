@@ -4,7 +4,7 @@
 In this project, you are going to create a dashboard that will visualise data; you can choose what data it shows from a range of online sources. Your data dashboard will need to meet the **project brief**.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">dashboard</span> is a user interface that gives a current summary of important information, usually in a graphical or easy-to-read form. The term originates from cars, where the driver is shown the current status of the vehicle using big, bright dials and scales.</p>
+A <span style="color: #0faeb0">dashboard</span> is a user interface that gives a current summary of important information, usually in a graphical or easy-to-read form. The term originates from cars, where the driver is shown the current status of the vehicle by big, bright dials and scales.</p>
 
 You will:
 + Build automated indicators using LEGO® motors and elements
@@ -105,10 +105,10 @@ Your task is to create a LEGO dashboard that will display your chosen data. The 
 
 For our example data, we will be measuring:
 + The **NO2** levels at a chosen location. Nitrogen dioxide (NO2) is one of a group of highly reactive gases known as nitrogen oxides or NOx. NO2 is primarily released into the air from the burning of fuel.
-+ The **fine particles (PM2.5)** levels at a chosen location. The term **fine particles**, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and a half microns (or less) in width. The particles associated with PM2.5 are what make up smoke and smog.
++ The **fine particles (PM2.5)** levels at a chosen location. The term **fine particles**, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and a half microns (or less) in size. Particles classed as PM2.5 are what make up smoke and smog.
 
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">The example API we are using in this project is from [OpenAQ](https://openaq.org/#/), a global non-profit organisation "fighting air inequality through open data". Globally, **1 in 8 deaths** is due to poor air quality, and OpenAQ collects global air quality data to help inform more people about the problems of increasing air pollution in some parts of the world. </p>
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">The example API we are using in this project is from [OpenAQ](https://openaq.org/#/), a global non-profit organisation "fighting air inequality through open data". Globally, **1 in 8 deaths** are due to poor air quality, and OpenAQ collects global air quality data to help inform more people about the problems of increasing air pollution in some parts of the world. </p>
 
 
 Your dashboard should:
