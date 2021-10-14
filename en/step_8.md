@@ -12,6 +12,6 @@ Some possible sources you can use for new data to show on your dash:
 
 If you are following the [Introduction to LEGO BuildHAT](https://projects.raspberrypi.org/en/pathways/lego-intro) pathway, you can move on to the [LEGO Robot Face](https://projects.raspberrypi.org/en/projects/lego-data-dash) project. In this project, you will make a face from Lego and some LED arrays, then connect it to a machine learning model to recognise objects and have it react to them with funny faces!
 
-![LEGO RObot Face banner showing funny robot face](images/robotfacebanner.png)
+![LEGO Robot Face banner showing funny robot face](images/robotfacebanner.png)
 
 If you've completed all the LEGO Spark projects and want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
