@@ -2,7 +2,7 @@
 
 Another really cool way to display data is by using a series of LEDs that turn on and off as readings change — the higher the reading, the more LEDs are lit; like a graphic equaliser on your computer showing the volume of your music.
 
-![](https://media.giphy.com/media/Hzt1XTt6gilFlK8Oea/giphy.gif)
+![Image displaying graphic equaliser moving up and down](https://media.giphy.com/media/Hzt1XTt6gilFlK8Oea/giphy.gif)
 
 To make an LED display, you'll need a few LED bulbs — the more bulbs you have, the more precise your scale will be. There is an upper limit though: you can only have as many LEDs as there are available GPIO pins. In this example, we're using five LEDs, but you **could** connect more than ten if you choose.
 
@@ -82,7 +82,7 @@ Now that your LED sequence is connected to your Raspberry Pi, you need to power 
 
 --- task ---
 
-Connect the 7.5V power supply to the barrel jack on your Build HAT. You should see your Raspberry Pi power up and load the Raspbian Desktop.
+Connect the 7.5V power supply to the barrel jack on your Build HAT. You should see your Raspberry Pi power up and load the Raspberry Pi OS Desktop.
 
 --- /task ---
 

@@ -109,7 +109,7 @@ line_numbers: true
 line_number_start: 39
 line_highlights: 
 ---
-def check_weather():
+def check_air():
     now = datetime.now()           #Gets the time now
     delta = datetime.now() - timedelta(days=1)         #Creates a time difference of one day
     
@@ -205,7 +205,7 @@ def output_results():
 
 --- /task ---
 
-The last part of your code now needs to call your `check_weather()` function to make it all go, and periodically check the API for updated data. 
+The last part of your code now needs to call your `check_air()` function to make it all go, and periodically check the API for updated data. 
 
 --- task ---
 
@@ -220,7 +220,7 @@ line_number_start: 93
 line_highlights: 
 ---
 while True:
-    check_weather()
+    check_air()
     sleep(3600)   #Wait an hour before checking again (make this smaller for testing purposes)
 --- /code ---
 

@@ -37,7 +37,7 @@ pollution = { #create a dictionary for the pollution readings
     'pm25': 0,
     }
 
-def check_weather():
+def check_air():
     now = datetime.now()
     delta = datetime.now() - timedelta(days=1)
     
@@ -84,5 +84,5 @@ def output_results():
     pm25_motor.run_to_position(pm25_new_angle, 100)
 
 while True:
-    check_weather()
+    check_air()
     sleep(3600)              # wait an hour before checking again (make this smaller for testing purposes)

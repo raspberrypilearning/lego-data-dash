@@ -120,7 +120,7 @@ Your dashboard should:
 
 Your dashboard could:
 + Use other electronic components (LEDs, buzzers)
-+ Have physical user inputs (LEGO® Technic™ motors, LEGO® Shock Sensor, GPIO button, distance sensor)
++ Have physical user inputs (LEGO® Technic™ motors, LEGO® Force Sensor, GPIO button, distance sensor)
   
 </div>
 
