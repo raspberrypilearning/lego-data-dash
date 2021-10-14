@@ -8,7 +8,7 @@ A <span style="color: #0faeb0">dashboard</span> is a user interface that gives a
 
 You will:
 + Build automated indicators using LEGO® motors and elements
-+ Access an online **API** to retrieve interesting data using Python
++ Access an online **API** (Application Programming Interface) to retrieve interesting data using Python
 + Display your chosen data on a dashboard you create
 
 --- no-print ---
