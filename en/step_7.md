@@ -2,7 +2,7 @@
 
 At the moment, your dash uses random integers between -175 and 175; these numbers are used because they are the motor's limits of travel in each direction. (We don't go to 180 as it can cause problems with travel around a full rotation.) The data coming in from your API won't have this same range, so you need to make it fit the motors.
 
-**Calibrating** the indicators will mean mapping the maximum and minimum possible data values from your API to between -175° and 175° on your motor. The highest possible reading will be at -175°, whereas the lowest possible reading will be at 175°. (Because you have mounted the motors in reverse!)
+**Calibrating** the indicators means mapping the maximum and minimum possible data values from your API to between -175° and 175° on your motor. The highest possible reading will be at -175°, whereas the lowest possible reading will be at 175°. (Because you have mounted the motors in reverse!)
 
 For our example, we will display the **fine particles (PM2.5)** measurement on the gauge, while the slider will display the nitrogen dioxide (NO2) level. The term **fine particles**, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and a half microns (or less) in width. The particles measured by PM2.5 are what make up most smoke and smog, and make it hard to see.
 
@@ -47,12 +47,12 @@ pm25_motor.run_to_position(0,100) # Reset gauge position
 
 no2_min_value = 0         #The lowest NO2 reading you think you will get (this should hopefully be around 0)
 no2_max_value = 60        #The highest NO2 reading you think you will get 
-no2_min_angle = 175       #Miniumum motor travel
+no2_min_angle = 175       #Minimum motor travel
 no2_max_angle = -175      #Maximum motor travel
 
 pm25_min_value = 0        #The lowest PM2.5 reading you think you will get (this should hopefully be around 0)
 pm25_max_value = 100      #The highest PM2.5 reading you think you will get 
-pm25_min_angle = 175      #Miniumum motor travel
+pm25_min_angle = 175      #Minimum motor travel
 pm25_max_angle = -175     #Maximum motor travel
 
 --- /code ---
