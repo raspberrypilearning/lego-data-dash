@@ -4,11 +4,11 @@
 
 Whenever you use an app on your phone, the app connects to the internet and sends data about what you want to know to a server. The server then finds and retrieves the data you want, interprets it, and sends it back to your phone. The app then takes the data that has been returned and presents you with the information you wanted in a readable way. This is what an API is: a way to control other machines over the internet — all of this happens through the **API**.
 
-The cool part is, you can write your own apps that investigate online databases of information and return the desired data to your LEGO dashboard instead of a phone — you'll use your Raspberry Pi as the brains to get that data, then display it on your hand-made, custom LEGO indicators!
+The cool part is, you can write your own apps that investigate online databases of information and return the desired data to your LEGO® dashboard instead of a phone — you'll use your Raspberry Pi as the brains to get that data, then display it on your hand-made, custom LEGO indicators!
 
 To do that, you'll need to decide on a few things: you'll need to pick the location where you will find out about the air quality — you can choose anywhere in the world! — and you'll need to decide which markers of air quality you want to represent. 
 
-### OpenAQ — the open source air quality database
+### OpenAQ — the open-source air quality database
 
 In your example dashboard, you're going to be using the API for [**OpenAQ**](https://openaq.org/#/){:target="_blank"}, an open-source, global air quality data project. OpenAQ allows you to look at lots of different air pollution data from all over the globe, collected by thousands of measurement stations around the world. 
 
@@ -26,11 +26,11 @@ If you're already a wizard with APIs, you can use any data you like to represent
 
 --- /task --- 
 
-As our headquarters iare in Cambridge, in the United Kingdom, we will use that as the example here.  
+As our headquarters are in Cambridge, in the United Kingdom, we will use that as the example here.  
 
 There are many different measurements taken by air quality monitoring stations. The OpenAQ database has information on the following types of air pollution:
 
- + PM 2.5 and PM10 (particulate matter): microscopic particles floating in the air (smoke, smog)
+ + PM2.5 and PM10 (particulate matter): microscopic particles floating in the air (smoke, smog)
  + NO2 (nitrogen dioxide): causes ozone creation, causes asthma in children
  + CO (carbon monoxide): deadly to humans, side effect of burning fossil fuels
  + SO2 (sulfur dioxide): smells bad, can cause breathing problems, creates acid rain, side effect of industrial treatments
