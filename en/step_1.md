@@ -50,6 +50,8 @@ Optional:
   
 ### Downloads
 
++ The final script for this project is available [here]((http://rpf.io/p/en/lego-data-dash-go){:target="_blank"})
+
 --- /collapse ---
 
 Before you begin, you'll need to have set up your Raspberry Pi computer and attached your Build HAT:
