@@ -1,4 +1,4 @@
-title: LEGO Data Dashboard
+title: LEGO Data dashboard
 hero_image: images/banner.png
 description: invent-project-template description
 version: 4
@@ -8,8 +8,8 @@ last_tested: "2021-03-26"
 steps:
   - title: Introduction
   - title: Plan your dashboard
-  - title: Make a LEGO sliding indicator
-  - title: Make a LEGO gauge
+  - title: Make a LEGO® sliding indicator
+  - title: Make a LEGO® gauge
   - title: Make an LED scale
   - title: Access the OpenAQ API
   - title: Display pollution data with your dashboard
