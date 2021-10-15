@@ -157,4 +157,3 @@ while True:
 Save your work as `gauge_test.py` and press **Run**. You will see your gauge begin to move!
 
 --- /task ---
-

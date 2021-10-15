@@ -1,6 +1,5 @@
 ## Introduction
 
-
 In this project, you are going to create a dashboard that will visualise data; you can choose what data it shows from a range of online sources. Your data dashboard will need to meet the **project brief**.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
@@ -15,7 +14,6 @@ You will:
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1">
-
 
 --- /no-print ---
 
@@ -141,7 +139,9 @@ This example shows a weather dashboard displaying the current temperature on a v
 --- /no-print ---
 
 --- print-only ---
+
 ![Image showing a weather station dashboard made of LEGO®.](images/example-dash.jpg)
+
 --- /print-only ---
 
 

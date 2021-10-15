@@ -14,6 +14,7 @@ We will use an example API in this project from OpenAQ to demonstrate how to cre
 + How will it show this information to the user?
 + What layout will it have, to make it easy to read?
 
+
 --- /task ---
 
 ### Who is it for?
@@ -45,5 +46,6 @@ Draw your dashboard now, including the frame to hold it and any indicators you w
 --- /task ---
 
 In the next step, you will construct some readouts for your dashboard using LEGO®!
+
 
 --- save ---
