@@ -72,7 +72,7 @@ Line up the Build HAT with the Raspberry Pi, ensuring you can see the `This way 
 
 --- /task ---
 
-You should now power your Raspberry Pi using the 7.5V barrel jack on the Build HAT, which will allow you to use the motors. If you do not have an official BUildHAT power supply; you can power the buildHAT through the Raspberry Pi USB-C port, but will not be able to power the motors.
+You should now power your Raspberry Pi using the 7.5V barrel jack on the Build HAT, which will allow you to use the motors. 
 
 --- task ---
 
