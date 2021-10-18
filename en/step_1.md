@@ -26,6 +26,7 @@ title: What you will need
 
 + A Raspberry Pi computer
 + A Raspberry Pi Build HAT
++ A Raspberry Pi Build HAT 7.5V PSU
 + 2 LEGO® Technic™ motors (more optional)
 + A LEGO® SPIKE™ Force Sensor
 + Assortment of LEGO® (we used a selection from the [LEGO® SPIKE™ Prime kit](https://education.lego.com/en-gb/product/spike-prime){:target="_blank"})
@@ -79,6 +80,16 @@ You should now power your Raspberry Pi using the 7.5V barrel jack on the Build H
 If you have not already done so, set up your Raspberry Pi by following these instructions:
 
 [Setting up your Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up){:target="_blank"}
+
+--- /task ---
+
+--- task ---
+
+Once the Raspberry Pi has booted, open the Raspberry Pi Configuration tool by clicking on the Raspberry Menu button and then selecting “Preferences” and then “Raspberry Pi Configuration”.
+
+Click on the “interfaces” tab and adjust the Serial settings as shown below:
+
+![Image showing Raspberry Pi OS config screen with serial port enabled and serial console disabled](images/configshot.jpg)
 
 --- /task ---
 
