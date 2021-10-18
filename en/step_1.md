@@ -70,6 +70,7 @@ Mounting the Raspberry Pi this way round enables easy access to the ports as wel
 Line up the Build HAT with the Raspberry Pi, ensuring you can see the `This way up` label. Make sure all the GPIO pins are covered by the HAT, and press down firmly. (The example uses a [stacking header](https://www.adafruit.com/product/2223){:target="_blank"}, which makes the pins longer.)
 
 ![Image of GPIO pins poking through the top of the Build HAT.](images/build_15.jpg)
+![Animation showing Buildhat fitting to Raspberry Pi](images/haton.gif)
 
 --- /task ---
 
