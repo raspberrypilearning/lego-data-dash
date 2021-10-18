@@ -8,7 +8,7 @@ A <span style="color: #0faeb0">dashboard</span> is a user interface that gives a
 You will:
 + Build automated indicators using LEGO® motors and elements
 + Access an online **API** (Application Programming Interface) to retrieve interesting data using Python
-+ Display your chosen data on a dashboard you create
++ Display your chosen data on a dashboard you create using LEGO
 
 --- no-print ---
 
@@ -72,13 +72,18 @@ Line up the Build HAT with the Raspberry Pi, ensuring you can see the `This way 
 
 --- /task ---
 
-You should now power your Raspberry Pi using the 7.5V barrel jack on the Build HAT, which will allow you to use the motors.
+You should now power your Raspberry Pi using the 7.5V barrel jack on the Build HAT, which will allow you to use the motors. 
 
 --- task ---
 
 If you have not already done so, set up your Raspberry Pi by following these instructions:
 
 [Setting up your Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up){:target="_blank"}
+
+--- /task ---
+
+--- task ---
+You will also need to install the buildhat python library by following these instructions: 
 
 --- collapse ---
 ---
@@ -87,7 +92,7 @@ title: Install the BuildHAT Python library
 
 Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
 
-At the prompt type: `pip3 install buildhat`
+At the prompt type: `sudo pip3 install buildhat`
 
 Press <kbd>Enter</kbd> and wait for the "installation completed" message.
 
