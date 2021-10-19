@@ -99,7 +99,7 @@ You will also need to install the buildhat python library by following these ins
 
 --- collapse ---
 ---
-title: Install the BuildHAT Python library
+title: Install the buildhat Python library
 ---
 
 Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
