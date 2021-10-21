@@ -87,6 +87,7 @@ Connect the 7.5V power supply to the barrel jack on your Build HAT. You should s
 --- /task ---
 
 --- task ---
+
 Open **Thonny** from your **Programming menu**. 
 
 The first lines of your script will import the gpiozero and randint libraries and set up your LEDs to be controllable. You will need to change the values in brackets to match the numbered pins your LEDs are connected to. **Note:** The order of these numbers is important! The pin numbers should go from the lowest on your 'bar graph' to the highest.
