@@ -53,6 +53,7 @@ Take a small black gear and a short axle, and join them together.
 --- /task ---
 
 --- task ---
+
 Insert the axle through the Build Plate above the right bracket as shown: 
 ![Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate.](images/sliderbuild6.jpg)
 
@@ -147,6 +148,7 @@ In the **Shell** (the window at the bottom), next to the three arrows, type:
 --- /task ---
 
 --- task ---
+
 Now type:
 `motor = = Motor('A')` and press <kbd>Enter</kbd>.
 --- /task ---
@@ -172,6 +174,7 @@ You now know where your minumum and maximum possible readings are. Once you link
 ### Program your sliding indicator to show live data
 
 --- task ---
+
 Enter the following code in a blank tab:
 
 --- code ---
