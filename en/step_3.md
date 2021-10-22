@@ -13,7 +13,7 @@ Sliding indicators can also run horizontally if you prefer, by rotating the buil
 Follow these build instructions to create a vertical sliding indicator:
 
 To construct this model, follow our handy building guide here or [download it.](/en/resources/lego-data-dash-slider.pdf)
-<embed src="/en/resources/lego-data-dash-slider.pdf" width="600" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+<embed src="resources/lego-data-dash-slider.pdf" width="600" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
 
 --- /task --- 
 
