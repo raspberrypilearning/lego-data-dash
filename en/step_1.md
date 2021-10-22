@@ -95,6 +95,7 @@ Click on the “interfaces” tab and adjust the Serial settings as shown below:
 --- /task ---
 
 --- task ---
+  
 You will also need to install the buildhat python library by following these instructions: 
 
 --- collapse ---
