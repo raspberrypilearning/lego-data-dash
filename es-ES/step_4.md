@@ -21,7 +21,9 @@ Before attaching the motor to the rear of the gauge's axle, make sure that it is
 
 To finish building the gauge, you will need to create a scale using paper, card, or other art supplies. The mechanics and coding are exactly the same, but think now about how you would like your gauge to look.
 
- --- task --- **Choose** what kind of dial you will make.
+ --- task ---
+
+ **Choose** what kind of dial you will make.
 
  There are two simple types you can create with LEGO®:
 
