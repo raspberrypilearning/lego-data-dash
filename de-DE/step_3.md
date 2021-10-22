@@ -13,7 +13,7 @@ Sliding indicators can also run horizontally if you prefer, by rotating the buil
 Follow these build instructions to create a vertical sliding indicator:
 
 To construct this model, follow our handy building guide here or [download it.](/en/resources/lego-data-dash-slider.pdf)
-<embed src="/en/resources/lego-data-dash-slider.pdf" width="600" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+<embed src="resources/lego-data-dash-slider.pdf" width="600" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
   </p> 
   
   <p spaces-before="0">
@@ -81,7 +81,11 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    --- task --- Insert the axle through the Build Plate above the right bracket as shown: <img src="images/sliderbuild6.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate." />
+    --- task ---
+  </p>
+  
+  <p spaces-before="0">
+    Insert the axle through the Build Plate above the right bracket as shown: <img src="images/sliderbuild6.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate." />
   </p>
   
   <p spaces-before="0">
@@ -249,7 +253,11 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  --- task --- Now type: <code>motor = = Motor('A')</code> and press <kbd>Enter</kbd>. --- /task ---
+  --- task ---
+</p>
+
+<p spaces-before="0">
+  Now type: <code>motor = = Motor('A')</code> and press <kbd>Enter</kbd>. --- /task ---
 </p>
 
 <p spaces-before="0">
@@ -289,7 +297,11 @@ To construct this model, follow our handy building guide here or [download it.](
 </h3>
 
 <p spaces-before="0">
-  --- task --- Enter the following code in a blank tab:
+  --- task ---
+</p>
+
+<p spaces-before="0">
+  Enter the following code in a blank tab:
 </p>
 
 <p spaces-before="0">
