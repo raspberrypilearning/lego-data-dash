@@ -14,7 +14,7 @@ To work out what the maximum likely reading should be, you can see the historica
 
 ![Image showing graphed historical NO2 data from Sandy, roadside.](images/historicaldata_no2.jpg)
 
-Here, you can see that while there are some major outliers, around 60% (or 0.6) should be more than enough as your maximum value for most readings from the Sandy Roadside air quality station. (If you want to simply make your scale from 1 to 100, you can do that too — just make `max_value = 100`.)
+Here, you can see that while there are some major outliers, around 60 should be more than enough as your maximum value for most readings from the Sandy Roadside air quality station. (If you want to simply make your scale from 0 to 100, you can do that too — just make `max_value = 100`.)
 
 --- task ---
 

@@ -92,8 +92,9 @@ To finish building a spinning gauge:
 
 Mount a single gear behind your dial face as a spacer, to prevent it from catching on your dashboard. Use some Blu Tack to stick the face to this gear. If you have created an incremental scale around the gauge, mount it with the middle of the scale at the top (in line with the 'zeroed' lollipop symbols) and the minimum and maximum values at the bottom.
 
-![Image showing a black LEGO® gear mounted on an axle with some tack.](/en/images/dial-gauge1.jpg)
-![Image showing the gauge face mounted on top of a black LEGO® gear.](/en/images/dial-gauge2.jpg)
+![Image showing a black LEGO® gear mounted on an axle with some tack.](images/dial-gauge1.jpg)
+
+![Image showing the gauge face mounted on top of a black LEGO® gear.](images/dial-gauge2.jpg)
 
 --- /task ---
 
