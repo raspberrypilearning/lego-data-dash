@@ -150,7 +150,7 @@ In the **Shell** (the window at the bottom), next to the three arrows, type:
 --- task ---
 
 Now type:
-`motor = = Motor('A')` and press <kbd>Enter</kbd>.
+`motor = Motor('A')` and press <kbd>Enter</kbd>.
 --- /task ---
 
 Now you've set up your slider motor to run, you should send it to the maximum and minimum readings to see how far it can travel — then mark those places on the card.
@@ -165,7 +165,7 @@ Type:
 --- task ---
 
 Type: 
-`motor.run_to_position(180, 100, direction=clockwise)` and press <kbd>Enter</kbd>. Mark the card at the place the arrow indicates. This is your maximum possible readout.
+`motor.run_to_position(180, 100, direction="clockwise")` and press <kbd>Enter</kbd>. Mark the card at the place the arrow indicates. This is your maximum possible readout.
 
 --- /task ---
 
@@ -196,7 +196,7 @@ motor_slider.run_to_position(0,100)
 while True:
     current_angle = motor_slider.get_aposition()
     new_angle = randint(-175, 175)
-    print(sensor_data)
+    print(new_angle)
     if new_angle > current_angle:
         motor_slider.run_to_position(new_angle, 100, direction="clockwise")
         print('Turning CW')
