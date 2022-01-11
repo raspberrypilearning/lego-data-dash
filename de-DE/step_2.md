@@ -1,51 +1,51 @@
-## Plan your dashboard
+## Plane deine Instrumententafel
 
-Use this step to plan your dashboard, and think about what information you want to display. You can plan by just thinking, tinkering, drawing, writing, or however you like!
+Verwende diesen Schritt, um deine Instrumententafel zu planen und zu überlegen, welche Informationen du anzeigen möchtest. Du kannst planen, indem du einfach nachdenkst, bastelst, zeichnest, schreibst oder wie du möchtest!
 
-We will use an example API in this project from OpenAQ to demonstrate how to create and use your data dashboard, but you could use any API you want. (There are some more API links in the final step for you to look at if you'd like to try it with a different data source.)
+Wir werden in diesem Projekt eine Beispiel-API von OpenAQ verwenden, um zu zeigen, wie du deine Daten-Instrumententafel erstellen und verwenden kannst. Du kannst aber jede beliebige API verwenden. (Im letzten Schritt gibt es noch einige API-Links, die du dir ansehen kannst, wenn du es mit einer anderen Datenquelle ausprobieren möchtest.)
 
-### Why are you making a dashboard?
+### Warum erstellst du eine Instrumententafel?
 
 --- task ---
 
-**Think** about the purpose of your dashboard:
+**Denke** über den Zweck deiner Instrumententafel nach:
 
-+ What information will it display?
-+ How will it show this information to the user?
-+ What layout will it have, to make it easy to read?
++ Welche Informationen werden angezeigt?
++ Wie werden diese Informationen dem Benutzer angezeigt?
++ Welches Layout soll sie haben, damit es leicht lesbar ist?
 
 
 --- /task ---
 
-### Who is it for?
+### Für wen ist das?
 
 --- task ---
 
-Think about who you will make your dashboard for (your **audience**):
+Überlege, für wen die Instrumententafel erstellt wird (deine **Zielgruppe**):
 
-+ What symbols or scales will make it obvious what you are displaying?
-+ How will the user get current data?
-+ Will they prefer bright colours and lights, or simple and clean designs?
-+ Where will they keep it? Will it fit there?
++ Welche Symbole oder Skalen machen deutlich, was sie anzeigen?
++ Wie erhält der Benutzer aktuelle Daten?
++ Werden sie helle Farben und Lichter oder einfache und klare Designs bevorzugen?
++ Wo werden sie es aufbewahren? Wird es dort passen?
 
 --- /task ---
 
-### Get started
+### Fang an!
 
 --- task ---
 
-Use a pen and paper to plan ideas for your dashboard:
+Verwende Stift und Papier, um Ideen für deine Instrumententafel zu planen:
 
-+ Consider how many motors you will have available to you to power the indicators — you need one motor for each indicator
-+ Will you use other components in your build, like LEDs, buzzers, or buttons? What will they do?
-+ How will your different indicators and inputs fit together into a frame?
-+ What LEGO elements will you need to build it?
++ Überlege, wie viele Motoren dir zur Verfügung stehen, um die Anzeigen zu betreiben – du benötigst für jede Anzeige einen Motor
++ Wirst du andere Komponenten in deinem Gerät verwenden, wie LEDs, Summer oder Tasten? Wofür werden sie sein?
++ Wie passen deine verschiedenen Indikatoren und Eingaben in einen Rahmen?
++ Welche LEGO-Elemente benötigst du, um es zu bauen?
 
-Draw your dashboard now, including the frame to hold it and any indicators you would like to create or user inputs needed. Label them with the information they will display or the input they provide.
+Zeichne jetzt deine Instrumententafel, einschließlich des Rahmens, um sie zu halten, und aller Indikatoren, die du erstellen möchtest, und der erforderlichen Benutzereingaben. Beschrifte sie mit den Informationen, die sie anzeigen, oder den Eingaben, die sie bereitstellen.
 
 --- /task ---
 
-In the next step, you will construct some readouts for your dashboard using LEGO®!
+Im nächsten Schritt konstruierst du mit LEGO® einige Anzeigen für deine Instrumententafel!
 
 
 --- save ---
