@@ -1,78 +1,78 @@
-## Make a LEGO® gauge
+## Mache eine LEGO® Anzeige
 
-Another way to quickly display data is by using **dials**, also known as **gauges**. You've definitely seen them before; they are usually round or semicircular and have two main visible parts:
+Eine andere Möglichkeit, Daten schnell anzuzeigen, ist die Verwendung von **Zifferblättern**, auch bekannt als **Anzeigen**. Du hast sie definitiv schon einmal gesehen; Sie sind normalerweise rund oder halbkreisförmig und haben zwei sichtbare Hauptteile:
 
-+ The face, which has the scale shown on it
-+ The needle, which moves along the scale to display the data reading
++ Das Zifferblatt, auf dem die Skala abgebildet ist
++ Die Nadel, die sich entlang der Skala bewegt, um den Messwert anzuzeigen
 
-![Animated image showing dials moving.](https://media.giphy.com/media/uozBSFuz99USA/giphy.gif)
+![Animiertes Bild mit sich bewegendem Zeiger.](https://media.giphy.com/media/uozBSFuz99USA/giphy.gif)
 
-A gauge or dial is the simplest type of data readout you can create using LEGO®, as it only relies upon creating the face and needle. Because the needle or dial connects directly to your motor, the build is very simple:
+Ein Messgerät oder ein Zifferblatt ist die einfachste Art der Datenanzeige, die du mit LEGO® erstellen kannst, da du nur ein Zifferblatt und eine Nadel benötigst. Da die Nadel und das Zifferblatt direkt mit deinem Motor verbunden sind, ist der Aufbau sehr einfach:
 
 --- task ---
 
-Before attaching the motor to the rear of the gauge's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
+Bevor du den Motor an der Rückseite des Messgeräts auf der Achse anbringst, stelle sicher, dass er „genullt“ ist, indem du die beiden Lutschersymbole an der Kante des Motors ausrichtest:
 
-![Image showing the motor 'zeroed in' with aligned symbols.](images/aligned_symbols.jpg)
+![Bild zeigt den Motor "genullt" mit ausgerichteten Symbolen.](images/aligned_symbols.jpg)
 
 --- /task ---
 
-### Create a scale
+### Erstelle eine Skala
 
-To finish building the gauge, you will need to create a scale using paper, card, or other art supplies. The mechanics and coding are exactly the same, but think now about how you would like your gauge to look.
+Um das Messgerät fertig zu bauen, musst du eine Skala aus Papier, Karton oder anderem Künstlerzubehör erstellen. Die Mechanik und das Programm sind genau gleich, aber du musst dir jetzt überlegen, wie dein Messgerät aussehen soll.
 
  --- task ---
 
- **Choose** what kind of dial you will make.
+ **Wähle** welche Art von Anzeige du machen möchtest.
 
- There are two simple types you can create with LEGO®:
+ Es gibt zwei einfache Typen, die du mit LEGO® erstellen kannst:
 
-+ A gauge where the needle spins to indicate a point on the face: ![An image showing a gauge with a needle and scale.](images/dial2.gif)
++ Ein Messgerät, bei dem sich die Nadel dreht, um einen Punkt auf der Skala anzuzeigen: ![Ein Bild, das ein Messgerät mit einem Zeiger und einer Skala zeigt.](images/dial2.gif)
 
-+ A gauge where the whole face turns to display a point at the top with a stationary indicator: ![An image showing a gauge with a moving scale.](images/dial1.gif)
-
---- /task ---
-
---- task ---
-
-On a blank piece of paper, trace a neat circle the size you want your gauge to be. Mark the centre, and cut it out using scissors.
++ Eine Anzeige, bei der sich das gesamte Zifferblatt dreht, um einen Punkt oben mit einem stationären Indikator anzuzeigen: ![Ein Bild, das ein Messgerät mit einer beweglichen Skala zeigt.](images/dial1.gif)
 
 --- /task ---
 
 --- task ---
 
-Split the circle into equal segments (one for each reading) by drawing lines through the centre, or draw your scale around the edge.
+Zeichne auf einem leeren Blatt Papier einen schönen Kreis in der Größe, die dein Messgerät haben soll. Markiere die Mitte und schneide sie mit einer Schere aus.
 
 --- /task ---
 
 --- task ---
 
-Draw an icon or write inside each segment what it indicates.
+Teile den Kreis in gleich große Segmente (eines für jeden Messwert), indem du Linien durch die Mitte ziehst, oder zeichne deine Skala um den Rand herum.
 
 --- /task ---
 
-Once you have finished creating your gauge face, you will need to mount it to your dashboard.
+--- task ---
+
+Zeichne Symbole oder schreibe in jedes Segment, was es anzeigt.
+
+--- /task ---
+
+Sobald du mit der Erstellung deines Messgeräts fertig bist, musst du es an deinem Armaturenbrett montieren.
 
 --- collapse ---
 ---
-title: If you are creating a needle gauge
+title: Wenn du eine Anzeige mit Zeiger erstellst
 ---
 
-To finish building your needle gauge:
+Um dein Zeigerinstrument fertig zu stellen:
 
 --- task ---
 
-Slide the face down over your axle, using Blu Tack or tape to stick it down to the dashboard behind it and prevent it from sliding as the axle turns. ![Image showing a LEGO® axle protruding through a gauge's face.](images/needle-gauge1.jpg)
+Schiebe das Zifferblatt über deine Achse und kleben sie mit Blu Tack oder Klebeband auf das Armaturenbrett dahinter. Achte darauf, dass es beim Drehen der Achse nicht rutscht. ![Bild, das eine LEGO® Achse zeigt, die durch das Zifferblatt eines Messgeräts ragt.](images/needle-gauge1.jpg)
 
 --- /task ---
 
 --- task ---
 
-Add a 90 degree elbow to the end of your axle and place another axle into it. Make sure it is long enough to reach your scale and clearly indicate the readings.
+Stecke ein 90-Grad-Winkelstück auf die Achse und stecke eine weitere Achse hinein. Stelle sicher, dass sie lang genug ist um deine Skala zu erreichen und die Messwerte deutlich anzuzeigen.
 
-![Image showing the LEGO® axle protruding through the gauge's face with an elbow and perpendicular axle connected.](images/needle-gauge2.jpg)
+![Bild, das die LEGO®-Achse zeigt, die durch das Zifferblatt des Messgeräts ragt und, mit der ein 90°-Winkelstück und eine senkrechte Achse verbunden sind.](images/needle-gauge2.jpg)
 
-It will help later if your axle is pointing straight up (and your motor is 'zeroed') when you mount it, as it will make it easier to calculate the amount of rotation required for a reading.
+Es hilft später, wenn deine Achse beim Montieren gerade nach oben zeigt (und dein Motor auf Null gestellt ist), da dies die Berechnung der für die Anzeige erforderlichen Drehung erleichtert.
 
 --- /task ---
 
@@ -80,22 +80,24 @@ It will help later if your axle is pointing straight up (and your motor is 'zero
 
 --- collapse ---
 ---
-title: If you are creating a spinning face dial
+title: Wenn du ein sich drehendes Zifferblatt machst
 ---
 
-To finish building a spinning gauge:
+Um deine Drehskala fertig zu stellen:
 
 --- task ---
 
-Mount a single gear behind your dial face as a spacer, to prevent it from catching on your dashboard. Use some Blu Tack to stick the face to this gear. If you have created an incremental scale around the gauge, mount it with the middle of the scale at the top (in line with the 'zeroed' lollipop symbols) and the minimum and maximum values at the bottom.
+Montiere ein einzelnes Zahnrad als Abstandshalter hinter deinem Zifferblatt, damit es nicht an deinem Armaturenbrett hängen bleibt. Verwende etwas Blu Tack, um das Zifferblatt an dieses Zahnrad zu kleben. Wenn du eine inkrementelle Skala um das Zifferblatt herum erstellt hast, montiere es mit der Mitte der Skala oben (bei den 'genullten' Lutschersymbolen) und den minimalen und maximalen Werten unten.
 
-![Image showing a black LEGO® gear mounted on an axle with some tack.](/en/images/dial-gauge1.jpg) ![Image showing the gauge face mounted on top of a black LEGO® gear.](/en/images/dial-gauge2.jpg)
+![Bild, das ein schwarzes LEGO® Zahnrad zeigt, das auf einer Achse mit etwas Tack montiert ist.](images/dial-gauge1.jpg)
+
+![Image showing the gauge face mounted on top of a black LEGO® gear.](images/dial-gauge2.jpg)
 
 --- /task ---
 
 --- /collapse ---
 
-### Test your gauge
+### Teste dein Messgerät
 
 --- task ---
 
@@ -109,7 +111,7 @@ You will be using the BuildHAT Python library, so make sure it is installed:
 
 --- collapse ---
 ---
-title: Install the BuildHAT Python library
+title: Installation der buildhat Python-Bibliothek
 ---
 
 Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
