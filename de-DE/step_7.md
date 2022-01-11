@@ -14,7 +14,7 @@ Um den wahrscheinlich höchsten Messwert zu ermitteln, kannst du die historische
 
 ![Bild, das historische NO2-Daten von Sandy am Straßenrand, grafisch dargestellt, zeigt.](images/historicaldata_no2.jpg)
 
-Here, you can see that while there are some major outliers, around 60 should be more than enough as your maximum value for most readings from the Sandy Roadside air quality station. (If you want to simply make your scale from 0 to 100, you can do that too — just make `max_value = 100`.)
+Hier kannst du sehen, dass, obwohl es einige große Ausreißer gibt, etwa 60 µg/m³ mehr als genug als maximaler Wert für die meisten Messwerte der Sandy Roadside-Luftqualitätsstation sein sollten. (Wenn du deine Skala einfach von 0 bis 000 machen möchtest, kannst du das auch tun – mache einfach `max_wert = 100`.)
 
 --- task ---
 
