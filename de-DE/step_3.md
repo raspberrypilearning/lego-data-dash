@@ -12,7 +12,7 @@ Schiebeindikatoren können auch horizontal verlaufen, wenn du dies bevorzugst, i
 
 Befolge diese Bauanleitung, um einen vertikalen Schiebeindikator zu erstellen:
 
-To construct this model, follow our handy building guide here or [download it.](resources/lego-data-dash-slider.pdf)
+Um dieses Modell zu konstruieren, folge unserer praktischen Bauanleitung hier oder [lade sie dir herunter.](resources/lego-data-dash-slider.pdf)
 <embed src="resources/lego-data-dash-slider.pdf" width="600" height="500" alt="pdf" pluginspage="https://www.adobe.com/products/acrobat/readstep2.html">
   </p> 
   
