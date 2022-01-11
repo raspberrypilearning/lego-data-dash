@@ -1,19 +1,19 @@
-## Make a LEGO® sliding indicator
+## Machen Sie einen LEGO® Schiebeindikator
 
-Now it's time to make a LEGO® sliding indicator! If you don't want to include a sliding indicator, you can skip to the next step, which shows you how to create rotating LEGO dials.
+Jetzt ist es an der Zeit, einen LEGO® Schiebeindikator herzustellen! Wenn du keinen Schiebeindikator einfügen möchtest, kannst du mit dem nächsten Schritt fortfahren, der dir zeigt, wie du rotierende LEGO-Zifferblätter erstellest.
 
-This is what a vertical slider looks like:
+So sieht ein vertikaler Schieberegler aus:
 
-![Image showing a vertical LEGO® slider acting as a thermometer.](images/slider.jpg)
+![Bild, das einen vertikalen LEGO®-Schieber zeigt, der als Thermometer fungiert.](images/slider.jpg)
 
-Sliding indicators can also run horizontally if you prefer, by rotating the build 90 degrees anti-clockwise.
+Schiebeindikatoren können auch horizontal verlaufen, wenn du dies bevorzugst, indem du den Aufbau um 90 Grad gegen den Uhrzeigersinn drehst.
 
 --- task ---
 
-Follow these build instructions to create a vertical sliding indicator:
+Befolge diese Bauanleitung, um einen vertikalen Schiebeindikator zu erstellen:
 
-To construct this model, follow our handy building guide here or [download it.](/en/resources/lego-data-dash-slider.pdf)
-<embed src="resources/lego-data-dash-slider.pdf" width="600" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+To construct this model, follow our handy building guide here or [download it.](resources/lego-data-dash-slider.pdf)
+<embed src="resources/lego-data-dash-slider.pdf" width="600" height="500" alt="pdf" pluginspage="https://www.adobe.com/products/acrobat/readstep2.html">
   </p> 
   
   <p spaces-before="0">
@@ -25,7 +25,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a yellow plate element and attach two blue beams using 90 degree stud brackets. <img src="images/sliderbuild1.jpg" alt="Image showing a Build Plate with blue legs." />
+    Nimm ein gelbes Plattenelement und befestige zwei blaue Balken mit 90-Grad-Bolzenhalterungen. <img src="images/sliderbuild1.jpg" alt="Bild, das eine Bauplatte mit blauen Beinen zeigt." />
   </p>
   
   <p spaces-before="0">
@@ -37,7 +37,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two grey straight brackets, one column apart. <img src="images/sliderbuild2.jpg" alt="Image showing the Build Plate with two straight brackets." />
+    Bringe zwei graue gerade Klammern im Abstand einer Säule an. <img src="images/sliderbuild2.jpg" alt="Bild, das die Bauplatte mit zwei geraden Halterungen zeigt." />
   </p>
   
   <p spaces-before="0">
@@ -49,7 +49,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two grey double length studs with spacers on one end to the plate element above the brackets. <img src="images/sliderbuild3.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    Befestige zwei graue Bolzen mit doppelter Länge mit Abstandshaltern an einem Ende am Plattenelement über den Halterungen. <img src="images/sliderbuild3.jpg" alt="Bild, das die Bauplatte mit zwei geraden Halterungen und Bolzen zeigt." />
   </p>
   
   <p spaces-before="0">
@@ -61,7 +61,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two yellow (three-hole) beams horizontally between the two straight brackets. <img src="images/sliderbuild4.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    Bringe zwei gelbe (Drei-Loch-) Balken horizontal zwischen den beiden geraden Halterungen an. <img src="images/sliderbuild4.jpg" alt="Bild, das die Bauplatte mit zwei geraden Halterungen und Bolzen zeigt." />
   </p>
   
   <p spaces-before="0">
@@ -73,7 +73,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a small black gear and a short axle, and join them together. <img src="images/sliderbuild5.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear." />
+    Nimm ein kleines schwarzes Zahnrad und eine kurze Achse und füge sie zusammen. <img src="images/sliderbuild5.jpg" alt="Bild, das die Bauplatte mit zwei geraden Halterungen und Bolzen sowie einer Achse und einem Zahnrad zeigt." />
   </p>
   
   <p spaces-before="0">
@@ -85,7 +85,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Insert the axle through the Build Plate above the right bracket as shown: <img src="images/sliderbuild6.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate." />
+    Stecke die Achse wie abgebildet durch die Bauplatte über der rechten Halterung: <img src="images/sliderbuild6.jpg" alt="Bild, das die Bauplatte mit zwei geraden Halterungen und Bolzen sowie einer auf der Platte montierten Achse und Zahnrad zeigt." />
   </p>
   
   <p spaces-before="0">
@@ -97,7 +97,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a toothed bar, a red axle, and an indicator arrow. Insert the axle into one end of the toothed bar, with the indicator arrow pointing toward the toothed side: <img src="images/sliderbuild11.jpg" alt="Image showing the toothed bar, axle, and indicator arrow." />
+    Nimm eine Zahnstange, eine rote Achse und einen Anzeigepfeil. Stecke die Achse in ein Ende der Zahnstange, wobei der Anzeigepfeil zur gezahnten Seite zeigt: <img src="images/sliderbuild11.jpg" alt="Bild mit Zahnstange, Achse und Anzeigepfeil." />
   </p>
   
   <p spaces-before="0">
@@ -109,23 +109,11 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Slide the toothed bar down into the top of the mechanism.
+    Schiebe die Zahnstange nach unten in die Oberseite des Mechanismus.
   </p>
   
   <p spaces-before="0">
-    You will have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth. The mechanism will slide easily up and down while the gear and axle are free. Connecting a motor will hold it steady. <img src="images/sliderbuild8.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted." />
-  </p>
-  
-  <p spaces-before="0">
-    --- /task ---
-  </p>
-  
-  <p spaces-before="0">
-    --- task ---
-  </p>
-  
-  <p spaces-before="0">
-    Take a motor and add two studs to the flat side, in the top two holes. <img src="images/sliderbuild9.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted, and a motor on the table." />
+    Du musst das Zahnrad nach vorne ziehen, um die Zahnstange vorbeizulassen, und dann das Zahnrad wieder hineinschieben, damit es in die Zähne eingreift. Der Mechanismus gleitet leicht nach oben und unten, während das Zahnrad und die Achse frei sind. Das Verbinden eines Motors hält ihn stabil. <img src="images/sliderbuild8.jpg" alt="Bild, das die Bauplatte mit zwei geraden Halterungen und Bolzen sowie einer auf der Platte montierten Achse und Zahnrad mit eingesetzter Zahnstange zeigt." />
   </p>
   
   <p spaces-before="0">
@@ -137,11 +125,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Before attaching the motor to the rear of the slider's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
-  </p>
-  
-  <p spaces-before="0">
-    <img src="images/aligned_symbols.jpg" alt="Image showing motor 'zeroed in' with aligned symbols." />
+    Nimm einen Motor und stecke zwei Bolzen in die oberen beiden Löchern. <img src="images/sliderbuild9.jpg" alt="Bild zeigt die Bauplatte mit zwei geraden Klammern und Bolzen. Eine Achse und ein Getriebe sind auf der Platte montiert, sowie der Schieberegler. Davor liegt ein Motor auf dem Tisch." />
   </p>
   
   <p spaces-before="0">
@@ -153,7 +137,23 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Adjust your toothed bar so the gear sits about halfway along it, then mount the motor behind the board using the two studs while holding the toothed bar in place. Make sure the axle fits into the hole on the <strong x-id="1">flat side</strong> of the motor. It should keep the slider held steady now, around halfway along the bar. <img src="images/sliderbuild10.jpg" alt="Image showing the Build Plate with a motor mounted on the back." />
+    Stelle sicher, dass der Motor auf 'null' steht, indem du die beiden lollipop Symbole am Motor aneinander ausrichtest, bevor du den Motor an der Rückseite der Slider-Achse montierst:
+  </p>
+  
+  <p spaces-before="0">
+    <img src="images/aligned_symbols.jpg" alt="Bild zeigt den Motor &quot;genullt&quot; mit ausgerichteten Symbolen." />
+  </p>
+  
+  <p spaces-before="0">
+    --- /task ---
+  </p>
+  
+  <p spaces-before="0">
+    --- task ---
+  </p>
+  
+  <p spaces-before="0">
+    Stelle deine Zahnstange so ein, dass sich das Zahnrad ungefähr in der Mitte befindet. Montiere dann den Motor mit den beiden Bolzen hinter der Platine, während du die Zahnstange festhältst. Stelle sicher, dass die Achse in das Loch auf der <strong x-id="1">flachen Seite</strong> des Motors passt. Es sollte den Schieber jetzt, ungefähr auf halbem Weg der Zahnstange, stabil halten. <img src="images/sliderbuild10.jpg" alt="Bild, das die Bauplatte mit einem auf der Rückseite montierten Motor zeigt." />
   </p>
   
   <p spaces-before="0">
@@ -161,11 +161,11 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
 
 <h3 spaces-before="0">
-  Test the sliding indicator
+  Testen Sie den Schiebeindikator
 </h3>
 
 <p spaces-before="0">
-  To program your sliding indicator, you can reuse some of the code written in the <a href="https://projects.raspberrypi.org/en/projects/lego-plotter">LEGO® Data plotter</a> project, as they use the same mechanism.
+  Um deinen Schiebeanzeiger zu programmieren, kannst du einen Teil des Codes wiederverwenden, der im <a href="https://projects.raspberrypi.org/en/projects/lego-plotter">LEGO® Daten Plotter</a> Projekt geschrieben wurde, da du denselben Mechanismus verwendest.
 </p>
 
 <p spaces-before="0">
@@ -173,7 +173,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Connect the motor of your slider to port A on your Build HAT.
+  Verbinde den Motor deine Linearanzeige mit Port A deines Build HAT.
 </p>
 
 <p spaces-before="0">
@@ -185,7 +185,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  You will use the BuildHAT Python library, so make sure it is installed:
+  Du benötigst die BuildHAT Python-Bibliothek, stelle also sicher, dass sie installiert ist:
 </p>
 
 <p spaces-before="0">
@@ -193,19 +193,19 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 <hr />
 <h2 spaces-before="0">
-  title: Install the BuildHAT Python library
+  title: Installation der buildhat Python-Bibliothek
 </h2>
 
 <p spaces-before="0">
-  Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
+  Öffne ein Terminalfenster auf deinem Raspberry Pi, indem du <kbd>Strg</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>drückst.
 </p>
 
 <p spaces-before="0">
-  At the prompt type: <code>pip3 install buildhat</code>
+  Gib an der Eingabeaufforderung <code>sudo pip3 install buildhat</code> ein
 </p>
 
 <p spaces-before="0">
-  Press <kbd>Enter</kbd> and wait for the "installation completed" message.
+  Drücke <kbd>Enter</kbd> und warte auf die Meldung "Installation abgeschlossen".
 </p>
 
 <p spaces-before="0">
@@ -217,11 +217,11 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <h3 spaces-before="0">
-  Create the scale for your sliding indicator
+  Skalierung für den Schiebe-Indikator erstellen
 </h3>
 
 <p spaces-before="0">
-  Now you know it works, you will need to create a scale for the sliding indicator, so you know what it means.
+  Du weist jetzt, dass es funktioniert. Du musst aber noch eine Skala für den Schiebeindikator erstellen, damit du weist, was es bedeutet.
 </p>
 
 <p spaces-before="0">
@@ -229,7 +229,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Get a piece of card about as long as your toothed bar. Stick it next to the sliding indicator, under the pointer. Have a marker or pencil ready.
+  Besorge dir ein Stück Karton, etwa so lange wie deine Zahnstange. Klebe ihn neben den Schiebeanzeiger unter den Zeiger. Halte einen Marker oder Bleistift bereit.
 </p>
 
 <p spaces-before="0">
@@ -241,35 +241,11 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Open <strong x-id="1">Thonny</strong> on your Raspberry Pi from the <strong x-id="1">Programming menu</strong>.
+  Öffne <strong x-id="1">Thonny</strong> auf deinem Raspberry Pi aus dem Menü <strong x-id="1">Entwicklung</strong>.
 </p>
 
 <p spaces-before="0">
-  In the <strong x-id="1">Shell</strong> (the window at the bottom), next to the three arrows, type: <code>from buildhat import Motor</code> and press <kbd>Enter</kbd>. You should see a new line appear with three more arrows.
-</p>
-
-<p spaces-before="0">
-  --- /task ---
-</p>
-
-<p spaces-before="0">
-  --- task ---
-</p>
-
-<p spaces-before="0">
-  Now type: <code>motor = = Motor('A')</code> and press <kbd>Enter</kbd>. --- /task ---
-</p>
-
-<p spaces-before="0">
-  Now you've set up your slider motor to run, you should send it to the maximum and minimum readings to see how far it can travel — then mark those places on the card.
-</p>
-
-<p spaces-before="0">
-  --- task ---
-</p>
-
-<p spaces-before="0">
-  Type: <code>motor.run_to_position(-180, 100)</code> and press <kbd>Enter</kbd>. Mark the card at the place the arrow indicates. This is your minimum possible readout.
+  Gib in der <strong x-id="1">Shell</strong> (das Fenster unten) neben den drei Pfeilen ein: <code>from buildhat import Motor</code> und drücke <kbd>Enter</kbd>. Du solltest eine neue Zeile mit drei weiteren Pfeilen sehen.
 </p>
 
 <p spaces-before="0">
@@ -281,7 +257,19 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Type: <code>motor.run_to_position(180, 100, direction=clockwise)</code> and press <kbd>Enter</kbd>. Mark the card at the place the arrow indicates. This is your maximum possible readout.
+  Tippe jetzt: <code>motor = Motor('A')</code> und drücken Sie <kbd>Enter</kbd>. --- /task ---
+</p>
+
+<p spaces-before="0">
+  Nachdem du deinen Schiebermotor eingerichtet hast, solltest du ihn zu den maximalen und minimalen Messwerten schicken, um zu sehen, wie weit er fahren kann. Markiere dann diese Stellen auf dem Karton.
+</p>
+
+<p spaces-before="0">
+  --- task ---
+</p>
+
+<p spaces-before="0">
+  Gib ein: <code>motor.run_to_position(-180, 100)</code> und drücke <kbd>Enter</kbd>. Markiere die Karte an der Stelle, die der Pfeil angibt. Dies ist deine minimal mögliche Anzeige.
 </p>
 
 <p spaces-before="0">
@@ -289,11 +277,23 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  You now know where your minumum and maximum possible readings are. Once you link the slider to some data, you will be able to create an accurate scale.
+  --- task ---
+</p>
+
+<p spaces-before="0">
+  Gib ein: <code>motor.run_to_position(180, 100, direction="clockwise")</code> und drücke <kbd>Enter</kbd>. Markiere den Karton an der Stelle, die der Pfeil angibt. Dies ist deine minimal mögliche Anzeige.
+</p>
+
+<p spaces-before="0">
+  --- /task ---
+</p>
+
+<p spaces-before="0">
+  Du weist jetzt, wo deine minimal und maximal möglichen Messwerte sind. Sobald du diese linearanzeige mit einigen Daten verknüpft hast, kannst du eine genaue Skala erstellen.
 </p>
 
 <h3 spaces-before="0">
-  Program your sliding indicator to show live data
+  Programmieren Sie Ihren Schiebeindikator, um Live-Daten anzuzeigen
 </h3>
 
 <p spaces-before="0">
@@ -301,7 +301,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Enter the following code in a blank tab:
+  Gib den folgenden Code in eine leere Registerkarte ein:
 </p>
 
 <p spaces-before="0">
@@ -321,15 +321,15 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  motor_slider = Motor('A')
+  motor_linear = Motor('A')
 </p>
 
 <p spaces-before="0">
-  motor_slider.run_to_position(0,100)
+  motor_linear.run_to_position(0,100)
 </p>
 
 <p spaces-before="0">
-  while True: current_angle = motor_slider.get_aposition() new_angle = randint(-175, 175) print(sensor_data) if new_angle > current_angle: motor_slider.run_to_position(new_angle, 100, direction="clockwise") print('Turning CW') elif new_angle < current_angle: motor_slider.run_to_position(new_angle, 100, direction="anticlockwise") print('Turning ACW') sleep(0.1)
+  while True: winkel_jetzt = motor_linear.get_aposition() winkel_neu = randint(-175, 175) print(winkel_neu) if winkel_neu > winkel_jetzt: motor_linear.run_to_position(new_angle, 100, direction="clockwise") print('im Uhrzeigersinn') elif winkel_neu < winkel_jetzt: motor_linear.run_to_position(new_angle, 100, direction="anticlockwise") print('gegen Uhrzeigersinn') sleep(0.1)
 </p>
 
 <p spaces-before="0">
@@ -337,7 +337,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Save your work as <code>slider_test.py</code> and click <strong x-id="1">Run</strong>. You should see your slider move up and down (or back and forth!)
+  Speichere deine Arbeit als <code>slider_test.py</code> und klicke auf <strong x-id="1">Run</strong>. Du solltest deinen Schieberegler nach oben oder unten (oder vor und zurück!) laufen sehen
 </p>
 
 <p spaces-before="0">
