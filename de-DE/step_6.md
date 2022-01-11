@@ -1,65 +1,65 @@
-## Access the OpenAQ API
+## Greife auf die OpenAQ-API zu
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">API stands for <span style="color: #0faeb0">**Application Programming Interface**</span>; this is software that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you’re using an API.</p>
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">API steht für <span style="color: #0faeb0">**Application Programming Interface**</span>; Dies ist eine Software, die es zwei Anwendungen ermöglicht, miteinander zu kommunizieren. Jedes Mal, wenn du eine App wie Facebook verwendest, eine Sofortnachricht sendest oder das Wetter auf deinem Telefon überprüfst, verwendest du eine API.</p>
 
-Whenever you use an app on your phone, the app connects to the internet and sends data about what you want to know to a server. The server then finds and retrieves the data you want, interprets it, and sends it back to your phone. The app then takes the data that has been returned and presents you with the information you wanted in a readable way. This is what an API is: a way to control other machines over the internet — all of this happens through the **API**.
+Immer wenn du eine App auf deinem Telefon verwendest, verbindet sich die App mit dem Internet und sendet Daten über das, was du wissen möchten, an einen Server. Der Server findet und ruft dann die gewünschten Daten ab, interpretiert sie und sendet sie zurück an dein Telefon. Die App übernimmt dann die zurückgegebenen Daten und präsentiert dir die gewünschten Informationen in lesbarer Form. Eine API ist: eine Möglichkeit, andere Maschinen über das Internet zu steuern – all dies geschieht über die **API**.
 
-The cool part is, you can write your own apps that investigate online databases of information and return the desired data to your LEGO® dashboard instead of a phone — you'll use your Raspberry Pi as the brains to get that data, then display it on your hand-made, custom LEGO indicators!
+Der coole Teil ist, dass du deine eigenen Apps schreiben kannst, die Online-Datenbanken nach Informationen durchsuchen und die gewünschten Daten an dein LEGO® Dashboard statt an ein Telefon zurückgeben – Du verwenden deinen Raspberry Pi als Gehirn, um diese Daten abzurufen und dann auf deinen handgefertigten, maßgefertigten LEGO Skalen anzuzeigen!
 
-To do that, you'll need to decide on a few things: you'll need to pick the location where you will find out about the air quality — you can choose anywhere in the world! — and you'll need to decide which markers of air quality you want to represent.
+Dazu musst du dich für einige Dinge entscheiden: du musst den Ort auswählen, von dem du dich über die Luftqualität informieren willst – du kannst jeden Ort auf der Welt wählen! — und du musst entscheiden, welche Kennwerte der Luftqualität du darstellen möchtest.
 
-### OpenAQ — the open-source air quality database
+### OpenAQ – die Open-Source-Datenbank zur Luftqualität
 
-In your example dashboard, you're going to be using the API for [**OpenAQ**](https://openaq.org/#/){:target="_blank"}, an open-source, global air quality data project. OpenAQ allows you to look at lots of different air pollution data from all over the globe, collected by thousands of measurement stations around the world.
+In deiner Beispiel-Instrumententafel verwendest du die API für [**OpenAQ**](https://openaq.org/#/){:target="_blank"}, ein Open-Source-Projekt für globale Luftqualitätsdaten. OpenAQ ermöglicht es dir, viele verschiedene Luftverschmutzungsdaten aus der ganzen Welt einzusehen, die von Tausenden von Messstationen auf der ganzen Welt gesammelt wurden.
 
-If you're already a wizard with APIs, you can use any data you like to represent on your dashboard. If you want to follow along with us and use OpenAQ for your first try, you'll need to find out which measurement station you want to investigate and which measurements you are able to view.
+Wenn du bereits ein Zauberer mit APIs bist, kannst du alle Daten verwenden, die du in deinem Dashboard darstellen möchtest. Wenn du mit uns mitmachen und OpenAQ zum ersten Mal nutzen möchtest, musst du herausfinden, welche Messstation du erforschen und welche Messungen du einsehen kannst.
 
 --- task ---
 
-**Navigate** to the OpenAQ map by [clicking here](https://openaq.org/#/map){:target="_blank"}. A webpage showing a world map covered in dots should appear.
+**Navigiere** zur OpenAQ-Karte, indem du [hier klickst](https://openaq.org/#/map){:target="_blank"}. Eine Webseite mit einer mit Punkten bedeckten Weltkarte sollte erscheinen.
 
 --- /task ---
 
 --- task ---
 
-**Decide** where in the world you would like to gather data about air quality from. This could be the area near where you live, somewhere that interests you, or somewhere that you think might have interesting data.
+**Entscheide** von wo auf der Welt du Daten zur Luftqualität sammeln möchtest. Dies kann der Bereich in der Nähe deines Wohnortes sein, ein Ort, der dich interessiert oder von dem du glaubst, dass er interessante Daten enthält.
 
 --- /task ---
 
-As our headquarters are in Cambridge, in the United Kingdom, we will use that as the example here.
+Da sich unser Hauptsitz in Cambridge im Vereinigten Königreich befindet, verwenden wir dies hier als Beispiel.
 
-There are many different measurements taken by air quality monitoring stations. The OpenAQ database has information on the following types of air pollution:
+Es gibt viele verschiedene Messungen, die von Messstationen für die Luftqualität durchgeführt werden. Die OpenAQ-Datenbank enthält Informationen zu folgenden Arten von Luftverschmutzung:
 
- + PM2.5 and PM10 (particulate matter): microscopic particles floating in the air (smoke, smog)
- + NO2 (nitrogen dioxide): causes ozone creation, causes asthma in children
- + CO (carbon monoxide): deadly to humans, side effect of burning fossil fuels
- + SO2 (sulfur dioxide): smells bad, can cause breathing problems, creates acid rain, side effect of industrial treatments
- + O3 (ozone): created when NO2 reacts to sunlight, causes smog, harmful to plants
- + BC (black carbon): not measured in many places (US and Poland), caused by inefficient fuel burning, adds to global warming, dangerous to humans
-
---- task ---
-
-**Decide** upon what kind of air pollution you are most interested in measuring. You can choose different options from the pulldown menu near the coloured scale on the left of the screen. ![Image showing the pulldown menu in the OpenAQ map.](images/mapscale.jpg)
-
-**Note:** Round markers represent more substantial air quality stations which are likely to measure more varied pollutants.
-
---- /task ---
+ + PM2,5 und PM10 (Partikel): mikroskopisch kleine Partikel, die in der Luft schweben (Rauch, Smog)
+ + NO2 (Stickstoffdioxid): verursacht Ozonbildung, verursacht Asthma bei Kindern
+ + CO (Kohlenmonoxid): tödlich für den Menschen, Nebenprodukt der Verbrennung fossiler Brennstoffe
+ + SO2 (Schwefeldioxid): riecht schlecht, kann Atembeschwerden verursachen, erzeugt sauren Regen, Nebenprodukt industrieller Prozesse
+ + O3 (Ozon): entsteht, wenn NO2 auf Sonnenlicht reagiert, verursacht Smog, schädlich für Pflanzen
+ + BC (Schwarzer Kohlenstoff): wird an vielen Orten (USA und Polen) nicht gemessen, wird durch ineffiziente Kraftstoffverbrennung verursacht, trägt zur globalen Erwärmung bei, gefährlich für den Menschen
 
 --- task ---
 
-**Zoom in** to your chosen area on the map, and find the dot closest to the place you would like to measure. Click on that nearest dot to see the location details. In the pop-up that appears, click the button that says **View Location**.  
-![Image showing a world map zoomed in on the eastern UK.](images/mapscroll.gif)
+**Entscheide**, welche Art von Luftverschmutzung dich am meisten interessiert. Du kannst aus dem Pulldown-Menü über der Farbskala links auf dem Bildschirm verschiedene Optionen auswählen. ![Bild, das das Pulldown-Menü in der OpenAQ-Karte zeigt.](images/mapscale.jpg)
+
+**Hinweis:** Runde Markierungen stehen für umfangreichere Luftqualitätsmessstationen, die wahrscheinlich mehr verschiedene Schadstoffe messen.
 
 --- /task ---
 
 --- task ---
 
-When the new webpage loads showing the details of the measurements taken at the location, **make a note** of the number in the URL of the new page. This is the OpenAQ identification number for your chosen air quality station. (In this example, it is the Sandy Roadside measurement station, with ID number **2480**.) ![Image showing the OpenAQ URL with a number for the location ID.](images/openaq_id.jpg)
+**Vergrößere** den ausgewählten Bereich auf der Karte und suche den Punkt, der dem Ort am nächsten ist, den du messen möchtest. Klicke auf den nächstgelegenen Punkt, um die Standortdetails anzuzeigen. Klicken Sie im angezeigten Popup auf die Schaltfläche **View Location**.  
+![Das Bild zeigt eine vergrößerte Weltkarte im Osten Großbritanniens.](images/mapscroll.gif)
 
 --- /task ---
 
 --- task ---
 
-On the location page, you will see the different types of pollutants measured at that location. **Choose** two from the list that you would like to represent on your data dashboard. ![Image showing a pollutant list from a location on the OpenAQ map.](images/openaq_msmt.jpg) This measurement station near Sandy can show NO2, PM10, and PM2.5 — so we'll use NO2 and PM2.5 in the example.
+Während die neue Webseite die Details der Messungen an der gewählten Stelle lädt und anzeigt, **notiere** du die Zahl in der URL der neuen Seite. Dies ist die OpenAQ-Identifikationsnummer für deine ausgewählte Luftqualitätsmessstation. (In diesem Beispiel ist es die Messstation Sandy Roadside mit der ID-Nummer **2480**.) ![Bild mit der OpenAQ-URL mit einer Nummer für die Standort-ID.](images/openaq_id.jpg)
+
+--- /task ---
+
+--- task ---
+
+Auf der Standortseite siehst du die verschiedenen Schadstoffarten, die an diesem Standort gemessen wurden. **Wähle** zwei aus der Liste aus, die du auf deiner Daten-Instrumententafel darstellen möchtest. ![Image showing a pollutant list from a location on the OpenAQ map.](images/openaq_msmt.jpg) Diese Messstation in der Nähe von Sandy kann NO2, PM10 und PM2,5 anzeigen – daher verwenden wir im Beispiel NO2 und PM2,5.
 
 --- /task ---
