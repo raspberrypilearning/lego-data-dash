@@ -101,24 +101,24 @@ Montiere ein einzelnes Zahnrad als Abstandshalter hinter deinem Zifferblatt, dam
 
 --- task ---
 
-Connect the motor of your gauge to port A on your Build HAT.
+Verbinde den Motor deiner Anzeige mit Port A deines Build HAT.
 
 --- /task ---
 
 --- task ---
 
-You will be using the BuildHAT Python library, so make sure it is installed:
+Du benötigst die BuildHAT Python-Bibliothek, stelle also sicher, dass sie installiert ist:
 
 --- collapse ---
 ---
 title: Installation der buildhat Python-Bibliothek
 ---
 
-Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
+Öffne ein Terminalfenster auf deinem Raspberry Pi, indem du <kbd>Strg</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>drückst.
 
-At the prompt type: `pip3 install buildhat`
+Gib an der Eingabeaufforderung `pip3 install buildhat` ein
 
-Press <kbd>Enter</kbd> and wait for the "installation completed" message.
+Drücke <kbd>Enter</kbd> und warte auf die Meldung "Installation abgeschlossen".
 
 --- /collapse ---
 
@@ -126,9 +126,9 @@ Press <kbd>Enter</kbd> and wait for the "installation completed" message.
 
 --- task ---
 
-Open **Thonny** on your Raspberry Pi from the **Programming menu**.
+Öffne **Thonny** auf deinem Raspberry Pi aus dem Menü **Entwicklung**.
 
-Enter the following code in a blank tab:
+Gib den folgenden Code in eine leere Registerkarte ein:
 
 --- code ---
 ---
@@ -137,14 +137,14 @@ line_highlights:
 ---
 from buildhat import Motor from time import sleep from random import randint
 
-motor_gauge = Motor('A')
+motor_zeiger = Motor('A')
 
-motor_gauge.run_to_position(0,100)
+motor_zeiger.run_to_position(0,100)
 
-while True: angle = randint(-180, 180) motor_gauge.run_to_position(angle, 100) sleep(0.3)
+while True: winkel = randint(-180, 180) motor_zeiger.run_to_position(winkel, 100) sleep(0.3)
 
 --- /code ---
 
-Save your work as `gauge_test.py` and press **Run**. You will see your gauge begin to move!
+Speichere deine Arbeit als `gauge_test.py` und klicke auf **Run**. Du wirst sehen, wie sich deine Anzeige zu bewegen beginnt!
 
 --- /task ---
