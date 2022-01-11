@@ -49,7 +49,7 @@ Optional:
 
 ### Downloads
 
-+ The final script for this project is available [here]((https://rpf.io/p/en/lego-data-dash-go){:target="_blank"})
++ Das endgültige Skript für dieses Projekt ist [hier]((https://rpf.io/p/en/lego-data-dash-go){:target="_blank"}) verfügbar
 
 --- /collapse ---
 
