@@ -1,18 +1,18 @@
-## Make a LEGO® sliding indicator
+## LEGO® 슬라이딩 표시기 만들기
 
-Now it's time to make a LEGO® sliding indicator! If you don't want to include a sliding indicator, you can skip to the next step, which shows you how to create rotating LEGO dials.
+이제 LEGO® 슬라이딩 표시기를 만들 차례입니다! 슬라이딩 표시기를 포함하지 않으려면 회전하는 LEGO 다이얼을 만드는 방법을 보여주는 다음 단계로 건너뛸 수 있습니다.
 
-This is what a vertical slider looks like:
+수직 슬라이더는 다음과 같습니다.
 
-![Image showing a vertical LEGO® slider acting as a thermometer.](images/slider.jpg)
+![온도계 역할을 하는 수직 LEGO® 슬라이더를 보여주는 이미지.](images/slider.jpg)
 
-Sliding indicators can also run horizontally if you prefer, by rotating the build 90 degrees anti-clockwise.
+슬라이딩 표시기는 원하는 경우 빌드를 시계 반대 방향으로 90도 회전하여 수평으로 실행할 수도 있습니다.
 
 --- task ---
 
-Follow these build instructions to create a vertical sliding indicator:
+수직 슬라이딩 표시기를 만들려면 다음 빌드 지침을 따르세요.
 
-To construct this model, follow our handy building guide here or [download it.](resources/lego-data-dash-slider.pdf)
+이 모델을 구축하기 위해,  [다운로드](resources/lego-data-dash-slider.pdf) 하거나 쉬운 건물 설명서를 따라하세요.
 <embed src="resources/lego-data-dash-slider.pdf" width="600" height="500" alt="pdf" pluginspage="https://www.adobe.com/products/acrobat/readstep2.html">
   </p> 
   
@@ -25,7 +25,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a yellow plate element and attach two blue beams using 90 degree stud brackets. <img src="images/sliderbuild1.jpg" alt="Image showing a Build Plate with blue legs." />
+    노란색 플레이트 요소를 잡고 90도 스터드 브래킷을 사용하여 두 개의 파란색 빔을 설치합니다.<img src="images/sliderbuild1.jpg" alt="Image showing a Build Plate with blue legs." />
   </p>
   
   <p spaces-before="0">
@@ -37,7 +37,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two grey straight brackets, one column apart. <img src="images/sliderbuild2.jpg" alt="Image showing the Build Plate with two straight brackets." />
+    한 열 간격으로 두 개의 회색 직선 브래킷을 연결합니다. <img src="images/sliderbuild2.jpg" alt="Image showing the Build Plate with two straight brackets." />
   </p>
   
   <p spaces-before="0">
@@ -49,7 +49,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two grey double length studs with spacers on one end to the plate element above the brackets. <img src="images/sliderbuild3.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    브래킷 위의 플레이트 요소에 한쪽 끝에 스페이서가 있는 회색의 두 배 길이의 스터드를 장착합니다.<img src="images/sliderbuild3.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
   </p>
   
   <p spaces-before="0">
@@ -61,7 +61,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two yellow (three-hole) beams horizontally between the two straight brackets. <img src="images/sliderbuild4.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    두 개의 직선 브래킷 사이에 두 개의 노란색(3개 구멍) 빔을 수평으로 부착합니다. <img src="images/sliderbuild4.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
   </p>
   
   <p spaces-before="0">
@@ -73,7 +73,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a small black gear and a short axle, and join them together. <img src="images/sliderbuild5.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear." />
+    작은 검은 기어와 짧은 차축을 가지고 그들을 결합합니다.<img src="images/sliderbuild5.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear." />
   </p>
   
   <p spaces-before="0">
@@ -97,7 +97,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a toothed bar, a red axle, and an indicator arrow. Insert the axle into one end of the toothed bar, with the indicator arrow pointing toward the toothed side: <img src="images/sliderbuild11.jpg" alt="Image showing the toothed bar, axle, and indicator arrow." />
+    톱니 막대, 빨간색 샤프트 및 포인터 화살표를 가져옵니다. 표시 화살표가 톱니 면을 가리키도록 하여 톱니 막대의 한쪽 끝에 샤프트를 삽입합니다. <img src="images/sliderbuild11.jpg" alt="톱니 막대, 차축 및 표시기 화살표를 보여주는 이미지." />
   </p>
   
   <p spaces-before="0">
@@ -109,7 +109,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Slide the toothed bar down into the top of the mechanism.
+    랙을 메커니즘 상단으로 밀어 넣습니다.
   </p>
   
   <p spaces-before="0">
@@ -257,11 +257,11 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Now type: <code>motor = = Motor('A')</code> and press <kbd>Enter</kbd>. --- /task ---
+  이제 다음을 입력합니다: <code>motor = = Motor('A')</code> 명령을 입력하고 <kbd>Enter</kbd> 키를 누르세요. --- /task ---
 </p>
 
 <p spaces-before="0">
-  Now you've set up your slider motor to run, you should send it to the maximum and minimum readings to see how far it can travel — then mark those places on the card.
+  푸셔 모터를 설정한 후 최대 및 최소 판독값으로 보내 얼마나 멀리 갈 수 있는지 확인해야 합니다. 그런 다음 판지에 이러한 장소를 표시하십시오.
 </p>
 
 <p spaces-before="0">
@@ -269,7 +269,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Type: <code>motor.run_to_position(-180, 100)</code> and press <kbd>Enter</kbd>. Mark the card at the place the arrow indicates. This is your minimum possible readout.
+  다음을 입력하세요: <code>motor.run_to_position(-180, 100)</code> 명령을 입력하고 <kbd>Enter</kbd> 를 누르세요. 화살표로 표시된 위치에 카드를 표시하세요. 이것은 가능한 최소 판독값입니다.
 </p>
 
 <p spaces-before="0">
@@ -281,7 +281,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Type: <code>motor.run_to_position(180, 100, direction=clockwise)</code> and press <kbd>Enter</kbd>. Mark the card at the place the arrow indicates. This is your maximum possible readout.
+  다음을 입력하세요: <code>motor.run_to_position(180, 100, direction=clockwise)</code> 명령을 입력하고 <kbd>Enter</kbd> 를 누르세요. 화살표로 표시된 위치에 카드를 표시하세요. 이것은 가능한 최대 판독값입니다.
 </p>
 
 <p spaces-before="0">
@@ -289,11 +289,11 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  You now know where your minumum and maximum possible readings are. Once you link the slider to some data, you will be able to create an accurate scale.
+  이제 최소 판독값 및 최대 판독값이 어디에 있는지 알 수 있습니다. 슬라이더를 일부 데이터에 연결하면, 정확한 척도를 만들 수 있습니다.
 </p>
 
 <h3 spaces-before="0">
-  Program your sliding indicator to show live data
+  라이브 데이터를 표시하도록 슬라이딩 표시기를 프로그래밍하십시오.
 </h3>
 
 <p spaces-before="0">
@@ -301,7 +301,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Enter the following code in a blank tab:
+  빈 탭에 다음 코드를 입력하세요:
 </p>
 
 <p spaces-before="0">
@@ -337,7 +337,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Save your work as <code>slider_test.py</code> and click <strong x-id="1">Run</strong>. You should see your slider move up and down (or back and forth!)
+  Save your work as <code>slider_test.py</code> and click <strong x-id="1">Run</strong>. 슬라이더가 위 또는 아래로(또는 앞뒤로!) 미끄러지는 것을 볼 수 있습니다.
 </p>
 
 <p spaces-before="0">
