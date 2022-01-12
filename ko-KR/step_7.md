@@ -1,30 +1,30 @@
-## Display pollution data with your dashboard
+## 대시보드에 오염 데이터 표시
 
-At the moment, your dash uses random integers between -175 and 175; these numbers are used because they are the motor's limits of travel in each direction. (We don't go to 180 as it can cause problems with travel around a full rotation.) The data coming in from your API won't have this same range, so you need to make it fit the motors.
+현재 대시보드는 -175에서 175 사이의 임의의 정수를 사용합니다. 이 숫자는 모터가 각 방향으로 이동하는 한계이기 때문에 사용됩니다. (180은 전체 회전을 도는 데 문제를 일으킬 수 있으므로 180으로 가면 안됩니다.) API에서 들어오는 데이터의 범위는 동일하지 않으므로 모터에 맞게 조정해야 합니다.
 
-**Calibrating** the indicators means mapping the maximum and minimum possible data values from your API to between -175° and 175° on your motor. The highest possible reading will be at -175°, whereas the lowest possible reading will be at 175°. (Because you have mounted the motors in reverse!)
+**보정** 표시기는 API의 가능한 최대 및 최소 데이터 값을 모터의 -175°와 175° 사이로 매핑하는 것을 의미합니다. 가능한 가장 높은 판독값은 -175°인 반면 가능한 가장 낮은 판독값은 175°입니다. (모터를 반대로 장착했기 때문에!)
 
-For our example, we will display the **fine particles (PM2.5)** measurement on the gauge, while the slider will display the nitrogen dioxide (NO2) level. The term **fine particles**, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and a half microns (or less) in width. The particles measured by PM2.5 are what make up most smoke and smog, and make it hard to see.
+이 예 **미세 입자(PM2.5)** 측정값을 표시하고 슬라이더는 이산화질소(NO2) 수준을 표시합니다. **미세 입자**또는 미립자 물질 2.5(PM2.5)라는 용어는 너비가 2.5마이크론(또는 그 미만)인 공기 중의 작은 입자 또는 액적을 나타냅니다. PM2.5로 측정되는 입자는 대부분의 연기와 스모그를 구성하는 물질로 잘 보이지 않습니다.
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">Like inches, metres, and millimetres, a <span style="color: #0faeb0">micron</span> is a unit of measurement for distance. There are about 25,000 microns in an inch. The widths of the larger particles in the PM2.5 size range would be about thirty times smaller than that of a human hair. These particles are so small that several thousand of them could fit on the full stop at the end of this sentence.</p>
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">인치, 미터 및 밀리미터와 마찬가지로 <span style="color: #0faeb0">미크론</span> 은 거리 측정 단위입니다. 1인치는 약 25,000미크론입니다. PM2.5 크기 범위에서 더 큰 입자의 너비는 사람 머리카락의 너비보다 약 30배 작습니다. 이 입자들은 너무 작아서 수천개가 이 문장의 끝에 있는 마침표에 맞습니다.</p>
 
-In our example, the slider will display the nitrogen dioxide (NO2) level. The maximum possible reading on your slider will depend on your chosen location, because urban areas will always have higher readings than rural ones. The minimum reading possible is obviously 0, but you will want to consider what the normal range is for what you are measuring and add a bit to that.
+이 예에서 슬라이더는 이산화질소(NO2) 수준을 표시합니다. 슬라이더에서 가능한 최대 수치는 선택한 위치에 따라 달라집니다. 도시 지역은 항상 시골 지역보다 수치가 더 높기 때문입니다. 가능한 최소 판독값은 분명히 0이지만 측정 대상에 대한 정상 범위가 무엇인지 고려하고 여기에 약간을 추가해야 합니다.
 
-To work out what the maximum likely reading should be, you can see the historical data from your chosen location on the webpage you opened earlier:
+가능한 최대 판독값을 계산하기 위해 이전에 연 웹 페이지에서 선택한 위치의 기록 데이터를 볼 수 있습니다.
 
-![Image showing graphed historical NO2 data from Sandy, roadside.](images/historicaldata_no2.jpg)
+![도로변 Sandy의 과거 이산화질소 데이터를 그래프로 나타낸 이미지.](images/historicaldata_no2.jpg)
 
-Here, you can see that while there are some major outliers, around 60 should be more than enough as your maximum value for most readings from the Sandy Roadside air quality station. (If you want to simply make your scale from 0 to 100, you can do that too — just make `max_value = 100`.)
+Here, you can see that while there are some major outliers, around 60 should be more than enough as your maximum value for most readings from the Sandy Roadside air quality station. (만약 여러분이 0에서 000까지의 척도를 하고 싶다면, 여러분도 그렇게 할 수 있습니다 - 그냥 ` max_value = 100 ` 하세요.)
 
 --- task ---
 
-Connect your sliding indicator motor to port A on the Build HAT. Connect your gauge indicator motor to port B.
+슬라이딩 표시기 모터를 Build HAT의 포트 A에 연결합니다. 게이지 표시기 모터를 포트 B에 연결합니다.
 
 --- /task ---
 
 --- task ---
 
-In a new Thonny window, type the following:
+새 Thonny 창에서 다음을 입력합니다.
 
 --- code ---
 ---
@@ -33,21 +33,21 @@ line_highlights:
 ---
 from buildhat import Motor from time import sleep from datetime import datetime, timedelta import requests
 
-no2_motor = Motor('A')           #Set up slider motor no2_motor.run_to_position(0,100) #Reset slider position pm25_motor = Motor('B')           #Set up gauge motor pm25_motor.run_to_position(0,100) # Reset gauge position
+no2_motor = Motor('A')           #슬라이드 모터 셋업 no2_motor.run_to_position(0,100) # 슬라이더 포지션 리셋 pm25_motor = Motor('B')           # 게이지 모터 셋업 pm25_motor.run_to_position(0,100) # 게이지 포지션 리셋
 
-no2_min_value = 0         #The lowest NO2 reading you think you will get (this should hopefully be around 0) no2_max_value = 60        #The highest NO2 reading you think you will get no2_min_angle = 175       #Minimum motor travel no2_max_angle = -175      #Maximum motor travel
+no2_min_value = 0         #API가 가져올 것이라 생각하는 가장 작은 NO2 값 (약 0이여야 함) no2_max_value = 60        #API가 가져올 것이라 생각하는 가장 큰 NO2 값 no2_min_angle = 175       #최소 모터 이동 앵글 no2_max_angle = -175      #최대 모터 이동 앵글
 
-pm25_min_value = 0        #The lowest PM2.5 reading you think you will get (this should hopefully be around 0) pm25_max_value = 100      #The highest PM2.5 reading you think you will get pm25_min_angle = 175      #Minimum motor travel pm25_max_angle = -175     #Maximum motor travel
+pm25_min_value = 0         #API가 가져올 것이라 생각하는 가장 작은 PM2.5 값 (약 0이여야 함) pm25_max_value = 60        #API가 가져올 것이라 생각하는 가장 큰 PM2.5 값 pm25_min_angle = 175       #최소 모터 이동 앵글 pm25_max_angle = -175      #최대 모터 이동 앵글
 
 --- /code ---
 
 --- /task ---
 
-Now that you have imported the necessary libraries and set up your measurement details, you can set up your query to the API by making a few **dictionaries** of terms you will use.
+필요한 라이브러리를 가져오고 측정 세부 정보를 설정했으므로 이제 사용하는 용어로 **딕셔너리**을 만들어 API에 대한 쿼리를 설정할 수 있습니다.
 
 --- task ---
 
-In your Thonny window, add this code to the end of your script:
+Thonny 창에서 스크립트 끝에 다음 코드를 추가합니다.
 
 --- code ---
 ---
@@ -56,43 +56,43 @@ line_highlights:
 ---
 base_url = 'https://docs.openaq.org/v2/measurements'
 
-payload = {                    #Create a dictionary for the API request 'date_from':'', 'date_to':'', 'location_id':'2480',      #This number should be the ID number taken from the URL earlier 'order_by':'datetime', 'sort':'asc', 'has_geo':'true', 'limit':'100', 'offset':'0', }
+payload = {                    # API Request에 대한 딕셔너리 생성 'date_from':'', 'date_to':'', 'location_id':'2480',      # 방금 받은 URL에 적혀있는 숫자로 된 location ID입니다. 'order_by':'datetime', 'sort':'asc', 'has_geo':'true', 'limit':'100', 'offset':'0', }
 
-pollution = {                  #Create a dictionary for the pollution readings 'no2' : 0,                 #Here we are looking for NO2 and PM25 — yours may differ! 'pm25': 0, }
+pollution = {                  #오염 수치에 대한 딕셔너리 'no2' : 0,                 #NO2나 PM25에 대한 key-value 쌍 - 다를 수 있습니다! 'pm25': 0, }
 
 --- /code ---
 
 --- /task ---
 
-The next function you need to write will query the API using the parameters you have set up.
+작성해야 하는 다음 함수는 설정한 매개변수를 사용하여 API를 쿼리합니다.
 
 --- task ---
 
-At the end of your script, add this code:
+스크립트 끝에 다음 코드를 추가합니다.
 
 --- code ---
 ---
 language: python filename: data_dash.py line_numbers: true line_number_start: 39
 line_highlights:
 ---
-def check_air(): now = datetime.now()           #Gets the time now delta = datetime.now() - timedelta(days=1)         #Creates a time difference of one day
+def check_air(): now = datetime.now()           #현재 시간 가져오기 delta = datetime.now() - timedelta(days=1)         #시차 계산
 
-    payload['date_from'] = f'{delta:%Y-%m-%d}T{delta:%H:%M:%S}+00:00'  #Inserts your date and time into the dictionary above
+    payload['date_from'] = f'{delta:%Y-%m-%d}T{delta:%H:%M:%S}+00:00'  #딕셔너리 datetime 세팅
     payload['date_to'] = f'{now:%Y-%m-%d}T{now:%H:%M:%S}+00:00'
     
-    response = requests.get(base_url, params=payload)          #Queries the API database
+    response = requests.get(base_url, params=payload)          #API database 쿼리
     
-    if response.status_code != 200:          #Check for connection to API
+    if response.status_code != 200:          #API connection 검사
         print('no response from server')
         return
     
     data = response.json()
     
     for reading in data['results']:
-        if reading['parameter'] == 'no2':       #This will depend upon what pollutant you are measuring
+        if reading['parameter'] == 'no2':       #어떤 오염 수치를 측정할 것인지에 따라 다릅니다.
             pollution['no2'] = reading['value']
             print(pollution['no2'])
-        if reading['parameter'] == 'pm25':      #This will depend upon what pollutant you are measuring
+        if reading['parameter'] == 'pm25':      #어떤 오염 수치를 측정할 것인지에 따라 다릅니다.
             pollution['pm25'] = reading['value']
             print(pollution['pm25'])
     
@@ -103,32 +103,32 @@ def check_air(): now = datetime.now()           #Gets the time now delta = datet
 
  --- /task ---
 
-The next part you will write will do some clever maths to map your data range across the motor range. (It's basically the same as the function used in the [LEGO Data plotter project](https://learning-admin.raspberrypi.org/en/projects/lego-plotter/6).)
+다음으로 작성하게 될 부분은 전체 엔진 범위에 걸쳐 데이터 범위를 매핑하는 몇 가지 영리한 계산을 수행하는 것입니다. [LEGO Data 플로터 프로젝트](https://learning-admin.raspberrypi.org/en/projects/lego-plotter/6)에서 사용하는 기능과 동일합니다.)
 
 --- task ---
 
-Add this function beneath your existing code:
+기존 코드 아래에 이 함수를 추가합니다.
 
 --- code ---
 ---
 language: python filename: data_dash.py line_numbers: true line_number_start: 65
 line_highlights:
 ---
-def remap(min_value, max_value, min_angle, max_angle, sensor_data):                    #Create function value_range = (max_value - min_value)                                              #Work out how wide your value range is motor_range = (max_angle - min_angle)                                              #Work out how wide your motor range is mapped = (((sensor_data - min_value) * motor_range) / value_range) + min_angle     #Stretch your value range across your motor range return int(mapped)                                           #Give back a number that shows the value as an angle on the motor
+def remap(min_value, max_value, min_angle, max_angle, sensor_data):                    #함수 만들기 value_range = (max_value - min_value)                                              #value range 계산 motor_range = (max_angle - min_angle)                                              #motor range 계산 mapped = (((sensor_data - min_value) * motor_range) / value_range) + min_angle     #모터 범위 전체에 걸쳐 값 범위 확장 return int(mapped)                                           #모터의 각도로 값을 표시하는 숫자 반환
 
 --- /code ---
 
 --- /task ---
 
-Now that your function has been created, you need to make a loop that will:
+이제 함수가 생성되었으므로 다음을 수행하는 루프를 만들어야 합니다.
 
-+ Find the angle the motor is currently at
-+ Pull the pollutant data from the `remap` function to use as the new angle for your motors
-+ Move to the new angle to display the reading
++ 모터가 현재 있는 각도 찾기
++ `remap` 기능에서 오염 물질 데이터를 가져와 모터의 새 각도로 사용
++ 새로운 각도로 이동하여 결과 값 표시
 
 --- task ---
 
-Add the following code to the end of your script, on a new line:
+새 줄의 스크립트 끝에 다음 코드를 추가합니다.
 
 --- code ---
 ---
@@ -141,24 +141,24 @@ def output_results(): print(f'NO2 = {pollution['no2']}') no2_current_angle = no2
 
 --- /task ---
 
-The last part of your code now needs to call your `check_air()` function to make it all go, and periodically check the API for updated data.
+이제 코드의 마지막 부분에서 `check_air()` 함수를 호출하여 모든 작업을 수행하고 API에서 업데이트된 데이터를 주기적으로 확인해야 합니다.
 
 --- task ---
 
-At the end of your script, on a new line (make sure it isn't indented), type:
+스크립트 끝에서 새 줄에(들여쓰기가 없는지 확인) 다음을 입력합니다.
 
 --- code ---
 ---
 language: python filename: data_dash.py line_numbers: true line_number_start: 93
 line_highlights:
 ---
-while True: check_air() sleep(3600)   #Wait an hour before checking again (make this smaller for testing purposes) --- /code ---
+while True: check_air() sleep(3600)   # 다음 데이터 검색 전에 1시간을 기다립니다(테스트를 위해 이 시간을 더 짧게 만들 수 있음) --- /code ---
 
 --- /task ---
 
 --- task ---
 
-Save your work as `data_dash.py` and click **Run**. Your slider should move to display the current NO2 reading from your chosen OpenAQ station, and your gauge should move to display the PM2.5 reading. Well done!
+작업을 `data_dash.py` 로 저장하고 **실행** 을 클릭합니다. 슬라이더는 선택한 OpenAQ 스테이션의 현재 NO2 판독값을 표시하도록 이동해야 하고 게이지는 PM2.5 판독값을 표시하도록 이동해야 합니다. 잘 했어요!
 
 --- /task ---
 
