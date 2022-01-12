@@ -91,7 +91,7 @@ Montiere ein einzelnes Zahnrad als Abstandshalter hinter deinem Zifferblatt, dam
 
 ![Bild, das ein schwarzes LEGO® Zahnrad zeigt, das auf einer Achse mit etwas Tack montiert ist.](images/dial-gauge1.jpg)
 
-![Image showing the gauge face mounted on top of a black LEGO® gear.](images/dial-gauge2.jpg)
+![Bild, das die Anzeige zeigt, die auf einem schwarzen LEGO® Zahnrad montiert ist.](images/dial-gauge2.jpg)
 
 --- /task ---
 
