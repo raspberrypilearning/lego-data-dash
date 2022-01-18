@@ -1,51 +1,51 @@
-## Plan your dashboard
+## 规划您的仪表板
 
-Use this step to plan your dashboard, and think about what information you want to display. You can plan by just thinking, tinkering, drawing, writing, or however you like!
+使用此步骤来规划仪表板，并考虑您期望显示哪些信息。 您可以通过思考、修剪、绘画、写作或任何您喜欢的方式进行规划！
 
-We will use an example API in this project from OpenAQ to demonstrate how to create and use your data dashboard, but you could use any API you want. (There are some more API links in the final step for you to look at if you'd like to try it with a different data source.)
+我们将在 OpenAQ 的项目中使用一个示例 API 来演示如何创建和使用您的数据仪表板，但您可以使用任何您想要的 API。 （如果您想尝试使用不同的数据源，在最后一步中还有更多 API 链接供您查看。）
 
-### Why are you making a dashboard?
+### 你为什么要制作仪表板？
 
 --- task ---
 
-**Think** about the purpose of your dashboard:
+**考虑** 仪表板的用途：
 
-+ What information will it display?
-+ How will it show this information to the user?
-+ What layout will it have, to make it easy to read?
++ 它将显示什么信息？
++ 它将如何向用户显示这些信息？
++ 为了便于阅读，它将有什么样的布局？
 
 
 --- /task ---
 
-### Who is it for?
+### 它（仪表板）是给谁的？
 
 --- task ---
 
-Think about who you will make your dashboard for (your **audience**):
+考虑一下您将为谁制作仪表板（您的 **受众**）：
 
-+ What symbols or scales will make it obvious what you are displaying?
-+ How will the user get current data?
-+ Will they prefer bright colours and lights, or simple and clean designs?
-+ Where will they keep it? Will it fit there?
++ 用什么符号或比例会使您显示的内容显而易见？
++ 用户将如何获得当前数据？
++ 他们会喜欢明亮的颜色和灯光，还是简单而干净的设计？
++ 他们会把它放在哪里？ 它会适合那里吗？
 
 --- /task ---
 
-### Get started
+### 启程
 
 --- task ---
 
-Use a pen and paper to plan ideas for your dashboard:
+使用笔和纸来规划您的仪表板：
 
-+ Consider how many motors you will have available to you to power the indicators — you need one motor for each indicator
-+ Will you use other components in your build, like LEDs, buzzers, or buttons? What will they do?
-+ How will your different indicators and inputs fit together into a frame?
-+ What LEGO elements will you need to build it?
++ 考虑一下您有多少个马达可以用于控制指示器——每个指示器都需要一个马达
++ 您会在仪表板中使用其他组件吗，例如 LED、蜂鸣器或按钮？ 他们都用于做什么呢？
++ 您的不同指标和输入将如何在同一个框架中排布？
++ 你需要什么乐高（LEGO）组件来建造这个仪表板？
 
-Draw your dashboard now, including the frame to hold it and any indicators you would like to create or user inputs needed. Label them with the information they will display or the input they provide.
+现在绘制您的仪表板，包括用于固定它的框架以及您想要创建的任何指标或需要的用户输入。 标记它们将显示的信息或相应的输入信息。
 
 --- /task ---
 
-In the next step, you will construct some readouts for your dashboard using LEGO®!
+在下一步中，您将使用 LEGO® 为您的仪表板构建一些读数！
 
 
 --- save ---
