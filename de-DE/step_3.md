@@ -54,7 +54,7 @@ Stecke die Achse wie abgebildet durch die Bauplatte über der rechten Halterung:
 ![Bild, das die Bauplatte mit zwei geraden Halterungen und Bolzen sowie einer auf der Platte montierten Achse und Zahnrad zeigt.](images/sliderbuild6.jpg)
 
 --- /task ---
-
+--- task ---
 Nimm eine Zahnstange, eine rote Achse und einen Anzeigepfeil. Stecke die Achse in ein Ende der Zahnstange, wobei der Anzeigepfeil zur gezahnten Seite zeigt:
 ![Bild mit Zahnstange, Achse und Anzeigepfeil.](images/sliderbuild11.jpg)
 
