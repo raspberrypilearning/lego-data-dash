@@ -1,90 +1,90 @@
-## Make an LED scale
+## 制作一个 LED 比例尺
 
-Another really cool way to display data is by using a series of LEDs that turn on and off as readings change — the higher the reading, the more LEDs are lit; like a graphic equaliser on your computer showing the volume of your music.
+另一种非常酷的数据显示方式是使用一连串的LED。这些 LED 会随着读数的变化而变化——读数越高，点亮的LED越多；就像计算机上显示音乐音量的图形均衡器。
 
-![Image displaying graphic equaliser moving up and down](https://media.giphy.com/media/Hzt1XTt6gilFlK8Oea/giphy.gif)
+![图形均衡器显示上下移动的图片](https://media.giphy.com/media/Hzt1XTt6gilFlK8Oea/giphy.gif)
 
-To make an LED display, you'll need a few LED bulbs — the more bulbs you have, the more precise your scale will be. There is an upper limit though: you can only have as many LEDs as there are available GPIO pins. In this example, we're using five LEDs, but you **could** connect more than ten if you choose.
+要制作 LED 显示屏，您需要一些LED灯泡——灯泡越多，您的刻度就越精确。 但是有一个上限：您只能拥有与可用的GPIO 引脚一样多的LED。 在这个例子中，我们使用了五个 LED，但如果您愿意，您 **可以** 连接十多个。
 
-**Note:** Because of the way the Build HAT is designed, you **can't access GPIO 14 or 15 (pins 8 and 10)**.
+**注意：** 由于 Build HAT 的设计，您 **无法访问 GPIO 14 或 15（引脚 8 和 10）**。
 
 --- task ---
 
-Collect your LEDs, resistors, M–F jumper cables, and breadboard together. ![Image showing a Raspberry Pi with Build HAT, breadboard, LEDs, and jumper cables on a workbench.](images/LEDbuild1.jpg)
+连接LED、电阻、公母跨接电缆和面包板。 ![放有 Build HAT、面包板、LED、跨接电缆和Raspberry Pi的工作台的图片。](images/LEDbuild1.jpg)
 
 --- /task ---
 
 --- task ---
 
-Look closely at your LEDs — you'll notice that one leg is longer than the other. ![Image showing an LED in close up on a workbench.](images/LEDbuild2.jpg)
+仔细观察您的 LED — 您会注意到一条腿比另一条腿长。 ![特写的工作台上的LED 的图片。](images/LEDbuild2.jpg)
 
 --- /task ---
 
 --- task ---
 
-Insert the **short leg** of your LEDs into the **common ground rail** along the edge of your breadboard (it's the one next to the blue line at the very edge), and the long leg into the nearest numbered row: ![Image showing LEDs lined up on a breadboard.](images/LEDbuild3.jpg)
+将 LED 的 **短腿** 接入面包板的**公共接地轨**（最边缘蓝线旁边的那条），将长腿插入最近的编号行： ![LED 排列在面包板上的图片。](images/LEDbuild3.jpg)
 
 --- /task ---
 
-You need to add a resistor to the circuit, to protect the LEDs from overloading and burning out or popping. Now is a good time to do that.
+您需要在电路中添加一个电阻，以防止 LED 过载、烧坏或爆裂。 现在这是一个操作的好机会。
 
 --- task ---
 
-Take a resistor and insert one end into the **same row** as the first LED in your sequence. Insert the other end of the resistor into the same row, but **on the other side of the spine** of your breadboard, like this:
+取一个电阻并将一端插入您序列中的第一个LED所在行 **** 将电阻的另一端插入面包板**脊柱对面**的同一行，如下所示：
 
-![Image showing LEDs lined up on a breadboard, with a resistor joining the first row.](images/LEDbuild4.jpg)
+![LED 排列在面包板上，第一行连接了电阻的图片。](images/LEDbuild4.jpg)
 
-Repeat for all the LEDs in your sequence: ![Image showing LEDs lined up on a breadboard, with resistors joining the rows.](images/LEDbuildX.jpg)
-
---- /task ---
-
---- task ---
-
-Insert the M end of your M–F jumper cables into the same row as the resistors, so you can connect them to the pins on the Raspberry Pi: ![Image showing LEDs lined up on a breadboard, with resistors joining the rows, and jumper cables trailing from the breadboard.](images/LEDbuild5.jpg)
+对序列中的所有 LED 重复上述操作：![LED 排列在面包板上，每行都连接了电阻的图片。](images/LEDbuildX.jpg)
 
 --- /task ---
 
 --- task ---
 
-Take the M end of another jumper cable and insert it into the end of the common ground rail: ![Image showing a jumper cable trailing from the common ground rail of the breadboard.](images/LEDbuild6.jpg)
-
---- /task ---
-
-Your finished LED scale should look something like this:
-
-![Image showing LEDs lined up on a breadboard, with resistors joining the rows, and jumper cables trailing from the breadboard.](images/LEDbuild7.jpg)
-
-The next step is to connect it to the GPIO pins on the Raspberry Pi.
-
---- task ---
-
-Take the F end of the jumper cable connected to your common ground rail, and connect it to Pin 39. This is one of several ground pins on the Raspberry Pi, which will provide the grounding for **all** of your LED bulbs. ![Image showing a black jumper cable connected to Pin 39 on the Raspberry Pi.](images/LEDbuild9.jpg)
+将公母跨接电缆的公端与电阻器插入同一行，以便将它们连接到 Raspberry Pi 上的引脚： ![LED 排列在面包板上，每行都连接了电阻，并且有跳线从面包板上拖出的图片。](images/LEDbuild5.jpg)
 
 --- /task ---
 
 --- task ---
 
-Connect the other cables to numbered GPIO pins, taking note of which ones you have attached your LEDs to.
-
-In this example, we have used Pins 16, 19, 20, 21, and 26 (to keep them all at one end for tidiness): ![Image showing jumper cables trailing from the Raspberry Pi GPIO pins.](images/LEDbuild10.jpg)
+将另一根公母跨接电缆公端接入公共地轨的末端： ![图像显示从面包板的公共接地导轨拖尾的跨接电缆。](images/LEDbuild6.jpg)
 
 --- /task ---
 
-Now that your LED sequence is connected to your Raspberry Pi, you need to power it up and program it.
+您完成的 LED比例尺应如下所示：
+
+![图像显示 LED 排列在面包板上，电阻器连接各行，跳线从面包板上拖出。](images/LEDbuild7.jpg)
+
+下一步是将其连接到 Raspberry Pi 上的 GPIO 引脚。
 
 --- task ---
 
-Connect the 7.5V power supply to the barrel jack on your Build HAT. You should see your Raspberry Pi power up and load the Raspberry Pi OS Desktop.
+将连接到公共接地轨的公母跨接电缆的母端连接到引脚 39。 这是 Raspberry Pi 上的几个接地引脚之一，它将为 **所有** LED 灯泡提供接地。 ![图像显示连接到 Raspberry Pi 上的针脚 39 的黑色跨接电缆。](images/LEDbuild9.jpg)
 
 --- /task ---
 
 --- task ---
 
-Open **Thonny** from your **Programming menu**.
+将剩余的跨接电缆连接到各个GPIO 引脚，记下每个LED对应的引脚。
 
-The first lines of your script will import the gpiozero and randint libraries and set up your LEDs to be controllable. You will need to change the values in brackets to match the numbered pins your LEDs are connected to. **Note:** The order of these numbers is important! The pin numbers should go from the lowest on your 'bar graph' to the highest.
+在本示例中，我们使用了引脚 16、19、20、21 和 26（将它们全部放在同一端以保持整洁）： ![显示从 Raspberry Pi GPIO 引脚拖出的跨接电缆的图像。](images/LEDbuild10.jpg)
 
-In the blank window enter the following code:
+--- /task ---
+
+现在您的 LED 阵列已连接到您的 Raspberry Pi，您需要为其通电并对其进行编程。
+
+--- task ---
+
+将 7.5V 电源连接到 Build HAT 上的桶形插孔。 您应该会看到 Raspberry Pi 启动并加载 Raspberry Pi OS 桌面。
+
+--- /task ---
+
+--- task ---
+
+从**Programming **菜单中启动 **Thonny**。
+
+脚本的第一行将导入 gpiozero 和 randint 库并将 LED 设置为可控。 您将需要更改括号中的值以匹配您的 LED 连接到的引脚编号。 **注意：** 这些数字的顺序很重要！ 引脚编号应该依照“条形图”的位置由低到高递增。
+
+在空白窗口中输入以下代码：
 
 --- code ---
 ---
@@ -99,13 +99,13 @@ graph = LEDBarGraph(16, 19, 20, 21, 26) #The order of these numbers should match
 
 --- /task ---
 
-Now that you have your LEDs ready to program, the next part of your code should pull the data you want to measure, then determine how many LEDs to switch on based on the result. For testing purposes, you should use random data.
+您现在已经可以编写LED的程序了，代码的下一部分应该获取你想要测量的数据，然后根据结果来决定需要点亮多少LED。 您应该使用随机数据来测试。
 
-The intention is to have the LEDs turn on as the reading increases, and to turn off as it decreases. As with the other indicators, you will need to map your data across your scale.
+目的是让 LED 在读数增大时逐渐打开，在读数变小时逐渐关闭。 与其他指标一样，您需要将数据映射到您的比例尺。
 
 --- task ---
 
-Enter the following code at the end of your open script:
+将以下代码添加到脚本的末尾：
 
 --- code ---
 ---
@@ -118,7 +118,7 @@ while True: data_reading = randint(0, 100) graph.value = 1/data_reading #This cr
 
 --- task ---
 
-Save your work as `led_sequence.py` and click **Run**. You should see your bar graph begin to light up!
+将您的工作保存为 `led_sequence.py` 并单击 **Run**。 您应该会看到您的条形图开始渐渐亮起！
 
 ![Animated image showing a changing bar graph made of LEDs.](images/LEDbuild.gif)
 
