@@ -1,16 +1,16 @@
-## Make a LEGO® sliding indicator
+## Haz un indicador deslizante LEGO®
 
-Now it's time to make a LEGO® sliding indicator! If you don't want to include a sliding indicator, you can skip to the next step, which shows you how to create rotating LEGO dials.
+¡Ahora es el momento de hacer un indicador deslizante LEGO®! Si no deseas incluir un indicador deslizante, puedes pasar al siguiente paso, que te muestra cómo crear diales LEGO giratorios.
 
-This is what a vertical slider looks like:
+Así es como se ve un control deslizante vertical:
 
-![Image showing a vertical LEGO® slider acting as a thermometer.](images/slider.jpg)
+![Imagen que muestra un control deslizante LEGO® vertical que actúa como termómetro.](images/slider.jpg)
 
-Sliding indicators can also run horizontally if you prefer, by rotating the build 90 degrees anti-clockwise.
+Los indicadores deslizantes también se pueden ejecutar horizontalmente si lo prefiere, girando la construcción 90 grados en sentido antihorario.
 
 --- task ---
 
-Follow these build instructions to create a vertical sliding indicator:
+Sigue estas instrucciones de construcción para crear un indicador deslizante vertical:
 
 To construct this model, follow our handy building guide here or [download it.](resources/lego-data-dash-slider.pdf)
 <embed src="resources/lego-data-dash-slider.pdf" width="600" height="500" alt="pdf" pluginspage="https://www.adobe.com/products/acrobat/readstep2.html">
@@ -25,7 +25,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a yellow plate element and attach two blue beams using 90 degree stud brackets. <img src="images/sliderbuild1.jpg" alt="Image showing a Build Plate with blue legs." />
+    Toma un elemento de placa amarilla y coloca dos vigas azules usando soportes de pernos de 90 grados. <img src="images/sliderbuild1.jpg" alt="Imagen que muestra una placa de construcción con patas azules." />
   </p>
   
   <p spaces-before="0">
@@ -37,7 +37,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two grey straight brackets, one column apart. <img src="images/sliderbuild2.jpg" alt="Image showing the Build Plate with two straight brackets." />
+    Coloca dos soportes rectos grises, separados por una columna. <img src="images/sliderbuild2.jpg" alt="Imagen que muestra la placa de construcción con dos soportes rectos." />
   </p>
   
   <p spaces-before="0">
@@ -49,7 +49,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two grey double length studs with spacers on one end to the plate element above the brackets. <img src="images/sliderbuild3.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    Fija dos postes grises de doble longitud con espaciadores en un extremo al elemento de placa sobre los soportes. <img src="images/sliderbuild3.jpg" alt="Imagen que muestra la placa de construcción con dos soportes rectos y pernos." />
   </p>
   
   <p spaces-before="0">
@@ -61,7 +61,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two yellow (three-hole) beams horizontally between the two straight brackets. <img src="images/sliderbuild4.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    Coloca dos vigas amarillas (de tres orificios) horizontalmente entre los dos soportes rectos. <img src="images/sliderbuild4.jpg" alt="Imagen que muestra la placa de construcción con dos soportes rectos y pernos." />
   </p>
   
   <p spaces-before="0">
@@ -73,7 +73,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a small black gear and a short axle, and join them together. <img src="images/sliderbuild5.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear." />
+    Toma un engranaje negro pequeño y un eje corto y únelos. <img src="images/sliderbuild5.jpg" alt="Imagen que muestra la placa de construcción con dos soportes rectos y espárragos, y un eje y un engranaje." />
   </p>
   
   <p spaces-before="0">
@@ -85,7 +85,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Insert the axle through the Build Plate above the right bracket as shown: <img src="images/sliderbuild6.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate." />
+    Inserta el eje a través de la placa de construcción sobre el soporte derecho como se muestra: <img src="images/sliderbuild6.jpg" alt="Imagen que muestra la placa de construcción con dos soportes rectos y tarugos, y un eje y un engranaje montados en la placa." />
   </p>
   
   <p spaces-before="0">
@@ -97,7 +97,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a toothed bar, a red axle, and an indicator arrow. Insert the axle into one end of the toothed bar, with the indicator arrow pointing toward the toothed side: <img src="images/sliderbuild11.jpg" alt="Image showing the toothed bar, axle, and indicator arrow." />
+    Toma una barra dentada, un eje rojo y una flecha indicadora. Inserta el eje en un extremo de la barra dentada, con la flecha indicadora apuntando hacia el lado dentado: <img src="images/sliderbuild11.jpg" alt="Imagen que muestra la barra dentada, el eje y la flecha indicadora." />
   </p>
   
   <p spaces-before="0">
@@ -109,23 +109,11 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Slide the toothed bar down into the top of the mechanism.
+    Desliza la barra dentada hacia abajo en la parte superior del mecanismo.
   </p>
   
   <p spaces-before="0">
-    You will have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth. The mechanism will slide easily up and down while the gear and axle are free. Connecting a motor will hold it steady. <img src="images/sliderbuild8.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted." />
-  </p>
-  
-  <p spaces-before="0">
-    --- /task ---
-  </p>
-  
-  <p spaces-before="0">
-    --- task ---
-  </p>
-  
-  <p spaces-before="0">
-    Take a motor and add two studs to the flat side, in the top two holes. <img src="images/sliderbuild9.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted, and a motor on the table." />
+    Tendrás que tirar del engranaje hacia delante para dejarlo pasar, y luego volver a empujarlo para que encaje entre los dientes. El mecanismo se deslizará fácilmente hacia arriba y hacia abajo mientras el engranaje y el eje estén libres. Conectar un motor lo mantendrá estable. <img src="images/sliderbuild8.jpg" alt="Imagen que muestra la placa de construcción con dos soportes rectos y tarugos, y un eje y un engranaje montados en la placa con la barra deslizante insertada." />
   </p>
   
   <p spaces-before="0">
@@ -137,11 +125,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Before attaching the motor to the rear of the slider's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
-  </p>
-  
-  <p spaces-before="0">
-    <img src="images/aligned_symbols.jpg" alt="Image showing motor 'zeroed in' with aligned symbols." />
+    Toma un motor y agrega dos pernos al lado plano, en los dos orificios superiores. <img src="images/sliderbuild9.jpg" alt="Imagen que muestra la placa de construcción con dos soportes rectos y tarugos, y un eje y un engranaje montados en la placa con la barra deslizante insertada, y un motor en la mesa." />
   </p>
   
   <p spaces-before="0">
@@ -153,7 +137,23 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Adjust your toothed bar so the gear sits about halfway along it, then mount the motor behind the board using the two studs while holding the toothed bar in place. Make sure the axle fits into the hole on the <strong x-id="1">flat side</strong> of the motor. It should keep the slider held steady now, around halfway along the bar. <img src="images/sliderbuild10.jpg" alt="Image showing the Build Plate with a motor mounted on the back." />
+    Antes de conectar el motor a la parte trasera del eje del control deslizante, asegúrate de que esté "puesto a cero", alineando los dos símbolos en forma de paleta en el borde del motor:
+  </p>
+  
+  <p spaces-before="0">
+    <img src="images/aligned_symbols.jpg" alt="Imagen que muestra el motor 'puesto a cero' con los símbolos alineados." />
+  </p>
+  
+  <p spaces-before="0">
+    --- /task ---
+  </p>
+  
+  <p spaces-before="0">
+    --- task ---
+  </p>
+  
+  <p spaces-before="0">
+    Ajusta la barra dentada de modo que el engranaje se asiente aproximadamente a la mitad de su recorrido, luego monta el motor detrás de la placa usando los dos pernos mientras sostienes la barra dentada en su lugar. Asegúrate de que el eje encaje en el agujero del <strong x-id="1">lado plano</strong> del motor. Deberías mantener el deslizador estable, alrededor de la mitad de la barra. <img src="images/sliderbuild10.jpg" alt="Imagen que muestra la placa de construcción con un motor montado en la parte posterior." />
   </p>
   
   <p spaces-before="0">
@@ -161,11 +161,11 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
 
 <h3 spaces-before="0">
-  Test the sliding indicator
+  Prueba el indicador deslizante
 </h3>
 
 <p spaces-before="0">
-  To program your sliding indicator, you can reuse some of the code written in the <a href="https://projects.raspberrypi.org/en/projects/lego-plotter">LEGO® Data plotter</a> project, as they use the same mechanism.
+  Para programar tu indicador deslizante, puedes reutilizar parte el código escrito en el proyecto <a href="https://projects.raspberrypi.org/en/projects/lego-plotter">Trazador LEGO®</a>, ya que utilizan el mismo mecanismo.
 </p>
 
 <p spaces-before="0">
@@ -173,7 +173,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Connect the motor of your slider to port A on your Build HAT.
+  Conecta el motor de tu control deslizante al puerto A en tu Build HAT.
 </p>
 
 <p spaces-before="0">
@@ -185,7 +185,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  You will use the BuildHAT Python library, so make sure it is installed:
+  Utilizarás la biblioteca BuildHAT de Python, así que asegúrate de que esté instalada:
 </p>
 
 <p spaces-before="0">
@@ -193,19 +193,19 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 <hr />
 <h2 spaces-before="0">
-  title: Install the BuildHAT Python library
+  title: Instala la biblioteca BuildHAT Python
 </h2>
 
 <p spaces-before="0">
-  Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
+  Abre una ventana de terminal en tu Raspberry Pi presionando <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
 </p>
 
 <p spaces-before="0">
-  At the prompt type: <code>pip3 install buildhat</code>
+  En el indicador, escribe: <code>sudo pip3 install buildhat</code>
 </p>
 
 <p spaces-before="0">
-  Press <kbd>Enter</kbd> and wait for the "installation completed" message.
+  Presiona <kbd>Entrar</kbd> y espera el mensaje "installation completed".
 </p>
 
 <p spaces-before="0">
@@ -217,11 +217,11 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <h3 spaces-before="0">
-  Create the scale for your sliding indicator
+  Crea la escala para tu indicador deslizante
 </h3>
 
 <p spaces-before="0">
-  Now you know it works, you will need to create a scale for the sliding indicator, so you know what it means.
+  Ahora que sabes que funciona, deberás crear una escala para el indicador deslizante, para saber lo que significa.
 </p>
 
 <p spaces-before="0">
@@ -229,7 +229,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Get a piece of card about as long as your toothed bar. Stick it next to the sliding indicator, under the pointer. Have a marker or pencil ready.
+  Consigue un trozo de cartón del tamaño de tu barra dentada. Pégalo al lado del indicador deslizante, debajo del puntero. Ten listo un marcador o un lápiz.
 </p>
 
 <p spaces-before="0">
@@ -241,35 +241,11 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Open <strong x-id="1">Thonny</strong> on your Raspberry Pi from the <strong x-id="1">Programming menu</strong>.
+  Abre <strong x-id="1">Thonny</strong> en tu Raspberry Pi desde el <strong x-id="1">menú de programación</strong>.
 </p>
 
 <p spaces-before="0">
-  In the <strong x-id="1">Shell</strong> (the window at the bottom), next to the three arrows, type: <code>from buildhat import Motor</code> and press <kbd>Enter</kbd>. You should see a new line appear with three more arrows.
-</p>
-
-<p spaces-before="0">
-  --- /task ---
-</p>
-
-<p spaces-before="0">
-  --- task ---
-</p>
-
-<p spaces-before="0">
-  Now type: <code>motor = = Motor('A')</code> and press <kbd>Enter</kbd>. --- /task ---
-</p>
-
-<p spaces-before="0">
-  Now you've set up your slider motor to run, you should send it to the maximum and minimum readings to see how far it can travel — then mark those places on the card.
-</p>
-
-<p spaces-before="0">
-  --- task ---
-</p>
-
-<p spaces-before="0">
-  Type: <code>motor.run_to_position(-180, 100)</code> and press <kbd>Enter</kbd>. Mark the card at the place the arrow indicates. This is your minimum possible readout.
+  En el <strong x-id="1">Shell</strong> (la ventana en la parte inferior), junto a las tres flechas, escribe: <code>from buildhat import Motor</code> y presiona <kbd>Entrar</kbd>. Deberías ver una nueva línea que aparece con tres flechas más.
 </p>
 
 <p spaces-before="0">
@@ -281,7 +257,19 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Type: <code>motor.run_to_position(180, 100, direction=clockwise)</code> and press <kbd>Enter</kbd>. Mark the card at the place the arrow indicates. This is your maximum possible readout.
+  Ahora escribe: <code>motor = = Motor('A')</code> y presiona <kbd>Entrar</kbd>. --- /task ---
+</p>
+
+<p spaces-before="0">
+  Ahora que has configurado su motor deslizante para que funcione, debes enviarlo a las lecturas máxima y mínima para ver qué tan lejos puede viajar, luego marca esas posiciones en la tarjeta.
+</p>
+
+<p spaces-before="0">
+  --- task ---
+</p>
+
+<p spaces-before="0">
+  Escribe: <code>motor.run_to_position (-180, 100)</code> y presiona <kbd>Entrar</kbd>. Marca la tarjeta en el lugar que indica la flecha. Esta es su mínima lectura posible.
 </p>
 
 <p spaces-before="0">
@@ -289,11 +277,23 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  You now know where your minumum and maximum possible readings are. Once you link the slider to some data, you will be able to create an accurate scale.
+  --- task ---
+</p>
+
+<p spaces-before="0">
+  Escribe: <code>motor.run_to_position (180, 100, direction=clockwise)</code> y presiona <kbd>Entrar</kbd>. Marca la tarjeta en el lugar que indica la flecha. Esta es su máxima lectura posible.
+</p>
+
+<p spaces-before="0">
+  --- /task ---
+</p>
+
+<p spaces-before="0">
+  Ahora ya sabes dónde están tus lecturas mínima y máxima. Una vez que vincules el deslizador con algunos datos, podrás crear una escala precisa.
 </p>
 
 <h3 spaces-before="0">
-  Program your sliding indicator to show live data
+  Programe su indicador deslizante para mostrar datos en vivo
 </h3>
 
 <p spaces-before="0">
@@ -301,7 +301,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Enter the following code in a blank tab:
+  Ingresa el siguiente código en una pestaña en blanco:
 </p>
 
 <p spaces-before="0">
@@ -321,15 +321,15 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  motor_slider = Motor('A')
+  motor_deslizador = Motor('A')
 </p>
 
 <p spaces-before="0">
-  motor_slider.run_to_position(0,100)
+  motor_deslizador.run_to_position(0,100)
 </p>
 
 <p spaces-before="0">
-  while True: current_angle = motor_slider.get_aposition() new_angle = randint(-175, 175) print(sensor_data) if new_angle > current_angle: motor_slider.run_to_position(new_angle, 100, direction="clockwise") print('Turning CW') elif new_angle < current_angle: motor_slider.run_to_position(new_angle, 100, direction="anticlockwise") print('Turning ACW') sleep(0.1)
+  while True: angulo_actual = motor_slider.get_aposition() nuevo_angulo = randint(-175, 175) print(sensor_data) if nuevo_angulo > angulo_actual: motor_deslizador.run_to_position(nuevo_angulo, 100, direction="clockwise") print('Girando en sentido horario') elif nuevo_angulo < angulo_actual: motor_deslizador.run_to_position(nuevo_angulo, 100, direction="anticlockwise") print('Girando en sentido antihorario') sleep(0.1)
 </p>
 
 <p spaces-before="0">
@@ -337,7 +337,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Save your work as <code>slider_test.py</code> and click <strong x-id="1">Run</strong>. You should see your slider move up and down (or back and forth!)
+  Guarda tu trabajo como <code>slider_test.py</code> y haz clic en <strong x-id="1">Ejecutar</strong>. Deberías ver que tu deslizador se mueva hacia arriba y hacia abajo (¡o hacia atrás!)
 </p>
 
 <p spaces-before="0">
