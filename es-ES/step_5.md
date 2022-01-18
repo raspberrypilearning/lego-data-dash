@@ -1,90 +1,90 @@
-## Make an LED scale
+## Haz una escala LED
 
-Another really cool way to display data is by using a series of LEDs that turn on and off as readings change — the higher the reading, the more LEDs are lit; like a graphic equaliser on your computer showing the volume of your music.
+Otra forma realmente interesante de mostrar datos es mediante el uso de una serie de LEDs que se encienden y apagan a medida que cambian las lecturas: cuanto mayor es la lectura, más LEDs se encienden; como un ecualizador gráfico en tu computadora que muestra el volumen de tu música.
 
-![Image displaying graphic equaliser moving up and down](https://media.giphy.com/media/Hzt1XTt6gilFlK8Oea/giphy.gif)
+![Imagen que muestra el ecualizador gráfico moviéndose hacia arriba y hacia abajo](https://media.giphy.com/media/Hzt1XTt6gilFlK8Oea/giphy.gif)
 
-To make an LED display, you'll need a few LED bulbs — the more bulbs you have, the more precise your scale will be. There is an upper limit though: you can only have as many LEDs as there are available GPIO pins. In this example, we're using five LEDs, but you **could** connect more than ten if you choose.
+Para hacer una pantalla LED, necesitarás algunas bombillas LED; cuantas más bombillas tengas, más precisa será tu escala. Sin embargo, hay un límite superior: solo puedes tener tantos LEDs como pines GPIO disponibles. En este ejemplo, estamos usando cinco LEDs, pero **podrías** conectar más de diez si lo deseas.
 
-**Note:** Because of the way the Build HAT is designed, you **can't access GPIO 14 or 15 (pins 8 and 10)**.
+**Nota:** Debido a la forma en que está diseñado Build HAT, **no puedes acceder a GPIO 14 o 15 (pines 8 y 10)**.
 
 --- task ---
 
-Collect your LEDs, resistors, M–F jumper cables, and breadboard together. ![Image showing a Raspberry Pi with Build HAT, breadboard, LEDs, and jumper cables on a workbench.](images/LEDbuild1.jpg)
+Reúne tus LEDs, resistencias, cables de puente M – F y la placa de pruebas. ![Imagen que muestra una Raspberry Pi con Build HAT, placa de pruebas, LEDs y cables de puente en un banco de trabajo.](images/LEDbuild1.jpg)
 
 --- /task ---
 
 --- task ---
 
-Look closely at your LEDs — you'll notice that one leg is longer than the other. ![Image showing an LED in close up on a workbench.](images/LEDbuild2.jpg)
+Mira de cerca sus LEDs: notarás que una pata es más larga que la otra. ![Imagen que muestra un LED de cerca en un banco de trabajo.](images/LEDbuild2.jpg)
 
 --- /task ---
 
 --- task ---
 
-Insert the **short leg** of your LEDs into the **common ground rail** along the edge of your breadboard (it's the one next to the blue line at the very edge), and the long leg into the nearest numbered row: ![Image showing LEDs lined up on a breadboard.](images/LEDbuild3.jpg)
+Inserta la **pata corta** de tus LEDs en el **riel de tierra común** a lo largo del borde de tu tablero (es el que está al lado de la línea azul en el borde mismo), y la pata larga en la fila numerada más cercana: ![Imagen que muestra los LEDs alineados en una placa de pruebas.](images/LEDbuild3.jpg)
 
 --- /task ---
 
-You need to add a resistor to the circuit, to protect the LEDs from overloading and burning out or popping. Now is a good time to do that.
+Debes agregar una resistencia al circuito para proteger los LEDs de sobrecargas, quemaduras o estallidos. Ahora es un buen momento para hacerlo.
 
 --- task ---
 
-Take a resistor and insert one end into the **same row** as the first LED in your sequence. Insert the other end of the resistor into the same row, but **on the other side of the spine** of your breadboard, like this:
+Toma una resistencia e inserta un extremo en la **misma fila** que el primer LED de tu secuencia. Inserta el otro extremo de la resistencia en la misma fila, pero **en el otro lado del lomo** de tu tablero, así:
 
-![Image showing LEDs lined up on a breadboard, with a resistor joining the first row.](images/LEDbuild4.jpg)
+![Imagen que muestra los LED alineados en una placa de pruebas, con una resistencia que se une a la primera fila.](images/LEDbuild4.jpg)
 
-Repeat for all the LEDs in your sequence: ![Image showing LEDs lined up on a breadboard, with resistors joining the rows.](images/LEDbuildX.jpg)
-
---- /task ---
-
---- task ---
-
-Insert the M end of your M–F jumper cables into the same row as the resistors, so you can connect them to the pins on the Raspberry Pi: ![Image showing LEDs lined up on a breadboard, with resistors joining the rows, and jumper cables trailing from the breadboard.](images/LEDbuild5.jpg)
+Repite para todos los LEDs de tu secuencia: ![Imagen que muestra los LED alineados en una placa de pruebas, con resistencias que se unen a las filas.](images/LEDbuildX.jpg)
 
 --- /task ---
 
 --- task ---
 
-Take the M end of another jumper cable and insert it into the end of the common ground rail: ![Image showing a jumper cable trailing from the common ground rail of the breadboard.](images/LEDbuild6.jpg)
-
---- /task ---
-
-Your finished LED scale should look something like this:
-
-![Image showing LEDs lined up on a breadboard, with resistors joining the rows, and jumper cables trailing from the breadboard.](images/LEDbuild7.jpg)
-
-The next step is to connect it to the GPIO pins on the Raspberry Pi.
-
---- task ---
-
-Take the F end of the jumper cable connected to your common ground rail, and connect it to Pin 39. This is one of several ground pins on the Raspberry Pi, which will provide the grounding for **all** of your LED bulbs. ![Image showing a black jumper cable connected to Pin 39 on the Raspberry Pi.](images/LEDbuild9.jpg)
+Inserta el extremo M de los cables de puente M – F en la misma fila que las resistencias, para que puedas conectarlos a los pines de la Raspberry Pi: ![Imagen que muestra los LEDs alineados en una placa de pruebas, con resistencias que se unen a las filas y cables de puente que salen de la placa de pruebas.](images/LEDbuild5.jpg)
 
 --- /task ---
 
 --- task ---
 
-Connect the other cables to numbered GPIO pins, taking note of which ones you have attached your LEDs to.
-
-In this example, we have used Pins 16, 19, 20, 21, and 26 (to keep them all at one end for tidiness): ![Image showing jumper cables trailing from the Raspberry Pi GPIO pins.](images/LEDbuild10.jpg)
+Toma el extremo M de otro cable puente e insértalo en el extremo del riel de tierra común: ![Imagen que muestra un cable de puente que sale del riel de tierra común de la placa de pruebas.](images/LEDbuild6.jpg)
 
 --- /task ---
 
-Now that your LED sequence is connected to your Raspberry Pi, you need to power it up and program it.
+Tu escala de LED terminada debería verse así:
+
+![Imagen que muestra los LED alineados en una placa de pruebas, con resistencias que se unen a las filas y cables de puente que salen de la placa de pruebas.](images/LEDbuild7.jpg)
+
+El siguiente paso es conectarlo a los pines GPIO de la Raspberry Pi.
 
 --- task ---
 
-Connect the 7.5V power supply to the barrel jack on your Build HAT. You should see your Raspberry Pi power up and load the Raspberry Pi OS Desktop.
+Toma el extremo F del cable de puente conectado a su riel de tierra común y conéctelo al Pin 39. Este es uno de los varios pines de tierra en la Raspberry Pi, que proporcionará la conexión a tierra para **todas las** de sus bombillas LED. ![Imagen que muestra un cable de puente negro conectado al Pin 39 en la Raspberry Pi.](images/LEDbuild9.jpg)
 
 --- /task ---
 
 --- task ---
 
-Open **Thonny** from your **Programming menu**.
+Conecta los otros cables a los pines GPIO numerados, tomando nota de a cuáles ha conectado sus LED.
 
-The first lines of your script will import the gpiozero and randint libraries and set up your LEDs to be controllable. You will need to change the values in brackets to match the numbered pins your LEDs are connected to. **Note:** The order of these numbers is important! The pin numbers should go from the lowest on your 'bar graph' to the highest.
+En este ejemplo, hemos utilizado los pines 16, 19, 20, 21 y 26 (para mantenerlos todos en un extremo para que estén ordenados): ![Imagen que muestra los cables de puente que salen de los pines GPIO de la Raspberry Pi.](images/LEDbuild10.jpg)
 
-In the blank window enter the following code:
+--- /task ---
+
+Ahora que tu secuencia de LED está conectada a su Raspberry Pi, debes encenderla y programarla.
+
+--- task ---
+
+Conecta la fuente de alimentación de 7,5 V al conector de barril de tu Build HAT. Debería ver que tu Raspberry Pi se enciende y carga el escritorio del sistema operativo Raspberry Pi.
+
+--- /task ---
+
+--- task ---
+
+Abre **Thonny** en tu **menú de programación**.
+
+Las primeras líneas de tu script importarán las librerías gpiozero y randint y configurarán tus LEDs para que sean controlables. Necesitarás cambiar los valores entre corchetes para que coincidan con los números de los pines a los que conectaste tus LEDs. **Nota:** ¡El orden de estos números es importante! Los números de pin deben ir desde los más bajos de tu "gráfico de barras" a los más altos.
+
+En la ventana en blanco ingresa el siguiente código:
 
 --- code ---
 ---
@@ -93,34 +93,34 @@ line_highlights:
 ---
 from gpiozero import LEDBarGraph from random import randint
 
-graph = LEDBarGraph(16, 19, 20, 21, 26) #The order of these numbers should match the pins you connected up
+grafico = LEDBarGraph(16, 19, 20, 21, 26) #El orden de estos números debe coincidir con los pines que conectaste
 
 --- /code ---
 
 --- /task ---
 
-Now that you have your LEDs ready to program, the next part of your code should pull the data you want to measure, then determine how many LEDs to switch on based on the result. For testing purposes, you should use random data.
+Ahora que tienes tus LEDs listos para programar, la siguiente parte del código debería extraer los datos que quieres medir, luego determinar cuántos LEDs encender basado en el resultado. Para fines de prueba, debes utilizar datos aleatorios.
 
-The intention is to have the LEDs turn on as the reading increases, and to turn off as it decreases. As with the other indicators, you will need to map your data across your scale.
+La intención es que los LEDs se enciendan a medida que aumenta la lectura, y que se apaguen a medida que disminuye. Al igual que con los otros indicadores, necesitarás mapear tus datos a través de tu escala.
 
 --- task ---
 
-Enter the following code at the end of your open script:
+Agrega el siguiente código al final de tu programa:
 
 --- code ---
 ---
 language: python filename: led_sequence.py line_numbers: true line_number_start: 9
 line_highlights:
 ---
-while True: data_reading = randint(0, 100) graph.value = 1/data_reading #This creates a decimal value for the graph to display sleep(0.5) --- /code ---
+while True: lectura = randint(0, 100) grafico.value = 1/lecture #Esto crea un valor decimar para que el grafico muestre sleep(0.5) --- /code ---
 
 --- /task ---
 
 --- task ---
 
-Save your work as `led_sequence.py` and click **Run**. You should see your bar graph begin to light up!
+Guarda tu trabajo como `led_sequence.py` y haz clic en **Ejecutar**. ¡Deberías ver que tu gráfico de barras se empieza a encender!
 
-![Animated image showing a changing bar graph made of LEDs.](images/LEDbuild.gif)
+![Imagen animada que muestra un gráfico de barras cambiante hecho de LEDs.](images/LEDbuild.gif)
 
 --- /task ---
 
