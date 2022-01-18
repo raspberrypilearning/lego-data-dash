@@ -1,18 +1,18 @@
-## Make a LEGO® sliding indicator
+## 制作一个乐高（LEGO®）滑动指示器
 
-Now it's time to make a LEGO® sliding indicator! If you don't want to include a sliding indicator, you can skip to the next step, which shows you how to create rotating LEGO dials.
+现在可以开始制作乐高（LEGO®）滑动指示器了！ 如果您不想包含滑动指示器，可以跳到下一步：创建旋转乐高（LEGO）表盘。
 
-This is what a vertical slider looks like:
+这是垂直滑动指示器的样子：
 
-![Image showing a vertical LEGO® slider acting as a thermometer.](images/slider.jpg)
+![乐高（LEGO® ）垂直滑块做的温度计的图片。](images/slider.jpg)
 
-Sliding indicators can also run horizontally if you prefer, by rotating the build 90 degrees anti-clockwise.
+如果您愿意，也可以将滑动指示器逆时针旋 90 度，从而做到水平滑动。
 
 --- task ---
 
-Follow these build instructions to create a vertical sliding indicator:
+按照以下步骤创建垂直滑动指示器：
 
-To construct this model, follow our handy building guide here or [download it.](resources/lego-data-dash-slider.pdf)
+要构建此模型，请按照我们下述的构建指南进行操作，也可在此[下载](resources/lego-data-dash-slider.pdf)。
 <embed src="resources/lego-data-dash-slider.pdf" width="600" height="500" alt="pdf" pluginspage="https://www.adobe.com/products/acrobat/readstep2.html">
   </p> 
   
@@ -25,7 +25,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a yellow plate element and attach two blue beams using 90 degree stud brackets. <img src="images/sliderbuild1.jpg" alt="Image showing a Build Plate with blue legs." />
+    取一个黄色板，利用 90 度螺柱支架连接上两个蓝色横梁。<img src="images/sliderbuild1.jpg" alt="安装了蓝色支脚的构建板的图片。" />
   </p>
   
   <p spaces-before="0">
@@ -37,7 +37,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two grey straight brackets, one column apart. <img src="images/sliderbuild2.jpg" alt="Image showing the Build Plate with two straight brackets." />
+    接上两个灰色直支架，中间分隔一列。 <img src="images/sliderbuild2.jpg" alt="Image showing the Build Plate with two straight brackets." />
   </p>
   
   <p spaces-before="0">
@@ -49,7 +49,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two grey double length studs with spacers on one end to the plate element above the brackets. <img src="images/sliderbuild3.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    将两个带垫片的，灰色双倍长度螺柱连接到支架上方。 <img src="images/sliderbuild3.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
   </p>
   
   <p spaces-before="0">
@@ -61,7 +61,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two yellow (three-hole) beams horizontally between the two straight brackets. <img src="images/sliderbuild4.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    将两个直支架用两个黄色（三孔）梁水平连接起来。 <img src="images/sliderbuild4.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
   </p>
   
   <p spaces-before="0">
@@ -73,7 +73,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a small black gear and a short axle, and join them together. <img src="images/sliderbuild5.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear." />
+    取一个黑色的小齿轮和一个短轴，将它们连接在一起。 <img src="images/sliderbuild5.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear." />
   </p>
   
   <p spaces-before="0">
@@ -97,7 +97,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a toothed bar, a red axle, and an indicator arrow. Insert the axle into one end of the toothed bar, with the indicator arrow pointing toward the toothed side: <img src="images/sliderbuild11.jpg" alt="Image showing the toothed bar, axle, and indicator arrow." />
+    取一个齿条、一个红色轴和一个指示箭头。 将红色轴插入齿条的一端，连接指示箭头，并指向牙齿侧方向： <img src="images/sliderbuild11.jpg" alt="齿条、短轴和指示箭头的图像。" />
   </p>
   
   <p spaces-before="0">
@@ -109,23 +109,11 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Slide the toothed bar down into the top of the mechanism.
+    将齿条滑入支架结构，直到触及顶部。
   </p>
   
   <p spaces-before="0">
-    You will have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth. The mechanism will slide easily up and down while the gear and axle are free. Connecting a motor will hold it steady. <img src="images/sliderbuild8.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted." />
-  </p>
-  
-  <p spaces-before="0">
-    --- /task ---
-  </p>
-  
-  <p spaces-before="0">
-    --- task ---
-  </p>
-  
-  <p spaces-before="0">
-    Take a motor and add two studs to the flat side, in the top two holes. <img src="images/sliderbuild9.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted, and a motor on the table." />
+    您须要向前拉齿轮，以便于齿条通过，然后将齿轮推回并与齿扣接合。 当齿轮和轴可以自由转动时，带了指示箭头的齿条可以轻易地上下滑动。 连接马达后就可以保持齿条的稳定。 <img src="images/sliderbuild8.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted." />
   </p>
   
   <p spaces-before="0">
@@ -137,11 +125,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Before attaching the motor to the rear of the slider's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
-  </p>
-  
-  <p spaces-before="0">
-    <img src="images/aligned_symbols.jpg" alt="Image showing motor 'zeroed in' with aligned symbols." />
+    取一个马达，在平滑面的顶部上方添加两个螺柱。 <img src="images/sliderbuild9.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted, and a motor on the table." />
   </p>
   
   <p spaces-before="0">
@@ -153,7 +137,23 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Adjust your toothed bar so the gear sits about halfway along it, then mount the motor behind the board using the two studs while holding the toothed bar in place. Make sure the axle fits into the hole on the <strong x-id="1">flat side</strong> of the motor. It should keep the slider held steady now, around halfway along the bar. <img src="images/sliderbuild10.jpg" alt="Image showing the Build Plate with a motor mounted on the back." />
+    在将马达连接到滑动指示器的背面之前，通过将马达边缘的两个棒棒糖符号对齐，确保它已“归零”：
+  </p>
+  
+  <p spaces-before="0">
+    <img src="images/aligned_symbols.jpg" alt="对齐了符号的已“归零”马达的图片。" />
+  </p>
+  
+  <p spaces-before="0">
+    --- /task ---
+  </p>
+  
+  <p spaces-before="0">
+    --- task ---
+  </p>
+  
+  <p spaces-before="0">
+    调整你的齿条高度，使齿轮位于它的一半左右。将齿条固定后，然后使用两个螺柱将马达安装在指示器的背面。 确保短轴准确地插入马达 <strong x-id="1">平滑面</strong>的孔中。 这样可以使齿轮保持稳定在齿条的中部。 <img src="images/sliderbuild10.jpg" alt="Image showing the Build Plate with a motor mounted on the back." />
   </p>
   
   <p spaces-before="0">
@@ -161,7 +161,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
 
 <h3 spaces-before="0">
-  Test the sliding indicator
+  测试滑动指示器
 </h3>
 
 <p spaces-before="0">
@@ -173,7 +173,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Connect the motor of your slider to port A on your Build HAT.
+  将滑动指示器的马达连接到 Build HAT 上的端口 A。
 </p>
 
 <p spaces-before="0">
@@ -185,7 +185,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  You will use the BuildHAT Python library, so make sure it is installed:
+  您将使用 BuildHAT Python 库，因此请确保已安装它：
 </p>
 
 <p spaces-before="0">
@@ -193,19 +193,19 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 <hr />
 <h2 spaces-before="0">
-  title: Install the BuildHAT Python library
+  标题：安装 BuildHAT Python 库
 </h2>
 
 <p spaces-before="0">
-  Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
+  按下<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>，在 Raspberry Pi 上打开一个终端窗口。
 </p>
 
 <p spaces-before="0">
-  At the prompt type: <code>pip3 install buildhat</code>
+  在提示符后键入： <code>sudo pip3 install buildhat</code>
 </p>
 
 <p spaces-before="0">
-  Press <kbd>Enter</kbd> and wait for the "installation completed" message.
+  按 <kbd>回车</kbd> 并等待“installation completed”消息。
 </p>
 
 <p spaces-before="0">
@@ -217,11 +217,11 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <h3 spaces-before="0">
-  Create the scale for your sliding indicator
+  为您的滑动指示器创建比例尺
 </h3>
 
 <p spaces-before="0">
-  Now you know it works, you will need to create a scale for the sliding indicator, so you know what it means.
+  现在您知道滑动指示器可以运作了，您需要为它创建一个刻度，从而知道它的含义。
 </p>
 
 <p spaces-before="0">
@@ -229,7 +229,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Get a piece of card about as long as your toothed bar. Stick it next to the sliding indicator, under the pointer. Have a marker or pencil ready.
+  拿一张大约和你的齿条一样长的卡片。 将它贴在指针下方的滑动指示器旁边。 准备好记号笔或铅笔。
 </p>
 
 <p spaces-before="0">
@@ -241,35 +241,11 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Open <strong x-id="1">Thonny</strong> on your Raspberry Pi from the <strong x-id="1">Programming menu</strong>.
+  从Raspberry Pi 上的<strong x-id="1">Programming </strong>菜单中启动 <strong x-id="1">Thonny</strong>。
 </p>
 
 <p spaces-before="0">
-  In the <strong x-id="1">Shell</strong> (the window at the bottom), next to the three arrows, type: <code>from buildhat import Motor</code> and press <kbd>Enter</kbd>. You should see a new line appear with three more arrows.
-</p>
-
-<p spaces-before="0">
-  --- /task ---
-</p>
-
-<p spaces-before="0">
-  --- task ---
-</p>
-
-<p spaces-before="0">
-  Now type: <code>motor = = Motor('A')</code> and press <kbd>Enter</kbd>. --- /task ---
-</p>
-
-<p spaces-before="0">
-  Now you've set up your slider motor to run, you should send it to the maximum and minimum readings to see how far it can travel — then mark those places on the card.
-</p>
-
-<p spaces-before="0">
-  --- task ---
-</p>
-
-<p spaces-before="0">
-  Type: <code>motor.run_to_position(-180, 100)</code> and press <kbd>Enter</kbd>. Mark the card at the place the arrow indicates. This is your minimum possible readout.
+  在（底部的）<strong x-id="1">Shell</strong> 窗口中，在三个箭头后面键入： <code>from buildhat import Motor</code> 并按 <kbd>回车</kbd>。 您应该会看到一个同样带有三个箭头的新行。
 </p>
 
 <p spaces-before="0">
@@ -281,7 +257,19 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Type: <code>motor.run_to_position(180, 100, direction=clockwise)</code> and press <kbd>Enter</kbd>. Mark the card at the place the arrow indicates. This is your maximum possible readout.
+  现在输入： <code>motor = = Motor('A')</code> 并按 <kbd>回车</kbd>。 --- /task ---
+</p>
+
+<p spaces-before="0">
+  现在您已经配置好马达，请将马达运转到最大和最小读数以查看指示箭头可以移动到多远 - 在卡片上标记相应位置。
+</p>
+
+<p spaces-before="0">
+  --- task ---
+</p>
+
+<p spaces-before="0">
+  键入： <code>motor.run_to_position(-180, 100)</code> 并按 <kbd>回车</kbd>。 在卡片上标记箭头指示的位置。 这是您的最小读数。
 </p>
 
 <p spaces-before="0">
@@ -289,11 +277,23 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  You now know where your minumum and maximum possible readings are. Once you link the slider to some data, you will be able to create an accurate scale.
+  --- task ---
+</p>
+
+<p spaces-before="0">
+  键入： <code>motor.run_to_position(180, 100)</code> 并按 <kbd>回车</kbd>。 在卡片上标记箭头指示的位置。 这是您的最大读数。
+</p>
+
+<p spaces-before="0">
+  --- /task ---
+</p>
+
+<p spaces-before="0">
+  您现在知道您的最小和最大读数在哪里。 一旦你将滑块指示器关联到一些数据，你就将能够创建一个准确的尺度。
 </p>
 
 <h3 spaces-before="0">
-  Program your sliding indicator to show live data
+  编程您的滑动指示器以显示实时数据
 </h3>
 
 <p spaces-before="0">
@@ -301,7 +301,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Enter the following code in a blank tab:
+  新建文件并输入以下代码：
 </p>
 
 <p spaces-before="0">
@@ -337,7 +337,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Save your work as <code>slider_test.py</code> and click <strong x-id="1">Run</strong>. You should see your slider move up and down (or back and forth!)
+  将您的工作保存为 <code>slider_test.py</code> 并单击 <strong x-id="1">Run</strong>。 您应该可以看到滑块上下移动（或前后移动！）
 </p>
 
 <p spaces-before="0">
