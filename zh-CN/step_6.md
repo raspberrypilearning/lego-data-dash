@@ -1,45 +1,45 @@
-## Access the OpenAQ API
+## 访问 OpenAQ API
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">API stands for <span style="color: #0faeb0">**Application Programming Interface**</span>; this is software that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you’re using an API.</p>
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">API 代表 <span style="color: #0faeb0">**应用程序编程接口**</span>;这是一个允许两个应用程序相互交谈的软件。 每次您使用 Facebook 等应用程序、发送即时消息或在手机上查看天气时，您都在使用 API。</p>
 
-Whenever you use an app on your phone, the app connects to the internet and sends data about what you want to know to a server. The server then finds and retrieves the data you want, interprets it, and sends it back to your phone. The app then takes the data that has been returned and presents you with the information you wanted in a readable way. This is what an API is: a way to control other machines over the internet — all of this happens through the **API**.
+每当您在手机上使用应用程序时，该应用程序都会连接到互联网并将有关您想知道的内容的数据发送到服务器。 然后服务器会查找并检索您想要的数据，对其进行解释，然后将其发送回您的手机。 然后，该应用程序获取已返回的数据，并以可读的方式向您呈现您想要的信息。 这就是 API：一种通过互联网控制其他机器的方法——所有这些都通过 **API**。
 
-The cool part is, you can write your own apps that investigate online databases of information and return the desired data to your LEGO® dashboard instead of a phone — you'll use your Raspberry Pi as the brains to get that data, then display it on your hand-made, custom LEGO indicators!
+最酷的部分是，您可以编写自己的应用程序来调查在线信息数据库并将所需数据返回到您的 LEGO® 仪表板而不是手机 — 您将使用 Raspberry Pi 作为大脑来获取这些数据，然后显示它在您手工制作的定制乐高指示器上！
 
-To do that, you'll need to decide on a few things: you'll need to pick the location where you will find out about the air quality — you can choose anywhere in the world! — and you'll need to decide which markers of air quality you want to represent.
+为此，您需要决定几件事：您需要选择可以了解空气质量的地点——您可以选择世界上任何地方！ — 您需要决定要代表哪些空气质量标志。
 
-### OpenAQ — the open-source air quality database
+### OpenAQ — 开源空气质量数据库
 
-In your example dashboard, you're going to be using the API for [**OpenAQ**](https://openaq.org/#/){:target="_blank"}, an open-source, global air quality data project. OpenAQ allows you to look at lots of different air pollution data from all over the globe, collected by thousands of measurement stations around the world.
+在您的示例仪表板中，您将使用 [**OpenAQ**](https://openaq.org/#/){:target="_blank"} 的 API，这是一个开源的全球空气质量数据项目。 OpenAQ allows you to look at lots of different air pollution data from all over the globe, collected by thousands of measurement stations around the world.
 
-If you're already a wizard with APIs, you can use any data you like to represent on your dashboard. If you want to follow along with us and use OpenAQ for your first try, you'll need to find out which measurement station you want to investigate and which measurements you are able to view.
+如果您已经是 API 向导，则可以使用您喜欢在仪表板上表示的任何数据。 如果您想跟随我们并首次尝试使用 OpenAQ，您需要找出您想要调查的测量站以及您能够查看的测量结果。
 
 --- task ---
 
-**Navigate** to the OpenAQ map by [clicking here](https://openaq.org/#/map){:target="_blank"}. A webpage showing a world map covered in dots should appear.
+** [单击此处](https://openaq.org/#/map){:target="_blank"} 导航** 到 OpenAQ 地图。 应该会出现一个显示由点覆盖的世界地图的网页。
 
 --- /task ---
 
 --- task ---
 
-**Decide** where in the world you would like to gather data about air quality from. This could be the area near where you live, somewhere that interests you, or somewhere that you think might have interesting data.
+**决定** 您希望从世界上的哪个地方收集有关空气质量的数据。 这可能是您居住地附近的区域、您感兴趣的地方或您认为可能有有趣数据的地方。
 
 --- /task ---
 
-As our headquarters are in Cambridge, in the United Kingdom, we will use that as the example here.
+由于我们的总部位于英国剑桥，因此我们将以此为示例。
 
-There are many different measurements taken by air quality monitoring stations. The OpenAQ database has information on the following types of air pollution:
+空气质量监测站进行了许多不同的测量。 OpenAQ 数据库包含有关以下类型空气污染的信息：
 
- + PM2.5 and PM10 (particulate matter): microscopic particles floating in the air (smoke, smog)
- + NO2 (nitrogen dioxide): causes ozone creation, causes asthma in children
- + CO (carbon monoxide): deadly to humans, side effect of burning fossil fuels
- + SO2 (sulfur dioxide): smells bad, can cause breathing problems, creates acid rain, side effect of industrial treatments
- + O3 (ozone): created when NO2 reacts to sunlight, causes smog, harmful to plants
- + BC (black carbon): not measured in many places (US and Poland), caused by inefficient fuel burning, adds to global warming, dangerous to humans
+ + PM2.5和PM10（颗粒物）：漂浮在空气中的微小颗粒（烟、雾）
+ + NO2（二氧化氮）：导致臭氧产生，导致儿童哮喘
+ + CO（一氧化碳）：对人类致命，燃烧化石燃料的副作用
+ + SO2（二氧化硫）：气味难闻，会导致呼吸问题，产生酸雨，工业处理的副作用
+ + O3（臭氧）：当 NO2 与阳光发生反应时产生，产生烟雾，对植物有害
+ + BC（黑碳）：在很多地方（美国和波兰）没有测量，由于燃料燃烧效率低下，加剧了全球变暖，对人类有害
 
 --- task ---
 
-**Decide** upon what kind of air pollution you are most interested in measuring. You can choose different options from the pulldown menu near the coloured scale on the left of the screen. ![Image showing the pulldown menu in the OpenAQ map.](images/mapscale.jpg)
+**决定** 您最想测量哪种空气污染。 You can choose different options from the pulldown menu near the coloured scale on the left of the screen. ![显示 OpenAQ 地图中下拉菜单的图像。](images/mapscale.jpg)
 
 **Note:** Round markers represent more substantial air quality stations which are likely to measure more varied pollutants.
 
