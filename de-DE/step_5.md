@@ -6,7 +6,7 @@ Eine andere wirklich coole Möglichkeit, Daten anzuzeigen, ist die Verwendung ei
 
 Um eine LED-Anzeige zu erstellen, benötigst du ein paar LEDs – je mehr LEDs du hast, desto genauer wird deine Skala. Es gibt jedoch eine Obergrenze: Du kannst nur so viele LEDs benutzen, wie GPIO-Pins verfügbar sind. In diesem Beispiel verwenden wir fünf LEDs, aber man **könnte** mehr als zehn anschließen, wenn du möchtest.
 
-**Hinweis:** Aufgrund der Konstruktion des Build HAT **kannst du auf GPIO 14 oder 15 (Pins 8 und 10)**nicht zugreifen.
+**Hinweis:** Aufgrund der Konstruktion des Build HAT **kannst du auf GPIO 14 oder 15 (Pins 8 und 10)** nicht zugreifen.
 
 --- task ---
 

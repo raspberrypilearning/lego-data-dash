@@ -1,6 +1,6 @@
 ## Einleitung
 
-In diesem Projekt erstellst du eine Instrumententafel, die Daten visualisiert. Du kannst auswählen, welche Daten aus einer Reihe von Online-Quellen angezeigt werden. Deine Daten-Instrumententafel muss die **Projektbeschreibung**erfüllen.
+In diesem Projekt erstellst du eine Instrumententafel, die Daten visualisiert. Du kannst auswählen, welche Daten aus einer Reihe von Online-Quellen angezeigt werden. Deine Daten-Instrumententafel muss die **Projektbeschreibung** erfüllen.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 Eine <span style="color: #0faeb0">Instrumententafel</span> ist eine Benutzeroberfläche, die eine aktuelle Zusammenfassung wichtiger Informationen bereitstellt, meist in grafischer oder leicht lesbarer Form. Der Begriff stammt aus dem Auto, bei dem dem Fahrer durch große, helle Zifferblätter und Skalen der aktuelle Status des Fahrzeugs angezeigt wird.</p>

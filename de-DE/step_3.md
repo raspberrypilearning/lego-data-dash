@@ -14,7 +14,7 @@ Befolge diese Bauanleitung, um einen vertikalen Schiebeindikator zu erstellen:
 
 Um dieses Modell zu konstruieren, folge unserer praktischen Bauanleitung hier oder [lade sie dir herunter.](resources/lego-data-dash-slider.pdf)
 <embed src="resources/lego-data-dash-slider.pdf" width="600" height="500" alt="pdf" pluginspage="https://www.adobe.com/products/acrobat/readstep2.html">
-  </p> 
+
 
 --- /task ---
 --- task ---

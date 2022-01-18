@@ -4,7 +4,7 @@ Im Moment verwenden deine Anzeigen zufällige ganze Zahlen zwischen -175 und 175
 
 **Kalibrieren** der Anzeigen bedeutet, dass die maximal und minimal möglichen Datenwerte von deiner API auf Werte zwischen -175° und 175° auf deinem Motor abgebildet werden. Der höchstmögliche Messwert liegt bei -175°, während der niedrigste Messwert bei 175° liegt. (Weil du die Motoren umgekehrt montiert hast!)
 
-In unserem Beispiel zeigen wir den **Feinstaub (PM2,5)** auf dem Messgerät an, während die Linearanzeige den Stickstoffdioxidgehalt (NO2) anzeigt. Der Begriff **Feinstaub**oder Feinstaub 2,5 (PM2,5) bezieht sich auf winzige Partikel oder Tröpfchen in der Luft, die zweieinhalb Mikrometer (oder weniger) groß sind. Die von PM2,5 gemessenen Partikel sind die Hauptbestandteile von Rauch und Smog und erschweren die Sicht.
+In unserem Beispiel zeigen wir den **Feinstaub (PM2,5)** auf dem Messgerät an, während die Linearanzeige den Stickstoffdioxidgehalt (NO2) anzeigt. Der Begriff **Feinstaub** oder Feinstaub 2,5 (PM2,5) bezieht sich auf winzige Partikel oder Tröpfchen in der Luft, die zweieinhalb Mikrometer (oder weniger) groß sind. Die von PM2,5 gemessenen Partikel sind die Hauptbestandteile von Rauch und Smog und erschweren die Sicht.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">Wie Zoll, Meter und Millimeter ist ein <span style="color: #0faeb0">Mikron</span> eine Maßeinheit für Entfernung. Ein Zentimeter entspricht 10.000 Mikrometer. Der Durchmesser der größeren Partikel im Größenbereich PM2,5 wäre etwa dreißigmal kleiner als die Dicke eines menschlichen Haares. Diese Teilchen sind so klein, dass mehrere Tausend von ihnen auf den Punkt am Ende dieses Satzes passen.</p>
 
