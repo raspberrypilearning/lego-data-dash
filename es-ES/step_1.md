@@ -1,14 +1,14 @@
-## Introduction
+## Introducción
 
-In this project, you are going to create a dashboard that will visualise data; you can choose what data it shows from a range of online sources. Your data dashboard will need to meet the **project brief**.
+En este proyecto, crearás un tablero que visualizará los datos; puedes elegir qué datos mostrar de una variedad de fuentes en línea. Tu panel de datos deberá cumplir con el **resumen del proyecto**.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">dashboard</span> is a user interface that gives a current summary of important information, usually in a graphical or easy-to-read form. The term originates from cars, where the driver is shown the current status of the vehicle by big, bright dials and scales.</p>
+Un <span style="color: #0faeb0">tablero</span> es una interfaz de usuario que brinda un resumen actual de información importante, generalmente en forma gráfica o fácil de leer. El término se origina en los automóviles, donde al conductor se le muestra el estado actual del vehículo mediante diales y escalas grandes y brillantes.</p>
 
-You will:
-+ Build automated indicators using LEGO® motors and elements
-+ Access an online **API** (Application Programming Interface) to retrieve interesting data using Python
-+ Display your chosen data on a dashboard you create using LEGO
+Vas a:
++ Construir indicadores automatizados usando motores y elementos LEGO®
++ Acceder a una **API** (interfaz de programación de aplicaciones) en línea para recuperar datos interesantes utilizando Python
++ Mostrar los datos elegidos en un tablero crado con LEGO
 
 --- no-print ---
 
@@ -20,93 +20,93 @@ You will:
 
 --- collapse ---
 ---
-title: What you will need
+title: Lo que necesitarás
 ---
 ### Hardware
 
-+ A Raspberry Pi computer
-+ A Raspberry Pi Build HAT
-+ A Raspberry Pi Build HAT 7.5V PSU
-+ 2 LEGO® Technic™ motors (more optional)
-+ A LEGO® SPIKE™ Force Sensor
-+ Assortment of LEGO® (we used a selection from the [LEGO® SPIKE™ Prime kit](https://education.lego.com/en-gb/product/spike-prime){:target="_blank"})
-+ Paper or card
-+ Tack or tape for sticking down card
-+ Marker or pencil
-+ Scissors or craft knife
++ Una computadora Raspberry Pi
++ Un Build HAT Raspberry Pi
++ Una fuente de alimentación Raspberry Pi Build HAT de 7.5V
++ 2 motores LEGO® Technic ™ (más opcionales)
++ Un sensor de fuerza LEGO® SPIKE ™
++ Surtido de LEGO® (utilizamos una selección del [LEGO® SPIKE ™ Prime](https://education.lego.com/en-gb/product/spike-prime){: target = "_ blank"})
++ Papel o cartulina
++ Tachuela o cinta adhesiva para pegar la tarjeta
++ Rotulador o lápiz
++ Tijeras o cuchillo artesanal
 
-Optional:
-+ LEDs
-+ Resistors
-+ Jumper wires
-+ A breadboard
-+ M2 bolts and nuts (×2 of each for mounting the Raspberry Pi onto the LEGO® Build Plate)
+Opcional:
++ LED
++ Resistencias
++ Cables de puente
++ Una placa de pruebas
++ Pernos y tuercas M2 (× 2 de cada uno para montar la Raspberry Pi en la placa de construcción LEGO®)
 
 ### Software
 
-+ BuildHAT Python library for controlling the Build HAT
-+ Thonny Python IDE
++ Biblioteca BuildHAT Python para controlar Build HAT
++ IDE de Thonny Python
 
-### Downloads
+### Descargas
 
-+ The final script for this project is available [here]((https://rpf.io/p/en/lego-data-dash-go){:target="_blank"})
++ El programa final de este proyecto está disponible [aquí]((https://rpf.io/p/en/lego-data-dash-go){:target="_blank"})
 
 --- /collapse ---
 
-Before you begin, you'll need to have set up your Raspberry Pi computer and attached your Build HAT:
+Antes de comenzar, deberás configurar tu computadora Raspberry Pi e instalar el Build HAT:
 
 --- task ---
 
-Mount your Raspberry Pi on to the LEGO Build Plate using M2 bolts and nuts, making sure the Raspberry Pi is on the side without the 'edge':
+Monta tu Raspberry Pi en la placa de construcción LEGO usando pernos y tuercas M2, asegurándote de que la Raspberry Pi esté en el lado sin el 'borde':
 
- ![Raspberry Pi bolted to a magenta LEGO Build Plate.](images/build_11.jpg)
+ ![Raspberry Pi atornillada a una placa de construcción LEGO magenta.](images/build_11.jpg)
 
 --- /task ---
 
-Mounting the Raspberry Pi this way round enables easy access to the ports as well as the SD card slot. The Build Plate will allow you to connect the Raspberry Pi to the main structure of your dashboard more easily.
+Montar la Raspberry Pi de esta manera permite un fácil acceso a los puertos, así como a la ranura de la tarjeta SD. La placa de construcción te permitirá conectar la Raspberry Pi a la estructura principal de tu tablero más fácilmente.
 
 --- task ---
 
-Line up the Build HAT with the Raspberry Pi, ensuring you can see the `This way up` label. Make sure all the GPIO pins are covered by the HAT, and press down firmly. (The example uses a [stacking header](https://www.adafruit.com/product/2223){:target="_blank"}, which makes the pins longer.)
+Alinea el Build HAT con la Raspberry Pi, asegurándote de que puedes ver la etiqueta `This way up`. Asegúrate de que todos los pines GPIO estén cubiertos por el HAT y presiona firmemente. (El ejemplo usa un encabezado de apilamiento [](https://www.adafruit.com/product/2223){: target = "_ blank"}, lo que alarga los pines)
 
-![Image of GPIO pins poking through the top of the Build HAT.](images/build_15.jpg) ![Animation showing Buildhat fitting to Raspberry Pi](images/haton.gif)
+![Imagen de los pines GPIO asomándose por la parte superior del Build HAT.](images/build_15.jpg) ![Animación que muestra el ajuste de Buildhat a Raspberry Pi](images/haton.gif)
 
 --- /task ---
 
-You should now power your Raspberry Pi using the 7.5V barrel jack on the Build HAT, which will allow you to use the motors.
+Ahora debes encender tu Raspberry Pi utilizando el conector de barril de 7.5V en el Build HAT, lo cual te permitirá usar los motores.
 
 --- task ---
 
-If you have not already done so, set up your Raspberry Pi by following these instructions:
+Si aún no lo ha hecho, configura tu Raspberry Pi siguiendo estas instrucciones:
 
-[Setting up your Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up){:target="_blank"}
-
---- /task ---
-
---- task ---
-
-Once the Raspberry Pi has booted, open the Raspberry Pi Configuration tool by clicking on the Raspberry Menu button and then selecting “Preferences” and then “Raspberry Pi Configuration”.
-
-Click on the “interfaces” tab and adjust the Serial settings as shown below:
-
-![Image showing Raspberry Pi OS config screen with serial port enabled and serial console disabled](images/configshot.jpg)
+[Configurando tu Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up){:target="_blank"}
 
 --- /task ---
 
 --- task ---
 
-You will also need to install the buildhat python library by following these instructions:
+Una vez que la Raspberry Pi se haya iniciado, abra la herramienta de configuración de Raspberry Pi haciendo clic en el botón Menú de Raspberry y luego seleccionando "Preferencias" y luego "Configuración de Raspberry Pi".
+
+Haz clic en la pestaña "interfaces" y ajusta la configuración Serie como se muestra a continuación:
+
+![Imagen que muestra la pantalla de configuración del sistema operativo Raspberry Pi con el puerto en serie habilitado y la consola en serie deshabilitada](images/configshot.jpg)
+
+--- /task ---
+
+--- task ---
+
+También necesitarás instalar la biblioteca buildhat de python siguiendo estas instrucciones:
 
 --- collapse ---
 ---
-title: Install the buildhat Python library
+title: Instale la biblioteca buildhat Python
 ---
 
-Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
+Abre una ventana de terminal en tu Raspberry Pi presionando <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
 
-At the prompt type: `sudo pip3 install buildhat`
+En el indicador, escribe: `sudo pip3 install buildhat`
 
-Press <kbd>Enter</kbd> and wait for the "installation completed" message.
+Presiona <kbd>Entrar</kbd> y espera el mensaje "installation completed".
 
 --- /collapse ---
 
@@ -115,41 +115,41 @@ Press <kbd>Enter</kbd> and wait for the "installation completed" message.
 
 <div style="border-top: 15px solid #f3524f; background-color: whitesmoke; margin-bottom: 20px; padding: 10px;">
 
-### PROJECT BRIEF: LEGO® data dashboard
+### RESUMEN DEL PROYECTO: Panel de datos LEGO®
 <hr style="border-top: 2px solid black;">
 
-Your task is to create a LEGO dashboard that will display your chosen data. The sources for your data can be any API you like, but in this example, we will show you how to access OpenAQ, which requires minimal or no sign up. 
+Tu tarea es crear un tablero de LEGO que mostrará los datos elegidos. Las fuentes para tus datos pueden ser cualquier API que quieras, pero en este ejemplo, te mostraremos cómo acceder a OpenAQ, que requiere mínimo o ningún registro. 
 
-For our example data, we will be measuring:
-+ The **NO2** levels at a chosen location. Nitrogen dioxide (NO2) is one of a group of highly reactive gases known as nitrogen oxides or NOx. NO2 is primarily released into the air from the burning of fuel.
-+ The **fine particles (PM2.5)** levels at a chosen location. The term **fine particles**, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and a half microns (or less) in size. Particles classed as PM2.5 are what make up smoke and smog.
-
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">The example API we are using in this project is from [OpenAQ](https://openaq.org/#/), a global non-profit organisation "fighting air inequality through open data". Globally, **1 in 8 deaths** are due to poor air quality, and OpenAQ collects global air quality data to help inform more people about the problems of increasing air pollution in some parts of the world. </p>
+Para nuestros datos de ejemplo, mediremos:
++ Los niveles de ** NO2 ** en una ubicación elegida. El dióxido de nitrógeno (NO2) es uno de un grupo de gases altamente reactivos conocidos como óxidos de nitrógeno o NOx. El NO2 se libera principalmente al aire a partir de la quema de combustible.
++ Los niveles de ** partículas finas (PM2.5) ** en una ubicación elegida. El término ** partículas finas **, o material particulado 2.5 (PM2.5), se refiere a partículas diminutas o gotitas en el aire que tienen un tamaño de dos micrones y medio (o menos). Las partículas clasificadas como PM2.5 son las que forman el humo y el smog.
 
 
-Your dashboard should:
-+ Use LEGO® to display your chosen data in a clear way
-+ Access an online API to retrieve up-to-date data
-+ Have at least two LEGO® indicators
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">La API de ejemplo que estamos usando en este proyecto es de [OpenAQ](https://openaq.org/#/), una organización global sin fines de lucro que "lucha contra la desigualdad del aire a través de datos abiertos". A nivel mundial, ** 1 de cada 8 muertes ** se debe a la mala calidad del aire, y OpenAQ recopila datos sobre la calidad del aire a nivel mundial para ayudar a informar a más personas sobre los problemas del aumento de la contaminación del aire en algunas partes del mundo. </p>
 
-Your dashboard could:
-+ Use other electronic components (LEDs, buzzers)
-+ Have physical user inputs (LEGO® Technic™ motors, LEGO® Force Sensor, GPIO button, distance sensor)
+
+Tu tablero debe:
++ Usar LEGO® para mostrar los datos elegidos de una manera clara
++ Acceder a una API en línea para recuperar datos actualizados
++ Tener al menos dos indicadores LEGO®
+
+Tu tablero podría:
++ Usar otros componentes electrónicos (LED, zumbadores)
++ Tener entradas físicas del usuario (motores LEGO® Technic ™, sensor de fuerza LEGO®, botón GPIO, sensor de distancia)
   
 </div>
 
 --- no-print ---
 
-### Get inspiration
+### Inspírate
 
 --- task ---
 
-Think about the information you would like to display on your dashboard as you investigate these example projects to get more ideas.
+Piensa qué información te gustaría mostrar en tu tablero mientras investigas estos proyectos de ejemplo para obtener más ideas.
 
-This example shows a weather dashboard displaying the current temperature on a vertical slider, the cloud cover using an LED scale, and on the rotating dials it suggests a suitable level of clothing based on the apparent temperature (it includes the wind and other weather in the temperature) and a detailed weather report using World Weather Codes (a.k.a. WMO code).
+Este ejemplo muestra un tablero meteorológico que muestra la temperatura actual en un control deslizante vertical, la nubosidad usando una escala LED y en los diales giratorios sugiere un nivel adecuado de ropa basado en la temperatura aparente (incluye el viento y otras condiciones climáticas en el temperatura) y un informe meteorológico detallado utilizando los códigos meteorológicos mundiales (también conocidos como Código OMM).
 
-![Demo Video](images/weather-dash.gif)
+![Vídeo de demostración](images/weather-dash.gif)
 
 --- /task ---
 
@@ -157,7 +157,7 @@ This example shows a weather dashboard displaying the current temperature on a v
 
 --- print-only ---
 
-![Image showing a weather station dashboard made of LEGO®.](images/example-dash.jpg)
+![Imagen que muestra el tablero de una estación meteorológica hecho de LEGO®.](images/example-dash.jpg)
 
 --- /print-only ---
 
