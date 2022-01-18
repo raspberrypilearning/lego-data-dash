@@ -1,25 +1,25 @@
 ---
-title: LEGO® data dashboard
+title: 乐高（LEGO®） 数据仪表板
 hero_image: images/banner.png
-description: Display pollution data on physical dials and sliders with LEGO® and the Build HAT
+description: 使用乐高（LEGO®） 和 Build HAT 在物理表盘和滑动指示器上显示污染数据
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-03-26"
 steps:
   - 
-    title: Introduction
+    title: 介绍
   - 
-    title: Plan your dashboard
+    title: 规划您的仪表板
   - 
-    title: Make a LEGO® sliding indicator
+    title: 制作一个乐高（LEGO®） 滑动指示器
   - 
-    title: Make a LEGO® gauge
+    title: 制作一个乐高（LEGO®）仪表
   - 
-    title: Make an LED scale
+    title: 制作一个 LED 秤
   - 
-    title: Access the OpenAQ API
+    title: 访问 OpenAQ API
   - 
-    title: Display pollution data with your dashboard
+    title: 使用仪表板显示污染数据
   - 
-    title: What next?
+    title: 接下来还有什么？
