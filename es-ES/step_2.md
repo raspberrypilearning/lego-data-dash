@@ -1,51 +1,51 @@
-## Plan your dashboard
+## Planifica tu tablero
 
-Use this step to plan your dashboard, and think about what information you want to display. You can plan by just thinking, tinkering, drawing, writing, or however you like!
+Utiliza este paso para planificar tu panel y piensa qué información deseas mostrar. ¡Puedes planificar con solo pensar, retocar, dibujar, escribir o como desees!
 
-We will use an example API in this project from OpenAQ to demonstrate how to create and use your data dashboard, but you could use any API you want. (There are some more API links in the final step for you to look at if you'd like to try it with a different data source.)
+Usaremos una API de ejemplo en este proyecto de OpenAQ para demostrar cómo crear y usar tu panel de datos, pero puedes usar cualquier API que desees. (Hay algunos enlaces de API más en el paso final para que los veas si deseas probarlos con una fuente de datos diferente)
 
-### Why are you making a dashboard?
+### ¿Por qué estás haciendo un tablero?
 
 --- task ---
 
-**Think** about the purpose of your dashboard:
+**Piensa** en el propósito de tu tablero:
 
-+ What information will it display?
-+ How will it show this information to the user?
-+ What layout will it have, to make it easy to read?
++ ¿Qué información mostrará?
++ ¿Cómo mostrará esta información al usuario?
++ ¿Qué diseño tendrá para que sea fácil de leer?
 
 
 --- /task ---
 
-### Who is it for?
+### ¿Para quién?
 
 --- task ---
 
-Think about who you will make your dashboard for (your **audience**):
+Piensa para quién crearás su panel de control (tu **audiencia**):
 
-+ What symbols or scales will make it obvious what you are displaying?
-+ How will the user get current data?
-+ Will they prefer bright colours and lights, or simple and clean designs?
-+ Where will they keep it? Will it fit there?
++ ¿Qué símbolos o escalas harán que sea obvio lo que estás mostrando?
++ ¿Cómo hará el usuario para obtener los datos actuales?
++ ¿Preferirán colores y luces brillantes o diseños simples y limpios?
++ ¿Dónde lo guardarán? ¿Entrará ahí?
 
 --- /task ---
 
-### Get started
+### Empezar
 
 --- task ---
 
-Use a pen and paper to plan ideas for your dashboard:
+Use lápiz y papel para planificar ideas para su tablero:
 
-+ Consider how many motors you will have available to you to power the indicators — you need one motor for each indicator
-+ Will you use other components in your build, like LEDs, buzzers, or buttons? What will they do?
-+ How will your different indicators and inputs fit together into a frame?
-+ What LEGO elements will you need to build it?
++ Considera cuántos motores tendrás disponibles para alimentar los indicadores; necesitas un motor para cada indicador
++ ¿Utilizarás otros componentes en su construcción, como LEDs, bocinas o botones? ¿Qué harán?
++ ¿Cómo encajarán tus diferentes indicadores e insumos en un marco?
++ ¿Qué elementos LEGO necesitarás para construirlo?
 
-Draw your dashboard now, including the frame to hold it and any indicators you would like to create or user inputs needed. Label them with the information they will display or the input they provide.
+Ahora dibuja tu tablero, incluido el marco para sostenerlo y los indicadores que te gustaría crear o las entradas de usuario necesarias. Etiquétalos con la información que mostrarán o la entrada que proporcionarán.
 
 --- /task ---
 
-In the next step, you will construct some readouts for your dashboard using LEGO®!
+¡En el siguiente paso, construirás algunas lecturas para tu tablero usando LEGO®!
 
 
 --- save ---
