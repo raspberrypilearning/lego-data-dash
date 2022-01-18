@@ -1,14 +1,14 @@
-## Introduction
+## 简介
 
-In this project, you are going to create a dashboard that will visualise data; you can choose what data it shows from a range of online sources. Your data dashboard will need to meet the **project brief**.
+在本项目中，您将创建一个可视化数据的仪表板；您可以从一系列在线资源中选择数据。 您的数据仪表板将需要满足 **项目简介**。
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">dashboard</span> is a user interface that gives a current summary of important information, usually in a graphical or easy-to-read form. The term originates from cars, where the driver is shown the current status of the vehicle by big, bright dials and scales.</p>
+<span style="color: #0faeb0">仪表板</span> 是一个用户界面，它通常以图形或易于阅读的形式提供重要信息的当前摘要。 该术语起源于汽车，通过又大又亮的表盘和刻度向驾驶员显示车辆的当前状态。</p>
 
-You will:
-+ Build automated indicators using LEGO® motors and elements
-+ Access an online **API** (Application Programming Interface) to retrieve interesting data using Python
-+ Display your chosen data on a dashboard you create using LEGO
+您将要：
++ 使用乐高（LEGO®）马达和元件构建一个自动化指示器
++ 通过 Python访问在线 **API** （应用程序编程接口）来获得一些有趣的数据
++ 在您用乐高（LEGO）创建的仪表板上显示您选择的数据
 
 --- no-print ---
 
@@ -20,93 +20,93 @@ You will:
 
 --- collapse ---
 ---
-title: What you will need
+title: 您需要准备的材料
 ---
-### Hardware
+### 硬件
 
-+ A Raspberry Pi computer
-+ A Raspberry Pi Build HAT
-+ A Raspberry Pi Build HAT 7.5V PSU
-+ 2 LEGO® Technic™ motors (more optional)
-+ A LEGO® SPIKE™ Force Sensor
-+ Assortment of LEGO® (we used a selection from the [LEGO® SPIKE™ Prime kit](https://education.lego.com/en-gb/product/spike-prime){:target="_blank"})
-+ Paper or card
-+ Tack or tape for sticking down card
-+ Marker or pencil
-+ Scissors or craft knife
++ 一台树莓派(Raspberry Pi)电脑
++ 一个Raspberry Pi Build HAT
++ 一个Raspberry Pi Build HAT的7.5V电源
++ 2 个乐高（LEGO®）Technic™ 马达（或者更多）
++ 一个乐高（LEGO®）SPIKE™ 压力传感器
++ 各种乐高（LEGO®）组件（我们使用了 [LEGO® SPIKE™ Prime 套件](https://education.lego.com/en-gb/product/spike-prime){:target="_blank"} ）
++ 纸或卡片
++ 用于粘贴卡片的大头钉或胶带
++ 记号笔或铅笔
++ 剪刀或工艺刀
 
-Optional:
-+ LEDs
-+ Resistors
-+ Jumper wires
-+ A breadboard
-+ M2 bolts and nuts (×2 of each for mounting the Raspberry Pi onto the LEGO® Build Plate)
+可选的：
++ LED发光二极管
++ 电阻
++ 跳线
++ 一块面包板
++ M2 螺栓和螺母（2组，用于将 Raspberry Pi 安装到LEGO® Build Plate）
 
-### Software
+### 软件
 
-+ BuildHAT Python library for controlling the Build HAT
++ 用于控制 Build HAT的BuildHAT Python 库
 + Thonny Python IDE
 
-### Downloads
+### 下载
 
-+ The final script for this project is available [here]((https://rpf.io/p/en/lego-data-dash-go){:target="_blank"})
++ 本项目的最终脚本可在 [此处]((https://rpf.io/p/en/lego-data-dash-go){:target="_blank"})下载
 
 --- /collapse ---
 
-Before you begin, you'll need to have set up your Raspberry Pi computer and attached your Build HAT:
+在开始之前，您需要设置好您的 Raspberry Pi 并连接您的 Build HAT：
 
 --- task ---
 
-Mount your Raspberry Pi on to the LEGO Build Plate using M2 bolts and nuts, making sure the Raspberry Pi is on the side without the 'edge':
+使用 M2 螺栓和螺母将您的 Raspberry Pi 安装到乐高(LEGO)积木板上，请确保 将Raspberry Pi 置于没有“边缘”的一侧：
 
- ![Raspberry Pi bolted to a magenta LEGO Build Plate.](images/build_11.jpg)
+ ![通过螺栓固定在洋红色乐高(LEGO)积木板上的Raspberry Pi。](images/build_11.jpg)
 
 --- /task ---
 
-Mounting the Raspberry Pi this way round enables easy access to the ports as well as the SD card slot. The Build Plate will allow you to connect the Raspberry Pi to the main structure of your dashboard more easily.
+以这种方式安装 Raspberry Pi 可以轻松访问（Raspberry Pi的）端口和 SD 卡插槽。 Build Plate 可让您更轻松地将 Raspberry Pi 连接到仪表板的主要部件。
 
 --- task ---
 
-Line up the Build HAT with the Raspberry Pi, ensuring you can see the `This way up` label. Make sure all the GPIO pins are covered by the HAT, and press down firmly. (The example uses a [stacking header](https://www.adafruit.com/product/2223){:target="_blank"}, which makes the pins longer.)
+将 Build HAT 与 Raspberry Pi 对齐，请确保您可以看到 `This way up` 标签。 确保所有 GPIO 引脚都被 HAT 覆盖，然后用力按下。 （该示例使用了 [堆叠头](https://www.adafruit.com/product/2223){:target="_blank"}，所以有更长的引脚。）
 
-![Image of GPIO pins poking through the top of the Build HAT.](images/build_15.jpg) ![Animation showing Buildhat fitting to Raspberry Pi](images/haton.gif)
+![显示GPIO 引脚穿过 Build HAT 的顶部的图片。](images/build_15.jpg) ![显示将 Buildhat 匹配到 Raspberry Pi的动画](images/haton.gif)
 
 --- /task ---
 
-You should now power your Raspberry Pi using the 7.5V barrel jack on the Build HAT, which will allow you to use the motors.
+现在利用 Build HAT 上的 7.5V 桶形插孔为您的 Raspberry Pi 供电，这也将用于驱动马达。
 
 --- task ---
 
-If you have not already done so, set up your Raspberry Pi by following these instructions:
+如果您尚未设置您的 Raspberry Pi，请按照以下步骤：
 
-[Setting up your Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up){:target="_blank"}
-
---- /task ---
-
---- task ---
-
-Once the Raspberry Pi has booted, open the Raspberry Pi Configuration tool by clicking on the Raspberry Menu button and then selecting “Preferences” and then “Raspberry Pi Configuration”.
-
-Click on the “interfaces” tab and adjust the Serial settings as shown below:
-
-![Image showing Raspberry Pi OS config screen with serial port enabled and serial console disabled](images/configshot.jpg)
+[设置你的Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up){:target="_blank"}
 
 --- /task ---
 
 --- task ---
 
-You will also need to install the buildhat python library by following these instructions:
+Raspberry Pi 启动后，单击 Raspberry 菜单按钮，然后选择“首选项”，然后选择“Raspberry Pi 配置”，打开 Raspberry Pi 配置工具。
+
+单击“interfaces”选项卡并调整串口设置，如下所示：
+
+![Raspberry Pi 操作系统的配置界面：启用串行端口，禁用串行控制台](images/configshot.jpg)
+
+--- /task ---
+
+--- task ---
+
+您还需要按照以下说明安装 buildhat的 python 库：
 
 --- collapse ---
 ---
-title: Install the buildhat Python library
+标题：安装 buildhat Python 库
 ---
 
-Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
+按下<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>，在 Raspberry Pi 上打开一个终端窗口。
 
-At the prompt type: `sudo pip3 install buildhat`
+在提示符后键入： `sudo pip3 install buildhat`
 
-Press <kbd>Enter</kbd> and wait for the "installation completed" message.
+按 <kbd>回车</kbd> 并等待“installation completed”消息。
 
 --- /collapse ---
 
@@ -115,41 +115,41 @@ Press <kbd>Enter</kbd> and wait for the "installation completed" message.
 
 <div style="border-top: 15px solid #f3524f; background-color: whitesmoke; margin-bottom: 20px; padding: 10px;">
 
-### PROJECT BRIEF: LEGO® data dashboard
+### 项目简介：乐高（LEGO®）数据仪表板
 <hr style="border-top: 2px solid black;">
 
-Your task is to create a LEGO dashboard that will display your chosen data. The sources for your data can be any API you like, but in this example, we will show you how to access OpenAQ, which requires minimal or no sign up. 
+您的任务是创建一个乐高（LEGO） 仪表板来显示您选择的数据。 您的数据来源可以是您喜欢的任何 API，但在本示例中，我们将向您展示如何访问 OpenAQ，它只需要很少或无需注册。 
 
-For our example data, we will be measuring:
-+ The **NO2** levels at a chosen location. Nitrogen dioxide (NO2) is one of a group of highly reactive gases known as nitrogen oxides or NOx. NO2 is primarily released into the air from the burning of fuel.
-+ The **fine particles (PM2.5)** levels at a chosen location. The term **fine particles**, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and a half microns (or less) in size. Particles classed as PM2.5 are what make up smoke and smog.
-
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">The example API we are using in this project is from [OpenAQ](https://openaq.org/#/), a global non-profit organisation "fighting air inequality through open data". Globally, **1 in 8 deaths** are due to poor air quality, and OpenAQ collects global air quality data to help inform more people about the problems of increasing air pollution in some parts of the world. </p>
+对于我们的示例数据，我们将测量：
++ 选定位置的 **NO2** 水平。 二氧化氮 (NO2) 是一种被称为氮氧化物或 NOx 的高活性气体。 NO2 主要通过燃料的燃烧被释放到空气中。
++在选定位置的 **细颗粒物 (PM2.5)** 水平。 术语**细颗粒**，或颗粒物 2.5 (PM2.5)，是指空气中尺寸为两微米半（或更小）的微小颗粒或液滴。 被归类为 PM2.5 的颗粒是构成烟雾的物质。
 
 
-Your dashboard should:
-+ Use LEGO® to display your chosen data in a clear way
-+ Access an online API to retrieve up-to-date data
-+ Have at least two LEGO® indicators
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">我们在这个项目中使用的示例 API 来自 [OpenAQ](https://openaq.org/#/)，一个全球性的非营利组织，旨在“通过开放数据对抗空气的不平等”。 在全球范围内，**八分之一的死亡**是由于空气质量差造成的，OpenAQ 收集全球空气质量数据，以帮助更多人了解世界某些地区空气污染日益严重的问题。 </p>
 
-Your dashboard could:
-+ Use other electronic components (LEDs, buzzers)
-+ Have physical user inputs (LEGO® Technic™ motors, LEGO® Force Sensor, GPIO button, distance sensor)
+
+您的仪表板应该实现：
++ 使用乐高（LEGO®）以清晰的方式显示您选择的数据
++ 在线访问 API 以获得最新的数据
++ 至少有两个乐高（LEGO®）指示器
+
+您的仪表板可以：
++ 使用其他电子元件（LED、蜂鸣器）
++ 接受物理用户输入（乐高LEGO® Technic™ 马达、乐高LEGO® 压力传感器、GPIO 按钮、距离传感器）
   
 </div>
 
 --- no-print ---
 
-### Get inspiration
+### 获得灵感
 
 --- task ---
 
-Think about the information you would like to display on your dashboard as you investigate these example projects to get more ideas.
+在您学习这些示例项目以获得更多的想法时，考虑您想在您的仪表板上显示的信息。
 
-This example shows a weather dashboard displaying the current temperature on a vertical slider, the cloud cover using an LED scale, and on the rotating dials it suggests a suitable level of clothing based on the apparent temperature (it includes the wind and other weather in the temperature) and a detailed weather report using World Weather Codes (a.k.a. WMO code).
+这个范例显示了一个天气仪表板：在垂直滑块上显示当前温度；在云层上利用 LED显示可见度；在旋转刻度盘上，根据表观温度（包括风和其他天气情况）给出了舒适着衣的建议，并且显示了以世界天气代码标注的详尽天气情况（又名 WMO 代码）。
 
-![Demo Video](images/weather-dash.gif)
+![演示视频](images/weather-dash.gif)
 
 --- /task ---
 
@@ -157,7 +157,7 @@ This example shows a weather dashboard displaying the current temperature on a v
 
 --- print-only ---
 
-![Image showing a weather station dashboard made of LEGO®.](images/example-dash.jpg)
+![一个由乐高（LEGO®） 制成的气象站仪表板的图片。](images/example-dash.jpg)
 
 --- /print-only ---
 
