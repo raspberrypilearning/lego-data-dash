@@ -1,78 +1,78 @@
-## Make a LEGO® gauge
+## 制作一个乐高（LEGO®）仪表盘
 
-Another way to quickly display data is by using **dials**, also known as **gauges**. You've definitely seen them before; they are usually round or semicircular and have two main visible parts:
+另一种快速显示数据的方法是使用 **刻度盘**，也称为 **仪表**。 你以前肯定见过他们；它们通常是圆形或半圆形的，有两个主要的可见部分：
 
-+ The face, which has the scale shown on it
-+ The needle, which moves along the scale to display the data reading
++ 表盘，上面有刻度
++ 指针，沿刻度移动以显示读数
 
-![Animated image showing dials moving.](https://media.giphy.com/media/uozBSFuz99USA/giphy.gif)
+![仪表盘指针在移动的动图。](https://media.giphy.com/media/uozBSFuz99USA/giphy.gif)
 
-A gauge or dial is the simplest type of data readout you can create using LEGO®, as it only relies upon creating the face and needle. Because the needle or dial connects directly to your motor, the build is very simple:
+仪表或刻度盘是您可以使用乐高（LEGO®）创建的最简单的显示数据的模型，因为它仅需要创建表盘和指针。 因为指针或刻度盘直接连接到您的马达，因此搭建非常简单：
 
 --- task ---
 
-Before attaching the motor to the rear of the gauge's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
+在将马达连接到仪表的背面之前，通过将马达边缘的两个棒棒糖符号对齐，确保它已“归零”：
 
-![Image showing the motor 'zeroed in' with aligned symbols.](images/aligned_symbols.jpg)
+![马达“归零”后，符号对齐的图片。](images/aligned_symbols.jpg)
 
 --- /task ---
 
-### Create a scale
+### 创建一个比例尺
 
-To finish building the gauge, you will need to create a scale using paper, card, or other art supplies. The mechanics and coding are exactly the same, but think now about how you would like your gauge to look.
+要完成仪表的构建，您需要使用纸张、卡片或其他美术用品创建一个比例尺。 机制和编码完全相同，但现在您要考虑一下期望的仪表的外观。
 
  --- task ---
 
- **Choose** what kind of dial you will make.
+ **选择** 您将制作什么样的表盘。
 
- There are two simple types you can create with LEGO®:
+ 您可以使用乐高（LEGO®）创建两种简单的类型：
 
-+ A gauge where the needle spins to indicate a point on the face: ![An image showing a gauge with a needle and scale.](images/dial2.gif)
++ 一个通过旋转指针来指示表盘上某个点的仪表：![带有指针和刻度的仪表的图片。](images/dial2.gif)
 
-+ A gauge where the whole face turns to display a point at the top with a stationary indicator: ![An image showing a gauge with a moving scale.](images/dial1.gif)
-
---- /task ---
-
---- task ---
-
-On a blank piece of paper, trace a neat circle the size you want your gauge to be. Mark the centre, and cut it out using scissors.
++ 一个具有固定在顶部的指针，但是可以旋转整个表盘以显示一个数值的仪表：![带有移动刻度的仪表的图片。](images/dial1.gif)
 
 --- /task ---
 
 --- task ---
 
-Split the circle into equal segments (one for each reading) by drawing lines through the centre, or draw your scale around the edge.
+在一张空白纸上，按照您希望的仪表大小画一个完整的圆圈。 标记好中心点，然后用剪刀裁剪出整个圆圈。
 
 --- /task ---
 
 --- task ---
 
-Draw an icon or write inside each segment what it indicates.
+通过圆心将圆圈等分成几个部分（每个读数一个），或着在圆圈的边缘绘制刻度。
 
 --- /task ---
 
-Once you have finished creating your gauge face, you will need to mount it to your dashboard.
+--- task ---
+
+在每个段内画一个图标或写下该部分所指示的内容。
+
+--- /task ---
+
+完成仪表盘后，您需要将其安装到仪表板上。
 
 --- collapse ---
 ---
-title: If you are creating a needle gauge
+title：如果您创建的是指针仪表
 ---
 
-To finish building your needle gauge:
+要完成你的指针仪表：
 
 --- task ---
 
-Slide the face down over your axle, using Blu Tack or tape to stick it down to the dashboard behind it and prevent it from sliding as the axle turns. ![Image showing a LEGO® axle protruding through a gauge's face.](images/needle-gauge1.jpg)
+将表盘穿过轮轴，使用蓝胶（Blu Tack）或胶带将其粘在后面的仪表板上，这样可以防止表盘在轮轴转动时滑动。 ![一个乐高（LEGO®）轮轴从仪表盘表面伸出的图片。](images/needle-gauge1.jpg)
 
 --- /task ---
 
 --- task ---
 
-Add a 90 degree elbow to the end of your axle and place another axle into it. Make sure it is long enough to reach your scale and clearly indicate the readings.
+在轮轴的末端添加一个 90 度弯头，然后用其连接另一个轮轴。 请确保它足够长，可以达到您的标尺并明确显示读数。
 
-![Image showing the LEGO® axle protruding through the gauge's face with an elbow and perpendicular axle connected.](images/needle-gauge2.jpg)
+![一个连接了弯头和垂直轴的乐高（LEGO®）轮轴从仪表盘表面伸出的图片。](images/needle-gauge2.jpg)
 
-It will help later if your axle is pointing straight up (and your motor is 'zeroed') when you mount it, as it will make it easier to calculate the amount of rotation required for a reading.
+如果您在安装轮轴时能保持指针笔直向上（并且马达“归零”），这对后面的工作会有帮助，因为这样可以更轻松地计算读数所需的旋转量。
 
 --- /task ---
 
@@ -80,45 +80,45 @@ It will help later if your axle is pointing straight up (and your motor is 'zero
 
 --- collapse ---
 ---
-title: If you are creating a spinning face dial
+title：如果您创建的是盘面旋转仪表
 ---
 
-To finish building a spinning gauge:
+要完成一个旋转仪表：
 
 --- task ---
 
-Mount a single gear behind your dial face as a spacer, to prevent it from catching on your dashboard. Use some Blu Tack to stick the face to this gear. If you have created an incremental scale around the gauge, mount it with the middle of the scale at the top (in line with the 'zeroed' lollipop symbols) and the minimum and maximum values at the bottom.
+在表盘后面安装一个齿轮作为垫片，以防止表盘卡在仪表板上。 用蓝胶（Blu Tack）将表盘粘在设备上。 如果您刚才创建的比例尺是递增式的，就将比例尺的中间放置在仪表板的高处（与“归零”了棒棒糖标记对齐），同时比例尺的最大最小值将位于仪表板的底部。
 
-![Image showing a black LEGO® gear mounted on an axle with some tack.](images/dial-gauge1.jpg)
+![安装了带有蓝胶的黑色乐高（LEGO®）齿轮的轴的图片。](images/dial-gauge1.jpg)
 
-![Image showing the gauge face mounted on top of a black LEGO® gear.](images/dial-gauge2.jpg)
+![在黑色乐高（LEGO® ）齿轮上安置了仪表盘面的图片。](images/dial-gauge2.jpg)
 
 --- /task ---
 
 --- /collapse ---
 
-### Test your gauge
+### 测试您的仪表
 
 --- task ---
 
-Connect the motor of your gauge to port A on your Build HAT.
+将您仪表的马达连接到Build HAT的端口A。
 
 --- /task ---
 
 --- task ---
 
-You will be using the BuildHAT Python library, so make sure it is installed:
+您将使用 BuildHAT Python 库，因此请确保已安装它：
 
 --- collapse ---
 ---
-title: Install the BuildHAT Python library
+title：安装 BuildHAT Python 库
 ---
 
-Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
+按下<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>，在 Raspberry Pi 上打开一个终端窗口。
 
-At the prompt type: `pip3 install buildhat`
+在提示符后键入： `pip3 install buildhat`。您可能需要使用sudo执行这个命令。
 
-Press <kbd>Enter</kbd> and wait for the "installation completed" message.
+按 <kbd>回车</kbd> 并等待“installation completed”消息。
 
 --- /collapse ---
 
@@ -126,9 +126,9 @@ Press <kbd>Enter</kbd> and wait for the "installation completed" message.
 
 --- task ---
 
-Open **Thonny** on your Raspberry Pi from the **Programming menu**.
+从Raspberry Pi 上的**Programming **菜单中启动 **Thonny**。
 
-Enter the following code in a blank tab:
+新建文件并输入以下代码：
 
 --- code ---
 ---
@@ -145,6 +145,6 @@ while True: angle = randint(-180, 180) motor_gauge.run_to_position(angle, 100) s
 
 --- /code ---
 
-Save your work as `gauge_test.py` and press **Run**. You will see your gauge begin to move!
+将您的工作保存为 `gauge_test.py` 并单击 **Run**。 您将看到您的仪表盘开始移动了！
 
 --- /task ---
