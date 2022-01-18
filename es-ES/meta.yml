@@ -1,25 +1,25 @@
 ---
-title: LEGO® data dashboard
+title: Panel de datos LEGO®
 hero_image: images/banner.png
-description: Display pollution data on physical dials and sliders with LEGO® and the Build HAT
+description: Muestra datos de contaminación en diales físicos y controles deslizantes con LEGO® y Build HAT
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-03-26"
 steps:
   - 
-    title: Introduction
+    title: Introducción
   - 
-    title: Plan your dashboard
+    title: Planifica su tablero
   - 
-    title: Make a LEGO® sliding indicator
+    title: Haz un indicador deslizante LEGO®
   - 
-    title: Make a LEGO® gauge
+    title: Haz un medidor LEGO®
   - 
-    title: Make an LED scale
+    title: Haz una escala LED
   - 
-    title: Access the OpenAQ API
+    title: Accede a la API de OpenAQ
   - 
-    title: Display pollution data with your dashboard
+    title: Muestra los datos de contaminación con su tablero
   - 
-    title: What next?
+    title: '¿Qué hacer a continuación?'
