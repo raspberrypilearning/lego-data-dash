@@ -1,78 +1,78 @@
-## Make a LEGO® gauge
+## Haz un medidor LEGO®
 
-Another way to quickly display data is by using **dials**, also known as **gauges**. You've definitely seen them before; they are usually round or semicircular and have two main visible parts:
+Otra forma de mostrar datos rápidamente es utilizando **diales**, también conocidos como **indicadores**. Definitivamente los has visto antes; suelen ser redondos o semicirculares y tienen dos partes principales visibles:
 
-+ The face, which has the scale shown on it
-+ The needle, which moves along the scale to display the data reading
++ La cara, que tiene la escala que se muestra en ella.
++ La aguja, que se mueve a lo largo de la escala para mostrar la lectura de datos.
 
-![Animated image showing dials moving.](https://media.giphy.com/media/uozBSFuz99USA/giphy.gif)
+![Imagen animada que muestra diales en movimiento.](https://media.giphy.com/media/uozBSFuz99USA/giphy.gif)
 
-A gauge or dial is the simplest type of data readout you can create using LEGO®, as it only relies upon creating the face and needle. Because the needle or dial connects directly to your motor, the build is very simple:
+Un indicador o un cuadrante es el tipo de lectura de datos más simple que puede crear con LEGO®, ya que solo se basa en la creación de la cara y la aguja. Debido a que la aguja o el dial se conectan directamente a su motor, la construcción es muy simple:
 
 --- task ---
 
-Before attaching the motor to the rear of the gauge's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
+Antes de acoplar el motor a la parte trasera del eje del medidor, asegúrese de que esté 'puesto a cero', alineando los dos símbolos de paleta en el borde del motor:
 
-![Image showing the motor 'zeroed in' with aligned symbols.](images/aligned_symbols.jpg)
+![Imagen que muestra el motor 'puesto a cero' con símbolos alineados.](images/aligned_symbols.jpg)
 
 --- /task ---
 
-### Create a scale
+### Crea una escala
 
-To finish building the gauge, you will need to create a scale using paper, card, or other art supplies. The mechanics and coding are exactly the same, but think now about how you would like your gauge to look.
+Para terminar de construir el medidor, deberá crear una escala con papel, cartulina u otros materiales de arte. La mecánica y la codificación son exactamente las mismas, pero piense ahora cómo le gustaría que se viera su medidor.
 
  --- task ---
 
- **Choose** what kind of dial you will make.
+ **Elige** qué tipo de dial harás.
 
- There are two simple types you can create with LEGO®:
+ Hay dos tipos simples que puedes crear con LEGO®:
 
-+ A gauge where the needle spins to indicate a point on the face: ![An image showing a gauge with a needle and scale.](images/dial2.gif)
++ Un indicador donde la aguja gira para indicar un punto en la cara: ![Una imagen que muestra un medidor con una aguja y una escala.](images/dial2.gif)
 
-+ A gauge where the whole face turns to display a point at the top with a stationary indicator: ![An image showing a gauge with a moving scale.](images/dial1.gif)
-
---- /task ---
-
---- task ---
-
-On a blank piece of paper, trace a neat circle the size you want your gauge to be. Mark the centre, and cut it out using scissors.
++ Un indicador donde toda la cara gira para mostrar un punto en la parte superior con un indicador estacionario: ![Una imagen que muestra un indicador con una escala móvil.](images/dial1.gif)
 
 --- /task ---
 
 --- task ---
 
-Split the circle into equal segments (one for each reading) by drawing lines through the centre, or draw your scale around the edge.
+En un pedazo de papel en blanco, traza un círculo del tamaño que quieres que sea tu medidor. Marca el centro, y córtalo usando tijeras.
 
 --- /task ---
 
 --- task ---
 
-Draw an icon or write inside each segment what it indicates.
+Divide el círculo en segmentos iguales (uno para cada lectura) dibujando líneas a través del centro, o dibuja tu escala alrededor del borde.
 
 --- /task ---
 
-Once you have finished creating your gauge face, you will need to mount it to your dashboard.
+--- task ---
+
+Dibuja un icono o escribe dentro de cada segmento lo que indica.
+
+--- /task ---
+
+Una vez que hayas terminado de crear la cara del medidor, necesitarás montarla en tu tablero.
 
 --- collapse ---
 ---
-title: If you are creating a needle gauge
+título: Si está creando un calibre de aguja
 ---
 
-To finish building your needle gauge:
+Para terminar de construir tu medidor de aguja:
 
 --- task ---
 
-Slide the face down over your axle, using Blu Tack or tape to stick it down to the dashboard behind it and prevent it from sliding as the axle turns. ![Image showing a LEGO® axle protruding through a gauge's face.](images/needle-gauge1.jpg)
+Desliza la cara hacia abajo sobre tu eje, usando Blu Tack o cinta adhesiva por detrás para pegarla al tablero y evitar que se deslice cuando el eje gira. ![Imagen que muestra un eje LEGO® que sobresale a través de la cara de un medidor.](images/needle-gauge1.jpg)
 
 --- /task ---
 
 --- task ---
 
-Add a 90 degree elbow to the end of your axle and place another axle into it. Make sure it is long enough to reach your scale and clearly indicate the readings.
+Agrega un codo de 90 grados al final del eje y coloqca otro eje en él. Asegúrate de que es lo suficientemente largo para alcanzar tu escala e indicar claramente las lecturas.
 
-![Image showing the LEGO® axle protruding through the gauge's face with an elbow and perpendicular axle connected.](images/needle-gauge2.jpg)
+![Imagen que muestra el eje LEGO® que sobresale a través de la cara del medidor con un codo y un eje perpendicular conectados.](images/needle-gauge2.jpg)
 
-It will help later if your axle is pointing straight up (and your motor is 'zeroed') when you mount it, as it will make it easier to calculate the amount of rotation required for a reading.
+Ayudará más tarde si tu eje apunta derecho hacia arriba (y tu motor está "puesto a cero") cuando lo montas, ya que facilitará el cálculo de la cantidad de rotación necesaria para una lectura.
 
 --- /task ---
 
@@ -80,45 +80,45 @@ It will help later if your axle is pointing straight up (and your motor is 'zero
 
 --- collapse ---
 ---
-title: If you are creating a spinning face dial
+título: Si estás creando un dial de cara giratoria
 ---
 
-To finish building a spinning gauge:
+Para terminar de construir un medidor de aguja:
 
 --- task ---
 
-Mount a single gear behind your dial face as a spacer, to prevent it from catching on your dashboard. Use some Blu Tack to stick the face to this gear. If you have created an incremental scale around the gauge, mount it with the middle of the scale at the top (in line with the 'zeroed' lollipop symbols) and the minimum and maximum values at the bottom.
+Monta un solo engranaje detrás de cara del medidor como espaciador, para evitar que se enganche en tu tablero. Usa un poco de Blu Tack para pegar la cara a este engranaje. Si has creado una escala incremental alrededor del medidor, móntala con el centro de la escala en la parte superior (en línea con los símbolos de paleta "puestos a cero") y los valores mínimo y máximo en la parte inferior.
 
-![Image showing a black LEGO® gear mounted on an axle with some tack.](images/dial-gauge1.jpg)
+![Imagen que muestra un engranaje negro LEGO® montado en un eje con algo de tack.](images/dial-gauge1.jpg)
 
-![Image showing the gauge face mounted on top of a black LEGO® gear.](images/dial-gauge2.jpg)
+![Imagen que muestra la cara del indicador montada en la parte superior de un engranaje LEGO® negro.](images/dial-gauge2.jpg)
 
 --- /task ---
 
 --- /collapse ---
 
-### Test your gauge
+### Prueba tu medidor
 
 --- task ---
 
-Connect the motor of your gauge to port A on your Build HAT.
+Conecta el motor de tu medidor al puerto A de tu Build HAT.
 
 --- /task ---
 
 --- task ---
 
-You will be using the BuildHAT Python library, so make sure it is installed:
+Utilizarás la biblioteca BuildHAT de Python, así que asegúrate de que esté instalada:
 
 --- collapse ---
 ---
-title: Install the BuildHAT Python library
+title: Instala la biblioteca BuildHAT de Python
 ---
 
-Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
+Abre una ventana de terminal en tu Raspberry Pi presionando <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
 
-At the prompt type: `pip3 install buildhat`
+En el indicador, escribe: `sudo pip3 install buildhat`
 
-Press <kbd>Enter</kbd> and wait for the "installation completed" message.
+Presiona <kbd>Entrar</kbd> y espera el mensaje "installation completed".
 
 --- /collapse ---
 
@@ -126,9 +126,9 @@ Press <kbd>Enter</kbd> and wait for the "installation completed" message.
 
 --- task ---
 
-Open **Thonny** on your Raspberry Pi from the **Programming menu**.
+Abre **Thonny** en tu Raspberry Pi desde el **menú de programación**.
 
-Enter the following code in a blank tab:
+Ingresa el siguiente código en una pestaña en blanco:
 
 --- code ---
 ---
@@ -137,14 +137,14 @@ line_highlights:
 ---
 from buildhat import Motor from time import sleep from random import randint
 
-motor_gauge = Motor('A')
+motor_medidor = Motor('A')
 
-motor_gauge.run_to_position(0,100)
+motor_medidor.run_to_position(0,100)
 
-while True: angle = randint(-180, 180) motor_gauge.run_to_position(angle, 100) sleep(0.3)
+while True: angulo = randint(-180, 180) motor_medidor.run_to_position(angulo, 100) sleep(0.3)
 
 --- /code ---
 
-Save your work as `gauge_test.py` and press **Run**. You will see your gauge begin to move!
+Guarda tu trabajo como `medidor_test.py` y haz clic en **Ejecutar**. ¡Verás que tu medidor empieza a moverse!
 
 --- /task ---
