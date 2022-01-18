@@ -1,17 +1,17 @@
-## What next?
+## ¿Qué hacer a continuación?
 
-You could quite easily add a third motor to your dash, or create an LED bar graph to display other data from OpenAQ, but now you know how to represent data using LEGO® indicators, you can use your new data dashboard to show almost anything!
+Puedes agregar fácilmente un tercer motor a tu tablero, o crear un gráfico de barras LED para mostrar otros datos de OpenAQ, pero ahora que sabes cómo representar datos usando indicadores LEGO®, ¡puedes usar tu nuevo tablero de datos para mostrar casi cualquier cosa!
 
-Some possible sources you can use for new data to show on your dashboard:
+Algunas fuentes posibles que puedse utilizar para que se muestren nuevos datos en tu panel de control:
 
-+ If you make YouTube videos, you could use the [YouTube Developer API](https://developers.google.com/youtube/v3)
-+ Fortnite players can access their [player data](https://fortnitetracker.com/site-api)
-+ You could display the [weather on Mars](https://mars.nasa.gov/insight/weather/), thanks to NASA!
-+ Display data related to the [COVID pandemic](https://github.com/M-Media-Group/Covid-19-API)
-+ Or, connect your Fitbit up to your dashboard using the [Fitbit API](https://dev.fitbit.com/build/reference/web-api/) and track your workouts!
++ Si creas videos de YouTube, puedes usar [API de desarrollador de YouTube](https://developers.google.com/youtube/v3)
++ Los jugadores de Fortnite pueden acceder a sus [datos de jugador](https://fortnitetracker.com/site-api)
++ ¡Podrías mostrar el clima [en Marte](https://mars.nasa.gov/insight/weather/), gracias a la NASA!
++ Mostrar datos relacionados con la [pandemia COVID](https://github.com/M-Media-Group/Covid-19-API)
++ ¡O conecta tu Fitbit a tu panel de control usando la [Fitbit API](https://dev.fitbit.com/build/reference/web-api/) y realiza un seguimiento de tus entrenamientos!
 
-If you are following the [Introduction to LEGO Build HAT](https://projects.raspberrypi.org/en/pathways/lego-intro) pathway, you can move on to the [LEGO Robot face](https://projects.raspberrypi.org/en/projects/lego-data-dash) project. In this project, you will make a face from LEGO® and some LED arrays, then connect it to a machine learning model to recognise objects and have it react to them with funny faces!
+Si estás siguiendo el camino [Introducción a LEGO Build HAT](https://projects.raspberrypi.org/en/pathways/lego-intro), puedes pasar al proyecto [Cara de robot LEGO](https://projects.raspberrypi.org/en/projects/lego-data-dash). En este proyecto, harás una cara de LEGO® y algunas matrices de LED, luego lo conectarás a un modelo de aprendizaje automático para reconocer objetos y hacer que reaccione a ellos con caras divertidas.
 
-![LEGO Robot face banner showing funny robot face.](images/robotfacebanner.png)
+![Banner de cara de robot LEGO que muestra una cara de robot divertida.](images/robotfacebanner.png)
 
-If you've completed all the LEGO® Spark projects and want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+Si has completado todos los proyectos de LEGO® Spark y quieres divertirte más explorando Python, entonces puedes probar cualquiera de [estos proyectos](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
