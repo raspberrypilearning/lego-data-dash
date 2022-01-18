@@ -1,30 +1,30 @@
-## Display pollution data with your dashboard
+## Muestra los datos de contaminación con tu tablero
 
-At the moment, your dash uses random integers between -175 and 175; these numbers are used because they are the motor's limits of travel in each direction. (We don't go to 180 as it can cause problems with travel around a full rotation.) The data coming in from your API won't have this same range, so you need to make it fit the motors.
+Por el momento, tu tablero usa números enteros aleatorios entre -175 y 175; estos números se utilizan porque son los límites de recorrido del motor en cada dirección. (No vamos a 180, ya que puede causar problemas con el desplazamiento alrededor de una rotación completa). Los datos provenientes de tu API no tendrán este mismo rango, por lo que debes ajustarlo a los motores.
 
-**Calibrating** the indicators means mapping the maximum and minimum possible data values from your API to between -175° and 175° on your motor. The highest possible reading will be at -175°, whereas the lowest possible reading will be at 175°. (Because you have mounted the motors in reverse!)
+**Calibrar** los indicadores significa mapear los valores de datos máximos y mínimos posibles de tu API entre -175 ° y 175 ° en tu motor. La lectura más alta posible estará en -175 °, mientras que la lectura más baja posible será en 175 °. (¡Porque has montado los motores al revés!)
 
-For our example, we will display the **fine particles (PM2.5)** measurement on the gauge, while the slider will display the nitrogen dioxide (NO2) level. The term **fine particles**, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and a half microns (or less) in width. The particles measured by PM2.5 are what make up most smoke and smog, and make it hard to see.
+Para nuestro ejemplo, mostraremos **partículas finas (PM2.5)** en el medidor, mientras que el control deslizante mostrará el nivel de dióxido de nitrógeno (NO2). El término **partículas finas**, o material particulado 2.5 (PM2.5), se refiere a partículas diminutas o gotitas en el aire que tienen dos micrones y medio (o menos) de ancho. Las partículas medidas por PM2.5 son las que componen la mayor parte del humo y el smog, y dificultan la visualización.
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">Like inches, metres, and millimetres, a <span style="color: #0faeb0">micron</span> is a unit of measurement for distance. There are about 25,000 microns in an inch. The widths of the larger particles in the PM2.5 size range would be about thirty times smaller than that of a human hair. These particles are so small that several thousand of them could fit on the full stop at the end of this sentence.</p>
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">Al igual que en pulgadas, metros y milímetros, <span style="color: #0faeb0">micrones</span> es una unidad de medida para la distancia. Hay alrededor de 25.000 micrones en una pulgada. Los anchos de las partículas más grandes en el rango de tamaño de PM2.5 serían unas treinta veces más pequeñas que las de un cabello humano. Estas partículas son tan pequeñas que varios miles de ellas podrían caber en el punto al final de esta oración.</p>
 
-In our example, the slider will display the nitrogen dioxide (NO2) level. The maximum possible reading on your slider will depend on your chosen location, because urban areas will always have higher readings than rural ones. The minimum reading possible is obviously 0, but you will want to consider what the normal range is for what you are measuring and add a bit to that.
+En nuestro ejemplo, el control deslizante mostrará el nivel de dióxido de nitrógeno (NO2). La lectura máxima posible en tu control deslizante dependerá de la ubicación que has elegido, porque las áreas urbanas siempre tendrán lecturas más altas que las rurales. La lectura mínima posible es obviamente 0, pero querrás considerar cuál es el rango normal para lo que estás midiendo y agregarle un poco.
 
-To work out what the maximum likely reading should be, you can see the historical data from your chosen location on the webpage you opened earlier:
+Para determinar cuál debería ser la lectura máxima probable, puedes ver los datos históricos de la ubicación elegida en la página web que abriste anteriormente:
 
-![Image showing graphed historical NO2 data from Sandy, roadside.](images/historicaldata_no2.jpg)
+![Imagen que muestra datos históricos graficados de NO2 de Sandy, al borde de la carretera.](images/historicaldata_no2.jpg)
 
-Here, you can see that while there are some major outliers, around 60 should be more than enough as your maximum value for most readings from the Sandy Roadside air quality station. (If you want to simply make your scale from 0 to 100, you can do that too — just make `max_value = 100`.)
+Here, you can see that while there are some major outliers, around 60 should be more than enough as your maximum value for most readings from the Sandy Roadside air quality station. (Si simplemente deseas hacer tu escala de 0 a 100, también puedes hacerlo, simplemente haz `max_valor = 100`)
 
 --- task ---
 
-Connect your sliding indicator motor to port A on the Build HAT. Connect your gauge indicator motor to port B.
+Conecta el motor del indicador deslizante al puerto A del Build HAT. Conecta el motor del medidor al puerto B.
 
 --- /task ---
 
 --- task ---
 
-In a new Thonny window, type the following:
+En una nueva ventana de Thonny, escribe lo siguiente:
 
 --- code ---
 ---
@@ -33,21 +33,21 @@ line_highlights:
 ---
 from buildhat import Motor from time import sleep from datetime import datetime, timedelta import requests
 
-no2_motor = Motor('A')           #Set up slider motor no2_motor.run_to_position(0,100) #Reset slider position pm25_motor = Motor('B')           #Set up gauge motor pm25_motor.run_to_position(0,100) # Reset gauge position
+no2_motor = Motor ('A') #Configura el motor del deslizador no2_motor.run_to_position (0,100) #Restablece la posición del deslizador pm25_motor = Motor ('B') #Configura el motor del medidor pm25_motor.run_to_position (0,100) # Restablece la posición del medidor
 
-no2_min_value = 0         #The lowest NO2 reading you think you will get (this should hopefully be around 0) no2_max_value = 60        #The highest NO2 reading you think you will get no2_min_angle = 175       #Minimum motor travel no2_max_angle = -175      #Maximum motor travel
+no2_min_valor = 0 #La lectura de NO2 más baja que crees que obtendrás (con suerte debería ser alrededor de 0) no2_max_valor = 60 #La lectura de NO2 más alta que crees que obtendrá no2_min_angulo = 175 # Recorrido mínimo del motor no2_max_angulo = -175 #Máximo viaje del motor
 
-pm25_min_value = 0        #The lowest PM2.5 reading you think you will get (this should hopefully be around 0) pm25_max_value = 100      #The highest PM2.5 reading you think you will get pm25_min_angle = 175      #Minimum motor travel pm25_max_angle = -175     #Maximum motor travel
+pm25_min_valor = 0 #La lectura de PM2.5 más baja que crees que obtendrás (con suerte debería ser alrededor de 0) pm25_max_valor = 100 #La lectura de PM2.5 más alta que crees que obtendrá pm25_min_angulo = 175 # Recorrido mínimo del motor pm25_max_angulo = -175 # Recorrido máximo del motor
 
 --- /code ---
 
 --- /task ---
 
-Now that you have imported the necessary libraries and set up your measurement details, you can set up your query to the API by making a few **dictionaries** of terms you will use.
+Ahora que has importado las bibliotecas necesarias y configurado los detalles de medición, puedes configurar tu consulta a la API creando unos **diccionarios** de términos que utilizarás.
 
 --- task ---
 
-In your Thonny window, add this code to the end of your script:
+En tu ventana de Thonny, agrega este código al final de tu secuencia de comandos:
 
 --- code ---
 ---
@@ -56,109 +56,109 @@ line_highlights:
 ---
 base_url = 'https://docs.openaq.org/v2/measurements'
 
-payload = {                    #Create a dictionary for the API request 'date_from':'', 'date_to':'', 'location_id':'2480',      #This number should be the ID number taken from the URL earlier 'order_by':'datetime', 'sort':'asc', 'has_geo':'true', 'limit':'100', 'offset':'0', }
+payload = {#Crea un diccionario para la solicitud de API 'date_from': '', 'date_to': '', 'location_id': '2480', #Este número debe ser el número de identificación tomado de la URL anteriormente 'order_by': 'datetime', 'sort': 'asc', 'has_geo': 'true', 'limit': '100', 'offset': '0', }
 
-pollution = {                  #Create a dictionary for the pollution readings 'no2' : 0,                 #Here we are looking for NO2 and PM25 — yours may differ! 'pm25': 0, }
+contaminacion = {#Crea un diccionario para las lecturas de contaminación 'no2': 0, #Aquí estamos buscando NO2 y PM25 - ¡el tuyo puede ser diferente! 'pm25': 0, }
 
 --- /code ---
 
 --- /task ---
 
-The next function you need to write will query the API using the parameters you have set up.
+La siguiente función que necesitas escribir consultará la API utilizando los parámetros que has configurado.
 
 --- task ---
 
-At the end of your script, add this code:
+Al final de tu secuencia de comandos, agrega este código:
 
 --- code ---
 ---
 language: python filename: data_dash.py line_numbers: true line_number_start: 39
 line_highlights:
 ---
-def check_air(): now = datetime.now()           #Gets the time now delta = datetime.now() - timedelta(days=1)         #Creates a time difference of one day
+def calidad_aire (): ahora = datetime.now () # Obtiene la hora de este momento delta = datetime.now () - timedelta (days = 1) # Crea una diferencia horaria de un día
 
-    payload['date_from'] = f'{delta:%Y-%m-%d}T{delta:%H:%M:%S}+00:00'  #Inserts your date and time into the dictionary above
-    payload['date_to'] = f'{now:%Y-%m-%d}T{now:%H:%M:%S}+00:00'
+    payload ['date_from'] = f '{delta:%Y-%m-%d} T {delta:%H:%M:%S} +00: 00' #Inserta tu fecha y hora en el diccionario de arriba
+    payload ['date_to'] = f '{ahora:%Y-%m-%d} T {ahora:%H:%M:%S} +00: 00 '
     
-    response = requests.get(base_url, params=payload)          #Queries the API database
+    respuesta = solicitudes.get (base_url, params = payload) # Consulta la base de datos
     
-    if response.status_code != 200:          #Check for connection to API
-        print('no response from server')
+    if respuesta.status_code != 200: #Compruebe la conexión a API
+        print (' no hay respuesta del servidor ')
         return
     
-    data = response.json()
+    data = respuesta.json ()
     
-    for reading in data['results']:
-        if reading['parameter'] == 'no2':       #This will depend upon what pollutant you are measuring
-            pollution['no2'] = reading['value']
-            print(pollution['no2'])
-        if reading['parameter'] == 'pm25':      #This will depend upon what pollutant you are measuring
-            pollution['pm25'] = reading['value']
-            print(pollution['pm25'])
+    for lectura in datos['resultados']:
+        if lectura['parametro'] ==' no2 ': # Esto dependerá del contaminante que estés midiendo
+            contaminacion['no2'] = lectura['value']
+            print(contaminacion ['no2'])
+        if lectura['parametro'] == 'pm25': # Esto dependerá del contaminante que estés midiendo
+            contaminacion [ 'pm25'] = lectura['value']
+            print (contaminacion ['pm25'])
     
-    output_results()   
-    sleep(1)
+    mostrar_resultado()   
+    sleep (1)
 
  --- /code ---
 
  --- /task ---
 
-The next part you will write will do some clever maths to map your data range across the motor range. (It's basically the same as the function used in the [LEGO Data plotter project](https://learning-admin.raspberrypi.org/en/projects/lego-plotter/6).)
+La siguiente parte que escribirá hará algunos cálculos matemáticos inteligentes para mapear su rango de datos en todo el rango del motor. (Básicamente es la misma que la función utilizada en el[proyecto trazador de datos LEGO ](https://learning-admin.raspberrypi.org/en/projects/lego-plotter/6))
 
 --- task ---
 
-Add this function beneath your existing code:
+Agrega esta función debajo de tu código existente:
 
 --- code ---
 ---
 language: python filename: data_dash.py line_numbers: true line_number_start: 65
 line_highlights:
 ---
-def remap(min_value, max_value, min_angle, max_angle, sensor_data):                    #Create function value_range = (max_value - min_value)                                              #Work out how wide your value range is motor_range = (max_angle - min_angle)                                              #Work out how wide your motor range is mapped = (((sensor_data - min_value) * motor_range) / value_range) + min_angle     #Stretch your value range across your motor range return int(mapped)                                           #Give back a number that shows the value as an angle on the motor
+def remap(min_valor, max_valor, min_angulo, max_angulo, sensor_datos): #Crea la función valor_rango = (max_valor - min_valor) # Calcula qué tan amplio es tu rango de valores motor_rango = (max_angulo - min_angulo) # Calcula qué tan amplio es el rango de tu motor mapeado = (((sensor_datos - min_valor) * motor_rango) / valor_rango) + min_angulo #Estira tu rango de valores a lo largo de tu rango de motor return int (mapeado) # Devuelve un número que muestre el valor como un ángulo en el motor
 
 --- /code ---
 
 --- /task ---
 
-Now that your function has been created, you need to make a loop that will:
+Ahora que creaste tu función, necesitas hacer un bucle que:
 
-+ Find the angle the motor is currently at
-+ Pull the pollutant data from the `remap` function to use as the new angle for your motors
-+ Move to the new angle to display the reading
++ Encuentre el ángulo en el que se encuentra actualmente el motor
++ Extraiga los datos de contaminantes de la función `remap` para usarlos como el nuevo ángulo para tus motores
++ Mover al nuevo ángulo para mostrar la lectura
 
 --- task ---
 
-Add the following code to the end of your script, on a new line:
+Agrega el siguiente código al final de tu secuencia de comandos, en una nueva línea:
 
 --- code ---
 ---
 language: python filename: data_dash.py line_numbers: true line_number_start: 73
 line_highlights:
 ---
-def output_results(): print(f'NO2 = {pollution['no2']}') no2_current_angle = no2_motor.get_aposition() no2_sensor_data = int(pollution['no2']) no2_new_angle = remap(no2_min_value, no2_max_value, no2_min_angle, no2_max_angle, no2_sensor_data) print(no2_new_angle) if no2_new_angle > no2_current_angle: no2_motor.run_to_position(no2_new_angle, 100, direction='anticlockwise') print('Turning CW') elif no2_new_angle < no2_current_angle: no2_motor.run_to_position(no2_new_angle, 100, direction='clockwise') print('Turning ACW') sleep(0.1) pm25_sensor_data = int(pollution['pm25']) print(f"PM2.5 = {pollution['pm25']}") pm25_current_angle = pm25_motor.get_aposition() print(pm25_current_angle) pm25_new_angle = remap(pm25_min_value, pm25_max_value, pm25_min_angle, pm25_max_angle, pm25_sensor_data) pm25_motor.run_to_position(pm25_new_angle, 100)
+def mostrar_resultado(): print (f'NO2 = {contaminacion ['no2']} ') no2_angulo_actual = no2_motor.get_aposition () no2_sensor_datos = int (contaminacion [' no2 ']) no2_nuevo_angulo = remap(no2_min_valor, no2_max_valor, no2_min_angulo, no2_max_angulo, no2_sensor_datos) print(no2_nuevo_angulo) if no2_nuevo_angulo > no2_angulo_actual: no2_motor.run_to_position (no2_nuevo_angulo, 100, direction='anticlockwise') print ( 'Girando en sentido horario') elif no2_nuevo_angulo <no2_angulo_actual: no2_motor. run_to_position (no2_nuevo_angulo, 100, direction='clockwise') print ('Girando en sentido antihorario') sleep (0.1) pm25_sensor_datos = int(contaminacion ['pm25']) print (f "PM2.5 = {contaminacion ['pm25']} ") pm25_angulo_actual = pm25_motor.get_aposition() print (pm25_angulo_actual) pm25_nuevo_angulo = remap(pm25_min_valor, pm25_max_valor, pm25_min_angulo, pm25_max_angulo, pm25_sensor_datos) pm25_motor.run_to_position(pm25_nuevo_angulo, 100)
 
 --- /code ---
 
 --- /task ---
 
-The last part of your code now needs to call your `check_air()` function to make it all go, and periodically check the API for updated data.
+Ahora la última parte de tu código necesita llamar a tu función `calidad_aire()` para hacer que todo funcione, y verificar periódicamente la API para obtener datos actualizados.
 
 --- task ---
 
-At the end of your script, on a new line (make sure it isn't indented), type:
+Al final de tu secuencia de comandos, en una nueva línea (asegúrate de que no tenga sangría), escribe:
 
 --- code ---
 ---
 language: python filename: data_dash.py line_numbers: true line_number_start: 93
 line_highlights:
 ---
-while True: check_air() sleep(3600)   #Wait an hour before checking again (make this smaller for testing purposes) --- /code ---
+while True: calidad_aire() sleep (3600) #Espere una hora antes de verificar nuevamente (haz este número más pequeño para propósitos de prueba) --- / code ---
 
 --- /task ---
 
 --- task ---
 
-Save your work as `data_dash.py` and click **Run**. Your slider should move to display the current NO2 reading from your chosen OpenAQ station, and your gauge should move to display the PM2.5 reading. Well done!
+Guarda tu trabajo como `data_dash.py` y haz clic en **Ejecutar**. Tu control deslizante debe moverse para mostrar la lectura actual de NO2 de tu estación OpenAQ elegida, y tu medidor debe moverse para mostrar la lectura de PM2.5. ¡Bien hecho!
 
 --- /task ---
 
