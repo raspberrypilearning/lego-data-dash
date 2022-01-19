@@ -113,7 +113,7 @@
   </p>
   
   <p spaces-before="0">
-    You will have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth. The mechanism will slide easily up and down while the gear and axle are free. Connecting a motor will hold it steady. <img src="images/sliderbuild8.jpg" alt="두 개의 직선 브래킷과 스터드가 있는 Build Plate와 슬라이더 바가 삽입된 플레이트에 장착된 액슬 및 기어를 보여주는 이미지." />
+    기어를 앞으로 당겨 랙이 통과하도록 한 다음 톱니를 맞물리려면 기어를 다시 밀어 넣어야 합니다. 기어와 액슬이 자유로운 상태에서 메커니즘이 위아래로 쉽게 미끄러집니다. 모터를 연결하면 안정적으로 유지됩니다. <img src="images/sliderbuild8.jpg" alt="두 개의 직선 브래킷과 스터드가 있는 Build Plate와 슬라이더 바가 삽입된 플레이트에 장착된 액슬 및 기어를 보여주는 이미지." />
   </p>
   
   <p spaces-before="0">
@@ -125,7 +125,7 @@
   </p>
   
   <p spaces-before="0">
-    Take a motor and add two studs to the flat side, in the top two holes. <img src="images/sliderbuild9.jpg" alt="2개의 직선 브래킷과 스터드가 있는 제작판, 슬라이더 막대가 삽입된 Build Plate에 장착된 차축과 기어, 테이블 위의 모터를 보여주는 이미지." />
+    모터를 가지고 상단 2개의 구멍에 2개의 볼트를 삽입합니다.<img src="images/sliderbuild9.jpg" alt="2개의 직선 브래킷과 스터드가 있는 제작판, 슬라이더 막대가 삽입된 Build Plate에 장착된 차축과 기어, 테이블 위의 모터를 보여주는 이미지." />
   </p>
   
   <p spaces-before="0">
@@ -137,11 +137,11 @@
   </p>
   
   <p spaces-before="0">
-    Before attaching the motor to the rear of the slider's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
+    슬라이더 축 뒷면에 모터를 장착하기 전에 모터에 있는 두 개의 막대 사탕 기호를 정렬하여 모터가 '0'에 있는지 확인하세요:
   </p>
   
   <p spaces-before="0">
-    <img src="images/aligned_symbols.jpg" alt="Image showing motor 'zeroed in' with aligned symbols." />
+    <img src="images/aligned_symbols.jpg" alt="정렬된 기호가 있는 '제로인' 모터를 보여주는 이미지." />
   </p>
   
   <p spaces-before="0">
@@ -153,7 +153,7 @@
   </p>
   
   <p spaces-before="0">
-    Adjust your toothed bar so the gear sits about halfway along it, then mount the motor behind the board using the two studs while holding the toothed bar in place. Make sure the axle fits into the hole on the <strong x-id="1">flat side</strong> of the motor. It should keep the slider held steady now, around halfway along the bar. <img src="images/sliderbuild10.jpg" alt="뒷면에 모터가 장착된 Build Plate를 보여주는 이미지." />
+    기어가 대략 중간에 오도록 랙을 조정합니다. 그런 다음 랙을 제자리에 고정한 상태에서 두 개의 볼트로 회로 기판 뒤에 모터를 장착합니다. 축이 모터의 <strong x-id="1">평평한 면</strong> 구멍에 맞는지 확인하십시오. 이제 슬라이더를 랙의 절반 정도에서 안정적으로 유지해야 합니다. <img src="images/sliderbuild10.jpg" alt="뒷면에 모터가 장착된 Build Plate를 보여주는 이미지." />
   </p>
   
   <p spaces-before="0">
@@ -161,11 +161,11 @@
   </p>
 
 <h3 spaces-before="0">
-  Test the sliding indicator
+  슬라이딩 표시기 테스트
 </h3>
 
 <p spaces-before="0">
-  To program your sliding indicator, you can reuse some of the code written in the <a href="https://projects.raspberrypi.org/en/projects/lego-plotter">LEGO® Data plotter</a> project, as they use the same mechanism.
+  슬라이드 표시기를 프로그래밍하기 위해 동일한 메커니즘을 사용하므로 <a href="https://projects.raspberrypi.org/en/projects/lego-plotter">LEGO® 데이터 플로터</a> 프로젝트에서 작성된 일부 코드를 재사용할 수 있습니다.
 </p>
 
 <p spaces-before="0">
@@ -173,7 +173,7 @@
 </p>
 
 <p spaces-before="0">
-  Connect the motor of your slider to port A on your Build HAT.
+  선형 디스플레이의 모터를 Build HAT의 포트 A에 연결합니다.
 </p>
 
 <p spaces-before="0">
@@ -185,7 +185,7 @@
 </p>
 
 <p spaces-before="0">
-  You will use the BuildHAT Python library, so make sure it is installed:
+  Build HAT Python 라이브러리가 필요하므로 다음과 같이 설치되어 있는지 확인하세요:
 </p>
 
 <p spaces-before="0">
@@ -193,19 +193,19 @@
 </p>
 <hr />
 <h2 spaces-before="0">
-  title: Install the BuildHAT Python library
+  title: buildhat Python 라이브러리 설치
 </h2>
 
 <p spaces-before="0">
-  Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
+  <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>를 눌러 Raspberry Pi에서 터미널 창을 엽니다.
 </p>
 
 <p spaces-before="0">
-  At the prompt type: <code>pip3 install buildhat</code>
+  커맨드 창에서 다음을 입력합니다: <code>sudo pip3 install buildhat</code>
 </p>
 
 <p spaces-before="0">
-  Press <kbd>Enter</kbd> and wait for the "installation completed" message.
+  <kbd>Enter</kbd> 를 누르고 "설치 완료" 메시지를 확인합니다.
 </p>
 
 <p spaces-before="0">
@@ -217,11 +217,11 @@
 </p>
 
 <h3 spaces-before="0">
-  Create the scale for your sliding indicator
+  슬라이딩 표시기의 눈금 만들기
 </h3>
 
 <p spaces-before="0">
-  Now you know it works, you will need to create a scale for the sliding indicator, so you know what it means.
+  이제 작동한다는 것을 알았습니다. 그러나 의미를 알 수 있도록 슬라이딩 표시기에 대한 척도를 생성해야 합니다.
 </p>
 
 <p spaces-before="0">
@@ -229,7 +229,7 @@
 </p>
 
 <p spaces-before="0">
-  Get a piece of card about as long as your toothed bar. Stick it next to the sliding indicator, under the pointer. Have a marker or pencil ready.
+  랙 길이 정도의 판지 조각을 가져옵니다. 슬라이드 표시기 옆의 포인터 아래에 붙입니다. 마커나 연필을 준비하세요.
 </p>
 
 <p spaces-before="0">
@@ -241,11 +241,11 @@
 </p>
 
 <p spaces-before="0">
-  Open <strong x-id="1">Thonny</strong> on your Raspberry Pi from the <strong x-id="1">Programming menu</strong>.
+  <strong x-id="1">개발</strong> 메뉴에서 Raspberry Pi의 <strong x-id="1">Thonny</strong>를 엽니다.
 </p>
 
 <p spaces-before="0">
-  In the <strong x-id="1">Shell</strong> (the window at the bottom), next to the three arrows, type: <code>from buildhat import Motor</code> and press <kbd>Enter</kbd>. You should see a new line appear with three more arrows.
+  <strong x-id="1">셸</strong>(아래 창)에서 세 개의 화살표 옆에 다음을 입력합니다: <code>from buildhat import Motor</code> 명령을 입력하고 <kbd>Enter</kbd> 키를 누르세요. 세 개의 화살표가 더 있는 새 줄이 표시되어야 합니다.
 </p>
 
 <p spaces-before="0">
