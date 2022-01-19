@@ -12,7 +12,7 @@ Los indicadores deslizantes también se pueden ejecutar horizontalmente si lo pr
 
 Sigue estas instrucciones de construcción para crear un indicador deslizante vertical:
 
-To construct this model, follow our handy building guide here or [download it.](resources/lego-data-dash-slider.pdf)
+Para construir este modelo, sigue nuestra útil guía de construcción aquí o [descárgala.](resources/lego-data-dash-slider.pdf)
 <embed src="resources/lego-data-dash-slider.pdf" width="600" height="500" alt="pdf" pluginspage="https://www.adobe.com/products/acrobat/readstep2.html">
   </p> 
   
