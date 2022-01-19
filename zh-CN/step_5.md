@@ -46,19 +46,19 @@
 
 --- task ---
 
-将另一根公母跨接电缆公端接入公共地轨的末端： ![图像显示从面包板的公共接地导轨拖尾的跨接电缆。](images/LEDbuild6.jpg)
+将另一根公母跨接电缆公端接入公共地轨的末端： ![从面包板的公共接地导轨接出的跨接电缆的图片。](images/LEDbuild6.jpg)
 
 --- /task ---
 
 您完成的 LED比例尺应如下所示：
 
-![图像显示 LED 排列在面包板上，电阻器连接各行，跳线从面包板上拖出。](images/LEDbuild7.jpg)
+![LED 排列在面包板上，每行都连接了电阻，并且有跳线从面包板上拖出的图片。](images/LEDbuild7.jpg)
 
 下一步是将其连接到 Raspberry Pi 上的 GPIO 引脚。
 
 --- task ---
 
-将连接到公共接地轨的公母跨接电缆的母端连接到引脚 39。 这是 Raspberry Pi 上的几个接地引脚之一，它将为 **所有** LED 灯泡提供接地。 ![图像显示连接到 Raspberry Pi 上的针脚 39 的黑色跨接电缆。](images/LEDbuild9.jpg)
+将连接到公共接地轨的公母跨接电缆的母端连接到引脚 39。 这是 Raspberry Pi 上的几个接地引脚之一，它将为 **所有** LED 灯泡提供接地。 ![连接到 Raspberry Pi 上的第39个针脚的黑色跨接电缆的图片。](images/LEDbuild9.jpg)
 
 --- /task ---
 
@@ -66,7 +66,7 @@
 
 将剩余的跨接电缆连接到各个GPIO 引脚，记下每个LED对应的引脚。
 
-在本示例中，我们使用了引脚 16、19、20、21 和 26（将它们全部放在同一端以保持整洁）： ![显示从 Raspberry Pi GPIO 引脚拖出的跨接电缆的图像。](images/LEDbuild10.jpg)
+在本示例中，我们使用了引脚 16、19、20、21 和 26（将它们全部放在同一端以保持整洁）： ![从 Raspberry Pi GPIO 引脚拖出的跨接电缆的图片。](images/LEDbuild10.jpg)
 
 --- /task ---
 
@@ -93,7 +93,7 @@ line_highlights:
 ---
 from gpiozero import LEDBarGraph from random import randint
 
-graph = LEDBarGraph(16, 19, 20, 21, 26) #The order of these numbers should match the pins you connected up
+graph = LEDBarGraph(16, 19, 20, 21, 26) #这儿数字的顺序应该和您链接的引脚号匹配
 
 --- /code ---
 
@@ -112,7 +112,7 @@ graph = LEDBarGraph(16, 19, 20, 21, 26) #The order of these numbers should match
 language: python filename: led_sequence.py line_numbers: true line_number_start: 9
 line_highlights:
 ---
-while True: data_reading = randint(0, 100) graph.value = 1/data_reading #This creates a decimal value for the graph to display sleep(0.5) --- /code ---
+while True: data_reading = randint(0, 100) graph.value = 1/data_reading #这将生成一个小于1的数用于显示 sleep(0.5) --- /code ---
 
 --- /task ---
 
@@ -120,7 +120,7 @@ while True: data_reading = randint(0, 100) graph.value = 1/data_reading #This cr
 
 将您的工作保存为 `led_sequence.py` 并单击 **Run**。 您应该会看到您的条形图开始渐渐亮起！
 
-![Animated image showing a changing bar graph made of LEDs.](images/LEDbuild.gif)
+![由 LED构成的条形图在不断变化的动图。](images/LEDbuild.gif)
 
 --- /task ---
 
