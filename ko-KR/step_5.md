@@ -93,7 +93,7 @@ line_highlights:
 ---
 from gpiozero import LEDBarGraph from random import randint
 
-graph = LEDBarGraph(16, 19, 20, 21, 26) #The order of these numbers should match the pins you connected up
+graph = LEDBarGraph(16, 19, 20, 21, 26) #이 숫자의 순서는 연결한 핀과 일치해야 합니다.
 
 --- /code ---
 
