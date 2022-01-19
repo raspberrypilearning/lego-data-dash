@@ -25,7 +25,7 @@
   </p>
   
   <p spaces-before="0">
-    노란색 플레이트 요소를 잡고 90도 스터드 브래킷을 사용하여 두 개의 파란색 빔을 설치합니다.<img src="images/sliderbuild1.jpg" alt="Image showing a Build Plate with blue legs." />
+    노란색 플레이트 요소를 잡고 90도 스터드 브래킷을 사용하여 두 개의 파란색 빔을 설치합니다.<img src="images/sliderbuild1.jpg" alt="파란색 다리가 있는 Build Plate를 보여주는 이미지." />
   </p>
   
   <p spaces-before="0">
@@ -37,7 +37,7 @@
   </p>
   
   <p spaces-before="0">
-    한 열 간격으로 두 개의 회색 직선 브래킷을 연결합니다. <img src="images/sliderbuild2.jpg" alt="Image showing the Build Plate with two straight brackets." />
+    한 열 간격으로 두 개의 회색 직선 브래킷을 연결합니다. <img src="images/sliderbuild2.jpg" alt="두 개의 직선 브래킷과 스터드가 있는 Build Plate를 보여주는 이미지." />
   </p>
   
   <p spaces-before="0">
@@ -49,7 +49,7 @@
   </p>
   
   <p spaces-before="0">
-    브래킷 위의 플레이트 요소에 한쪽 끝에 스페이서가 있는 회색의 두 배 길이의 스터드를 장착합니다.<img src="images/sliderbuild3.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    브래킷 위의 플레이트 요소에 한쪽 끝에 스페이서가 있는 회색의 두 배 길이의 스터드를 장착합니다.<img src="images/sliderbuild3.jpg" alt="두 개의 직선 브래킷과 스터드가 있는 Build Plate를 보여주는 이미지." />
   </p>
   
   <p spaces-before="0">
@@ -61,7 +61,7 @@
   </p>
   
   <p spaces-before="0">
-    두 개의 직선 브래킷 사이에 두 개의 노란색(3개 구멍) 빔을 수평으로 부착합니다. <img src="images/sliderbuild4.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    두 개의 직선 브래킷 사이에 두 개의 노란색(3개 구멍) 빔을 수평으로 부착합니다. <img src="images/sliderbuild4.jpg" alt="두 개의 직선 브래킷과 스터드가 있는 Build Plate를 보여주는 이미지." />
   </p>
   
   <p spaces-before="0">
@@ -73,7 +73,7 @@
   </p>
   
   <p spaces-before="0">
-    작은 검은 기어와 짧은 차축을 가지고 그들을 결합합니다.<img src="images/sliderbuild5.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear." />
+    작은 검은 기어와 짧은 차축을 가지고 그들을 결합합니다.<img src="images/sliderbuild5.jpg" alt="2개의 직선 브래킷과 스터드, 액슬과 기어가 있는 Build Plate를 보여주는 이미지." />
   </p>
   
   <p spaces-before="0">
@@ -85,7 +85,7 @@
   </p>
   
   <p spaces-before="0">
-    Insert the axle through the Build Plate above the right bracket as shown: <img src="images/sliderbuild6.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate." />
+    그림과 같이 오른쪽 브래킷 위의 Build Plate를 통해 액슬을 삽입하세요:<img src="images/sliderbuild6.jpg" alt="두 개의 직선 브래킷과 스터드가 있는 Build Plate와 플레이트에 장착된 액슬과 기어를 보여주는 이미지." />
   </p>
   
   <p spaces-before="0">
@@ -113,7 +113,7 @@
   </p>
   
   <p spaces-before="0">
-    You will have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth. The mechanism will slide easily up and down while the gear and axle are free. Connecting a motor will hold it steady. <img src="images/sliderbuild8.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted." />
+    You will have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth. The mechanism will slide easily up and down while the gear and axle are free. Connecting a motor will hold it steady. <img src="images/sliderbuild8.jpg" alt="두 개의 직선 브래킷과 스터드가 있는 Build Plate와 슬라이더 바가 삽입된 플레이트에 장착된 액슬 및 기어를 보여주는 이미지." />
   </p>
   
   <p spaces-before="0">
@@ -125,7 +125,7 @@
   </p>
   
   <p spaces-before="0">
-    Take a motor and add two studs to the flat side, in the top two holes. <img src="images/sliderbuild9.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted, and a motor on the table." />
+    Take a motor and add two studs to the flat side, in the top two holes. <img src="images/sliderbuild9.jpg" alt="2개의 직선 브래킷과 스터드가 있는 제작판, 슬라이더 막대가 삽입된 Build Plate에 장착된 차축과 기어, 테이블 위의 모터를 보여주는 이미지." />
   </p>
   
   <p spaces-before="0">
@@ -153,7 +153,7 @@
   </p>
   
   <p spaces-before="0">
-    Adjust your toothed bar so the gear sits about halfway along it, then mount the motor behind the board using the two studs while holding the toothed bar in place. Make sure the axle fits into the hole on the <strong x-id="1">flat side</strong> of the motor. It should keep the slider held steady now, around halfway along the bar. <img src="images/sliderbuild10.jpg" alt="Image showing the Build Plate with a motor mounted on the back." />
+    Adjust your toothed bar so the gear sits about halfway along it, then mount the motor behind the board using the two studs while holding the toothed bar in place. Make sure the axle fits into the hole on the <strong x-id="1">flat side</strong> of the motor. It should keep the slider held steady now, around halfway along the bar. <img src="images/sliderbuild10.jpg" alt="뒷면에 모터가 장착된 Build Plate를 보여주는 이미지." />
   </p>
   
   <p spaces-before="0">
@@ -337,7 +337,7 @@
 </p>
 
 <p spaces-before="0">
-  Save your work as <code>slider_test.py</code> and click <strong x-id="1">Run</strong>. 슬라이더가 위 또는 아래로(또는 앞뒤로!) 미끄러지는 것을 볼 수 있습니다.
+  작업을 <code>slider_test.py</code> 로 저장하고 <strong x-id="1">Run</strong> 을 클릭하십시오. 슬라이더가 위 또는 아래로(또는 앞뒤로!) 미끄러지는 것을 볼 수 있습니다.
 </p>
 
 <p spaces-before="0">
