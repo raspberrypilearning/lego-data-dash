@@ -37,7 +37,7 @@
   </p>
   
   <p spaces-before="0">
-    接上两个灰色直支架，中间分隔一列。 <img src="images/sliderbuild2.jpg" alt="Image showing the Build Plate with two straight brackets." />
+    接上两个灰色直支架，中间分隔一列。 <img src="images/sliderbuild2.jpg" alt="安装了两个直支架的Build Plate的图片。" />
   </p>
   
   <p spaces-before="0">
@@ -193,7 +193,7 @@
 </p>
 <hr />
 <h2 spaces-before="0">
-  标题：安装 BuildHAT Python 库
+  title：安装 BuildHAT Python 库
 </h2>
 
 <p spaces-before="0">
