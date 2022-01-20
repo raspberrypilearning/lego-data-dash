@@ -49,7 +49,7 @@ title: 준비물
 
 ### 다운로드
 
-+ The final script for this project is available [here]((https://rpf.io/p/en/lego-data-dash-go){:target="_blank"})
++ 이 프로젝트의 최종 스크립트는 [여기]((https://rpf.io/p/en/lego-data-dash-go){:target="_blank"})에서 다운로드 받을 수 있습니다.
 
 --- /collapse ---
 
