@@ -128,13 +128,15 @@ Besorge dir ein Stück Karton, etwa so lange wie deine Zahnstange. Klebe ihn neb
 
 Öffne <strong x-id="1">Thonny</strong> auf deinem Raspberry Pi aus dem Menü <strong x-id="1">Entwicklung</strong>.
 
-Gib in der <strong x-id="1">Shell</strong> (das Fenster unten) neben den drei Pfeilen ein: <code>from buildhat import Motor</code> und drücke <kbd>Enter</kbd>. Du solltest eine neue Zeile mit drei weiteren Pfeilen sehen.
+Gib in der <strong x-id="1">Shell</strong> (das Fenster unten) neben den drei Pfeilen ein: 
+<code>from buildhat import Motor</code> und drücke <kbd>Enter</kbd>. Du solltest eine neue Zeile mit drei weiteren Pfeilen sehen.
 
 --- /task ---
 
 --- task ---
 
-Tippe jetzt: <code>motor = Motor('A')</code> und drücken Sie <kbd>Enter</kbd>.
+Tippe jetzt: 
+<code>motor = Motor('A')</code> und drücken Sie <kbd>Enter</kbd>.
 
 --- /task ---
 
@@ -142,13 +144,15 @@ Nachdem du deinen Schiebermotor eingerichtet hast, solltest du ihn zu den maxima
 
 --- task ---
 
-Gib ein: <code>motor.run_to_position(-180, 100)</code> und drücke <kbd>Enter</kbd>. Markiere die Karte an der Stelle, die der Pfeil angibt. Dies ist deine minimal mögliche Anzeige.
+Gib ein: 
+<code>motor.run_to_position(-180, 100)</code> und drücke <kbd>Enter</kbd>. Markiere die Karte an der Stelle, die der Pfeil angibt. Dies ist deine minimal mögliche Anzeige.
 
 --- /task ---
 
 --- task ---
 
-Gib ein: <code>motor.run_to_position(180, 100, direction="clockwise")</code> und drücke <kbd>Enter</kbd>. Markiere den Karton an der Stelle, die der Pfeil angibt. Dies ist deine minimal mögliche Anzeige.
+Gib ein: 
+<code>motor.run_to_position(180, 100, direction="clockwise")</code> und drücke <kbd>Enter</kbd>. Markiere den Karton an der Stelle, die der Pfeil angibt. Dies ist deine minimal mögliche Anzeige.
 
 --- /task ---
 
