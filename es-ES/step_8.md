@@ -1,4 +1,4 @@
-## ¿Qué hacer a continuación?
+## ¿¿Qué sigue?
 
 Puedes agregar fácilmente un tercer motor a tu tablero, o crear un gráfico de barras LED para mostrar otros datos de OpenAQ, pero ahora que sabes cómo representar datos usando indicadores LEGO®, ¡puedes usar tu nuevo tablero de datos para mostrar casi cualquier cosa!
 
