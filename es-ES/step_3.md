@@ -141,7 +141,8 @@ Consigue un trozo de cartón del tamaño de tu barra dentada. Pégalo al lado de
 
 Abre <strong x-id="1">Thonny</strong> en tu Raspberry Pi desde el <strong x-id="1">menú de programación</strong>.
 
-En el <strong x-id="1">Shell</strong> (la ventana en la parte inferior), junto a las tres flechas, escribe: <code>from buildhat import Motor</code> y presiona <kbd>Entrar</kbd>. Deberías ver una nueva línea que aparece con tres flechas más.
+En el <strong x-id="1">Shell</strong> (la ventana en la parte inferior), junto a las tres flechas, escribe: 
+<code>from buildhat import Motor</code> y presiona <kbd>Entrar</kbd>. Deberías ver una nueva línea que aparece con tres flechas más.
 
 --- /task ---
 
