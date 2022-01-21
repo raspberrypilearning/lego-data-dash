@@ -30,6 +30,7 @@ Toma un elemento de placa amarilla y coloca dos vigas azules usando soportes de 
 Coloca dos soportes rectos grises, separados por una columna. 
 ![Imagen que muestra la placa de construcción con dos soportes rectos.](images/sliderbuild2.jpg)
 
+--- /task ---
 --- task ---
 
 Fija dos postes grises de doble longitud con espaciadores en un extremo al elemento de placa sobre los soportes. 
