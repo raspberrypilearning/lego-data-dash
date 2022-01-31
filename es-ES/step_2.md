@@ -37,7 +37,7 @@ Piensa para quién crearás su panel de control (tu **audiencia**):
 Use lápiz y papel para planificar ideas para su tablero:
 
 + Considera cuántos motores tendrás disponibles para alimentar los indicadores; necesitas un motor para cada indicador
-+ ¿Utilizarás otros componentes en su construcción, como LEDs, bocinas o botones? ¿Qué harán?
++ ¿Utilizarás otros componentes en su construcción, como LEDs, altavoces o botones? ¿Qué harán?
 + ¿Cómo encajarán tus diferentes indicadores e insumos en un marco?
 + ¿Qué elementos LEGO necesitarás para construirlo?
 
