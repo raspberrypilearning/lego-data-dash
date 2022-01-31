@@ -68,7 +68,7 @@ Desliza la cara hacia abajo sobre tu eje, usando Blu Tack o cinta adhesiva por d
 
 --- task ---
 
-Agrega un codo de 90 grados al final del eje y coloqca otro eje en él. Asegúrate de que es lo suficientemente largo para alcanzar tu escala e indicar claramente las lecturas.
+Agrega un codo de 90 grados al final del eje y coloca otro eje en él. Asegúrate de que es lo suficientemente largo para alcanzar tu escala e indicar claramente las lecturas.
 
 ![Imagen que muestra el eje LEGO® que sobresale a través de la cara del medidor con un codo y un eje perpendicular conectados.](images/needle-gauge2.jpg)
 

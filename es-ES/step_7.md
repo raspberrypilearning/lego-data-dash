@@ -99,7 +99,7 @@ La siguiente función que necesitas escribir consultará la API utilizando los p
 
 --- task ---
 
-Al final de tu secuencia de comandos, agrega este código:
+Al final de tu secuencia de comandos, agrega estas líneas:
 
 --- code ---
 ---
@@ -143,7 +143,7 @@ La siguiente parte que escribirá hará algunos cálculos matemáticos inteligen
 
 --- task ---
 
-Agrega esta función debajo de tu código existente:
+Agrega esta función debajo de tu programa:
 
 --- code ---
 ---
