@@ -1,0 +1,17 @@
+---
+title: LEGO® 데이터 대시보드
+hero_image: images/banner.png
+description: LEGO®와 Build HAT를 사용하여 실제 다이얼과 슬라이더에 오염 데이터 표시하기
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-03-26"
+steps:
+  - title: 소개
+  - title: 대시보드 계획 세우기
+  - title: LEGO® 슬라이딩 표시기 만들기
+  - title: LEGO® 게이지 만들기
+  - title: LED 저울 만들기
+  - title: OpenAQ API에 액세스
+  - title: 대시보드에 오염 데이터 표시
+  - title: 더 나아가기
