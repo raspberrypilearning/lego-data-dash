@@ -6,7 +6,7 @@ Así es como se ve un control deslizante vertical:
 
 ![Imagen que muestra un control deslizante LEGO® vertical que actúa como termómetro.](images/slider.jpg)
 
-Los indicadores deslizantes también se pueden ejecutar horizontalmente si lo prefiere, girando la construcción 90 grados en sentido antihorario.
+Los indicadores deslizantes también se pueden ejecutar horizontalmente si lo prefieres, girando la construcción 90 grados en sentido antihorario.
 
 --- task ---
 
