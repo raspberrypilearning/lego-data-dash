@@ -14,7 +14,7 @@
 
 ![도로변 Sandy의 과거 이산화질소 데이터를 그래프로 나타낸 이미지.](images/historicaldata_no2.jpg)
 
-Here, you can see that while there are some major outliers, around 60 should be more than enough as your maximum value for most readings from the Sandy Roadside air quality station. (만약 여러분이 0에서 000까지의 척도를 하고 싶다면, 여러분도 그렇게 할 수 있습니다 - 그냥 ` max_value = 100 ` 하세요.)
+여기에서 몇 가지 주요 아웃라이어한 이상값이 있지만 Sandy Roadside 공기질 관측소의 대부분의 판독값에 대해 최대값으로 약 60 이상을 충족해야 함을 알 수 있습니다. (만약 여러분이 0에서 000까지의 척도를 하고 싶다면, 여러분도 그렇게 할 수 있습니다 - 그냥 ` max_value = 100 ` 하세요.)
 
 --- task ---
 
