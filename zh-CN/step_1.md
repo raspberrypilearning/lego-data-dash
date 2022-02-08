@@ -57,7 +57,7 @@ title: 您需要准备的材料
 
 --- task ---
 
-使用 M2 螺栓和螺母将您的 Raspberry Pi 安装到乐高(LEGO)积木板上，请确保 将Raspberry Pi 置于没有“边缘”的一侧：
+使用 M2 螺栓和螺母将您的 Raspberry Pi 安装到乐高(LEGO®) Build Plate上，请确保将Raspberry Pi 置于没有“边缘”的一侧：
 
  ![通过螺栓固定在洋红色乐高(LEGO)积木板上的Raspberry Pi。](images/build_11.jpg)
 
@@ -67,9 +67,9 @@ title: 您需要准备的材料
 
 --- task ---
 
-将 Build HAT 与 Raspberry Pi 对齐，请确保您可以看到 `This way up` 标签。 确保所有 GPIO 引脚都被 HAT 覆盖，然后用力按下。 （该示例使用了 [堆叠头](https://www.adafruit.com/product/2223){:target="_blank"}，所以有更长的引脚。）
+将 Build HAT 与 Raspberry Pi 对齐，请确保您可以看到 `This way up` 标签。 确保Build HAT准确滴覆盖了所有的 GPIO 引脚，然后用力按下。 （该示例使用了 [堆叠头](https://www.adafruit.com/product/2223){:target="_blank"}，所以有更长的引脚。）
 
-![显示GPIO 引脚穿过 Build HAT 的顶部的图片。](images/build_15.jpg) ![显示将 Buildhat 匹配到 Raspberry Pi的动画](images/haton.gif)
+![显示GPIO 引脚穿过 Build HAT 的顶部的图片。](images/build_15.jpg) ![将 Buildhat 匹配到 Raspberry Pi的动图](images/haton.gif)
 
 --- /task ---
 
