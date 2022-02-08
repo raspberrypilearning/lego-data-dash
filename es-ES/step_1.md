@@ -24,7 +24,7 @@ title: Lo que necesitarás
 ---
 ### Hardware
 
-+ Una computadora Raspberry Pi
++ Un ordenador Raspberry Pi
 + Un Build HAT Raspberry Pi
 + Una fuente de alimentación Raspberry Pi Build HAT de 7.5V
 + 2 motores LEGO® Technic ™ (más opcionales)
@@ -134,7 +134,7 @@ Tu tablero debe:
 + Tener al menos dos indicadores LEGO®
 
 Tu tablero podría:
-+ Usar otros componentes electrónicos (LED, zumbadores)
++ Usar otros componentes electrónicos (LED, altavoces)
 + Tener entradas físicas del usuario (motores LEGO® Technic ™, sensor de fuerza LEGO®, botón GPIO, sensor de distancia)
   
 </div>
