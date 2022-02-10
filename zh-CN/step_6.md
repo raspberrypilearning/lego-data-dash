@@ -10,7 +10,7 @@
 
 ### OpenAQ — 开源空气质量数据库
 
-在您的示例仪表板中，您将使用 [**OpenAQ**](https://openaq.org/#/){:target="_blank"} 的 API，这是一个开源的全球空气质量数据项目。 OpenAQ allows you to look at lots of different air pollution data from all over the globe, collected by thousands of measurement stations around the world.
+在您的示例仪表板中，您将使用 [**OpenAQ**](https://openaq.org/#/){:target="_blank"} 的 API，这是一个开源的全球空气质量数据项目。 OpenAQ 允许您查看由全球数千个测量站收集的来自全球各地的大量不同空气污染数据。
 
 如果您已经是 API 向导，则可以使用您喜欢在仪表板上表示的任何数据。 如果您想跟随我们并首次尝试使用 OpenAQ，您需要找出您想要调查的测量站以及您能够查看的测量结果。
 
@@ -39,27 +39,27 @@
 
 --- task ---
 
-**决定** 您最想测量哪种空气污染。 You can choose different options from the pulldown menu near the coloured scale on the left of the screen. ![显示 OpenAQ 地图中下拉菜单的图像。](images/mapscale.jpg)
+**决定** 您最想测量哪种空气污染。 您可以从屏幕左侧靠近彩色刻度的下拉菜单中选择不同的选项。 ![显示 OpenAQ 地图中下拉菜单的图像。](images/mapscale.jpg)
 
-**Note:** Round markers represent more substantial air quality stations which are likely to measure more varied pollutants.
-
---- /task ---
-
---- task ---
-
-**Zoom in** to your chosen area on the map, and find the dot closest to the place you would like to measure. Click on that nearest dot to see the location details. In the pop-up that appears, click the button that says **View Location**.  
-![Image showing a world map zoomed in on the eastern UK.](images/mapscroll.gif)
+**注意：** 圆形标记代表重要的空气质量站，它们可能会测量更多种类的污染物。
 
 --- /task ---
 
 --- task ---
 
-When the new webpage loads showing the details of the measurements taken at the location, **make a note** of the number in the URL of the new page. This is the OpenAQ identification number for your chosen air quality station. (In this example, it is the Sandy Roadside measurement station, with ID number **2480**.) ![Image showing the OpenAQ URL with a number for the location ID.](images/openaq_id.jpg)
+在地图上**放大** 您选择的区域，找到离您想要测量的位置最近的点。 单击最近的那个点，查看位置详细信息。 在出现的弹出窗口中，单击 **View Location**按钮。  
+![放大显示的英国东部的世界地图的图片。](images/mapscroll.gif)
 
 --- /task ---
 
 --- task ---
 
-On the location page, you will see the different types of pollutants measured at that location. **Choose** two from the list that you would like to represent on your data dashboard. ![Image showing a pollutant list from a location on the OpenAQ map.](images/openaq_msmt.jpg) This measurement station near Sandy can show NO2, PM10, and PM2.5 — so we'll use NO2 and PM2.5 in the example.
+当显示在该位置进行的测量的详细信息的网页加载时， **记下**该页面 URL 中的数字。 这是您选择的空气质量站的 OpenAQ 识别号。 （在本例中，它是 Sandy Roadside 测量站，ID 号为 **2480**。） ![带有位置 ID 编号的 OpenAQ的URL 的图片。](images/openaq_id.jpg)
+
+--- /task ---
+
+--- task ---
+
+在位置信息的页面上，您将看到在该位置测量的不同类型的污染物。 从列表上**选择** 2个您期望显示在您的数据仪表板的数据。 ![Image showing a pollutant list from a location on the OpenAQ map.](images/openaq_msmt.jpg) 桑迪附近的这个测量站可以显示 NO2、PM10 和 PM2.5——因此我们将在示例中使用 NO2 和 PM2.5。
 
 --- /task ---
