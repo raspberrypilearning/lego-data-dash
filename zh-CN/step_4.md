@@ -55,7 +55,7 @@
 
 --- collapse ---
 ---
-title：如果您创建的是指针仪表
+title: 如果您创建的是指针仪表
 ---
 
 要完成你的指针仪表：
@@ -80,7 +80,7 @@ title：如果您创建的是指针仪表
 
 --- collapse ---
 ---
-title：如果您创建的是盘面旋转仪表
+title: 如果您创建的是盘面旋转仪表
 ---
 
 要完成一个旋转仪表：
@@ -111,7 +111,7 @@ title：如果您创建的是盘面旋转仪表
 
 --- collapse ---
 ---
-title：安装 BuildHAT Python 库
+title: 安装 BuildHAT Python 库
 ---
 
 按下<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>，在 Raspberry Pi 上打开一个终端窗口。
