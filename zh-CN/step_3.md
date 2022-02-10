@@ -49,7 +49,7 @@
   </p>
   
   <p spaces-before="0">
-    将两个带垫片的，灰色双倍长度螺柱连接到支架上方。 <img src="images/sliderbuild3.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    将两个带垫片的，灰色双倍长度螺柱连接到支架上方。 <img src="images/sliderbuild3.jpg" alt="安装了两个直支架和螺柱的Build Plate的图片。" />
   </p>
   
   <p spaces-before="0">
@@ -61,7 +61,7 @@
   </p>
   
   <p spaces-before="0">
-    将两个直支架用两个黄色（三孔）梁水平连接起来。 <img src="images/sliderbuild4.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    将两个直支架用两个黄色（三孔）梁水平连接起来。 <img src="images/sliderbuild4.jpg" alt="安装了两个直支架和螺柱的Build Plate的图片。" />
   </p>
   
   <p spaces-before="0">
@@ -73,7 +73,7 @@
   </p>
   
   <p spaces-before="0">
-    取一个黑色的小齿轮和一个短轴，将它们连接在一起。 <img src="images/sliderbuild5.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear." />
+    取一个黑色的小齿轮和一个短轴，将它们连接在一起。 <img src="images/sliderbuild5.jpg" alt="安装了两个直支架和双头螺栓的Build Plate，外加一个短轴和齿轮的图片" />
   </p>
   
   <p spaces-before="0">
@@ -85,7 +85,7 @@
   </p>
   
   <p spaces-before="0">
-    Insert the axle through the Build Plate above the right bracket as shown: <img src="images/sliderbuild6.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate." />
+    如图所示，将短轴穿过右支架上方的Build Plate： <img src="images/sliderbuild6.jpg" alt="安装了两个直支架，双头螺栓以及一个短轴和齿轮的Build Plate的图片" />
   </p>
   
   <p spaces-before="0">
@@ -113,7 +113,7 @@
   </p>
   
   <p spaces-before="0">
-    您须要向前拉齿轮，以便于齿条通过，然后将齿轮推回并与齿扣接合。 当齿轮和轴可以自由转动时，带了指示箭头的齿条可以轻易地上下滑动。 连接马达后就可以保持齿条的稳定。 <img src="images/sliderbuild8.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted." />
+    您须要向前拉齿轮，以便于齿条通过，然后将齿轮推回并与齿扣接合。 当齿轮和轴可以自由转动时，带了指示箭头的齿条可以轻易地上下滑动。 连接马达后就可以保持齿条的稳定。 <img src="images/sliderbuild8.jpg" alt="安装了两个直支架，双头螺栓，一个短轴，一个齿轮以及滑动齿条的Build Plate的图片" />
   </p>
   
   <p spaces-before="0">
@@ -125,7 +125,7 @@
   </p>
   
   <p spaces-before="0">
-    取一个马达，在平滑面的顶部上方添加两个螺柱。 <img src="images/sliderbuild9.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted, and a motor on the table." />
+    取一个马达，在平滑面的顶部上方添加两个螺柱。 <img src="images/sliderbuild9.jpg" alt="安装了两个直支架，双头螺栓，一个短轴，一个齿轮以及滑动齿条的Build Plate，外加一个马达的图片" />
   </p>
   
   <p spaces-before="0">
@@ -153,7 +153,7 @@
   </p>
   
   <p spaces-before="0">
-    调整你的齿条高度，使齿轮位于它的一半左右。将齿条固定后，然后使用两个螺柱将马达安装在指示器的背面。 确保短轴准确地插入马达 <strong x-id="1">平滑面</strong>的孔中。 这样可以使齿轮保持稳定在齿条的中部。 <img src="images/sliderbuild10.jpg" alt="Image showing the Build Plate with a motor mounted on the back." />
+    调整你的齿条高度，使齿轮位于它的一半左右。将齿条固定后，然后使用两个螺柱将马达安装在指示器的背面。 确保短轴准确地插入马达 <strong x-id="1">平滑面</strong>的孔中。 这样可以使齿轮保持稳定在齿条的中部。 <img src="images/sliderbuild10.jpg" alt="背面安装了马达的Build Plate的图片。" />
   </p>
   
   <p spaces-before="0">
@@ -165,7 +165,7 @@
 </h3>
 
 <p spaces-before="0">
-  To program your sliding indicator, you can reuse some of the code written in the <a href="https://projects.raspberrypi.org/en/projects/lego-plotter">LEGO® Data plotter</a> project, as they use the same mechanism.
+  要对滑动指示器进行编程，您可以重复使用在 <a href="https://projects.raspberrypi.org/en/projects/lego-plotter">LEGO® Data plotter</a> 项目中编写的一些代码，因为它们使用相同的机制。
 </p>
 
 <p spaces-before="0">
