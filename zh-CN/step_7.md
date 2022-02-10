@@ -1,30 +1,30 @@
-## Display pollution data with your dashboard
+## 使用仪表板显示污染数据
 
-At the moment, your dash uses random integers between -175 and 175; these numbers are used because they are the motor's limits of travel in each direction. (We don't go to 180 as it can cause problems with travel around a full rotation.) The data coming in from your API won't have this same range, so you need to make it fit the motors.
+目前，您的仪表使用 -175 到 175 之间的随机整数；使用这些数字是因为它们是马达在两个方向上的行程限制。 （我们不会达到180 度，因为它会导致行程出现环绕覆盖的问题。） 来自您的 API 的数据不会具有相同的范围，因此您需要将其匹配到马达的行程范围。
 
-**Calibrating** the indicators means mapping the maximum and minimum possible data values from your API to between -175° and 175° on your motor. The highest possible reading will be at -175°, whereas the lowest possible reading will be at 175°. (Because you have mounted the motors in reverse!)
+**校准** 指示器意味着将来自 API 的最大和最小可能数据值映射到马达上的 -175° 和 175° 之间。 最高读数为 -175°，最低读数为 175°。 （因为您是反向装的马达！）
 
-For our example, we will display the **fine particles (PM2.5)** measurement on the gauge, while the slider will display the nitrogen dioxide (NO2) level. The term **fine particles**, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and a half microns (or less) in width. The particles measured by PM2.5 are what make up most smoke and smog, and make it hard to see.
+在本示例中，我们将在仪表盘上显示 **细颗粒 (PM2.5)** 测量值，而滑块显示器则将显示二氧化氮 (NO2) 水平。 术语**细颗粒**，或颗粒物 2.5 (PM2.5)，是指空气中尺寸为两微米半（或更小）的微小颗粒或液滴。 PM2.5 所测量的颗粒物构成了大部分烟和雾，并且很难看到。
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">Like inches, metres, and millimetres, a <span style="color: #0faeb0">micron</span> is a unit of measurement for distance. There are about 25,000 microns in an inch. The widths of the larger particles in the PM2.5 size range would be about thirty times smaller than that of a human hair. These particles are so small that several thousand of them could fit on the full stop at the end of this sentence.</p>
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">与英寸、米和毫米一样， <span style="color: #0faeb0">微米</span> 是距离的度量单位。 一英寸大约有 25,000 微米。 PM2.5 尺寸范围内的较大颗粒的宽度将比人类头发的宽度小约三十倍。 这些粒子非常小，以至于这句话末尾的句号可以容纳数千个这样的颗粒。</p>
 
-In our example, the slider will display the nitrogen dioxide (NO2) level. The maximum possible reading on your slider will depend on your chosen location, because urban areas will always have higher readings than rural ones. The minimum reading possible is obviously 0, but you will want to consider what the normal range is for what you are measuring and add a bit to that.
+在本示例中，滑块显示器将显示二氧化氮 (NO2) 水平。 滑块显示器上的最大可能读数取决于您选择的位置，因为城市地区的读数始终高于农村地区。 可能的最小读数显然是 0，但您需要考虑您所测量的正常范围是多少，然后再增大一点。
 
-To work out what the maximum likely reading should be, you can see the historical data from your chosen location on the webpage you opened earlier:
+要确定最大可能读数是多少，您可以在之前打开的网页上查看所选位置的历史数据：
 
-![Image showing graphed historical NO2 data from Sandy, roadside.](images/historicaldata_no2.jpg)
+![桑迪路边站采集的二氧化氮的历史数据的图片。](images/historicaldata_no2.jpg)
 
-Here, you can see that while there are some major outliers, around 60 should be more than enough as your maximum value for most readings from the Sandy Roadside air quality station. (If you want to simply make your scale from 0 to 100, you can do that too — just make `max_value = 100`.)
+在这里您可以看到，虽然有一些显著的异常值，但对于 Sandy Roadside 空气质量站的大多数读数来说，最大值设置为大约 60 应该足够了。 (如果您想将您的刻度简单地设置为从0到100, 你也可以这样做 — — 设置 `max_value = 100`。)
 
 --- task ---
 
-Connect your sliding indicator motor to port A on the Build HAT. Connect your gauge indicator motor to port B.
+将滑动指示器的马达连接到 Build HAT 上的端口 A。 将仪表指示器的马达连接到端口 B。
 
 --- /task ---
 
 --- task ---
 
-In a new Thonny window, type the following:
+在新的 Thonny 窗口中，键入以下内容：
 
 --- code ---
 ---
@@ -33,21 +33,21 @@ line_highlights:
 ---
 from buildhat import Motor from time import sleep from datetime import datetime, timedelta import requests
 
-no2_motor = Motor('A')           #Set up slider motor no2_motor.run_to_position(0,100) #Reset slider position pm25_motor = Motor('B')           #Set up gauge motor pm25_motor.run_to_position(0,100) # Reset gauge position
+no2_motor = Motor('A') #设置滑动指示器马达 no2_motor.run_to_position(0,100) #重置滑块位置 pm25_motor = Motor('B') #设置仪表马达 pm25_motor.run_to_position(0,100) #重置仪表位置
 
-no2_min_value = 0         #The lowest NO2 reading you think you will get (this should hopefully be around 0) no2_max_value = 60        #The highest NO2 reading you think you will get no2_min_angle = 175       #Minimum motor travel no2_max_angle = -175      #Maximum motor travel
+no2_min_value = 0 #你认为将获得的最低 NO2 读数（这应该在 0 左右） no2_max_value = 60 #你认为将获得的最高 NO2 读数 no2_min_angle = 175 #马达的反向最大行程 no2_max_angle = -175 #马达的正向最大行程
 
-pm25_min_value = 0        #The lowest PM2.5 reading you think you will get (this should hopefully be around 0) pm25_max_value = 100      #The highest PM2.5 reading you think you will get pm25_min_angle = 175      #Minimum motor travel pm25_max_angle = -175     #Maximum motor travel
+pm25_min_value = 0 #您认为将获得的最低 PM2.5 读数（这应该在 0 左右） pm25_max_value = 100 #您认为将获得的最高 PM2.5 读数 pm25_min_angle = 175 #马达的反向最大行程 pm25_max_angle = -175 #马达的正向最大行程
 
 --- /code ---
 
 --- /task ---
 
-Now that you have imported the necessary libraries and set up your measurement details, you can set up your query to the API by making a few **dictionaries** of terms you will use.
+现在您已经导入了必要的库并设置了您要测量的详细信息，您可以通过创建几个 **词典**来设置对 API 的查询。
 
 --- task ---
 
-In your Thonny window, add this code to the end of your script:
+在您的 Thonny 窗口中，将此代码添加到脚本的末尾：
 
 --- code ---
 ---
@@ -56,44 +56,44 @@ line_highlights:
 ---
 base_url = 'https://docs.openaq.org/v2/measurements'
 
-payload = {                    #Create a dictionary for the API request 'date_from':'', 'date_to':'', 'location_id':'2480',      #This number should be the ID number taken from the URL earlier 'order_by':'datetime', 'sort':'asc', 'has_geo':'true', 'limit':'100', 'offset':'0', }
+payload = { #为API请求创建一个字典 'date_from':'', 'date_to':'', 'location_id':'2480', #这个数字应该是之前从URL中获取的ID号 'order_by':'datetime', 'sort':'asc', 'has_geo':'true', 'limit':'100', 'offset':'0', }
 
-pollution = {                  #Create a dictionary for the pollution readings 'no2' : 0,                 #Here we are looking for NO2 and PM25 — yours may differ! 'pm25': 0, }
+pollution = {   #为污染读数创建一个字典 'no2' : 0, #这里我们查询 NO2 和 PM25 - 您的可能会有所不同！ 'pm25': 0, }
 
 --- /code ---
 
 --- /task ---
 
-The next function you need to write will query the API using the parameters you have set up.
+您需要编写的下一个函数将使用您设置的参数查询 API。
 
 --- task ---
 
-At the end of your script, add this code:
+在脚本的末尾，添加以下代码：
 
 --- code ---
 ---
 language: python filename: data_dash.py line_numbers: true line_number_start: 39
 line_highlights:
 ---
-def check_air(): now = datetime.now()           #Gets the time now delta = datetime.now() - timedelta(days=1)         #Creates a time difference of one day
+def check_air(): now = datetime.now() #获取现在的时间 delta = datetime.now() - timedelta(days=1) #创建一天的时差
 
-    payload['date_from'] = f'{delta:%Y-%m-%d}T{delta:%H:%M:%S}+00:00'  #Inserts your date and time into the dictionary above
-    payload['date_to'] = f'{now:%Y-%m-%d}T{now:%H:%M:%S}+00:00'
+    payload['date_from'] = f'{delta:%Y-%m-%d}T{delta:%H:%M:%S}+00:00' #将日期和时间插入上面的字典中
+    payload['date_to'] = f'{now:%Y-%m-%d} T{now:%H:%M:%S}+00:00'
     
-    response = requests.get(base_url, params=payload)          #Queries the API database
+    response = requests.get(base_url, params=payload) #查询API数据库
     
-    if response.status_code != 200:          #Check for connection to API
+    if response.status_code != 200: #检查API的连接
         print('no response from server')
         return
     
     data = response.json()
     
     for reading in data['results']:
-        if reading['parameter'] == 'no2':       #This will depend upon what pollutant you are measuring
-            pollution['no2'] = reading['value']
+        if reading['parameter'] == 'no2': #这取决于你测量的是什么污染物
+            污染['no2'] = reading['value']
             print(pollution['no2'])
-        if reading['parameter'] == 'pm25':      #This will depend upon what pollutant you are measuring
-            pollution['pm25'] = reading['value']
+        if reading['parameter'] == 'pm25': #这取决于你测量的是什么污染物
+            污染[ 'pm25'] = reading['value']
             print(pollution['pm25'])
     
     output_results()   
@@ -103,32 +103,32 @@ def check_air(): now = datetime.now()           #Gets the time now delta = datet
 
  --- /task ---
 
-The next part you will write will do some clever maths to map your data range across the motor range. (It's basically the same as the function used in the [LEGO Data plotter project](https://learning-admin.raspberrypi.org/en/projects/lego-plotter/6).)
+您将编写的下一部分将进行一些巧妙的数学运算，以在马达行程范围内映射您的数据区间。 (该函数与 [LEGO数据绘图项目](https://learning-admin.raspberrypi.org/en/projects/lego-plotter/6) 中使用的函数基本相同。)
 
 --- task ---
 
-Add this function beneath your existing code:
+在现有代码后添加这个函数：
 
 --- code ---
 ---
 language: python filename: data_dash.py line_numbers: true line_number_start: 65
 line_highlights:
 ---
-def remap(min_value, max_value, min_angle, max_angle, sensor_data):                    #Create function value_range = (max_value - min_value)                                              #Work out how wide your value range is motor_range = (max_angle - min_angle)                                              #Work out how wide your motor range is mapped = (((sensor_data - min_value) * motor_range) / value_range) + min_angle     #Stretch your value range across your motor range return int(mapped)                                           #Give back a number that shows the value as an angle on the motor
+def remap(min_value, max_value, min_angle, max_angle, sensor_data): #创建函数 value_range = (max_value - min_value) #计算您的数据区间 motor_range = (max_angle - min_angle) #计算您的马达行程 mapped = (((sensor_data - min_value) * motor_range) / value_range) + min_angle #将数据换算为马达行程 return int(mapped) #返回马达行程
 
 --- /code ---
 
 --- /task ---
 
-Now that your function has been created, you need to make a loop that will:
+现在您的函数已经创建，您需要创建一个循环：
 
-+ Find the angle the motor is currently at
-+ Pull the pollutant data from the `remap` function to use as the new angle for your motors
-+ Move to the new angle to display the reading
++ 找到马达当前所在的角度
++ 提取污染物数据，通过`remap` 函数计算出马达应该到达的新角度
++ 移动到新角度以显示读数
 
 --- task ---
 
-Add the following code to the end of your script, on a new line:
+将以下代码添加到脚本末尾的新行上：
 
 --- code ---
 ---
@@ -141,24 +141,24 @@ def output_results(): print(f'NO2 = {pollution['no2']}') no2_current_angle = no2
 
 --- /task ---
 
-The last part of your code now needs to call your `check_air()` function to make it all go, and periodically check the API for updated data.
+现在您的代码的最后一部分需要调用 `check_air()` 函数来运行上面的程序，并定期查询API 以获取更新的数据。
 
 --- task ---
 
-At the end of your script, on a new line (make sure it isn't indented), type:
+在脚本的末尾，在新行上（确保它没有缩进），键入：
 
 --- code ---
 ---
 language: python filename: data_dash.py line_numbers: true line_number_start: 93
 line_highlights:
 ---
-while True: check_air() sleep(3600)   #Wait an hour before checking again (make this smaller for testing purposes) --- /code ---
+while True: check_air() sleep(3600) #等待一小时再检查（可以改小以便于测试） --- /code ---
 
 --- /task ---
 
 --- task ---
 
-Save your work as `data_dash.py` and click **Run**. Your slider should move to display the current NO2 reading from your chosen OpenAQ station, and your gauge should move to display the PM2.5 reading. Well done!
+将您的工作另存为 `data_dash.py` 并单击 **Run**。 您的滑块应该移动以显示来自您选择的 OpenAQ 站的当前 NO2 读数，同时您的仪表也应该转动来显示 PM2.5 读数。 太棒了！
 
 --- /task ---
 
