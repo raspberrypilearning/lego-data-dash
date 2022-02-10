@@ -1,0 +1,17 @@
+---
+title: 乐高（LEGO®） 数据仪表板
+hero_image: images/banner.png
+description: 使用乐高（LEGO®） 和 Build HAT 在物理表盘和滑动指示器上显示污染数据
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-03-26"
+steps:
+  - title: 介绍
+  - title: 规划您的仪表板
+  - title: 制作一个乐高（LEGO®） 滑动指示器
+  - title: 制作一个乐高（LEGO®）仪表
+  - title: 制作一个 LED 秤
+  - title: 访问 OpenAQ API
+  - title: 使用仪表板显示污染数据
+  - title: 接下来还有什么？
