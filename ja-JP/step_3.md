@@ -1,18 +1,18 @@
-## Make a LEGO® sliding indicator
+## LEGO® でスライドインジケーターを作る
 
-Now it's time to make a LEGO® sliding indicator! If you don't want to include a sliding indicator, you can skip to the next step, which shows you how to create rotating LEGO dials.
+それでは、 LEGO® でスライドインジケーターを作成しましょう。 If you don't want to include a sliding indicator, you can skip to the next step, which shows you how to create rotating LEGO dials.
 
-This is what a vertical slider looks like:
+垂直スライダーは次のようなものです:
 
 ![Image showing a vertical LEGO® slider acting as a thermometer.](images/slider.jpg)
 
-Sliding indicators can also run horizontally if you prefer, by rotating the build 90 degrees anti-clockwise.
+必要なら、反時計回りに90度回転させることで、スライドインジケーターを水平方向に使うこともできます。
 
 --- task ---
 
-Follow these build instructions to create a vertical sliding indicator:
+次の組み立て手順に従って、垂直なスライドインジケーターを作成しましょう。
 
-To construct this model, follow our handy building guide here or [download it.](resources/lego-data-dash-slider.pdf)
+モデルを組み立てるには、次の組み立てガイドに沿って作成します。[また、ガイドはこちらからダウンロードできます。](resources/lego-data-dash-slider.pdf)
 <embed src="resources/lego-data-dash-slider.pdf" width="600" height="500" alt="pdf" pluginspage="https://www.adobe.com/products/acrobat/readstep2.html">
   </p> 
   
@@ -25,7 +25,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a yellow plate element and attach two blue beams using 90 degree stud brackets. <img src="images/sliderbuild1.jpg" alt="Image showing a Build Plate with blue legs." />
+    黄色の板のエレメントを取り出して、 90 度のスタッドブラケットを使用して 2 本の青い梁を取り付けます。 <img src="images/sliderbuild1.jpg" alt="Image showing a Build Plate with blue legs." />
   </p>
   
   <p spaces-before="0">
@@ -37,7 +37,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two grey straight brackets, one column apart. <img src="images/sliderbuild2.jpg" alt="Image showing the Build Plate with two straight brackets." />
+    2 つの灰色のストレートブラケットを 1 列離して付けます。 <img src="images/sliderbuild2.jpg" alt="Image showing the Build Plate with two straight brackets." />
   </p>
   
   <p spaces-before="0">
@@ -49,7 +49,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two grey double length studs with spacers on one end to the plate element above the brackets. <img src="images/sliderbuild3.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    灰色で、片方の端にスペーサーが付いていて長さが倍のスタッドを、ブラケットの上に 2 つ取り付けます。 <img src="images/sliderbuild3.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
   </p>
   
   <p spaces-before="0">
@@ -61,7 +61,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Attach two yellow (three-hole) beams horizontally between the two straight brackets. <img src="images/sliderbuild4.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    ストレートブラケットの間に黄色 (3 穴) の梁を 2 つ水平に取り付けます。 <img src="images/sliderbuild4.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
   </p>
   
   <p spaces-before="0">
@@ -73,7 +73,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a small black gear and a short axle, and join them together. <img src="images/sliderbuild5.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear." />
+    小さな黒の歯車と、短い軸を取り出して、組み合わせます。 <img src="images/sliderbuild5.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear." />
   </p>
   
   <p spaces-before="0">
@@ -85,7 +85,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Insert the axle through the Build Plate above the right bracket as shown: <img src="images/sliderbuild6.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate." />
+    図のように、ビルドプレート上の、右側のブラケットの上に車軸を差し込みます: <img src="images/sliderbuild6.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate." />
   </p>
   
   <p spaces-before="0">
@@ -97,7 +97,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a toothed bar, a red axle, and an indicator arrow. Insert the axle into one end of the toothed bar, with the indicator arrow pointing toward the toothed side: <img src="images/sliderbuild11.jpg" alt="Image showing the toothed bar, axle, and indicator arrow." />
+    歯型バー、赤い車軸、インジケーター用の矢印を用意します。 Insert the axle into one end of the toothed bar, with the indicator arrow pointing toward the toothed side: <img src="images/sliderbuild11.jpg" alt="Image showing the toothed bar, axle, and indicator arrow." />
   </p>
   
   <p spaces-before="0">
@@ -125,7 +125,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Take a motor and add two studs to the flat side, in the top two holes. <img src="images/sliderbuild9.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted, and a motor on the table." />
+    モーターを取り出して、平らな側の上部にある 2 つの穴に、スタッドを 2 つ追加します。 <img src="images/sliderbuild9.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted, and a motor on the table." />
   </p>
   
   <p spaces-before="0">
@@ -137,7 +137,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Before attaching the motor to the rear of the slider's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
+    モーターをスライダーの軸の後ろに取り付ける前に、モーターの端にある 2 つのロリポップの記号を並べて、モーターが「ゼロ調整」されていることを確認してください。
   </p>
   
   <p spaces-before="0">
@@ -153,7 +153,7 @@ To construct this model, follow our handy building guide here or [download it.](
   </p>
   
   <p spaces-before="0">
-    Adjust your toothed bar so the gear sits about halfway along it, then mount the motor behind the board using the two studs while holding the toothed bar in place. Make sure the axle fits into the hole on the <strong x-id="1">flat side</strong> of the motor. It should keep the slider held steady now, around halfway along the bar. <img src="images/sliderbuild10.jpg" alt="Image showing the Build Plate with a motor mounted on the back." />
+    Adjust your toothed bar so the gear sits about halfway along it, then mount the motor behind the board using the two studs while holding the toothed bar in place. 車軸がモーターの<strong x-id="1">平らな側</strong>の穴に入っていることを確認してください。 It should keep the slider held steady now, around halfway along the bar. <img src="images/sliderbuild10.jpg" alt="Image showing the Build Plate with a motor mounted on the back." />
   </p>
   
   <p spaces-before="0">
@@ -201,7 +201,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  At the prompt type: <code>pip3 install buildhat</code>
+  At the prompt type: <code>sudo pip3 install buildhat</code>
 </p>
 
 <p spaces-before="0">
@@ -257,7 +257,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Now type: <code>motor = = Motor('A')</code> and press <kbd>Enter</kbd>. --- /task ---
+  Now type: <code>motor = Motor('A')</code> and press <kbd>Enter</kbd>. --- /task ---
 </p>
 
 <p spaces-before="0">
@@ -329,7 +329,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  while True: current_angle = motor_slider.get_aposition() new_angle = randint(-175, 175) print(sensor_data) if new_angle > current_angle: motor_slider.run_to_position(new_angle, 100, direction="clockwise") print('Turning CW') elif new_angle < current_angle: motor_slider.run_to_position(new_angle, 100, direction="anticlockwise") print('Turning ACW') sleep(0.1)
+  while True: current_angle = motor_slider.get_aposition() new_angle = randint(-175, 175) if new_angle > current_angle: motor_slider.run_to_position(new_angle, 100, direction="clockwise") print('Turning CW') elif new_angle < current_angle: motor_slider.run_to_position(new_angle, 100, direction="anticlockwise") print('Turning ACW') sleep(0.1)
 </p>
 
 <p spaces-before="0">
