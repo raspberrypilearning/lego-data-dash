@@ -120,7 +120,7 @@ title: Install the BuildHAT Python library
 
 Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
 
-At the prompt type: `pip3 install buildhat`
+At the prompt type: `sudo pip3 install buildhat`
 
 Press <kbd>Enter</kbd> and wait for the "installation completed" message.
 
