@@ -201,7 +201,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  At the prompt type: <code>pip3 install buildhat</code>
+  At the prompt type: <code>sudo pip3 install buildhat</code>
 </p>
 
 <p spaces-before="0">
@@ -257,7 +257,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  Now type: <code>motor = = Motor('A')</code> and press <kbd>Enter</kbd>. --- /task ---
+  Now type: <code>motor = Motor('A')</code> and press <kbd>Enter</kbd>. --- /task ---
 </p>
 
 <p spaces-before="0">
@@ -329,7 +329,7 @@ To construct this model, follow our handy building guide here or [download it.](
 </p>
 
 <p spaces-before="0">
-  while True: current_angle = motor_slider.get_aposition() new_angle = randint(-175, 175) print(sensor_data) if new_angle > current_angle: motor_slider.run_to_position(new_angle, 100, direction="clockwise") print('Turning CW') elif new_angle < current_angle: motor_slider.run_to_position(new_angle, 100, direction="anticlockwise") print('Turning ACW') sleep(0.1)
+  while True: current_angle = motor_slider.get_aposition() new_angle = randint(-175, 175) if new_angle > current_angle: motor_slider.run_to_position(new_angle, 100, direction="clockwise") print('Turning CW') elif new_angle < current_angle: motor_slider.run_to_position(new_angle, 100, direction="anticlockwise") print('Turning ACW') sleep(0.1)
 </p>
 
 <p spaces-before="0">
