@@ -120,7 +120,7 @@ title: Install the BuildHAT Python library
 
 Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
 
-At the prompt type: `pip3 install buildhat`
+At the prompt type: `sudo pip3 install buildhat`
 
 Press <kbd>Enter</kbd> and wait for the "installation completed" message.
 
@@ -196,7 +196,6 @@ motor_slider.run_to_position(0,100)
 while True:
     current_angle = motor_slider.get_aposition()
     new_angle = randint(-175, 175)
-    print(sensor_data)
     if new_angle > current_angle:
         motor_slider.run_to_position(new_angle, 100, direction="clockwise")
         print('Turning CW')
