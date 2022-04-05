@@ -201,7 +201,7 @@ Um dieses Modell zu konstruieren, folge unserer praktischen Bauanleitung hier od
 </p>
 
 <p spaces-before="0">
-  Gib an der Eingabeaufforderung <code>sudo pip3 install buildhat</code> ein
+  At the prompt type: <code>sudo pip3 install buildhat</code>
 </p>
 
 <p spaces-before="0">
@@ -257,7 +257,7 @@ Um dieses Modell zu konstruieren, folge unserer praktischen Bauanleitung hier od
 </p>
 
 <p spaces-before="0">
-  Tippe jetzt: <code>motor = Motor('A')</code> und drücken Sie <kbd>Enter</kbd>. --- /task ---
+  Now type: <code>motor = Motor('A')</code> and press <kbd>Enter</kbd>. --- /task ---
 </p>
 
 <p spaces-before="0">
@@ -329,7 +329,7 @@ Um dieses Modell zu konstruieren, folge unserer praktischen Bauanleitung hier od
 </p>
 
 <p spaces-before="0">
-  while True: winkel_jetzt = motor_linear.get_aposition() winkel_neu = randint(-175, 175) print(winkel_neu) if winkel_neu > winkel_jetzt: motor_linear.run_to_position(new_angle, 100, direction="clockwise") print('im Uhrzeigersinn') elif winkel_neu < winkel_jetzt: motor_linear.run_to_position(new_angle, 100, direction="anticlockwise") print('gegen Uhrzeigersinn') sleep(0.1)
+  while True: current_angle = motor_slider.get_aposition() new_angle = randint(-175, 175) if new_angle > current_angle: motor_slider.run_to_position(new_angle, 100, direction="clockwise") print('Turning CW') elif new_angle < current_angle: motor_slider.run_to_position(new_angle, 100, direction="anticlockwise") print('Turning ACW') sleep(0.1)
 </p>
 
 <p spaces-before="0">
