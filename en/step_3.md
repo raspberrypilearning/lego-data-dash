@@ -150,7 +150,7 @@ In the **Shell** (the window at the bottom), next to the three arrows, type:
 --- task ---
 
 Now type:
-`motor = = Motor('A')` and press <kbd>Enter</kbd>.
+`motor = Motor('A')` and press <kbd>Enter</kbd>.
 --- /task ---
 
 Now you've set up your slider motor to run, you should send it to the maximum and minimum readings to see how far it can travel — then mark those places on the card.
