@@ -165,7 +165,7 @@ Type:
 --- task ---
 
 Type: 
-`motor.run_to_position(180, 100, direction=clockwise)` and press <kbd>Enter</kbd>. Mark the card at the place the arrow indicates. This is your maximum possible readout.
+`motor.run_to_position(180, 100, direction='clockwise')` and press <kbd>Enter</kbd>. Mark the card at the place the arrow indicates. This is your maximum possible readout.
 
 --- /task ---
 
