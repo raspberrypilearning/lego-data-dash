@@ -1,24 +1,24 @@
 ---
-title: LEGO® data dashboard
+title: LEGO® データダッシュボード
 hero_image: images/banner.png
-description: Display pollution data on physical dials and sliders with LEGO® and the Build HAT
+description: LEGO® と BuildHATを使用して、物理的なダイヤルとスライダーに汚染データを表示する
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-03-26"
 steps:
   - 
-    title: Introduction
+    title: はじめに
   - 
     title: Plan your dashboard
   - 
-    title: Make a LEGO® sliding indicator
+    title: LEGO® でスライドインジケーターを作る
   - 
-    title: Make a LEGO® gauge
+    title: LEGO® でゲージを作る
   - 
-    title: Make an LED scale
+    title: LED でスケールを作る
   - 
-    title: Access the OpenAQ API
+    title: OpenAQ API にアクセスする
   - 
     title: Display pollution data with your dashboard
   - 
