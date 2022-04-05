@@ -196,7 +196,6 @@ motor_slider.run_to_position(0,100)
 while True:
     current_angle = motor_slider.get_aposition()
     new_angle = randint(-175, 175)
-    print(sensor_data)
     if new_angle > current_angle:
         motor_slider.run_to_position(new_angle, 100, direction="clockwise")
         print('Turning CW')
