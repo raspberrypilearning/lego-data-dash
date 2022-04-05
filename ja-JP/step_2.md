@@ -1,51 +1,51 @@
 ## Plan your dashboard
 
-Use this step to plan your dashboard, and think about what information you want to display. You can plan by just thinking, tinkering, drawing, writing, or however you like!
+このステップでは、ダッシュボードの計画をして、どんな情報を表示したいかを考えます。 頭の中で考えたり、試作しながら決めたり、図を描いたり、仕様を書いたり、好きなように計画してください！
 
-We will use an example API in this project from OpenAQ to demonstrate how to create and use your data dashboard, but you could use any API you want. (There are some more API links in the final step for you to look at if you'd like to try it with a different data source.)
+このプロジェクトでは、 OpenAQ のサンプル API を使用して、データダッシュボードの作成および使用方法を紹介しますが、様々なAPIを使用することもできます。 (最後のステップでは、別のデータソースを試してみたい時のために、 API のリンクがいくつかあります。)
 
-### Why are you making a dashboard?
+### なぜダッシュボードを作るか？
 
 --- task ---
 
-**Think** about the purpose of your dashboard:
+ダッシュボードの目的について**考えてみましょう**。
 
-+ What information will it display?
-+ How will it show this information to the user?
-+ What layout will it have, to make it easy to read?
++ どのような情報を表示しますか？
++ この情報をどのようにユーザーに見せますか？
++ 読みやすくするために、どのようなレイアウトにしますか？
 
 
 --- /task ---
 
-### Who is it for?
+### 誰のために？
 
 --- task ---
 
 Think about who you will make your dashboard for (your **audience**):
 
 + What symbols or scales will make it obvious what you are displaying?
-+ How will the user get current data?
-+ Will they prefer bright colours and lights, or simple and clean designs?
-+ Where will they keep it? Will it fit there?
++ ユーザーはどのようにして現在のデータを取得しますか？
++ 彼らは明るい色や光を好むでしょうか、それともシンプルですっきりしたデザインを好むでしょうか？
++ どこにこれを設置しますか？ 置きたい場所に収まりますか？
 
 --- /task ---
 
-### Get started
+### はじめる
 
 --- task ---
 
-Use a pen and paper to plan ideas for your dashboard:
+ペンと紙を使って、ダッシュボードのアイデアを計画しましょう:
 
-+ Consider how many motors you will have available to you to power the indicators — you need one motor for each indicator
-+ Will you use other components in your build, like LEDs, buzzers, or buttons? What will they do?
-+ How will your different indicators and inputs fit together into a frame?
-+ What LEGO elements will you need to build it?
++ インジケーターに電力を供給して使えるモーターの数を検討してください。インジケーターごとに1つのモーターが必要です。
++ LED 、ブザー、ボタンなど、組み立てるときに他のコンポーネントを使用しますか？ それらに何をさせますか？
++ さまざまなインジケーターや入力をどのようにフレームに収めますか？
++ 構築するために必要な LEGO エレメントはどれですか？
 
-Draw your dashboard now, including the frame to hold it and any indicators you would like to create or user inputs needed. Label them with the information they will display or the input they provide.
+Draw your dashboard now, including the frame to hold it and any indicators you would like to create or user inputs needed. 表示する内容や、入力される情報に合わせて、ラベルを付けます。
 
 --- /task ---
 
-In the next step, you will construct some readouts for your dashboard using LEGO®!
+次のステップでは、 LEGO® を使用して、ダッシュボード向けにいくつかの値の読み取りを作成しましょう！
 
 
 --- save ---
