@@ -1,14 +1,14 @@
-## Introduction
+## はじめに
 
-In this project, you are going to create a dashboard that will visualise data; you can choose what data it shows from a range of online sources. Your data dashboard will need to meet the **project brief**.
+このプロジェクトでは、データを視覚化するダッシュボードを作成します。さまざまなオンラインのソースから表示するデータを選べます。 Your data dashboard will need to meet the **project brief**.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 A <span style="color: #0faeb0">dashboard</span> is a user interface that gives a current summary of important information, usually in a graphical or easy-to-read form. The term originates from cars, where the driver is shown the current status of the vehicle by big, bright dials and scales.</p>
 
-You will:
-+ Build automated indicators using LEGO® motors and elements
+本項で学ぶこと:
++ LEGO® モーターとエレメントを使用して自動のインジケーターを作成する
 + Access an online **API** (Application Programming Interface) to retrieve interesting data using Python
-+ Display your chosen data on a dashboard you create using LEGO
++ LEGO を使用して作成したダッシュボード上に、取得したデータを表示します。
 
 --- no-print ---
 
@@ -20,64 +20,64 @@ You will:
 
 --- collapse ---
 ---
-title: What you will need
+title: 必要なもの
 ---
-### Hardware
+### ハードウェア
 
-+ A Raspberry Pi computer
-+ A Raspberry Pi Build HAT
-+ A Raspberry Pi Build HAT 7.5V PSU
++ Raspberry Pi コンピューター
++ Raspberry Pi Build HAT
++ Raspberry Pi Build HAT 7.5V 電源アダプター
 + 2 LEGO® Technic™ motors (more optional)
-+ A LEGO® SPIKE™ Force Sensor
-+ Assortment of LEGO® (we used a selection from the [LEGO® SPIKE™ Prime kit](https://education.lego.com/en-gb/product/spike-prime){:target="_blank"})
-+ Paper or card
-+ Tack or tape for sticking down card
-+ Marker or pencil
-+ Scissors or craft knife
++ LEGO® SPIKE™ フォースセンサー
++ LEGO® 製品 (本項では [LEGO® SPIKE™ プライムキット](https://education.lego.com/en-gb/product/spike-prime){:target="_blank"} から選んで使用します)
++ 紙またはカード
++ カードを貼り付けるための画鋲やテープ
++ マーカーまたは鉛筆
++ はさみまたはカッターナイフ
 
-Optional:
-+ LEDs
-+ Resistors
-+ Jumper wires
-+ A breadboard
-+ M2 bolts and nuts (×2 of each for mounting the Raspberry Pi onto the LEGO® Build Plate)
+オプション:
++ LED
++ 抵抗
++ ジャンパー線
++ ブレッドボード
++ M2ボルトとナット (Raspberry Pi を LEGO® ビルドプレートに取り付けるためにそれぞれ2つ)
 
-### Software
+### ソフトウェア
 
-+ BuildHAT Python library for controlling the Build HAT
++ Build HAT を制御するための Build HAT Python ライブラリ
 + Thonny Python IDE
 
-### Downloads
+### ダウンロード
 
-+ The final script for this project is available [here]((https://rpf.io/p/en/lego-data-dash-go){:target="_blank"})
++ このプロジェクトの最終的なスクリプトは、 [ここ]((https://rpf.io/p/en/lego-data-dash-go){:target="_blank"}) から入手できます
 
 --- /collapse ---
 
-Before you begin, you'll need to have set up your Raspberry Pi computer and attached your Build HAT:
+開始する前に、Raspberry Piのセットアップと、Build HATの装着をしてください:
 
 --- task ---
 
-Mount your Raspberry Pi on to the LEGO Build Plate using M2 bolts and nuts, making sure the Raspberry Pi is on the side without the 'edge':
+M2のボルトとナットを使用して、 LEGO ビルドプレートの上にRaspberry Piを取り付けます。 Raspberry Piはふちがない方の面に載せます:
 
- ![Raspberry Pi bolted to a magenta LEGO Build Plate.](images/build_11.jpg)
+ ![Raspberry Pi が赤い LEGO ビルドプレートに固定された様子](images/build_11.jpg)
 
 --- /task ---
 
-Mounting the Raspberry Pi this way round enables easy access to the ports as well as the SD card slot. The Build Plate will allow you to connect the Raspberry Pi to the main structure of your dashboard more easily.
+Mounting the Raspberry Pi this way round enables easy access to the ports as well as the SD card slot. ビルドプレートを使うことで、 ダッシュボードのおもな構造に、より簡単に Raspberry Pi を接続できます。
 
 --- task ---
 
-Line up the Build HAT with the Raspberry Pi, ensuring you can see the `This way up` label. Make sure all the GPIO pins are covered by the HAT, and press down firmly. (The example uses a [stacking header](https://www.adafruit.com/product/2223){:target="_blank"}, which makes the pins longer.)
+`This way up` の文字が見えるようにBuild HATをRaspberry Piと並べます。 全部のGPIOピンがHATにかぶるよう合わせて、しっかり押し下げてください。 (例ではピンが長くなる [スタッキングヘッダー](https://www.adafruit.com/product/2223){:target="_blank"} を使用しています。)
 
 ![Image of GPIO pins poking through the top of the Build HAT.](images/build_15.jpg) ![Animation showing Buildhat fitting to Raspberry Pi](images/haton.gif)
 
 --- /task ---
 
-You should now power your Raspberry Pi using the 7.5V barrel jack on the Build HAT, which will allow you to use the motors.
+モーターを使用するためには、Build HAT上のバレルジャックに7.5Vの電源を接続してRaspberry Piに電源を供給する必要があります。
 
 --- task ---
 
-If you have not already done so, set up your Raspberry Pi by following these instructions:
+まだRaspberry Piのセットアップが済んでいない場合は、次の手順に従ってセットアップしてください:
 
 [Setting up your Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up){:target="_blank"}
 
@@ -85,7 +85,7 @@ If you have not already done so, set up your Raspberry Pi by following these ins
 
 --- task ---
 
-Once the Raspberry Pi has booted, open the Raspberry Pi Configuration tool by clicking on the Raspberry Menu button and then selecting “Preferences” and then “Raspberry Pi Configuration”.
+Raspberry Piが起動したら、Raspberry Piメニューをクリックして“Preferences”と “Raspberry Pi Configuration”の順に選択して、Raspberry Pi Configuration toolを起動します。
 
 Click on the “interfaces” tab and adjust the Serial settings as shown below:
 
@@ -99,14 +99,14 @@ You will also need to install the buildhat python library by following these ins
 
 --- collapse ---
 ---
-title: Install the buildhat Python library
+title: buildhat Python ライブラリのインストール
 ---
 
-Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> を押して、Raspberry Pi上にターミナルウィンドウを開きます。
 
 At the prompt type: `sudo pip3 install buildhat`
 
-Press <kbd>Enter</kbd> and wait for the "installation completed" message.
+<kbd>Enter</kbd> キーを入力して "installation completed" のメッセージが表示されるまで待ちます。
 
 --- /collapse ---
 
@@ -115,27 +115,27 @@ Press <kbd>Enter</kbd> and wait for the "installation completed" message.
 
 <div style="border-top: 15px solid #f3524f; background-color: whitesmoke; margin-bottom: 20px; padding: 10px;">
 
-### PROJECT BRIEF: LEGO® data dashboard
+### プロジェクトの概要: LEGO® データダッシュボード
 <hr style="border-top: 2px solid black;">
 
-Your task is to create a LEGO dashboard that will display your chosen data. The sources for your data can be any API you like, but in this example, we will show you how to access OpenAQ, which requires minimal or no sign up. 
+あなたのタスクは、あなたの選択したデータを表示する LEGO ダッシュボードを作成することです。 データのソースは好きな API にすることができますが、今回の例では、最小限のサインアップまたはサインアップが不要な OpenAQ にアクセスする方法を説明します。 
 
-For our example data, we will be measuring:
-+ The **NO2** levels at a chosen location. Nitrogen dioxide (NO2) is one of a group of highly reactive gases known as nitrogen oxides or NOx. NO2 is primarily released into the air from the burning of fuel.
-+ The **fine particles (PM2.5)** levels at a chosen location. The term **fine particles**, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and a half microns (or less) in size. Particles classed as PM2.5 are what make up smoke and smog.
-
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">The example API we are using in this project is from [OpenAQ](https://openaq.org/#/), a global non-profit organisation "fighting air inequality through open data". Globally, **1 in 8 deaths** are due to poor air quality, and OpenAQ collects global air quality data to help inform more people about the problems of increasing air pollution in some parts of the world. </p>
+例のデータでは、以下のデータが計測できます:
++ 選択した場所の **NO2** のレベル。 二酸化窒素 (NO2) は、窒素酸化物や NOx として知られる、反応性の高いガスの一種です。 NO2 は、主に燃料の燃焼によって大気中に放出されます。
++ 選択した場所の **微粒子 (PM2.5) ** のレベル。 **微粒子** または粒子状物質 2.5 (PM2.5) という用語は、サイズが 2.5 ミクロン (またはそれ以下) の、空気中の小さな粒子または液滴を指します。 PM2.5 に分類される粒子は、煙とスモッグを構成するものです。
 
 
-Your dashboard should:
-+ Use LEGO® to display your chosen data in a clear way
-+ Access an online API to retrieve up-to-date data
-+ Have at least two LEGO® indicators
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">The example API we are using in this project is from [OpenAQ](https://openaq.org/#/), a global non-profit organisation "fighting air inequality through open data". 世界的に、 **8人に1人が亡くなっている** のは大気質の悪さによるものであり、 OpenAQ は世界の大気質データを収集して、世界の一部地域で増加する大気汚染の問題について、より多くの人々に知ってもらうのに役立てています。 </p>
 
-Your dashboard could:
-+ Use other electronic components (LEDs, buzzers)
-+ Have physical user inputs (LEGO® Technic™ motors, LEGO® Force Sensor, GPIO button, distance sensor)
+
+ダッシュボードで、以下の要件を満たしてください:
++ LEGO® を使って、選んだデータを明確に表示すること
++ オンラインの API にアクセスして、最新のデータを取得すること
++ 最低2つのインジケータを LEGO® で作成すること
+
+ダッシュボードで、可能なら以下も行ってください:
++ 他の電子部品 (LED、ブザー) を使用する
++ 物理的なユーザー入力装置を用意する (LEGO® Technic™ モーター、 LEGO® フォースセンサー、 GPIO ボタン、距離センサー)
   
 </div>
 
@@ -145,9 +145,9 @@ Your dashboard could:
 
 --- task ---
 
-Think about the information you would like to display on your dashboard as you investigate these example projects to get more ideas.
+これらのサンプルプロジェクトを調べてもっとアイデアを得るために、ダッシュボードに表示したい情報について考えましょう。
 
-This example shows a weather dashboard displaying the current temperature on a vertical slider, the cloud cover using an LED scale, and on the rotating dials it suggests a suitable level of clothing based on the apparent temperature (it includes the wind and other weather in the temperature) and a detailed weather report using World Weather Codes (a.k.a. WMO code).
+この例では、垂直のスライダーに現在の温度を表示する天気のダッシュボード、LEDスケールを使った雲のカバー、 そして回転するダイヤルは、体感温度 (風や温度の他の天気を含む) に基づいたちょうどよい衣類を提案したり、世界気象コード (WMO コード) を使用した詳細な天気予報をレポートしたりします 。
 
 ![Demo Video](images/weather-dash.gif)
 
