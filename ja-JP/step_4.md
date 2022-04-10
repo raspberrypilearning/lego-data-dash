@@ -35,7 +35,7 @@
 
 --- task ---
 
-On a blank piece of paper, trace a neat circle the size you want your gauge to be. Mark the centre, and cut it out using scissors.
+ゲージにしたいサイズの円を、白紙にきれいになぞります。 中央に印を付け、はさみで切り取ります。
 
 --- /task ---
 
@@ -51,18 +51,18 @@ Draw an icon or write inside each segment what it indicates.
 
 --- /task ---
 
-Once you have finished creating your gauge face, you will need to mount it to your dashboard.
+ゲージの面を作り終えたら、ダッシュボードに取り付けていきしましょう。
 
 --- collapse ---
 ---
-title: If you are creating a needle gauge
+title: ニードルゲージを作る場合
 ---
 
-To finish building your needle gauge:
+ニードルゲージを完成させるには:
 
 --- task ---
 
-Slide the face down over your axle, using Blu Tack or tape to stick it down to the dashboard behind it and prevent it from sliding as the axle turns. ![Image showing a LEGO® axle protruding through a gauge's face.](images/needle-gauge1.jpg)
+面を軸に通し、軸が回転したときに面がずれないように、ブル・タックかテープを使って面の後ろとダッシュボードを固定します。 ![Image showing a LEGO® axle protruding through a gauge's face.](images/needle-gauge1.jpg)
 
 --- /task ---
 
