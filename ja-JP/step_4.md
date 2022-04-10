@@ -1,33 +1,33 @@
-## Make a LEGO® gauge
+## LEGO® でゲージを作る
 
-Another way to quickly display data is by using **dials**, also known as **gauges**. You've definitely seen them before; they are usually round or semicircular and have two main visible parts:
+データを手軽に表示するもう1つの方法は、**ダイヤル** (または**ゲージ**とも呼ばれます) を使うことです。 あなたは間違いなく前にそれらを見たことがあります。それらは通常円形または半円形であり、2つの主要な目に見える部分があります。
 
-+ The face, which has the scale shown on it
-+ The needle, which moves along the scale to display the data reading
++ 目盛りが表示されている面
++ 目盛りに沿って移動し、データの読み取り値を表示する針
 
 ![Animated image showing dials moving.](https://media.giphy.com/media/uozBSFuz99USA/giphy.gif)
 
-A gauge or dial is the simplest type of data readout you can create using LEGO®, as it only relies upon creating the face and needle. Because the needle or dial connects directly to your motor, the build is very simple:
+ゲージまたはダイヤルは、面と針を作成するだけなので、 LEGO® を使って作成できる一番シンプルなデータの読み出し方法です。 針またはダイヤルはモーターに直接接続するため、組み立てはとても簡単です:
 
 --- task ---
 
-Before attaching the motor to the rear of the gauge's axle, make sure that it is 'zeroed in', by lining up the two lollipop symbols on the motor's edge:
+モーターをゲージの軸の後ろに取り付ける前に、モーターの端にある 2 つのロリポップの記号を並べて、モーターが「ゼロに調整」されていることを確認してください。
 
 ![Image showing the motor 'zeroed in' with aligned symbols.](images/aligned_symbols.jpg)
 
 --- /task ---
 
-### Create a scale
+### スケールを作成する
 
-To finish building the gauge, you will need to create a scale using paper, card, or other art supplies. The mechanics and coding are exactly the same, but think now about how you would like your gauge to look.
+ゲージを完成させるためには、紙・カード・またはその他の画材を使って、スケールを作る必要があります。 仕組みとコーディングはまったく同じですが、ゲージをどう見せたいか考えてみましょう。
 
  --- task ---
 
- **Choose** what kind of dial you will make.
+ 作りたいダイヤルの種類を**選んでください**。
 
- There are two simple types you can create with LEGO®:
+ LEGO® で簡単に作成できるのは 2 種類あります。
 
-+ A gauge where the needle spins to indicate a point on the face: ![An image showing a gauge with a needle and scale.](images/dial2.gif)
++ 針が回転して面にある点を示すゲージ: ![An image showing a gauge with a needle and scale.](images/dial2.gif)
 
 + A gauge where the whole face turns to display a point at the top with a stationary indicator: ![An image showing a gauge with a moving scale.](images/dial1.gif)
 
