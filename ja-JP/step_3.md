@@ -4,7 +4,7 @@
 
 垂直スライダーは次のようなものです:
 
-![Image showing a vertical LEGO® slider acting as a thermometer.](images/slider.jpg)
+![垂直な LEGO® のスライダーを温度計として使う様子の画像。](images/slider.jpg)
 
 必要なら、反時計回りに90度回転させることで、スライドインジケーターを水平方向に使うこともできます。
 
@@ -25,7 +25,7 @@
   </p>
   
   <p spaces-before="0">
-    黄色の板のエレメントを取り出して、 90 度のスタッドブラケットを使用して 2 本の青い梁を取り付けます。 <img src="images/sliderbuild1.jpg" alt="Image showing a Build Plate with blue legs." />
+    黄色の板のエレメントを取り出して、 90 度のスタッドブラケットを使用して 2 本の青い梁を取り付けます。 <img src="images/sliderbuild1.jpg" alt="ビルドプレートと青い脚を写した画像。" />
   </p>
   
   <p spaces-before="0">
@@ -49,7 +49,7 @@
   </p>
   
   <p spaces-before="0">
-    灰色で、片方の端にスペーサーが付いていて長さが倍のスタッドを、ブラケットの上に 2 つ取り付けます。 <img src="images/sliderbuild3.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    灰色で、片方の端にスペーサーが付いていて長さが倍のスタッドを、ブラケットの上に 2 つ取り付けます。 <img src="images/sliderbuild3.jpg" alt="2 つのストレートブラケットとスタッドが付いたビルドプレートを写した画像。" />
   </p>
   
   <p spaces-before="0">
@@ -61,7 +61,7 @@
   </p>
   
   <p spaces-before="0">
-    ストレートブラケットの間に黄色 (3 穴) の梁を 2 つ水平に取り付けます。 <img src="images/sliderbuild4.jpg" alt="Image showing the Build Plate with two straight brackets and studs." />
+    ストレートブラケットの間に黄色 (3 穴) の梁を 2 つ水平に取り付けます。 <img src="images/sliderbuild4.jpg" alt="2 つのストレートブラケットとスタッドが付いたビルドプレートを写した画像。" />
   </p>
   
   <p spaces-before="0">
@@ -73,7 +73,7 @@
   </p>
   
   <p spaces-before="0">
-    小さな黒の歯車と、短い軸を取り出して、組み合わせます。 <img src="images/sliderbuild5.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear." />
+    小さな黒の歯車と、短い軸を取り出して、組み合わせます。 <img src="images/sliderbuild5.jpg" alt="2 つのストレートブラケットとスタッドが付いたビルドプレートと、車軸とギアがあることを示す画像。" />
   </p>
   
   <p spaces-before="0">
@@ -85,7 +85,7 @@
   </p>
   
   <p spaces-before="0">
-    図のように、ビルドプレート上の、右側のブラケットの上に車軸を差し込みます: <img src="images/sliderbuild6.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate." />
+    図のように、ビルドプレート上の、右側のブラケットの上に車軸を差し込みます: <img src="images/sliderbuild6.jpg" alt="2 つのストレートブラケット、スタッド、車軸、ギアが付いたビルドプレートを示す画像。" />
   </p>
   
   <p spaces-before="0">
@@ -97,7 +97,7 @@
   </p>
   
   <p spaces-before="0">
-    歯型バー、赤い車軸、インジケーター用の矢印を用意します。 Insert the axle into one end of the toothed bar, with the indicator arrow pointing toward the toothed side: <img src="images/sliderbuild11.jpg" alt="Image showing the toothed bar, axle, and indicator arrow." />
+    歯型バー、赤い車軸、インジケーター用の矢印を用意します。 Insert the axle into one end of the toothed bar, with the indicator arrow pointing toward the toothed side: <img src="images/sliderbuild11.jpg" alt="歯型バー、車軸と、インジケータの矢印を写した画像。" />
   </p>
   
   <p spaces-before="0">
@@ -113,7 +113,7 @@
   </p>
   
   <p spaces-before="0">
-    You will have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth. The mechanism will slide easily up and down while the gear and axle are free. モーターを接続すると安定して固定されるようになります。 <img src="images/sliderbuild8.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted." />
+    You will have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth. The mechanism will slide easily up and down while the gear and axle are free. モーターを接続すると安定して固定されるようになります。 <img src="images/sliderbuild8.jpg" alt="2 つのストレートブラケット、スタッド、車軸、ギアが付いたビルドプレートにスライダーのバーを差し込んだ様子を写した画像。" />
   </p>
   
   <p spaces-before="0">
@@ -141,7 +141,7 @@
   </p>
   
   <p spaces-before="0">
-    <img src="images/aligned_symbols.jpg" alt="Image showing motor 'zeroed in' with aligned symbols." />
+    <img src="images/aligned_symbols.jpg" alt="記号の位置を合わせて、モーターが 'ゼロに調整' されていることを写した画像。" />
   </p>
   
   <p spaces-before="0">
@@ -153,7 +153,7 @@
   </p>
   
   <p spaces-before="0">
-    歯型バーを歯車のだいたい半分のあたりにあるように調整して、バーをその位置で押さえながら、2つのスタッドが付いたモーターをボードの後ろに取り付けます。 車軸がモーターの<strong x-id="1">平らな側</strong>の穴に入っていることを確認してください。 It should keep the slider held steady now, around halfway along the bar. <img src="images/sliderbuild10.jpg" alt="Image showing the Build Plate with a motor mounted on the back." />
+    歯型バーを歯車のだいたい半分のあたりにあるように調整して、バーをその位置で押さえながら、2つのスタッドが付いたモーターをボードの後ろに取り付けます。 車軸がモーターの<strong x-id="1">平らな側</strong>の穴に入っていることを確認してください。 It should keep the slider held steady now, around halfway along the bar. <img src="images/sliderbuild10.jpg" alt="ビルドプレートの背面にモーターが取り付けられた様子を写した画像。" />
   </p>
   
   <p spaces-before="0">
@@ -229,7 +229,7 @@
 </p>
 
 <p spaces-before="0">
-  Get a piece of card about as long as your toothed bar. Stick it next to the sliding indicator, under the pointer. Have a marker or pencil ready.
+  歯型バーと同じくらいの長さの紙を用意しましょう。 スライドインジケーターの横で、ポインターの下に貼り付けます。 そして、マーカーまたは鉛筆を用意します。
 </p>
 
 <p spaces-before="0">
@@ -241,35 +241,11 @@
 </p>
 
 <p spaces-before="0">
-  Open <strong x-id="1">Thonny</strong> on your Raspberry Pi from the <strong x-id="1">Programming menu</strong>.
+  Raspberry Pi上で、 <strong x-id="1">プログラミングメニュー</strong> から <strong x-id="1">Thonny</strong> を開きます。
 </p>
 
 <p spaces-before="0">
-  In the <strong x-id="1">Shell</strong> (the window at the bottom), next to the three arrows, type: <code>from buildhat import Motor</code> and press <kbd>Enter</kbd>. You should see a new line appear with three more arrows.
-</p>
-
-<p spaces-before="0">
-  --- /task ---
-</p>
-
-<p spaces-before="0">
-  --- task ---
-</p>
-
-<p spaces-before="0">
-  Now type: <code>motor = Motor('A')</code> and press <kbd>Enter</kbd>. --- /task ---
-</p>
-
-<p spaces-before="0">
-  Now you've set up your slider motor to run, you should send it to the maximum and minimum readings to see how far it can travel — then mark those places on the card.
-</p>
-
-<p spaces-before="0">
-  --- task ---
-</p>
-
-<p spaces-before="0">
-  Type: <code>motor.run_to_position(-180, 100)</code> and press <kbd>Enter</kbd>. Mark the card at the place the arrow indicates. This is your minimum possible readout.
+  <strong x-id="1">シェル</strong> (ウィンドウの下部) で、 3 つの矢印のあとに次のように入力します: <code>from buildhat import Motor</code> そして <kbd>Enter</kbd>を押します。 すると、新しい行にまた3本の矢印が現れます。
 </p>
 
 <p spaces-before="0">
@@ -281,7 +257,19 @@
 </p>
 
 <p spaces-before="0">
-  Type: <code>motor.run_to_position(180, 100, direction=clockwise)</code> and press <kbd>Enter</kbd>. Mark the card at the place the arrow indicates. This is your maximum possible readout.
+  次を入力します: <code>motor = Motor('A')</code> そして、 <kbd>Enter</kbd> を押します。 --- /task ---
+</p>
+
+<p spaces-before="0">
+  スライダーのモーターを実行できるように設定できたので、モーターを最大値と最小値の位置に動かして、どこまで動くかを確認します。そして、動いた場所をカードにマークします。
+</p>
+
+<p spaces-before="0">
+  --- task ---
+</p>
+
+<p spaces-before="0">
+  次を入力します: <code>motor.run_to_position(-180, 100)</code> そして <kbd>Enter</kbd> を押します。 矢印が示す場所で、紙にマークを付けます。 ここが最小値になります。
 </p>
 
 <p spaces-before="0">
@@ -289,7 +277,19 @@
 </p>
 
 <p spaces-before="0">
-  You now know where your minumum and maximum possible readings are. Once you link the slider to some data, you will be able to create an accurate scale.
+  --- task ---
+</p>
+
+<p spaces-before="0">
+  次を入力します: <code>motor.run_to_position(180, 100, direction="clockwise")</code> そして <kbd>Enter</kbd> を押します。 矢印が示す場所で、紙にマークを付けます。 ここが最大値になります。
+</p>
+
+<p spaces-before="0">
+  --- /task ---
+</p>
+
+<p spaces-before="0">
+  You now know where your minumum and maximum possible readings are. スライダーをいくつかのデータにリンクすると、正確なスケールを作成できるようになります。
 </p>
 
 <h3 spaces-before="0">
@@ -301,7 +301,7 @@
 </p>
 
 <p spaces-before="0">
-  Enter the following code in a blank tab:
+  次のコードを空白のタブに入力します:
 </p>
 
 <p spaces-before="0">
@@ -337,7 +337,7 @@
 </p>
 
 <p spaces-before="0">
-  Save your work as <code>slider_test.py</code> and click <strong x-id="1">Run</strong>. You should see your slider move up and down (or back and forth!)
+  コードを <code>slider_test.py</code> として保存して、 <strong x-id="1">Run</strong>をクリックします。 スライダーが上下 (または前後) に動くのが見られるでしょう。
 </p>
 
 <p spaces-before="0">
