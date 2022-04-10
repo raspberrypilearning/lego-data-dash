@@ -113,7 +113,7 @@
   </p>
   
   <p spaces-before="0">
-    You will have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth. The mechanism will slide easily up and down while the gear and axle are free. Connecting a motor will hold it steady. <img src="images/sliderbuild8.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted." />
+    You will have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth. The mechanism will slide easily up and down while the gear and axle are free. モーターを接続すると安定して固定されるようになります。 <img src="images/sliderbuild8.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted." />
   </p>
   
   <p spaces-before="0">
@@ -153,7 +153,7 @@
   </p>
   
   <p spaces-before="0">
-    Adjust your toothed bar so the gear sits about halfway along it, then mount the motor behind the board using the two studs while holding the toothed bar in place. 車軸がモーターの<strong x-id="1">平らな側</strong>の穴に入っていることを確認してください。 It should keep the slider held steady now, around halfway along the bar. <img src="images/sliderbuild10.jpg" alt="Image showing the Build Plate with a motor mounted on the back." />
+    歯型バーを歯車のだいたい半分のあたりにあるように調整して、バーをその位置で押さえながら、2つのスタッドが付いたモーターをボードの後ろに取り付けます。 車軸がモーターの<strong x-id="1">平らな側</strong>の穴に入っていることを確認してください。 It should keep the slider held steady now, around halfway along the bar. <img src="images/sliderbuild10.jpg" alt="Image showing the Build Plate with a motor mounted on the back." />
   </p>
   
   <p spaces-before="0">
@@ -161,11 +161,11 @@
   </p>
 
 <h3 spaces-before="0">
-  Test the sliding indicator
+  スライドインジケーターのテスト
 </h3>
 
 <p spaces-before="0">
-  To program your sliding indicator, you can reuse some of the code written in the <a href="https://projects.raspberrypi.org/en/projects/lego-plotter">LEGO® Data plotter</a> project, as they use the same mechanism.
+  スライドインジケーターのプログラムを書くとき、 <a href="https://projects.raspberrypi.org/en/projects/lego-plotter">LEGO® データプロッター</a> で書いた、同じ仕組みを使用している一部のコードが再利用できます。
 </p>
 
 <p spaces-before="0">
@@ -173,7 +173,7 @@
 </p>
 
 <p spaces-before="0">
-  Connect the motor of your slider to port A on your Build HAT.
+  スライダー用のモーターを Build HAT のポート A に接続します。
 </p>
 
 <p spaces-before="0">
@@ -185,7 +185,7 @@
 </p>
 
 <p spaces-before="0">
-  You will use the BuildHAT Python library, so make sure it is installed:
+  BuildHAT Python ライブラリを使うため、インストールされていることを確認してください:
 </p>
 
 <p spaces-before="0">
@@ -193,19 +193,19 @@
 </p>
 <hr />
 <h2 spaces-before="0">
-  title: Install the BuildHAT Python library
+  title: BuildHat Python ライブラリのインストール
 </h2>
 
 <p spaces-before="0">
-  Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
+  <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> を押して、Raspberry Pi上でターミナルウィンドウを開きます。
 </p>
 
 <p spaces-before="0">
-  At the prompt type: <code>sudo pip3 install buildhat</code>
+  プロンプトで次の通りに入力します: <code>sudo pip3 install buildhat</code>
 </p>
 
 <p spaces-before="0">
-  Press <kbd>Enter</kbd> and wait for the "installation completed" message.
+  <kbd>Enter</kbd> キーを入力して "installation completed" のメッセージが表示されるまで待ちます。
 </p>
 
 <p spaces-before="0">
@@ -217,7 +217,7 @@
 </p>
 
 <h3 spaces-before="0">
-  Create the scale for your sliding indicator
+  スライドインジケーターの目盛りを作成する
 </h3>
 
 <p spaces-before="0">
