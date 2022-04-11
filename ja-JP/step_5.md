@@ -1,40 +1,40 @@
-## Make an LED scale
+## LED でスケールを作る
 
-Another really cool way to display data is by using a series of LEDs that turn on and off as readings change — the higher the reading, the more LEDs are lit; like a graphic equaliser on your computer showing the volume of your music.
+データを表示するもう1つのとても良い方法は、1列に並んだLEDを使用して、読み取り値の変化に応じてLEDのオンとオフを切り替えることです。読み取り値が高いほどたくさんのLEDが点灯します。コンピュータが音楽の音量を表示するグラフィックイコライザーのようなものです。
 
-![Image displaying graphic equaliser moving up and down](https://media.giphy.com/media/Hzt1XTt6gilFlK8Oea/giphy.gif)
+![上下に動くグラフィックイコライザーを示す画像](https://media.giphy.com/media/Hzt1XTt6gilFlK8Oea/giphy.gif)
 
-To make an LED display, you'll need a few LED bulbs — the more bulbs you have, the more precise your scale will be. There is an upper limit though: you can only have as many LEDs as there are available GPIO pins. In this example, we're using five LEDs, but you **could** connect more than ten if you choose.
+To make an LED display, you'll need a few LED bulbs — the more bulbs you have, the more precise your scale will be. ただし上限があり、使用可能なGPIOピンの数だけLEDが使用できます。 In this example, we're using five LEDs, but you **could** connect more than ten if you choose.
 
-**Note:** Because of the way the Build HAT is designed, you **can't access GPIO 14 or 15 (pins 8 and 10)**.
+**注:** Build HATの設計により、 **GPIO 14 と 15(ピン 8 と 10) にはアクセスできません**。
 
 --- task ---
 
-Collect your LEDs, resistors, M–F jumper cables, and breadboard together. ![Image showing a Raspberry Pi with Build HAT, breadboard, LEDs, and jumper cables on a workbench.](images/LEDbuild1.jpg)
+LED 、抵抗、 オス-メスのジャンパーケーブル、ブレッドボードを用意します。 ![机に Raspberry Pi と Build HAT 、ブレッドボード、 LED 、ジャンパーケーブルが置かれている画像。](images/LEDbuild1.jpg)
 
 --- /task ---
 
 --- task ---
 
-Look closely at your LEDs — you'll notice that one leg is longer than the other. ![Image showing an LED in close up on a workbench.](images/LEDbuild2.jpg)
+LEDをよく見ると、片方の脚がもう片方の脚よりも長いことがわかります。 ![机の上のLEDを拡大した画像。](images/LEDbuild2.jpg)
 
 --- /task ---
 
 --- task ---
 
-Insert the **short leg** of your LEDs into the **common ground rail** along the edge of your breadboard (it's the one next to the blue line at the very edge), and the long leg into the nearest numbered row: ![Image showing LEDs lined up on a breadboard.](images/LEDbuild3.jpg)
+Insert the **short leg** of your LEDs into the **common ground rail** along the edge of your breadboard (it's the one next to the blue line at the very edge), and the long leg into the nearest numbered row: ![ブレッドボードに並んだ LED を示す画像。](images/LEDbuild3.jpg)
 
 --- /task ---
 
-You need to add a resistor to the circuit, to protect the LEDs from overloading and burning out or popping. Now is a good time to do that.
+LED が過負荷になって、焼けたり破裂するのを防ぐために、回路に抵抗を追加する必要があります。 今やるのがちょうどいいタイミングです。
 
 --- task ---
 
-Take a resistor and insert one end into the **same row** as the first LED in your sequence. Insert the other end of the resistor into the same row, but **on the other side of the spine** of your breadboard, like this:
+抵抗を取り出し、並びの最初にあるLEDと**同じ行**に、片方を差し込みます。 Insert the other end of the resistor into the same row, but **on the other side of the spine** of your breadboard, like this:
 
 ![Image showing LEDs lined up on a breadboard, with a resistor joining the first row.](images/LEDbuild4.jpg)
 
-Repeat for all the LEDs in your sequence: ![Image showing LEDs lined up on a breadboard, with resistors joining the rows.](images/LEDbuildX.jpg)
+並んでいる他のLEDも同じように取り付けます: ![Image showing LEDs lined up on a breadboard, with resistors joining the rows.](images/LEDbuildX.jpg)
 
 --- /task ---
 
@@ -50,15 +50,15 @@ Take the M end of another jumper cable and insert it into the end of the common 
 
 --- /task ---
 
-Your finished LED scale should look something like this:
+完成したLEDスケールは次のようになります:
 
 ![Image showing LEDs lined up on a breadboard, with resistors joining the rows, and jumper cables trailing from the breadboard.](images/LEDbuild7.jpg)
 
-The next step is to connect it to the GPIO pins on the Raspberry Pi.
+次のステップは、 Raspberry Pi の GPIO ピンに接続することです。
 
 --- task ---
 
-Take the F end of the jumper cable connected to your common ground rail, and connect it to Pin 39. This is one of several ground pins on the Raspberry Pi, which will provide the grounding for **all** of your LED bulbs. ![Image showing a black jumper cable connected to Pin 39 on the Raspberry Pi.](images/LEDbuild9.jpg)
+Take the F end of the jumper cable connected to your common ground rail, and connect it to Pin 39. これは Raspberry Pi にいくつかある グラウンドピンの1つで、**すべての** LED 電球にアースを提供します。 ![Image showing a black jumper cable connected to Pin 39 on the Raspberry Pi.](images/LEDbuild9.jpg)
 
 --- /task ---
 
@@ -70,21 +70,21 @@ In this example, we have used Pins 16, 19, 20, 21, and 26 (to keep them all at o
 
 --- /task ---
 
-Now that your LED sequence is connected to your Raspberry Pi, you need to power it up and program it.
+LED の列が Raspberry Pi に接続されたので、電源を入れてプログラムを作成しましょう。
 
 --- task ---
 
-Connect the 7.5V power supply to the barrel jack on your Build HAT. You should see your Raspberry Pi power up and load the Raspberry Pi OS Desktop.
+7.5V 電源を Build HAT のバレルジャックに接続します。 Raspberry Pi の電源がオンになり、 Raspberry Pi OS のデスクトップが読み込まれます。
 
 --- /task ---
 
 --- task ---
 
-Open **Thonny** from your **Programming menu**.
+**プログラミングメニュー** から **Thonny** を開きます。
 
-The first lines of your script will import the gpiozero and randint libraries and set up your LEDs to be controllable. You will need to change the values in brackets to match the numbered pins your LEDs are connected to. **Note:** The order of these numbers is important! The pin numbers should go from the lowest on your 'bar graph' to the highest.
+スクリプトの最初の数行では、 gpiozero と randint ライブラリをインポートし、 LED を制御できるように設定します。 LED が接続されているピン番号と一致するように、かっこ内の値を変更する必要があります。 **注:** これらの番号の順序は重要です！ ピン番号は、「棒グラフ」の最小値から最大値の順になります。
 
-In the blank window enter the following code:
+空白のウィンドウに、次のコードを入力します。
 
 --- code ---
 ---
@@ -99,26 +99,26 @@ graph = LEDBarGraph(16, 19, 20, 21, 26) #The order of these numbers should match
 
 --- /task ---
 
-Now that you have your LEDs ready to program, the next part of your code should pull the data you want to measure, then determine how many LEDs to switch on based on the result. For testing purposes, you should use random data.
+LED のプログラムを作成する準備ができたので、測定したいデータの取得を作成するためのコードを作成します。そして、取得した結果に応じて点灯させる LED の数を決めます。 テストするだけのときは、ランダムなデータを使用しましょう。
 
-The intention is to have the LEDs turn on as the reading increases, and to turn off as it decreases. As with the other indicators, you will need to map your data across your scale.
+やることは、読み取り値が増加したらLEDをオンにして、読み取り値が減少したらオフにすることです。 他のインジケータと同様に、データをスケール全体にマッピングする必要があります。
 
 --- task ---
 
-Enter the following code at the end of your open script:
+スクリプトの最後に次のコードを入力しましょう:
 
 --- code ---
 ---
 language: python filename: led_sequence.py line_numbers: true line_number_start: 9
 line_highlights:
 ---
-while True: data_reading = randint(0, 100) graph.value = 1/data_reading #This creates a decimal value for the graph to display sleep(0.5) --- /code ---
+while True: data_reading = randint(0, 100) graph.value = 1/data_reading #ここで表示するグラフのための10進数の値が作成されます sleep(0.5) --- /code ---
 
 --- /task ---
 
 --- task ---
 
-Save your work as `led_sequence.py` and click **Run**. You should see your bar graph begin to light up!
+コードを `led_sequence.py` として保存して、 **Run**をクリックします。 棒グラフが点灯し始めるでしょう！
 
 ![Animated image showing a changing bar graph made of LEDs.](images/LEDbuild.gif)
 
