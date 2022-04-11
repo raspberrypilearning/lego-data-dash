@@ -27,7 +27,7 @@
 
  LEGO® で簡単に作成できるのは 2 種類あります。
 
-+ 針が回転して面にある点を示すゲージ: ![An image showing a gauge with a needle and scale.](images/dial2.gif)
++ A gauge where the needle spins to indicate a point on the face: ![An image showing a gauge with a needle and scale.](images/dial2.gif)
 
 + A gauge where the whole face turns to display a point at the top with a stationary indicator: ![An image showing a gauge with a moving scale.](images/dial1.gif)
 
@@ -80,10 +80,10 @@ It will help later if your axle is pointing straight up (and your motor is 'zero
 
 --- collapse ---
 ---
-title: If you are creating a spinning face dial
+title: 回転するフェイスダイヤルを作る場合
 ---
 
-To finish building a spinning gauge:
+回転するゲージを完成させるには:
 
 --- task ---
 
