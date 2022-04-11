@@ -46,7 +46,7 @@ Insert the M end of your M–F jumper cables into the same row as the resistors,
 
 --- task ---
 
-Take the M end of another jumper cable and insert it into the end of the common ground rail: ![Image showing a jumper cable trailing from the common ground rail of the breadboard.](images/LEDbuild6.jpg)
+Take the M end of another jumper cable and insert it into the end of the common ground rail: ![ブレッドボードのコモングラウンドレールから伸びるジャンパーケーブルを示す画像。](images/LEDbuild6.jpg)
 
 --- /task ---
 
@@ -58,7 +58,7 @@ Take the M end of another jumper cable and insert it into the end of the common 
 
 --- task ---
 
-Take the F end of the jumper cable connected to your common ground rail, and connect it to Pin 39. これは Raspberry Pi にいくつかある グラウンドピンの1つで、**すべての** LED 電球にアースを提供します。 ![Image showing a black jumper cable connected to Pin 39 on the Raspberry Pi.](images/LEDbuild9.jpg)
+Take the F end of the jumper cable connected to your common ground rail, and connect it to Pin 39. これは Raspberry Pi にいくつかある グラウンドピンの1つで、**すべての** LED 電球にアースを提供します。 ![Raspberry Pi のピン 39 に接続された黒いジャンパーケーブルを示す画像。](images/LEDbuild9.jpg)
 
 --- /task ---
 
@@ -120,7 +120,7 @@ while True: data_reading = randint(0, 100) graph.value = 1/data_reading #ここ�
 
 コードを `led_sequence.py` として保存して、 **Run**をクリックします。 棒グラフが点灯し始めるでしょう！
 
-![Animated image showing a changing bar graph made of LEDs.](images/LEDbuild.gif)
+![LEDで作られた棒グラフが変化する様子を示すアニメーション画像。](images/LEDbuild.gif)
 
 --- /task ---
 
