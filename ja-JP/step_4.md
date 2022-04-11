@@ -5,7 +5,7 @@
 + 目盛りが表示されている面
 + 目盛りに沿って移動し、データの読み取り値を表示する針
 
-![Animated image showing dials moving.](https://media.giphy.com/media/uozBSFuz99USA/giphy.gif)
+![ダイヤルが動いている様子を写したアニメーション画像。](https://media.giphy.com/media/uozBSFuz99USA/giphy.gif)
 
 ゲージまたはダイヤルは、面と針を作成するだけなので、 LEGO® を使って作成できる一番シンプルなデータの読み出し方法です。 針またはダイヤルはモーターに直接接続するため、組み立てはとても簡単です:
 
@@ -13,7 +13,7 @@
 
 モーターをゲージの軸の後ろに取り付ける前に、モーターの端にある 2 つのロリポップの記号を並べて、モーターが「ゼロに調整」されていることを確認してください。
 
-![Image showing the motor 'zeroed in' with aligned symbols.](images/aligned_symbols.jpg)
+![記号の位置を合わせて、モーターが 'ゼロに調整' されていることを写した画像。](images/aligned_symbols.jpg)
 
 --- /task ---
 
@@ -27,9 +27,9 @@
 
  LEGO® で簡単に作成できるのは 2 種類あります。
 
-+ A gauge where the needle spins to indicate a point on the face: ![An image showing a gauge with a needle and scale.](images/dial2.gif)
++ A gauge where the needle spins to indicate a point on the face: ![針と目盛り付きのゲージを写した画像。](images/dial2.gif)
 
-+ A gauge where the whole face turns to display a point at the top with a stationary indicator: ![An image showing a gauge with a moving scale.](images/dial1.gif)
++ A gauge where the whole face turns to display a point at the top with a stationary indicator: ![スケールが動くゲージを写した画像。](images/dial1.gif)
 
 --- /task ---
 
@@ -62,7 +62,7 @@ title: ニードルゲージを作る場合
 
 --- task ---
 
-面を軸に通し、軸が回転したときに面がずれないように、ブル・タックかテープを使って面の後ろとダッシュボードを固定します。 ![Image showing a LEGO® axle protruding through a gauge's face.](images/needle-gauge1.jpg)
+面を軸に通し、軸が回転したときに面がずれないように、ブル・タックかテープを使って面の後ろとダッシュボードを固定します。 ![ゲージの面から突き出ている LEGO® の軸を示す画像。](images/needle-gauge1.jpg)
 
 --- /task ---
 
@@ -89,36 +89,36 @@ title: 回転するフェイスダイヤルを作る場合
 
 Mount a single gear behind your dial face as a spacer, to prevent it from catching on your dashboard. Use some Blu Tack to stick the face to this gear. If you have created an incremental scale around the gauge, mount it with the middle of the scale at the top (in line with the 'zeroed' lollipop symbols) and the minimum and maximum values at the bottom.
 
-![Image showing a black LEGO® gear mounted on an axle with some tack.](images/dial-gauge1.jpg)
+![車軸に取り付けられ、タックがいくつか付けられた黒い LEGO® のギアを示す画像。](images/dial-gauge1.jpg)
 
-![Image showing the gauge face mounted on top of a black LEGO® gear.](images/dial-gauge2.jpg)
+![黒い LEGO® のギアの上に取り付けられたゲージの面を示す画像。](images/dial-gauge2.jpg)
 
 --- /task ---
 
 --- /collapse ---
 
-### Test your gauge
+### ゲージをテストする
 
 --- task ---
 
-Connect the motor of your gauge to port A on your Build HAT.
+ゲージ用のモーターを Build HAT のポート A に接続します。
 
 --- /task ---
 
 --- task ---
 
-You will be using the BuildHAT Python library, so make sure it is installed:
+BuildHAT Python ライブラリを使うため、インストールされていることを確認してください:
 
 --- collapse ---
 ---
-title: Install the BuildHAT Python library
+title: BuildHat Python ライブラリのインストール
 ---
 
-Open a terminal window on your Raspberry Pi by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> を押して、Raspberry Pi上にターミナルウィンドウを開きます。
 
-At the prompt type: `pip3 install buildhat`
+プロンプトで次の通りに入力します: `pip3 install buildhat`
 
-Press <kbd>Enter</kbd> and wait for the "installation completed" message.
+<kbd>Enter</kbd> キーを入力して "installation completed" のメッセージが表示されるまで待ちます。
 
 --- /collapse ---
 
@@ -126,9 +126,9 @@ Press <kbd>Enter</kbd> and wait for the "installation completed" message.
 
 --- task ---
 
-Open **Thonny** on your Raspberry Pi from the **Programming menu**.
+Raspberry Pi上で、 **プログラミングメニュー** から **Thonny** を開きます。
 
-Enter the following code in a blank tab:
+次のコードを空白のタブに入力します:
 
 --- code ---
 ---
@@ -145,6 +145,6 @@ while True: angle = randint(-180, 180) motor_gauge.run_to_position(angle, 100) s
 
 --- /code ---
 
-Save your work as `gauge_test.py` and press **Run**. You will see your gauge begin to move!
+コードを `gauge_test.py` として保存して、 **Run**をクリックします。 するとゲージが動き始めるでしょう！
 
 --- /task ---
