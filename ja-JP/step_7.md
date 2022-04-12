@@ -1,8 +1,8 @@
 ## Display pollution data with your dashboard
 
-At the moment, your dash uses random integers between -175 and 175; these numbers are used because they are the motor's limits of travel in each direction. (We don't go to 180 as it can cause problems with travel around a full rotation.) The data coming in from your API won't have this same range, so you need to make it fit the motors.
+At the moment, your dash uses random integers between -175 and 175; these numbers are used because they are the motor's limits of travel in each direction. (一周してしまう問題が起こる可能性があるため、180にはしません。) APIからのデータはこれと同じ範囲ではないため、モーターに合わせる必要があります。
 
-**Calibrating** the indicators means mapping the maximum and minimum possible data values from your API to between -175° and 175° on your motor. The highest possible reading will be at -175°, whereas the lowest possible reading will be at 175°. (Because you have mounted the motors in reverse!)
+インジケーターの**キャリブレーション** とは、APIからのデータの最大値と最小値をモーターの -175° から 175° の間にマッピングすることです。 最高の読み取り値は-175°になり、最低の読み取り値は175°になります。 (モーターを逆に取り付けているためです！)
 
 For our example, we will display the **fine particles (PM2.5)** measurement on the gauge, while the slider will display the nitrogen dioxide (NO2) level. The term **fine particles**, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and a half microns (or less) in width. The particles measured by PM2.5 are what make up most smoke and smog, and make it hard to see.
 
