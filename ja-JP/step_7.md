@@ -8,7 +8,7 @@ At the moment, your dash uses random integers between -175 and 175; these number
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">インチ、メートル、ミリメートルと同様に、 <span style="color: #0faeb0">ミクロン</span> は距離を測定するための単位です。 1 インチは約 25,000 ミクロンです。 The widths of the larger particles in the PM2.5 size range would be about thirty times smaller than that of a human hair. These particles are so small that several thousand of them could fit on the full stop at the end of this sentence.</p>
 
-In our example, the slider will display the nitrogen dioxide (NO2) level. The maximum possible reading on your slider will depend on your chosen location, because urban areas will always have higher readings than rural ones. The minimum reading possible is obviously 0, but you will want to consider what the normal range is for what you are measuring and add a bit to that.
+今回の例では、スライダーに二酸化窒素 (NO2) のレベルを表示します。 スライダーでの最大の読み取り値は、選択したロケーションによって変化します。これは、地方よりも都市部のほうが常に読み取り値が高くなるためです。 The minimum reading possible is obviously 0, but you will want to consider what the normal range is for what you are measuring and add a bit to that.
 
 To work out what the maximum likely reading should be, you can see the historical data from your chosen location on the webpage you opened earlier:
 
