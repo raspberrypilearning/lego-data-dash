@@ -1,4 +1,4 @@
-## Display pollution data with your dashboard
+## ダッシュボードで汚染データを表示する
 
 At the moment, your dash uses random integers between -175 and 175; these numbers are used because they are the motor's limits of travel in each direction. (一周してしまう問題が起こる可能性があるため、180にはしません。) APIからのデータはこれと同じ範囲ではないため、モーターに合わせる必要があります。
 
