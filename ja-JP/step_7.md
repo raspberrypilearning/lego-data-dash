@@ -14,17 +14,17 @@ To work out what the maximum likely reading should be, you can see the historica
 
 ![Image showing graphed historical NO2 data from Sandy, roadside.](images/historicaldata_no2.jpg)
 
-Here, you can see that while there are some major outliers, around 60 should be more than enough as your maximum value for most readings from the Sandy Roadside air quality station. (If you want to simply make your scale from 0 to 100, you can do that too — just make `max_value = 100`.)
+Here, you can see that while there are some major outliers, around 60 should be more than enough as your maximum value for most readings from the Sandy Roadside air quality station. (単純に 0 から 100 までのスケールを作成することもできます。その場合は `max_value = 100` にするだけです。)
 
 --- task ---
 
-Connect your sliding indicator motor to port A on the Build HAT. Connect your gauge indicator motor to port B.
+スライドインジケーターのモーターを Build HAT のポート A に接続します。 ゲージインジケータのモーターをポート B に接続します。
 
 --- /task ---
 
 --- task ---
 
-In a new Thonny window, type the following:
+新しい Thonny のウィンドウで、次のように入力します:
 
 --- code ---
 ---
@@ -33,7 +33,7 @@ line_highlights:
 ---
 from buildhat import Motor from time import sleep from datetime import datetime, timedelta import requests
 
-no2_motor = Motor('A')           #Set up slider motor no2_motor.run_to_position(0,100) #Reset slider position pm25_motor = Motor('B')           #Set up gauge motor pm25_motor.run_to_position(0,100) # Reset gauge position
+no2_motor = Motor('A')           #スライダーモーターのセットアップ no2_motor.run_to_position(0,100) #スライダー位置のリセット pm25_motor = Motor('B')           #ゲージモーターのセットアップ pm25_motor.run_to_position(0,100) # ゲージ位置のリセット
 
 no2_min_value = 0         #The lowest NO2 reading you think you will get (this should hopefully be around 0) no2_max_value = 60        #The highest NO2 reading you think you will get no2_min_angle = 175       #Minimum motor travel no2_max_angle = -175      #Maximum motor travel
 
@@ -43,11 +43,11 @@ pm25_min_value = 0        #The lowest PM2.5 reading you think you will get (this
 
 --- /task ---
 
-Now that you have imported the necessary libraries and set up your measurement details, you can set up your query to the API by making a few **dictionaries** of terms you will use.
+必要なライブラリをインポートして測定の詳細を設定したので、使用するパラメータの**辞書**をいくつか作成することで、 API へのクエリを設定できます。
 
 --- task ---
 
-In your Thonny window, add this code to the end of your script:
+Thonny のウィンドウで、次のコードをスクリプトの最後に追加します:
 
 --- code ---
 ---
