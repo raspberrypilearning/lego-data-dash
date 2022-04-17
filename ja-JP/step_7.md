@@ -58,24 +58,24 @@ base_url = 'https://docs.openaq.org/v2/measurements'
 
 payload = {                    #Create a dictionary for the API request 'date_from':'', 'date_to':'', 'location_id':'2480',      #This number should be the ID number taken from the URL earlier 'order_by':'datetime', 'sort':'asc', 'has_geo':'true', 'limit':'100', 'offset':'0', }
 
-pollution = {                  #Create a dictionary for the pollution readings 'no2' : 0,                 #Here we are looking for NO2 and PM25 — yours may differ! 'pm25': 0, }
+pollution = {                  #汚染測定値用の辞書を作成する 'no2' : 0,                 #ここでは NO2 と PM25 を見る ( 違う値を見るときは変える必要があるでしょう ) 'pm25': 0, }
 
 --- /code ---
 
 --- /task ---
 
-The next function you need to write will query the API using the parameters you have set up.
+次に作成するのは、設定したパラメーターを使用して API にクエリを実行する関数です。
 
 --- task ---
 
-At the end of your script, add this code:
+スクリプトの最後に、次のコードを追加します。
 
 --- code ---
 ---
 language: python filename: data_dash.py line_numbers: true line_number_start: 39
 line_highlights:
 ---
-def check_air(): now = datetime.now()           #Gets the time now delta = datetime.now() - timedelta(days=1)         #Creates a time difference of one day
+def check_air(): now = datetime.now()           #現在の時刻を取得する delta = datetime.now() - timedelta(days=1)         #1日違う時刻を作成する
 
     payload['date_from'] = f'{delta:%Y-%m-%d}T{delta:%H:%M:%S}+00:00'  #Inserts your date and time into the dictionary above
     payload['date_to'] = f'{now:%Y-%m-%d}T{now:%H:%M:%S}+00:00'
@@ -103,11 +103,11 @@ def check_air(): now = datetime.now()           #Gets the time now delta = datet
 
  --- /task ---
 
-The next part you will write will do some clever maths to map your data range across the motor range. (It's basically the same as the function used in the [LEGO Data plotter project](https://learning-admin.raspberrypi.org/en/projects/lego-plotter/6).)
+次の部分では、モーターの範囲全体にデータの範囲をマッピングするために、うまく計算をします。 (It's basically the same as the function used in the [LEGO Data plotter project](https://learning-admin.raspberrypi.org/en/projects/lego-plotter/6).)
 
 --- task ---
 
-Add this function beneath your existing code:
+この関数を既存のコードの下に追加します:
 
 --- code ---
 ---
@@ -120,9 +120,9 @@ def remap(min_value, max_value, min_angle, max_angle, sensor_data):             
 
 --- /task ---
 
-Now that your function has been created, you need to make a loop that will:
+関数を作成したら、次のようなループを作成します:
 
-+ Find the angle the motor is currently at
++ モーターが現在いる角度を見つけます
 + Pull the pollutant data from the `remap` function to use as the new angle for your motors
 + Move to the new angle to display the reading
 
