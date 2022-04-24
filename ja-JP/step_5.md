@@ -4,7 +4,7 @@
 
 ![上下に動くグラフィックイコライザーを示す画像](https://media.giphy.com/media/Hzt1XTt6gilFlK8Oea/giphy.gif)
 
-To make an LED display, you'll need a few LED bulbs — the more bulbs you have, the more precise your scale will be. ただし上限があり、使用可能なGPIOピンの数だけLEDが使用できます。 In this example, we're using five LEDs, but you **could** connect more than ten if you choose.
+LEDディスプレイを作るには、LED電球がいくつか必要です。電球が多いほど、スケールは正確になっていきます。 ただしこれには上限があり、使用可能なGPIOピンの数だけLEDが使用できます。 この例では5個のLEDを使用していますが、10個以上接続すること**も**できます。
 
 **注:** Build HATの設計により、 **GPIO 14 と 15(ピン 8 と 10) にはアクセスできません**。
 
@@ -22,7 +22,7 @@ LEDをよく見ると、片方の脚がもう片方の脚よりも長いこと�
 
 --- task ---
 
-Insert the **short leg** of your LEDs into the **common ground rail** along the edge of your breadboard (it's the one next to the blue line at the very edge), and the long leg into the nearest numbered row: ![ブレッドボードに並んだ LED を示す画像。](images/LEDbuild3.jpg)
+LED の**短い脚**を、ブレッドボードの端に沿った**コモングラウンドレール** (一番端の青い線の隣にあります) に差し込み、長い脚を番号が一番近い行に差し込みます。 ![ブレッドボードに並んだ LED を示す画像。](images/LEDbuild3.jpg)
 
 --- /task ---
 
@@ -30,7 +30,7 @@ LED が過負荷になって、焼けたり破裂するのを防ぐために、�
 
 --- task ---
 
-抵抗を取り出し、並びの最初にあるLEDと**同じ行**に、片方を差し込みます。 Insert the other end of the resistor into the same row, but **on the other side of the spine** of your breadboard, like this:
+抵抗を取り出し、並びの最初にあるLEDと**同じ行**に、片方を差し込みます。 そして、抵抗のもう片方を同じ行に差し込みますが、次に示すように、ブレッドボードの**溝をはさんだ反対側**に差し込みます:
 
 ![Image showing LEDs lined up on a breadboard, with a resistor joining the first row.](images/LEDbuild4.jpg)
 
@@ -40,13 +40,13 @@ LED が過負荷になって、焼けたり破裂するのを防ぐために、�
 
 --- task ---
 
-Insert the M end of your M–F jumper cables into the same row as the resistors, so you can connect them to the pins on the Raspberry Pi: ![Image showing LEDs lined up on a breadboard, with resistors joining the rows, and jumper cables trailing from the breadboard.](images/LEDbuild5.jpg)
+オス-メスのジャンパーケーブルのオス側を抵抗と同じ行に差し込み、 Raspberry Pi のピンに接続できるようにします: ![Image showing LEDs lined up on a breadboard, with resistors joining the rows, and jumper cables trailing from the breadboard.](images/LEDbuild5.jpg)
 
 --- /task ---
 
 --- task ---
 
-Take the M end of another jumper cable and insert it into the end of the common ground rail: ![ブレッドボードのコモングラウンドレールから伸びるジャンパーケーブルを示す画像。](images/LEDbuild6.jpg)
+別のジャンパーケーブルのオス側を、コモングラウンドレールの端に差し込みます: ![ブレッドボードのコモングラウンドレールから伸びるジャンパーケーブルを示す画像。](images/LEDbuild6.jpg)
 
 --- /task ---
 
@@ -58,15 +58,15 @@ Take the M end of another jumper cable and insert it into the end of the common 
 
 --- task ---
 
-Take the F end of the jumper cable connected to your common ground rail, and connect it to Pin 39. これは Raspberry Pi にいくつかある グラウンドピンの1つで、**すべての** LED 電球にアースを提供します。 ![Raspberry Pi のピン 39 に接続された黒いジャンパーケーブルを示す画像。](images/LEDbuild9.jpg)
+コモングラウンドレールに接続されているジャンパーケーブルのメス側を、ピン39に接続します。 これは Raspberry Pi にいくつかある グラウンドピンの1つで、**すべての** LED 電球にアースを提供します。 ![Raspberry Pi のピン 39 に接続された黒いジャンパーケーブルを示す画像。](images/LEDbuild9.jpg)
 
 --- /task ---
 
 --- task ---
 
-Connect the other cables to numbered GPIO pins, taking note of which ones you have attached your LEDs to.
+LED を接続したケーブルを確認しながら、残りのケーブルを番号付きの GPIO ピンに接続します。
 
-In this example, we have used Pins 16, 19, 20, 21, and 26 (to keep them all at one end for tidiness): ![Image showing jumper cables trailing from the Raspberry Pi GPIO pins.](images/LEDbuild10.jpg)
+今回は、ピン16、19、20、21、26を使用しました (整頓しまとめて端に配置するため): ![Image showing jumper cables trailing from the Raspberry Pi GPIO pins.](images/LEDbuild10.jpg)
 
 --- /task ---
 
@@ -93,7 +93,7 @@ line_highlights:
 ---
 from gpiozero import LEDBarGraph from random import randint
 
-graph = LEDBarGraph(16, 19, 20, 21, 26) #The order of these numbers should match the pins you connected up
+graph = LEDBarGraph(16, 19, 20, 21, 26) #この数字の順番は、接続したピンと一致させる必要があります
 
 --- /code ---
 
