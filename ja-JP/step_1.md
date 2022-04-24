@@ -7,8 +7,8 @@
 
 本項で学ぶこと:
 + LEGO® モーターとエレメントを使用して自動のインジケーターを作成する
-+ Access an online **API** (Application Programming Interface) to retrieve interesting data using Python
-+ Display your chosen data on a dashboard you create using LEGO
++ オンラインの **API** (Application Programming Interface) に Python を使用してアクセスし、興味のあるデータを取得する
++ LEGO を使用して作成したダッシュボード上に、取得したデータを表示する
 
 --- no-print ---
 
@@ -27,7 +27,7 @@ title: 必要なもの
 + Raspberry Pi コンピューター
 + Raspberry Pi Build HAT
 + Raspberry Pi Build HAT 7.5V 電源アダプター
-+ 2 LEGO® Technic™ motors (more optional)
++ 2つの LEGO® Technic™ モーター (3つ以上でも)
 + LEGO® SPIKE™ フォースセンサー
 + LEGO® 製品 (本項では [LEGO® SPIKE™ プライムキット](https://education.lego.com/en-gb/product/spike-prime){:target="_blank"} から選んで使用します)
 + 紙またはカード
@@ -63,13 +63,13 @@ M2のボルトとナットを使用して、 LEGO ビルドプレートの上に
 
 --- /task ---
 
-Mounting the Raspberry Pi this way round enables easy access to the ports as well as the SD card slot. ビルドプレートを使うことで、 ダッシュボードのおもな構造に、より簡単に Raspberry Pi を接続できます。
+写真のとおりにRaspberry Piを固定することで、SDカードスロットが扱いやすくなります。 ビルドプレートを使うことで、 ダッシュボードのおもな構造に、より簡単に Raspberry Pi を接続できます。
 
 --- task ---
 
 `This way up` の文字が見えるようにBuild HATをRaspberry Piと並べます。 全部のGPIOピンがHATにかぶるよう合わせて、しっかり押し下げてください。 (例ではピンが長くなる [スタッキングヘッダー](https://www.adafruit.com/product/2223){:target="_blank"} を使用しています。)
 
-![Image of GPIO pins poking through the top of the Build HAT.](images/build_15.jpg) ![Animation showing Buildhat fitting to Raspberry Pi](images/haton.gif)
+![ビルドHATの上部を突き抜けるGPIOピンの画像](images/build_15.jpg) ![Raspberry PiにBuildhatを搭載するアニメーション](images/haton.gif)
 
 --- /task ---
 
@@ -87,15 +87,15 @@ Mounting the Raspberry Pi this way round enables easy access to the ports as wel
 
 Raspberry Piが起動したら、Raspberry Piメニューをクリックして“Preferences”と “Raspberry Pi Configuration”の順に選択して、Raspberry Pi Configuration toolを起動します。
 
-Click on the “interfaces” tab and adjust the Serial settings as shown below:
+“interfaces”タブをクリックして、シリアルの設定を以下のとおりに設定します:
 
-![Image showing Raspberry Pi OS config screen with serial port enabled and serial console disabled](images/configshot.jpg)
+![Raspberry Pi OS設定画面で、シリアルポートを有効にして、シリアルコンソールを無効にしている様子](images/configshot.jpg)
 
 --- /task ---
 
 --- task ---
 
-You will also need to install the buildhat python library by following these instructions:
+また、以下の手順に従って、buildhat pythonライブラリのインストールも必要になります。
 
 --- collapse ---
 ---
@@ -125,7 +125,7 @@ At the prompt type: `sudo pip3 install buildhat`
 + 選択した場所の **微粒子 (PM2.5) ** のレベル。 **微粒子** または粒子状物質 2.5 (PM2.5) という用語は、サイズが 2.5 ミクロン (またはそれ以下) の、空気中の小さな粒子または液滴を指します。 PM2.5 に分類される粒子は、煙とスモッグを構成するものです。
 
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">The example API we are using in this project is from [OpenAQ](https://openaq.org/#/), a global non-profit organisation "fighting air inequality through open data". 世界的に、 **8人に1人が亡くなっている** のは大気質の悪さによるものであり、 OpenAQ は世界の大気質データを収集して、世界の一部地域で増加する大気汚染の問題について、より多くの人々に知ってもらうのに役立てています。 </p>
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">このプロジェクトで使用している API の例は、「オープンデータを通じて空気の不平等と戦う」国際的な非営利組織 [OpenAQ](https://openaq.org/#/) のものです。 世界的に、 **8人に1人が亡くなっている** のは大気質の悪さによるものであり、 OpenAQ は世界の大気質データを収集して、世界の一部地域で増加する大気汚染の問題について、より多くの人々に知ってもらうのに役立てています。 </p>
 
 
 ダッシュボードで、以下の要件を満たしてください:
@@ -149,7 +149,7 @@ At the prompt type: `sudo pip3 install buildhat`
 
 この例では、垂直のスライダーに現在の温度を表示する天気のダッシュボード、LEDスケールを使った雲のカバー、 そして回転するダイヤルは、体感温度 (風や温度の他の天気を含む) に基づいたちょうどよい衣類を提案したり、世界気象コード (WMO コード) を使用した詳細な天気予報をレポートしたりします 。
 
-![Demo Video](images/weather-dash.gif)
+![デモビデオ](images/weather-dash.gif)
 
 --- /task ---
 
@@ -157,7 +157,7 @@ At the prompt type: `sudo pip3 install buildhat`
 
 --- print-only ---
 
-![Image showing a weather station dashboard made of LEGO®.](images/example-dash.jpg)
+![LEGO® で作られたウェザーステーションのダッシュボードを示す画像](images/example-dash.jpg)
 
 --- /print-only ---
 
