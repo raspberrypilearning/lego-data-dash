@@ -1,6 +1,6 @@
 ## LEGO® でスライドインジケーターを作る
 
-それでは、 LEGO® でスライドインジケーターを作成しましょう。 If you don't want to include a sliding indicator, you can skip to the next step, which shows you how to create rotating LEGO dials.
+それでは、 LEGO® でスライドインジケーターを作成しましょう。 スライドインジケーターを使わない場合はここをスキップして次のステップ、回転する LEGO ダイヤルを作成する方法に進むことができます。
 
 垂直スライダーは次のようなものです:
 
