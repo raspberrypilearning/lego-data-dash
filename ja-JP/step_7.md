@@ -1,10 +1,10 @@
 ## ダッシュボードで汚染データを表示する
 
-At the moment, your dash uses random integers between -175 and 175; these numbers are used because they are the motor's limits of travel in each direction. (一周してしまう問題が起こる可能性があるため、180にはしません。) APIからのデータはこれと同じ範囲ではないため、モーターに合わせる必要があります。
+現時点では、ダッシュボードでは-175〜175のランダムな整数を使用しています。これらの数値は、各方向へのモーターの移動制限のため使われています。 (一周してしまう問題が起こる可能性があるため、180にはしません。) APIからのデータはこれと同じ範囲ではないため、モーターに合わせる必要があります。
 
 インジケーターの**キャリブレーション** とは、APIからのデータの最大値と最小値をモーターの -175° から 175° の間にマッピングすることです。 最高の読み取り値は-175°になり、最低の読み取り値は175°になります。 (モーターを逆に取り付けているためです！)
 
-今回の例では、**微粒子 (PM2.5)** の測定値をゲージに表示し、二酸化窒素 (NO2) レベルをスライダーに表示します。 The term **fine particles**, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and a half microns (or less) in width. The particles measured by PM2.5 are what make up most smoke and smog, and make it hard to see.
+今回の例では、**微粒子 (PM2.5)** の測定値をゲージに表示し、二酸化窒素 (NO2) レベルをスライダーに表示します。 **微粒子**、または微小粒子状物質 2.5 (PM2.5) という用語は、大きさが 2.5 ミクロン (またはそれ以下) の空気中の小さな粒子または飛沫を指します。 PM2.5 で測定された粒子は、ほとんどの煙やスモッグを構成するもので、視界を悪くします。
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">インチ、メートル、ミリメートルと同様に、 <span style="color: #0faeb0">ミクロン</span> は距離を測定するための単位です。 1 インチは約 25,000 ミクロンです。 The widths of the larger particles in the PM2.5 size range would be about thirty times smaller than that of a human hair. These particles are so small that several thousand of them could fit on the full stop at the end of this sentence.</p>
 
@@ -77,22 +77,22 @@ line_highlights:
 ---
 def check_air(): now = datetime.now()           #現在の時刻を取得する delta = datetime.now() - timedelta(days=1)         #1日違う時刻を作成する
 
-    payload['date_from'] = f'{delta:%Y-%m-%d}T{delta:%H:%M:%S}+00:00'  #Inserts your date and time into the dictionary above
+    payload['date_from'] = f'{delta:%Y-%m-%d}T{delta:%H:%M:%S}+00:00'  #日付と時刻を辞書に代入する
     payload['date_to'] = f'{now:%Y-%m-%d}T{now:%H:%M:%S}+00:00'
     
-    response = requests.get(base_url, params=payload)          #Queries the API database
+    response = requests.get(base_url, params=payload)          #API データベースに問い合わせる
     
-    if response.status_code != 200:          #Check for connection to API
+    if response.status_code != 200:          #API の接続を確認する
         print('no response from server')
         return
     
     data = response.json()
     
     for reading in data['results']:
-        if reading['parameter'] == 'no2':       #This will depend upon what pollutant you are measuring
+        if reading['parameter'] == 'no2':       #測定している汚染物質によってここは異なります
             pollution['no2'] = reading['value']
             print(pollution['no2'])
-        if reading['parameter'] == 'pm25':      #This will depend upon what pollutant you are measuring
+        if reading['parameter'] == 'pm25':      #測定している汚染物質によってここは異なります
             pollution['pm25'] = reading['value']
             print(pollution['pm25'])
     
@@ -103,7 +103,7 @@ def check_air(): now = datetime.now()           #現在の時刻を取得する 
 
  --- /task ---
 
-次の部分では、モーターの範囲全体にデータの範囲をマッピングするために、うまく計算をします。 (It's basically the same as the function used in the [LEGO Data plotter project](https://learning-admin.raspberrypi.org/en/projects/lego-plotter/6).)
+次の部分では、モーターの範囲全体にデータの範囲をマッピングするために、うまく計算をします。 (基本的には [LEGO データプロッターのプロジェクト](https://learning-admin.raspberrypi.org/en/projects/lego-plotter/6)で使用されている関数と同じです。)
 
 --- task ---
 
@@ -123,12 +123,12 @@ def remap(min_value, max_value, min_angle, max_angle, sensor_data):             
 関数を作成したら、次のようなループを作成します:
 
 + モーターが現在いる角度を見つけます
-+ Pull the pollutant data from the `remap` function to use as the new angle for your motors
-+ Move to the new angle to display the reading
++ `remap` 関数から汚染物質データを取得し、モーターの新しい角度として使用します
++ 新しい角度に移動して、読み取り値を表示します
 
 --- task ---
 
-Add the following code to the end of your script, on a new line:
+スクリプトの最後に次のコードを追加します:
 
 --- code ---
 ---
@@ -141,24 +141,24 @@ def output_results(): print(f'NO2 = {pollution['no2']}') no2_current_angle = no2
 
 --- /task ---
 
-The last part of your code now needs to call your `check_air()` function to make it all go, and periodically check the API for updated data.
+コードの最後の部分で、すべてを実行するために `check_air()` 関数を呼び出し、定期的に API をチェックしてデータを更新する必要があります。
 
 --- task ---
 
-At the end of your script, on a new line (make sure it isn't indented), type:
+スクリプトの最後に (インデントされていないことを確認して) 、次を入力します:
 
 --- code ---
 ---
 language: python filename: data_dash.py line_numbers: true line_number_start: 93
 line_highlights:
 ---
-while True: check_air() sleep(3600)   #Wait an hour before checking again (make this smaller for testing purposes) --- /code ---
+while True: check_air() sleep(3600)   #次のチェックまで1時間待つ (テストするときはこの値を小さくします) --- /code ---
 
 --- /task ---
 
 --- task ---
 
-Save your work as `data_dash.py` and click **Run**. Your slider should move to display the current NO2 reading from your chosen OpenAQ station, and your gauge should move to display the PM2.5 reading. Well done!
+コードを `data_dash.py` として保存して、 **Run**をクリックします。 スライダーが移動して、選択した OpenAQ ステーションからの現在の NO2 の読み取り値が表示されたり、ゲージが移動して PM2.5 の読み取り値が表示されたりするでしょう。 よくできました！
 
 --- /task ---
 
