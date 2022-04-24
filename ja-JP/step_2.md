@@ -21,7 +21,7 @@
 
 --- task ---
 
-Think about who you will make your dashboard for (your **audience**):
+誰のためにダッシュボードを作成するか考えてみましょう (**閲覧者**)。
 
 + 表示している内容をわかりやすくする記号や目盛りはどれですか？
 + ユーザーはどのようにして現在のデータを取得しますか？
