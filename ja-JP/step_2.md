@@ -23,7 +23,7 @@
 
 Think about who you will make your dashboard for (your **audience**):
 
-+ What symbols or scales will make it obvious what you are displaying?
++ 表示している内容をわかりやすくする記号や目盛りはどれですか？
 + ユーザーはどのようにして現在のデータを取得しますか？
 + 彼らは明るい色や光を好むでしょうか、それともシンプルですっきりしたデザインを好むでしょうか？
 + どこにこれを設置しますか？ 置きたい場所に収まりますか？
@@ -41,7 +41,7 @@ Think about who you will make your dashboard for (your **audience**):
 + さまざまなインジケーターや入力をどのようにフレームに収めますか？
 + 構築するために必要な LEGO エレメントはどれですか？
 
-Draw your dashboard now, including the frame to hold it and any indicators you would like to create or user inputs needed. 表示する内容や、入力される情報に合わせて、ラベルを付けます。
+ではダッシュボードを保持するフレームと、作成するインジケーターや必要なユーザー入力を含めて、ダッシュボードを描画しましょう。 表示する内容や、入力される情報に合わせて、ラベルを付けます。
 
 --- /task ---
 
