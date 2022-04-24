@@ -17,7 +17,7 @@
 
 --- /task ---
 
-### スケールを作成する
+### スケール（目盛り）を作成する
 
 ゲージを完成させるためには、紙・カード・またはその他の画材を使って、スケールを作る必要があります。 仕組みとコーディングはまったく同じですが、ゲージをどう見せたいか考えてみましょう。
 
@@ -41,7 +41,7 @@
 
 --- task ---
 
-Split the circle into equal segments (one for each reading) by drawing lines through the centre, or draw your scale around the edge.
+中心を通る線を引いて円を等間隔 (各読み取り値に1つ) に分割するか、円の端にスケールを描きます。
 
 --- /task ---
 
