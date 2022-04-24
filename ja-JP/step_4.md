@@ -27,9 +27,9 @@
 
  LEGO® で簡単に作成できるのは 2 種類あります。
 
-+ A gauge where the needle spins to indicate a point on the face: ![針と目盛り付きのゲージを写した画像。](images/dial2.gif)
++ 針が回転して、面の上のある一点を示すゲージ: ![針と目盛り付きのゲージを写した画像。](images/dial2.gif)
 
-+ A gauge where the whole face turns to display a point at the top with a stationary indicator: ![スケールが動くゲージを写した画像。](images/dial1.gif)
++ 面全体が回転して、上部に固定されたインジケーターである一点を示すゲージ: ![スケールが動くゲージを写した画像。](images/dial1.gif)
 
 --- /task ---
 
@@ -68,11 +68,11 @@ title: ニードルゲージを作る場合
 
 --- task ---
 
-Add a 90 degree elbow to the end of your axle and place another axle into it. Make sure it is long enough to reach your scale and clearly indicate the readings.
+軸の端に 90 度のエルボを追加し、別の軸をそこに取り付けます。 スケールを指すのに十分な長さで、測定値がわかりやすく示されることを確認してください。
 
-![Image showing the LEGO® axle protruding through the gauge's face with an elbow and perpendicular axle connected.](images/needle-gauge2.jpg)
+![ゲージの面から突き出ている LEGO® の軸に、エルボと垂直の軸が接続された状態を示す画像。](images/needle-gauge2.jpg)
 
-It will help later if your axle is pointing straight up (and your motor is 'zeroed') when you mount it, as it will make it easier to calculate the amount of rotation required for a reading.
+軸を取り付けるときに軸が真上を向いている (そしてモーターが「ゼロに調整」されている) と、測定値に対して必要な回転量の計算が簡単になるため、後で便利です。
 
 --- /task ---
 
@@ -87,7 +87,7 @@ title: 回転するフェイスダイヤルを作る場合
 
 --- task ---
 
-Mount a single gear behind your dial face as a spacer, to prevent it from catching on your dashboard. Use some Blu Tack to stick the face to this gear. If you have created an incremental scale around the gauge, mount it with the middle of the scale at the top (in line with the 'zeroed' lollipop symbols) and the minimum and maximum values at the bottom.
+ダッシュボードに引っ掛からないように、ダイヤル面の後ろにスペーサーとして歯車を1つ取り付けます。 ブル・タックを使用して、面を歯車に貼り付けます。 ゲージのまわりにインクリメンタルスケールを作ったときは、スケールの中間値が上 (「ゼロに調整」されたロリポップ記号に合わせる) 、最小値と最大値が下になるように面を取り付けます。
 
 ![車軸に取り付けられ、タックがいくつか付けられた黒い LEGO® のギアを示す画像。](images/dial-gauge1.jpg)
 
