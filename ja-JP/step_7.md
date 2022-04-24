@@ -4,7 +4,7 @@
 
 インジケーターの**キャリブレーション** とは、APIからのデータの最大値と最小値をモーターの -175° から 175° の間にマッピングすることです。 最高の読み取り値は-175°になり、最低の読み取り値は175°になります。 (モーターを逆に取り付けているためです！)
 
-今回の例では、**微粒子 (PM2.5)** の測定値をゲージに表示し、二酸化窒素 (NO2) レベルをスライダーに表示します。 **微粒子**、または微小粒子状物質 2.5 (PM2.5) という用語は、大きさが 2.5 ミクロン (またはそれ以下) の空気中の小さな粒子または飛沫を指します。 PM2.5 で測定された粒子は、ほとんどの煙やスモッグを構成するもので、視界を悪くします。
+今回の例では、**微粒子 (PM2.5)** の測定値をゲージに表示し、二酸化窒素 (NO2) レベルをスライダーに表示します。 **微粒子**、または微小粒子状物質 2.5 (PM2.5) という用語は、大きさが 2.5 ミクロン (またはそれ以下) の空気中の小さな粒子または液滴を指します。 PM2.5 で測定された粒子は、ほとんどの煙やスモッグを構成するもので、視界を悪くします。
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">インチ、メートル、ミリメートルと同様に、 <span style="color: #0faeb0">ミクロン</span> は距離を測定するための単位です。 1 インチは約 25,000 ミクロンです。 The widths of the larger particles in the PM2.5 size range would be about thirty times smaller than that of a human hair. These particles are so small that several thousand of them could fit on the full stop at the end of this sentence.</p>
 
@@ -12,7 +12,7 @@
 
 To work out what the maximum likely reading should be, you can see the historical data from your chosen location on the webpage you opened earlier:
 
-![Image showing graphed historical NO2 data from Sandy, roadside.](images/historicaldata_no2.jpg)
+![サンディのロードサイドから、過去のNO2データをグラフ化した画像。](images/historicaldata_no2.jpg)
 
 Here, you can see that while there are some major outliers, around 60 should be more than enough as your maximum value for most readings from the Sandy Roadside air quality station. (単純に 0 から 100 までのスケールを作成することもできます。その場合は `max_value = 100` にするだけです。)
 
@@ -35,9 +35,9 @@ from buildhat import Motor from time import sleep from datetime import datetime,
 
 no2_motor = Motor('A')           #スライダーモーターのセットアップ no2_motor.run_to_position(0,100) #スライダー位置のリセット pm25_motor = Motor('B')           #ゲージモーターのセットアップ pm25_motor.run_to_position(0,100) # ゲージ位置のリセット
 
-no2_min_value = 0         #The lowest NO2 reading you think you will get (this should hopefully be around 0) no2_max_value = 60        #The highest NO2 reading you think you will get no2_min_angle = 175       #Minimum motor travel no2_max_angle = -175      #Maximum motor travel
+no2_min_value = 0         #予想される最小の NO2 測定値 (おそらく 0 前後のはず) no2_max_value = 60        #予想される最大の NO2 測定値 no2_min_angle = 175       #最小のモーター移動量 no2_max_angle = -175      #最大のモーター移動量
 
-pm25_min_value = 0        #The lowest PM2.5 reading you think you will get (this should hopefully be around 0) pm25_max_value = 100      #The highest PM2.5 reading you think you will get pm25_min_angle = 175      #Minimum motor travel pm25_max_angle = -175     #Maximum motor travel
+pm25_min_value = 0＃予想される最小の PM2.5 測定値 (おそらく 0 前後のはず) pm25_max_value = 100＃予想される最大の PM2.5 測定値 pm25_min_angle = 175＃最小のモーター移動量 pm25_max_angle = -175＃最大のモーター移動量
 
 --- /code ---
 
@@ -56,7 +56,7 @@ line_highlights:
 ---
 base_url = 'https://docs.openaq.org/v2/measurements'
 
-payload = {                    #Create a dictionary for the API request 'date_from':'', 'date_to':'', 'location_id':'2480',      #This number should be the ID number taken from the URL earlier 'order_by':'datetime', 'sort':'asc', 'has_geo':'true', 'limit':'100', 'offset':'0', }
+payload = {                    #APIリクエスト用の辞書を作成する 'date_from':'', 'date_to':'', 'location_id':'2480',      #この番号は、先のURLから取得したIDを指定する 'order_by':'datetime', 'sort':'asc', 'has_geo':'true', 'limit':'100', 'offset':'0', }
 
 pollution = {                  #汚染測定値用の辞書を作成する 'no2' : 0,                 #ここでは NO2 と PM25 を見る ( 違う値を見るときは変える必要があるでしょう ) 'pm25': 0, }
 
