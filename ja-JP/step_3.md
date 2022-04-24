@@ -37,7 +37,7 @@
   </p>
   
   <p spaces-before="0">
-    2 つの灰色のストレートブラケットを 1 列離して付けます。 <img src="images/sliderbuild2.jpg" alt="Image showing the Build Plate with two straight brackets." />
+    2 つの灰色のストレートブラケットを 1 列離して付けます。 <img src="images/sliderbuild2.jpg" alt="2 つのストレートブラケットを付けたビルドプレートを写した画像。" />
   </p>
   
   <p spaces-before="0">
@@ -109,11 +109,11 @@
   </p>
   
   <p spaces-before="0">
-    Slide the toothed bar down into the top of the mechanism.
+    歯型バーを機構の上から下に差し込みます。
   </p>
   
   <p spaces-before="0">
-    You will have to pull the gear forward to allow it past, then push the gear back in to fit between the teeth. The mechanism will slide easily up and down while the gear and axle are free. モーターを接続すると安定して固定されるようになります。 <img src="images/sliderbuild8.jpg" alt="2 つのストレートブラケット、スタッド、車軸、ギアが付いたビルドプレートにスライダーのバーを差し込んだ様子を写した画像。" />
+    一度ギアを前に引き出す必要があります。そして、歯と噛み合うようにギアを押して戻しましょう。 歯車と軸が固定されていない間は、機構は上下に簡単にスライドできます。 モーターを接続すると安定して固定されるようになります。 <img src="images/sliderbuild8.jpg" alt="2 つのストレートブラケット、スタッド、車軸、ギアが付いたビルドプレートにスライダーのバーを差し込んだ様子を写した画像。" />
   </p>
   
   <p spaces-before="0">
@@ -125,7 +125,7 @@
   </p>
   
   <p spaces-before="0">
-    モーターを取り出して、平らな側の上部にある 2 つの穴に、スタッドを 2 つ追加します。 <img src="images/sliderbuild9.jpg" alt="Image showing the Build Plate with two straight brackets and studs, and an axle and gear mounted on the plate with the slider bar inserted, and a motor on the table." />
+    モーターを取り出して、平らな側の上部にある 2 つの穴に、スタッドを 2 つ追加します。 <img src="images/sliderbuild9.jpg" alt="2 つのストレートブラケット、スタッド、車軸、ギアが付いたビルドプレートにスライダーのバーが差し込まれたものと、モーターを並べた様子を写した画像。" />
   </p>
   
   <p spaces-before="0">
@@ -289,11 +289,11 @@
 </p>
 
 <p spaces-before="0">
-  You now know where your minumum and maximum possible readings are. スライダーをいくつかのデータにリンクすると、正確なスケールを作成できるようになります。
+  これで、最小値と最大値がどこにあるかがわかりました。 スライダーをいくつかのデータにリンクすると、正確なスケールを作成できるようになります。
 </p>
 
 <h3 spaces-before="0">
-  Program your sliding indicator to show live data
+  スライドインジケーターをプログラムして、ライブデータを表示する
 </h3>
 
 <p spaces-before="0">
