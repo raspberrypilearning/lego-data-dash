@@ -3,12 +3,12 @@
 このプロジェクトでは、データを視覚化するダッシュボードを作成します。さまざまなオンラインのソースから表示するデータを選べます。 Your data dashboard will need to meet the **project brief**.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">dashboard</span> is a user interface that gives a current summary of important information, usually in a graphical or easy-to-read form. The term originates from cars, where the driver is shown the current status of the vehicle by big, bright dials and scales.</p>
+<span style="color: #0faeb0">ダッシュボード</span> は、重要な情報についての現時点の要約を、グラフィカルまたは読みやすいかたちで提供するユーザーインターフェイスです。 この用語は、車の運転手が大きくて明るい文字盤やメーターで車両の現在の状態を確認できるものに由来しています。</p>
 
 本項で学ぶこと:
 + LEGO® モーターとエレメントを使用して自動のインジケーターを作成する
 + Access an online **API** (Application Programming Interface) to retrieve interesting data using Python
-+ LEGO を使用して作成したダッシュボード上に、取得したデータを表示します。
++ Display your chosen data on a dashboard you create using LEGO
 
 --- no-print ---
 
