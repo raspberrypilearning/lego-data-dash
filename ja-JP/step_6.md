@@ -39,7 +39,7 @@ Raspberry Piの本社は英国のケンブリッジにあるので、ここで�
 
 --- task ---
 
-測定するのに一番興味がある大気汚染の種類を**決めましょう**。 画面左側のカラースケールの近くにあるプルダウンメニューから、色々なオプションを選択できます。 ![Image showing the pulldown menu in the OpenAQ map.](images/mapscale.jpg)
+測定するのに一番興味がある大気汚染の種類を**決めましょう**。 画面左側のカラースケールの近くにあるプルダウンメニューから、色々なオプションを選択できます。 ![OpenAQ マップのプルダウンメニューを示す画像。](images/mapscale.jpg)
 
 **注:** 丸いマーカーは、より多様な汚染物質を測定していると思われる、本格的な大気質ステーションを表します。
 
@@ -48,18 +48,18 @@ Raspberry Piの本社は英国のケンブリッジにあるので、ここで�
 --- task ---
 
 地図上で選択したエリアを**拡大**して、測定したい場所に一番近い点を見つけましょう。 その一番近い点をクリックして、場所の詳細を表示します。 表示されたポップアップで、 **View Location** のボタンをクリックします。  
-![Image showing a world map zoomed in on the eastern UK.](images/mapscroll.gif)
+![イギリスの東部を拡大した世界地図を示す画像。](images/mapscroll.gif)
 
 --- /task ---
 
 --- task ---
 
-When the new webpage loads showing the details of the measurements taken at the location, **make a note** of the number in the URL of the new page. This is the OpenAQ identification number for your chosen air quality station. (In this example, it is the Sandy Roadside measurement station, with ID number **2480**.) ![Image showing the OpenAQ URL with a number for the location ID.](images/openaq_id.jpg)
+新しいウェブページがロードされてその場所で行われた測定の詳細が表示されたら、そのページのURLにある番号の **メモをとって** おきます。 これは、選択した大気質ステーションの OpenAQ での識別番号です。 (この例では、 ID 番号 **2480** はサンディ・ロードサイドの測定ステーションです。) ![ロケーション ID の番号が付いた Open AQ の URLを示す画像。](images/openaq_id.jpg)
 
 --- /task ---
 
 --- task ---
 
-On the location page, you will see the different types of pollutants measured at that location. **Choose** two from the list that you would like to represent on your data dashboard. ![Image showing a pollutant list from a location on the OpenAQ map.](images/openaq_msmt.jpg) This measurement station near Sandy can show NO2, PM10, and PM2.5 — so we'll use NO2 and PM2.5 in the example.
+ロケーションのページでは、その場所で測定された、さまざまな種類の汚染物質が表示されます。 データダッシュボードに表示したいことを、リストから 2 つ**選びましょう**。 ![Image showing a pollutant list from a location on the OpenAQ map.](images/openaq_msmt.jpg) サンディの近くにあるこの測定ステーションでは、 NO2 、 PM10 、 PM2.5 を表示できるため、例では NO2 と PM2.5 を使用します。
 
 --- /task ---
