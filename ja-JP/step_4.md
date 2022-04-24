@@ -47,7 +47,7 @@
 
 --- task ---
 
-Draw an icon or write inside each segment what it indicates.
+各セグメントが示す内容を、アイコンや文字でそれぞれ書き込みます。
 
 --- /task ---
 
