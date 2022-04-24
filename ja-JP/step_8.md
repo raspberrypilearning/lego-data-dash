@@ -5,7 +5,7 @@
 ダッシュボードに表示するための新しいデータとして、いくつかのソースが利用可能です:
 
 + If you make YouTube videos, you could use the [YouTube Developer API](https://developers.google.com/youtube/v3)
-+ Fortnite のプレイヤーは[プレイヤーデータ](https://fortnitetracker.com/site-api)にアクセスできます。
++ Fortnite のプレイヤーは[プレイヤーデータ](https://fortnitetracker.com/site-api)にアクセスできます
 + NASAのおかげで、[火星の天気](https://mars.nasa.gov/insight/weather/)が表示できます！
 + [COVID パンデミック](https://github.com/M-Media-Group/Covid-19-API)に関するデータを表示できます
 + [Fitbit API](https://dev.fitbit.com/build/reference/web-api/) を使用して Fitbit をダッシュボードに接続して、ワークアウトを追跡します！
