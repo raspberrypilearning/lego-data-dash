@@ -37,7 +37,7 @@ no2_motor = Motor('A')           #スライダーモーターのセットアッ�
 
 no2_min_value = 0         #予想される最小の NO2 測定値 (おそらく 0 前後のはず) no2_max_value = 60        #予想される最大の NO2 測定値 no2_min_angle = 175       #最小のモーター移動量 no2_max_angle = -175      #最大のモーター移動量
 
-pm25_min_value = 0＃予想される最小の PM2.5 測定値 (おそらく 0 前後のはず) pm25_max_value = 100＃予想される最大の PM2.5 測定値 pm25_min_angle = 175＃最小のモーター移動量 pm25_max_angle = -175＃最大のモーター移動量
+pm25_min_value = 0        #予想される最小の PM2.5 測定値 (おそらく 0 前後のはず) pm25_max_value = 100      #予想される最大の PM2.5 測定値 pm25_min_angle = 175      #最小のモーター移動量 pm25_max_angle = -175     #最大のモーター移動量
 
 --- /code ---
 
