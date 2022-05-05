@@ -10,7 +10,7 @@ steps:
   - 
     title: はじめに
   - 
-    title: Plan your dashboard
+    title: ダッシュボードを計画する
   - 
     title: LEGO® でスライドインジケーターを作る
   - 
@@ -20,6 +20,6 @@ steps:
   - 
     title: OpenAQ API にアクセスする
   - 
-    title: Display pollution data with your dashboard
+    title: ダッシュボードで汚染データを表示する
   - 
-    title: What next?
+    title: 次は何をしますか？
