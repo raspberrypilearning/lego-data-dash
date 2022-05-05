@@ -4,7 +4,7 @@
 
 ダッシュボードに表示するための新しいデータとして、いくつかのソースが利用可能です:
 
-+ If you make YouTube videos, you could use the [YouTube Developer API](https://developers.google.com/youtube/v3)
++ YouTubeの動画を作成するなら、 [YouTube Developer API](https://developers.google.com/youtube/v3) を使用できます
 + Fortnite のプレイヤーは[プレイヤーデータ](https://fortnitetracker.com/site-api)にアクセスできます
 + NASAのおかげで、[火星の天気](https://mars.nasa.gov/insight/weather/)が表示できます！
 + [COVID パンデミック](https://github.com/M-Media-Group/Covid-19-API)に関するデータを表示できます
