@@ -32,15 +32,15 @@ LED が過負荷になって、焼けたり破裂するのを防ぐために、�
 
 抵抗を取り出し、並びの最初にあるLEDと**同じ行**に、片方を差し込みます。 そして、抵抗のもう片方を同じ行に差し込みますが、次に示すように、ブレッドボードの**溝をはさんだ反対側**に差し込みます:
 
-![Image showing LEDs lined up on a breadboard, with a resistor joining the first row.](images/LEDbuild4.jpg)
+![ブレッドボードに LED が並んでいて、最初の列に抵抗が接続されている様子を示す画像。](images/LEDbuild4.jpg)
 
-並んでいる他のLEDも同じように取り付けます: ![Image showing LEDs lined up on a breadboard, with resistors joining the rows.](images/LEDbuildX.jpg)
+並んでいる他のLEDも同じように取り付けます: ![ブレッドボードにLEDが並んでいて、抵抗が列につながっている様子を示す画像。](images/LEDbuildX.jpg)
 
 --- /task ---
 
 --- task ---
 
-オス-メスのジャンパーケーブルのオス側を抵抗と同じ行に差し込み、 Raspberry Pi のピンに接続できるようにします: ![Image showing LEDs lined up on a breadboard, with resistors joining the rows, and jumper cables trailing from the breadboard.](images/LEDbuild5.jpg)
+オス-メスのジャンパーケーブルのオス側を抵抗と同じ行に差し込み、 Raspberry Pi のピンに接続できるようにします: ![ブレッドボードにLEDが並んでいて、抵抗が列につながり、ジャンパーケーブルがブレッドボードから引き通されている様子を示す画像。](images/LEDbuild5.jpg)
 
 --- /task ---
 
@@ -52,7 +52,7 @@ LED が過負荷になって、焼けたり破裂するのを防ぐために、�
 
 完成したLEDスケールは次のようになります:
 
-![Image showing LEDs lined up on a breadboard, with resistors joining the rows, and jumper cables trailing from the breadboard.](images/LEDbuild7.jpg)
+![ブレッドボードにLEDが並んでいて、抵抗が列につながり、ジャンパーケーブルがブレッドボードから引き通されている様子を示す画像。](images/LEDbuild7.jpg)
 
 次のステップは、 Raspberry Pi の GPIO ピンに接続することです。
 
@@ -66,7 +66,7 @@ LED が過負荷になって、焼けたり破裂するのを防ぐために、�
 
 LED を接続したケーブルを確認しながら、残りのケーブルを番号付きの GPIO ピンに接続します。
 
-今回は、ピン16、19、20、21、26を使用しました (整頓しまとめて端に配置するため): ![Image showing jumper cables trailing from the Raspberry Pi GPIO pins.](images/LEDbuild10.jpg)
+今回は、ピン16、19、20、21、26を使用しました (整頓しまとめて端に配置するため): ![Raspberry Pi の GPIO ピンから引き通したジャンパーケーブルを示す画像。](images/LEDbuild10.jpg)
 
 --- /task ---
 
