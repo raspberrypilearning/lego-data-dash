@@ -1,6 +1,6 @@
 ## はじめに
 
-このプロジェクトでは、データを視覚化するダッシュボードを作成します。さまざまなオンラインのソースから表示するデータを選べます。 Your data dashboard will need to meet the **project brief**.
+このプロジェクトでは、データを視覚化するダッシュボードを作成します。さまざまなオンラインのソースから表示するデータを選べます。 データダッシュボードは、**プロジェクトの概要**に合っている必要があります。
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 <span style="color: #0faeb0">ダッシュボード</span> は、重要な情報についての現時点の要約を、グラフィカルまたは読みやすいかたちで提供するユーザーインターフェイスです。 ダッシュボードという言葉は、車の運転手が大きくて明るい文字盤やメーターで車両の現在の状態を確認できるものに由来しています。</p>
@@ -104,7 +104,7 @@ title: buildhat Python ライブラリのインストール
 
 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> を押して、Raspberry Pi上にターミナルウィンドウを開きます。
 
-At the prompt type: `sudo pip3 install buildhat`
+プロンプトで次の通りに入力します: `sudo pip3 install buildhat`
 
 <kbd>Enter</kbd> キーを入力して "installation completed" のメッセージが表示されるまで待ちます。
 
@@ -141,7 +141,7 @@ At the prompt type: `sudo pip3 install buildhat`
 
 --- no-print ---
 
-### Get inspiration
+### インスピレーションを得る
 
 --- task ---
 
