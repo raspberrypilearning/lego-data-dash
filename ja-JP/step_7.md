@@ -6,15 +6,15 @@
 
 今回の例では、**微粒子 (PM2.5)** の測定値をゲージに表示し、二酸化窒素 (NO2) レベルをスライダーに表示します。 **微粒子**、または微小粒子状物質 2.5 (PM2.5) という用語は、大きさが 2.5 ミクロン (またはそれ以下) の空気中の小さな粒子または液滴を指します。 PM2.5 で測定された粒子は、ほとんどの煙やスモッグを構成するもので、視界を悪くします。
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">インチ、メートル、ミリメートルと同様に、 <span style="color: #0faeb0">ミクロン</span> は距離を測定するための単位です。 1 インチは約 25,000 ミクロンです。 The widths of the larger particles in the PM2.5 size range would be about thirty times smaller than that of a human hair. These particles are so small that several thousand of them could fit on the full stop at the end of this sentence.</p>
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">インチ、メートル、ミリメートルと同様に、 <span style="color: #0faeb0">ミクロン</span> は距離を測定するための単位です。 1 インチは約 25,000 ミクロンです。 PM2.5 のなかでは大きめな粒子でも、人の髪の毛の直径の約30分の1程度の大きさです。 これらの粒子は非常に小さく、この文の終わりの句点（。）に数千個が収まってしまうほどです。</p>
 
-今回の例では、スライダーに二酸化窒素 (NO2) のレベルを表示します。 スライダーでの最大の読み取り値は、選択したロケーションによって変化します。これは、地方よりも都市部のほうが常に読み取り値が高くなるためです。 The minimum reading possible is obviously 0, but you will want to consider what the normal range is for what you are measuring and add a bit to that.
+今回の例では、スライダーに二酸化窒素 (NO2) のレベルを表示します。 スライダーでの最大の読み取り値は、選択したロケーションによって変化します。これは、地方よりも都市部のほうが常に読み取り値が高くなるためです。 最小の読み取り値はほとんどの場合0なのですが、ねんのために測定対象のふだんの範囲を調べて少し調整したほうが良いでしょう。
 
-To work out what the maximum likely reading should be, you can see the historical data from your chosen location on the webpage you opened earlier:
+最大の読み取り値を調べるには、先ほど開いたウェブページで、選択したロケーションの履歴データから確認します:
 
 ![サンディのロードサイドから、過去のNO2データをグラフ化した画像。](images/historicaldata_no2.jpg)
 
-Here, you can see that while there are some major outliers, around 60 should be more than enough as your maximum value for most readings from the Sandy Roadside air quality station. (単純に 0 から 100 までのスケールを作成することもできます。その場合は `max_value = 100` にするだけです。)
+ここで、いくつか大きな外れ値がみられますが、サンディロードサイドの大気質測定地点から読み取れるほとんどの値からして、最大値は60前後で十分でしょう。 (単純に 0 から 100 までのスケールを作成することもできます。その場合は `max_value = 100` にするだけです。)
 
 --- task ---
 
@@ -58,7 +58,7 @@ base_url = 'https://docs.openaq.org/v2/measurements'
 
 payload = {                    #APIリクエスト用の辞書を作成する 'date_from':'', 'date_to':'', 'location_id':'2480',      #この番号は、先のURLから取得したIDを指定する 'order_by':'datetime', 'sort':'asc', 'has_geo':'true', 'limit':'100', 'offset':'0', }
 
-pollution = {                  #汚染測定値用の辞書を作成する 'no2' : 0,                 #ここでは NO2 と PM25 を見る ( 違う値を見るときは変える必要があるでしょう ) 'pm25': 0, }
+pollution = {                  #汚染測定値用の辞書を作成する 'no2' : 0,                 #ここでは NO2 と PM25 を見る ( 違う値を見るときは変える必要があるでしょう ) 'pm25'： }
 
 --- /code ---
 
@@ -114,7 +114,7 @@ def check_air(): now = datetime.now()           #現在の時刻を取得する 
 language: python filename: data_dash.py line_numbers: true line_number_start: 65
 line_highlights:
 ---
-def remap(min_value, max_value, min_angle, max_angle, sensor_data):                    #Create function value_range = (max_value - min_value)                                              #Work out how wide your value range is motor_range = (max_angle - min_angle)                                              #Work out how wide your motor range is mapped = (((sensor_data - min_value) * motor_range) / value_range) + min_angle     #Stretch your value range across your motor range return int(mapped)                                           #Give back a number that shows the value as an angle on the motor
+def remap(min_value, max_value, min_angle, max_angle, sensor_data):                    #関数の作成 value_range = (max_value - min_value)                                              #値の範囲がどれくらいの幅か計算する motor_range = (max_angle - min_angle)                                              #モーターの範囲がどれくらいの幅か計算する mapped = (((sensor_data - min_value) * motor_range) / value_range) + min_angle     #値の範囲をモーターの範囲に当てはめる return int(mapped)                                           #モーターの角度としての値の数値を返す
 
 --- /code ---
 
