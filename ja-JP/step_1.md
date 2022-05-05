@@ -79,7 +79,7 @@ M2のボルトとナットを使用して、 LEGO ビルドプレートの上に
 
 まだRaspberry Piのセットアップが済んでいない場合は、次の手順に従ってセットアップしてください:
 
-[Setting up your Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up){:target="_blank"}
+[Raspberry Piのセットアップ](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up){:target="_ blank"}
 
 --- /task ---
 
