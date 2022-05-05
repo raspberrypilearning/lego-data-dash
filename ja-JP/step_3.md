@@ -97,7 +97,7 @@
   </p>
   
   <p spaces-before="0">
-    歯型バー、赤い車軸、インジケーター用の矢印を用意します。 Insert the axle into one end of the toothed bar, with the indicator arrow pointing toward the toothed side: <img src="images/sliderbuild11.jpg" alt="歯型バー、車軸と、インジケータの矢印を写した画像。" />
+    歯型バー、赤い車軸、インジケーター用の矢印を用意します。 歯型バーの端に軸を差し込み、インジケータ用の矢印が歯の側を指すように組み合わせます。 <img src="images/sliderbuild11.jpg" alt="歯型バー、車軸と、インジケータの矢印を写した画像。" />
   </p>
   
   <p spaces-before="0">
@@ -153,7 +153,7 @@
   </p>
   
   <p spaces-before="0">
-    歯型バーを歯車のだいたい半分のあたりにあるように調整して、バーをその位置で押さえながら、2つのスタッドが付いたモーターをボードの後ろに取り付けます。 車軸がモーターの<strong x-id="1">平らな側</strong>の穴に入っていることを確認してください。 It should keep the slider held steady now, around halfway along the bar. <img src="images/sliderbuild10.jpg" alt="ビルドプレートの背面にモーターが取り付けられた様子を写した画像。" />
+    歯型バーを歯車のだいたい半分のあたりにあるように調整して、バーをその位置で押さえながら、2つのスタッドが付いたモーターをボードの後ろに取り付けます。 車軸がモーターの<strong x-id="1">平らな側</strong>の穴に入っていることを確認してください。 これで、スライダーはバーのほぼ半分のあたりに安定した状態で固定されるようになります。 <img src="images/sliderbuild10.jpg" alt="ビルドプレートの背面にモーターが取り付けられた様子を写した画像。" />
   </p>
   
   <p spaces-before="0">
@@ -221,7 +221,7 @@
 </h3>
 
 <p spaces-before="0">
-  Now you know it works, you will need to create a scale for the sliding indicator, so you know what it means.
+  これでスライダーを動かせるようになったので、スライドインジケーターの目盛りに意味をもたせましょう。
 </p>
 
 <p spaces-before="0">
