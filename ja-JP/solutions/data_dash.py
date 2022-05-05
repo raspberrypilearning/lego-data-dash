@@ -3,25 +3,25 @@ from time import sleep
 from datetime import datetime, timedelta
 import requests
 
-no2_motor = Motor('A') #set up slider motor
-no2_motor.run_to_position(0,100) # reset slider position
-pm25_motor = Motor('B') #set up gauge motor
-pm25_motor.run_to_position(0,100) # reset gauge position
+no2_motor = Motor('A') #スライダーモーターのセットアップ
+no2_motor.run_to_position(0,100) # スライダー位置のリセット
+pm25_motor = Motor('B') #ゲージモーターのセットアップ
+pm25_motor.run_to_position(0,100) # ゲージ位置のリセット
 
-no2_min_value = 0 # the lowest NO2 reading you think you will get (This should hopefully be around 0)
-no2_max_value = 60 #the highest NO2 reading you think you will get 
-no2_min_angle = 175 #miniumum motor travel
-no2_max_angle = -175 #maximum motor travel
+no2_min_value = 0 # 予想される最小の NO2 測定値 (おそらく 0 前後のはず)
+no2_max_value = 60 #予想される最大の NO2 測定値 
+no2_min_angle = 175 #最小のモーター移動量
+no2_max_angle = -175 #最大のモーター移動量
 
 
-pm25_min_value = 0  # the lowest NO2 reading you think you will get (This should hopefully be around 0)
-pm25_max_value = 100 #the highest pm25 reading you think you will get 
-pm25_min_angle = 175 #miniumum motor travel
-pm25_max_angle = -175 #maximum motor travel
+pm25_min_value = 0  # 予想される最小の PM2.5 測定値 (おそらく 0 前後のはず)
+pm25_max_value = 100 #予想される最大の PM2.5 測定値 
+pm25_min_angle = 175 #最小のモーター移動量
+pm25_max_angle = -175 #最大のモーター移動量
 
 base_url = "https://docs.openaq.org/v2/measurements"
 
-payload = { #create a dictionary for the API request
+payload = { #APIリクエスト用の辞書を作成する
     'date_from':'',
     'date_to':'',
     'location_id':'2480',
@@ -32,7 +32,7 @@ payload = { #create a dictionary for the API request
     'offset':'0',
 }
 
-pollution = { #create a dictionary for the pollution readings
+pollution = { #汚染測定値用の辞書を作成する
     'no2' : 0,
     'pm25': 0,
     }
@@ -53,9 +53,9 @@ def check_air():
     data = response.json()
         
     for reading in data['results']:
-        if reading['parameter'] == 'no2': # This will depend upon what pollutant you are measuring
+        if reading['parameter'] == 'no2': # 測定している汚染物質によってここは異なります
             pollution['no2'] = reading['value']
-        if reading['parameter'] == 'pm25': # This will depend upon what pollutant you are measuring
+        if reading['parameter'] == 'pm25': # 測定している汚染物質によってここは異なります
             pollution['pm25'] = reading['value']
 
     output_results()   
@@ -85,4 +85,4 @@ def output_results():
 
 while True:
     check_air()
-    sleep(3600)              # wait an hour before checking again (make this smaller for testing purposes)
+    sleep(3600)              # 次のチェックまで1時間待つ (テストするときはこの値を小さくします)
