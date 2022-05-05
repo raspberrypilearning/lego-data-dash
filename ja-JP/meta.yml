@@ -1,0 +1,17 @@
+---
+title: LEGO® データダッシュボード
+hero_image: images/banner.png
+description: LEGO® と BuildHATを使用して、物理的なダイヤルとスライダーに汚染データを表示する
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-03-26"
+steps:
+  - title: はじめに
+  - title: ダッシュボードを計画する
+  - title: LEGO® でスライドインジケーターを作る
+  - title: LEGO® でゲージを作る
+  - title: LED でスケールを作る
+  - title: OpenAQ API にアクセスする
+  - title: ダッシュボードで汚染データを表示する
+  - title: 次は何をしますか？
