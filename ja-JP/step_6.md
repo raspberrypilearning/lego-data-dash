@@ -2,9 +2,9 @@
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">API は <span style="color: #0faeb0">**Application Programming Interface**</span>の略で、 2 つのアプリケーションが互いに通信できるようにするためのソフトウェアです。 Facebook などのアプリを使用したり、インスタントメッセージを送信したり、スマートフォンで天気を確認したりするたびに、私たちは API を使用しています。</p>
 
-Whenever you use an app on your phone, the app connects to the internet and sends data about what you want to know to a server. The server then finds and retrieves the data you want, interprets it, and sends it back to your phone. アプリは返されたデータを受け取って、必要な情報を読みやすい方法で表示します。 つまりAPIとは、インターネット上で他のマシンを制御する方法です。すべては **API** を通じて行われます。
+スマートフォンでアプリを使用するたびに、アプリケーションはインターネットに接続し、知りたいことに関するデータをサーバーに送信します。 そして、サーバーは必要なデータを見つけて取得し、それを解釈して、スマートフォンに送り返します。 アプリは返されたデータを受け取って、必要な情報を読みやすい方法で表示します。 つまりAPIとは、インターネット上で他のマシンを制御する方法です。すべては **API** を通じて行われます。
 
-The cool part is, you can write your own apps that investigate online databases of information and return the desired data to your LEGO® dashboard instead of a phone — you'll use your Raspberry Pi as the brains to get that data, then display it on your hand-made, custom LEGO indicators!
+これがいいところは、オンラインデータベースから情報を調べて、必要なデータをスマートフォンではなく LEGO® ダッシュボードに返す独自のアプリケーションが作成できることです。 Raspberry Pi を頭脳として使用してデータを取得し、手作りの LEGO インジケーターに表示できます！
 
 そのためには、いくつかのことを決めておく必要があります。まずは大気質を調べるロケーションを選ぶ必要があります。これは世界中のどこを選ぶこともできます。 そして、表示したい大気質のマーカーがどれか決める必要があります。
 
@@ -12,7 +12,7 @@ The cool part is, you can write your own apps that investigate online databases 
 
 今回のダッシュボードでは、オープンソースのグローバルな大気質データのプロジェクトである [**OpenAQ**](https://openaq.org/#/){:target="_blank"} の API を使用します。 OpenAQ を使用すると、世界各地の何千もの測定ステーションによって収集された、地球上のさまざまな種類の大気汚染データを確認できます。
 
-If you're already a wizard with APIs, you can use any data you like to represent on your dashboard. If you want to follow along with us and use OpenAQ for your first try, you'll need to find out which measurement station you want to investigate and which measurements you are able to view.
+すでにAPIを使いこなしている場合は、ダッシュボード表示に好きなデータを使用することができます。 これ以降の手順に沿ってOpenAQをはじめて使う場合は、調査したい測定ステーションと、表示できる測定値を見つける必要があります。
 
 --- task ---
 
@@ -22,7 +22,7 @@ If you're already a wizard with APIs, you can use any data you like to represent
 
 --- task ---
 
-世界のどこの大気質データを収集したいかを**決めましょう**。 This could be the area near where you live, somewhere that interests you, or somewhere that you think might have interesting data.
+世界のどこの大気質データを収集したいかを**決めましょう**。 それは、あなたが住んでいる場所の近く、興味のある場所、または興味深いデータがあると思われる場所などでしょう。
 
 --- /task ---
 
@@ -33,7 +33,7 @@ Raspberry Piの本社は英国のケンブリッジにあるので、ここで�
  + PM2.5 および PM10 (粒子状物質): 空気中に浮遊する微細な粒子 (煙、スモッグ)
  + NO2 (二酸化窒素): オゾン生成の元となり、また、子供の喘息の原因になる
  + CO (一酸化炭素): 人体に致命的、化石燃料の燃焼の副反応
- + SO2 (sulfur dioxide): smells bad, can cause breathing problems, creates acid rain, side effect of industrial treatments
+ + SO2 (二酸化硫黄): 悪臭を放つ、呼吸障害を引き起こす可能性がある、酸性雨になる、産業処理の副作用
  + O3 (オゾン): NO2が日光に反応するとできる、スモッグの原因、植物に有害
  + BC (ブラックカーボン): 多くの場所 (米国やポーランド) では測定されていない、非効率的な燃料燃焼によって発生する、地球温暖化を助長する、人間に危険
 
