@@ -1,25 +1,22 @@
 ---
 title: LEGO® Daten-Instrumententafel
 hero_image: images/banner.png
-description: Zeige mit LEGO® und dem Build HAT Umwelt-Verschmutzungsdaten auf physischen Zifferblättern und Schiebereglern an
+description: Zeige mit LEGO® und dem Build HAT Umwelt-Verschmutzungsdaten auf physischen
+  Zifferblättern und Schiebereglern an
 version: 4
 listed: true
 copyedit: true
-last_tested: "2021-03-26"
+last_tested: '2021-03-26'
 steps:
-  - 
-    title: Einleitung
-  - 
-    title: Plane deine Instrumententafel
-  - 
-    title: Mache einen LEGO® Schiebeindikator
-  - 
-    title: Mache eine LEGO® Anzeige
-  - 
-    title: Mache eine LED-Skala
-  - 
-    title: Greife auf die OpenAQ-API zu
-  - 
-    title: Zeige Verschmutzungsdaten mit deiner Instrumententafel an
-  - 
-    title: Wie geht es weiter?
+- title: Einleitung
+- title: Plane deine Instrumententafel
+- title: Mache einen LEGO® Schiebeindikator
+  completion:
+  - engaged
+- title: Mache eine LEGO® Anzeige
+- title: Mache eine LED-Skala
+- title: Greife auf die OpenAQ-API zu
+- title: Zeige Verschmutzungsdaten mit deiner Instrumententafel an
+  completion:
+  - internal
+- title: Wie geht es weiter?
