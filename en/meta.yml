@@ -19,6 +19,5 @@ steps:
 - title: Display pollution data with your dashboard
   completion:
   - internal
-- title: What next?
   completion:
   - external

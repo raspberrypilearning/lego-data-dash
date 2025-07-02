@@ -19,4 +19,3 @@ steps:
 - title: Muestra los datos de contaminación con tu tablero
   completion:
   - internal
-- title: "¿Qué sigue?"
