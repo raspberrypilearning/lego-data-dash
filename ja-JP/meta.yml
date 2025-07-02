@@ -18,4 +18,3 @@ steps:
 - title: ダッシュボードで汚染データを表示する
   completion:
   - internal
-- title: 次は何をしますか？
